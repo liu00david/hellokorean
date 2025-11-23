@@ -9,82 +9,68 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
 
 type FlashcardState = "setup" | "review" | "results";
+type FlashcardSource = "learned" | "all";
 
 export default function FlashcardsPage() {
   const { user, loading: authLoading } = useAuth();
   const router = useRouter();
   const [state, setState] = useState<FlashcardState>("setup");
+  const [source, setSource] = useState<FlashcardSource>("learned");
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
   const [loading, setLoading] = useState(false);
   const [stats, setStats] = useState({ correct: 0, wrong: 0 });
   const [dueCount, setDueCount] = useState(0);
-  const [totalCount, setTotalCount] = useState(0);
+  const [learnedCount, setLearnedCount] = useState(0);
+  const [allCount, setAllCount] = useState(0);
 
   useEffect(() => {
-    if (!authLoading && !user) {
-      router.push("/");
-    }
-  }, [user, authLoading, router]);
-
-  useEffect(() => {
-    if (user) {
-      fetchCardCounts();
-    }
-  }, [user]);
+    fetchCardCounts();
+  }, [user, source]);
 
   const fetchCardCounts = async () => {
-    if (!user) return;
-
     try {
-      const dueResponse = await fetch(
-        `/api/flashcards?userId=${user.id}&dueOnly=true`
-      );
-      const dueData = await dueResponse.json();
-      setDueCount(dueData.flashcards?.length || 0);
+      // Fetch all words count
+      const allResponse = await fetch(`/api/flashcards?source=all`);
+      const allData = await allResponse.json();
+      setAllCount(allData.flashcards?.length || 0);
 
-      const totalResponse = await fetch(`/api/flashcards?userId=${user.id}`);
-      const totalData = await totalResponse.json();
-      setTotalCount(totalData.flashcards?.length || 0);
+      if (user) {
+        // Fetch due cards count (learned words only)
+        const dueResponse = await fetch(
+          `/api/flashcards?userId=${user.id}&source=learned&dueOnly=true`
+        );
+        const dueData = await dueResponse.json();
+        setDueCount(dueData.flashcards?.length || 0);
+
+        // Fetch all learned words count
+        const learnedResponse = await fetch(
+          `/api/flashcards?userId=${user.id}&source=learned`
+        );
+        const learnedData = await learnedResponse.json();
+        setLearnedCount(learnedData.flashcards?.length || 0);
+      }
     } catch (error) {
       console.error("Error fetching card counts:", error);
     }
   };
 
-  const syncFlashcards = async () => {
-    if (!user) return;
-
+  const startReview = async (dueOnly: boolean = false) => {
     setLoading(true);
     try {
-      const response = await fetch("/api/sync-flashcards", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId: user.id }),
-      });
+      let url = "";
 
-      const data = await response.json();
-
-      if (response.ok) {
-        alert(data.message || `Added ${data.wordsAdded} words to your deck!`);
-        fetchCardCounts(); // Refresh counts
+      if (source === "all") {
+        url = `/api/flashcards?source=all`;
       } else {
-        alert(data.error || "Failed to sync flashcards");
+        if (!user) {
+          alert("Please sign in to review learned words");
+          setLoading(false);
+          return;
+        }
+        url = dueOnly
+          ? `/api/flashcards?userId=${user.id}&source=learned&dueOnly=true`
+          : `/api/flashcards?userId=${user.id}&source=learned`;
       }
-    } catch (error) {
-      console.error("Error syncing flashcards:", error);
-      alert("Failed to sync flashcards. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const startReview = async (dueOnly: boolean) => {
-    if (!user) return;
-
-    setLoading(true);
-    try {
-      const url = dueOnly
-        ? `/api/flashcards?userId=${user.id}&dueOnly=true`
-        : `/api/flashcards?userId=${user.id}`;
 
       const response = await fetch(url);
       const data = await response.json();
@@ -93,11 +79,15 @@ export default function FlashcardsPage() {
         setFlashcards(data.flashcards);
         setState("review");
       } else {
-        alert(
-          dueOnly
-            ? "No cards are due for review! Check back later or review all cards."
-            : "You haven't learned any words yet! Complete some lessons first."
-        );
+        if (source === "learned") {
+          alert(
+            dueOnly
+              ? "No cards are due for review! Check back later or review all cards."
+              : "You haven't learned any words yet! Complete some lessons first."
+          );
+        } else {
+          alert("No words available in dictionary yet!");
+        }
       }
     } catch (error) {
       console.error("Error starting flashcard review:", error);
@@ -119,14 +109,6 @@ export default function FlashcardsPage() {
     fetchCardCounts();
   };
 
-  if (authLoading || !user) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10 flex items-center justify-center">
-        <p className="text-garden-earth/70">Loading...</p>
-      </div>
-    );
-  }
-
   if (state === "setup") {
     return (
       <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
@@ -140,83 +122,131 @@ export default function FlashcardsPage() {
               Review vocabulary with spaced repetition
             </p>
 
+            {/* Tabs for Learned/All Words */}
+            <div className="flex justify-center gap-2 mb-8">
+              <button
+                onClick={() => setSource("learned")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  source === "learned"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                Learned Words
+              </button>
+              <button
+                onClick={() => setSource("all")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  source === "all"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                All Words
+              </button>
+            </div>
+
+            {/* Warning for non-authenticated users on learned mode */}
+            {!user && source === "learned" && (
+              <div className="mb-6 p-4 bg-yellow-100 text-yellow-800 rounded-lg">
+                Please sign in to review your learned words
+              </div>
+            )}
+
             <Card>
               <CardContent className="pt-6">
-                <div className="grid gap-4 mb-6">
-                  <div className="flex items-center justify-between p-4 bg-garden-mint/10 rounded-xl">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">⏰</span>
-                      <div className="text-left">
-                        <div className="font-semibold text-garden-earth">
-                          Due for Review
+                {source === "learned" && user ? (
+                  <>
+                    <div className="grid gap-4 mb-6">
+                      <div className="flex items-center justify-between p-4 bg-garden-mint/10 rounded-xl">
+                        <div className="flex items-center gap-3">
+                          <span className="text-3xl">⏰</span>
+                          <div className="text-left">
+                            <div className="font-semibold text-garden-earth">
+                              Due for Review
+                            </div>
+                            <div className="text-sm text-garden-earth/60">
+                              Cards ready to practice now
+                            </div>
+                          </div>
                         </div>
-                        <div className="text-sm text-garden-earth/60">
-                          Cards ready to practice now
+                        <div className="text-3xl font-bold text-garden-pink">
+                          {dueCount}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between p-4 bg-garden-lavender/10 rounded-xl">
+                        <div className="flex items-center gap-3">
+                          <span className="text-3xl">📚</span>
+                          <div className="text-left">
+                            <div className="font-semibold text-garden-earth">
+                              Learned Words
+                            </div>
+                            <div className="text-sm text-garden-earth/60">
+                              Words from completed lessons
+                            </div>
+                          </div>
+                        </div>
+                        <div className="text-3xl font-bold text-garden-lavender">
+                          {learnedCount}
                         </div>
                       </div>
                     </div>
-                    <div className="text-3xl font-bold text-garden-pink">
-                      {dueCount}
-                    </div>
-                  </div>
 
-                  <div className="flex items-center justify-between p-4 bg-garden-lavender/10 rounded-xl">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">📚</span>
-                      <div className="text-left">
-                        <div className="font-semibold text-garden-earth">
-                          Total Cards
-                        </div>
-                        <div className="text-sm text-garden-earth/60">
-                          All learned words
+                    <div className="grid gap-4">
+                      <Button
+                        onClick={() => startReview(true)}
+                        disabled={loading || dueCount === 0}
+                        variant="default"
+                        className="py-6"
+                      >
+                        {dueCount > 0
+                          ? `Review Due Cards (${dueCount})`
+                          : "No Cards Due"}
+                      </Button>
+                      <Button
+                        onClick={() => startReview(false)}
+                        disabled={loading || learnedCount === 0}
+                        variant="outline"
+                        className="py-6"
+                      >
+                        {learnedCount > 0
+                          ? `Review All Learned Words (${learnedCount})`
+                          : "No Learned Words Yet"}
+                      </Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex items-center justify-between p-4 bg-garden-lavender/10 rounded-xl mb-6">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">📖</span>
+                        <div className="text-left">
+                          <div className="font-semibold text-garden-earth">
+                            All Words
+                          </div>
+                          <div className="text-sm text-garden-earth/60">
+                            Complete dictionary
+                          </div>
                         </div>
                       </div>
+                      <div className="text-3xl font-bold text-garden-lavender">
+                        {allCount}
+                      </div>
                     </div>
-                    <div className="text-3xl font-bold text-garden-lavender">
-                      {totalCount}
-                    </div>
-                  </div>
-                </div>
 
-                <div className="grid gap-4">
-                  <Button
-                    onClick={() => startReview(true)}
-                    disabled={loading || dueCount === 0}
-                    variant="default"
-                    className="py-6"
-                  >
-                    {dueCount > 0
-                      ? `Review Due Cards (${dueCount})`
-                      : "No Cards Due"}
-                  </Button>
-                  <Button
-                    onClick={() => startReview(false)}
-                    disabled={loading || totalCount === 0}
-                    variant="outline"
-                    className="py-6"
-                  >
-                    {totalCount > 0
-                      ? `Review All Cards (${totalCount})`
-                      : "No Cards Available"}
-                  </Button>
-                </div>
-
-                <div className="mt-6 p-4 bg-garden-mint/10 rounded-xl space-y-3">
-                  <p className="text-sm text-garden-earth/70">
-                    💡 {totalCount === 0
-                      ? "Add all dictionary words to your flashcard deck!"
-                      : "Refresh your flashcard deck with all dictionary words"}
-                  </p>
-                  <Button
-                    onClick={syncFlashcards}
-                    disabled={loading}
-                    variant="outline"
-                    className="w-full"
-                    size="sm"
-                  >
-                    {loading ? "Syncing..." : "🔄 Add All Words to Flashcard Deck"}
-                  </Button>
-                </div>
+                    <Button
+                      onClick={() => startReview(false)}
+                      disabled={loading || allCount === 0}
+                      variant="default"
+                      className="py-6 w-full"
+                    >
+                      {allCount > 0
+                        ? `Review All Words (${allCount})`
+                        : "No Words Available"}
+                    </Button>
+                  </>
+                )}
               </CardContent>
             </Card>
           </div>

@@ -4,25 +4,33 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { DictionaryEntry } from "@/types/dictionary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { useAuth } from "@/components/AuthProvider";
+
+type TabType = "learned" | "all";
 
 export default function DictionaryPage() {
-  const [entries, setEntries] = useState<DictionaryEntry[]>([]);
+  const { user } = useAuth();
+  const [activeTab, setActiveTab] = useState<TabType>("learned");
+  const [allEntries, setAllEntries] = useState<DictionaryEntry[]>([]);
+  const [learnedEntries, setLearnedEntries] = useState<DictionaryEntry[]>([]);
   const [filteredEntries, setFilteredEntries] = useState<DictionaryEntry[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [loading, setLoading] = useState(true);
-  const [syncing, setSyncing] = useState(false);
-  const [syncMessage, setSyncMessage] = useState("");
 
-  // Fetch dictionary entries
+  // Fetch dictionary entries based on active tab
   useEffect(() => {
-    fetchDictionary();
-  }, []);
+    if (activeTab === "all") {
+      fetchAllWords();
+    } else if (activeTab === "learned" && user) {
+      fetchLearnedWords();
+    }
+  }, [activeTab, user]);
 
   // Filter entries when search or filter changes
   useEffect(() => {
-    let filtered = entries;
+    const currentEntries = activeTab === "learned" ? learnedEntries : allEntries;
+    let filtered = currentEntries;
 
     // Apply search filter
     if (searchTerm) {
@@ -40,9 +48,9 @@ export default function DictionaryPage() {
     }
 
     setFilteredEntries(filtered);
-  }, [searchTerm, typeFilter, entries]);
+  }, [searchTerm, typeFilter, allEntries, learnedEntries, activeTab]);
 
-  const fetchDictionary = async () => {
+  const fetchAllWords = async () => {
     setLoading(true);
     const { data, error } = await supabase
       .from("dictionary")
@@ -52,40 +60,46 @@ export default function DictionaryPage() {
     if (error) {
       console.error("Error fetching dictionary:", error);
     } else {
-      setEntries(data || []);
+      setAllEntries(data || []);
       setFilteredEntries(data || []);
     }
     setLoading(false);
   };
 
-  const handleSync = async () => {
-    setSyncing(true);
-    setSyncMessage("");
-
-    try {
-      const response = await fetch("/api/sync-dictionary", {
-        method: "POST",
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setSyncMessage(
-          `✅ Synced! Added: ${result.wordsAdded}, Updated: ${result.wordsUpdated}`
-        );
-        // Refresh the dictionary
-        await fetchDictionary();
-      } else {
-        setSyncMessage(`❌ Error: ${result.error}`);
-      }
-    } catch (error) {
-      setSyncMessage(`❌ Error: ${error}`);
-    } finally {
-      setSyncing(false);
+  const fetchLearnedWords = async () => {
+    if (!user) {
+      setLearnedEntries([]);
+      setFilteredEntries([]);
+      setLoading(false);
+      return;
     }
+
+    setLoading(true);
+    const { data, error } = await supabase
+      .from("learned_words")
+      .select(`
+        word_id,
+        dictionary (*)
+      `)
+      .eq("user_id", user.id)
+      .order("first_seen", { ascending: false });
+
+    if (error) {
+      console.error("Error fetching learned words:", error);
+      setLearnedEntries([]);
+    } else {
+      // Extract dictionary entries from the joined data
+      const entries = (data || [])
+        .map((item: any) => item.dictionary)
+        .filter((entry: any) => entry !== null);
+      setLearnedEntries(entries);
+      setFilteredEntries(entries);
+    }
+    setLoading(false);
   };
 
-  const types = Array.from(new Set(entries.map((e) => e.type))).sort();
+  const currentEntries = activeTab === "learned" ? learnedEntries : allEntries;
+  const types = Array.from(new Set(currentEntries.map((e) => e.type))).sort();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
@@ -99,20 +113,36 @@ export default function DictionaryPage() {
             Browse and search Korean vocabulary
           </p>
 
-          {/* Sync Button */}
-          <div className="flex flex-col items-center gap-2">
-            <Button
-              onClick={handleSync}
-              disabled={syncing}
-              variant="secondary"
-              className="gap-2"
+          {/* Tabs */}
+          <div className="flex justify-center gap-2 mb-8">
+            <button
+              onClick={() => setActiveTab("learned")}
+              className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                activeTab === "learned"
+                  ? "bg-garden-pink text-garden-earth shadow-md"
+                  : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+              }`}
             >
-              {syncing ? "Syncing..." : "🔄 Sync Dictionary from Lessons"}
-            </Button>
-            {syncMessage && (
-              <p className="text-sm text-garden-earth/70">{syncMessage}</p>
-            )}
+              Learned Words
+            </button>
+            <button
+              onClick={() => setActiveTab("all")}
+              className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                activeTab === "all"
+                  ? "bg-garden-pink text-garden-earth shadow-md"
+                  : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+              }`}
+            >
+              All Words
+            </button>
           </div>
+
+          {/* Message for non-authenticated users */}
+          {!user && activeTab === "learned" && (
+            <div className="mb-4 p-4 bg-yellow-100 text-yellow-800 rounded-lg max-w-2xl mx-auto">
+              Please sign in to view your learned words
+            </div>
+          )}
         </div>
 
         {/* Search and Filters */}
@@ -156,7 +186,7 @@ export default function DictionaryPage() {
 
               {/* Results Count */}
               <div className="mt-4 text-sm text-garden-earth/60">
-                Showing {filteredEntries.length} of {entries.length} words
+                Showing {filteredEntries.length} of {currentEntries.length} words
               </div>
             </CardContent>
           </Card>
@@ -170,13 +200,15 @@ export default function DictionaryPage() {
         ) : filteredEntries.length === 0 ? (
           <div className="max-w-2xl mx-auto text-center p-12 bg-white/50 rounded-2xl">
             <p className="text-xl text-garden-earth/70 mb-4">
-              {entries.length === 0
-                ? "📚 No words in dictionary yet"
+              {currentEntries.length === 0
+                ? activeTab === "learned"
+                  ? "📚 No learned words yet"
+                  : "📚 No words in dictionary yet"
                 : "🔍 No words found matching your search"}
             </p>
-            {entries.length === 0 && (
+            {currentEntries.length === 0 && activeTab === "learned" && (
               <p className="text-sm text-garden-earth/60">
-                Click "Sync Dictionary from Lessons" to populate the dictionary
+                Complete lessons to add words to your learned vocabulary
               </p>
             )}
           </div>

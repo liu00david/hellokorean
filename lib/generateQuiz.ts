@@ -165,7 +165,21 @@ export function generateQuiz(
   }
 
   const questions: QuizQuestion[] = [];
-  const selectedEntries = getRandomItems(entries, count);
+
+  // If we have fewer entries than needed, we'll cycle through them to reach the count
+  // This allows repeating words when user has limited learned vocabulary
+  const selectedEntries: DictionaryEntry[] = [];
+
+  if (entries.length >= count) {
+    // Normal case: enough entries, just pick random ones
+    selectedEntries.push(...getRandomItems(entries, count));
+  } else {
+    // Repeat entries to reach the desired count
+    const shuffledEntries = shuffle(entries);
+    for (let i = 0; i < count; i++) {
+      selectedEntries.push(shuffledEntries[i % shuffledEntries.length]);
+    }
+  }
 
   for (const entry of selectedEntries) {
     // Randomly choose question type if not specified

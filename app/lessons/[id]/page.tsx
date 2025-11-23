@@ -11,7 +11,7 @@ interface LessonPageProps {
 }
 
 export async function generateStaticParams() {
-  const lessonIds = getLessonIds();
+  const lessonIds = await getLessonIds();
   return lessonIds.map((id) => ({
     id,
   }));
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 
 export default async function LessonPage({ params }: LessonPageProps) {
   const { id } = await params;
-  const lesson = getLessonById(id);
+  const lesson = await getLessonById(id);
 
   if (!lesson) {
     notFound();

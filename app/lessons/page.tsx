@@ -2,8 +2,8 @@ import { getAllLessons } from "@/lib/lessons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
-export default function LessonsPage() {
-  const lessons = getAllLessons();
+export default async function LessonsPage() {
+  const lessons = await getAllLessons();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">

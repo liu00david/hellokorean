@@ -16,10 +16,15 @@ const navItems = [
   { href: "/quiz", label: "Quiz" },
 ];
 
+const ADMIN_EMAIL = "liu00david@gmail.com";
+
 export function Navigation() {
   const pathname = usePathname();
   const { user, loading } = useAuth();
   const [loggingIn, setLoggingIn] = useState(false);
+
+  // Debug: log user info
+  console.log('Navigation user:', { email: user?.email, isAdmin: user?.email === ADMIN_EMAIL });
 
   const handleSignIn = async () => {
     setLoggingIn(true);
@@ -72,6 +77,19 @@ export function Navigation() {
                 </Link>
               );
             })}
+            {user && user.email === ADMIN_EMAIL && (
+              <Link
+                href="/admin"
+                className={cn(
+                  "px-4 py-2 rounded-lg font-nunito transition-colors",
+                  pathname === "/admin"
+                    ? "bg-purple-500 text-white font-semibold"
+                    : "text-purple-600 hover:bg-purple-50 hover:text-purple-700"
+                )}
+              >
+                Admin
+              </Link>
+            )}
           </div>
 
           {/* Auth Buttons */}

@@ -10,10 +10,12 @@ import { useAuth } from "@/components/AuthProvider";
 import { supabase } from "@/lib/supabase";
 
 type QuizState = "setup" | "quiz" | "results";
+type QuizSource = "learned" | "all";
 
 export default function QuizPage() {
   const { user } = useAuth();
   const [state, setState] = useState<QuizState>("setup");
+  const [quizSource, setQuizSource] = useState<QuizSource>("learned");
   const [questions, setQuestions] = useState<QuizQuestionType[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -25,7 +27,10 @@ export default function QuizPage() {
   const startQuiz = async (count: number = 10) => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/generate-quiz?count=${count}`);
+      const userId = user?.id || "";
+      const response = await fetch(
+        `/api/generate-quiz?count=${count}&source=${quizSource}&userId=${userId}`
+      );
       const data = await response.json();
 
       if (data.questions) {
@@ -112,6 +117,37 @@ export default function QuizPage() {
               Test your Korean knowledge with auto-generated quizzes
             </p>
 
+            {/* Tabs for Learned/All Words */}
+            <div className="flex justify-center gap-2 mb-8">
+              <button
+                onClick={() => setQuizSource("learned")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  quizSource === "learned"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                Learned Words
+              </button>
+              <button
+                onClick={() => setQuizSource("all")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  quizSource === "all"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                All Words
+              </button>
+            </div>
+
+            {/* Warning for non-authenticated users on learned mode */}
+            {!user && quizSource === "learned" && (
+              <div className="mb-6 p-4 bg-yellow-100 text-yellow-800 rounded-lg">
+                Please sign in to quiz yourself on learned words
+              </div>
+            )}
+
             <Card>
               <CardContent className="pt-6">
                 <p className="text-garden-earth/70 mb-6">
@@ -120,7 +156,7 @@ export default function QuizPage() {
                 <div className="grid gap-4">
                   <Button
                     onClick={() => startQuiz(5)}
-                    disabled={loading}
+                    disabled={loading || (quizSource === "learned" && !user)}
                     variant="outline"
                     className="py-6"
                   >
@@ -128,7 +164,7 @@ export default function QuizPage() {
                   </Button>
                   <Button
                     onClick={() => startQuiz(10)}
-                    disabled={loading}
+                    disabled={loading || (quizSource === "learned" && !user)}
                     variant="default"
                     className="py-6"
                   >
@@ -136,7 +172,7 @@ export default function QuizPage() {
                   </Button>
                   <Button
                     onClick={() => startQuiz(20)}
-                    disabled={loading}
+                    disabled={loading || (quizSource === "learned" && !user)}
                     variant="secondary"
                     className="py-6"
                   >
@@ -144,7 +180,7 @@ export default function QuizPage() {
                   </Button>
                 </div>
 
-                {!user && (
+                {!user && quizSource === "all" && (
                   <p className="mt-6 text-sm text-garden-earth/60">
                     💡 Sign in to save your quiz results!
                   </p>

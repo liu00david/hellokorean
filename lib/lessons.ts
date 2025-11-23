@@ -1,42 +1,64 @@
 import { Lesson } from "@/types/lesson";
-import fs from "fs";
-import path from "path";
+import { createClient } from "@supabase/supabase-js";
 
-const lessonsDirectory = path.join(process.cwd(), "content/lessons");
+// Create a server-side Supabase client for lesson loading
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-export function getAllLessons(): Lesson[] {
-  const fileNames = fs.readdirSync(lessonsDirectory);
-  const lessons = fileNames
-    .filter((fileName) => fileName.endsWith(".json"))
-    .map((fileName) => {
-      const fullPath = path.join(lessonsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-      const lesson: Lesson = JSON.parse(fileContents);
-      return lesson;
-    })
-    .sort((a, b) => {
-      // Sort by lesson id (assuming they are like lesson1, lesson2, etc.)
-      return a.id.localeCompare(b.id, undefined, { numeric: true });
-    });
+const supabase = createClient(supabaseUrl, supabaseKey);
 
-  return lessons;
+export async function getAllLessons(): Promise<Lesson[]> {
+  const { data, error } = await supabase
+    .from("lessons")
+    .select("*")
+    .order("order_index", { ascending: true });
+
+  if (error) {
+    console.error("Error fetching lessons:", error);
+    return [];
+  }
+
+  return (data || []).map(transformLesson);
 }
 
-export function getLessonById(id: string): Lesson | null {
-  try {
-    const fullPath = path.join(lessonsDirectory, `${id}.json`);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const lesson: Lesson = JSON.parse(fileContents);
-    return lesson;
-  } catch (error) {
+export async function getLessonById(id: string): Promise<Lesson | null> {
+  const { data, error } = await supabase
+    .from("lessons")
+    .select("*")
+    .eq("id", id)
+    .single();
+
+  if (error) {
     console.error(`Error loading lesson ${id}:`, error);
     return null;
   }
+
+  return transformLesson(data);
 }
 
-export function getLessonIds(): string[] {
-  const fileNames = fs.readdirSync(lessonsDirectory);
-  return fileNames
-    .filter((fileName) => fileName.endsWith(".json"))
-    .map((fileName) => fileName.replace(/\.json$/, ""));
+export async function getLessonIds(): Promise<string[]> {
+  const { data, error } = await supabase
+    .from("lessons")
+    .select("id")
+    .order("order_index", { ascending: true });
+
+  if (error) {
+    console.error("Error fetching lesson IDs:", error);
+    return [];
+  }
+
+  return (data || []).map((lesson) => lesson.id);
+}
+
+// Transform database lesson to Lesson type
+function transformLesson(dbLesson: any): Lesson {
+  return {
+    id: dbLesson.id,
+    title: dbLesson.title,
+    prerequisite: dbLesson.prerequisite,
+    objectives: dbLesson.objectives,
+    vocabulary: dbLesson.vocabulary,
+    sentences: dbLesson.sentences,
+    explanation: dbLesson.explanation,
+  };
 }

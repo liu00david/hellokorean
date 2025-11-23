@@ -1,17 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { TypingPractice } from "@/components/TypingPractice";
 import { DictionaryEntry } from "@/types/dictionary";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/components/AuthProvider";
+import { supabase } from "@/lib/supabase";
 
 type TypingState = "setup" | "practice" | "results";
+type TypingSource = "learned" | "all";
 
 export default function TypingPracticePage() {
+  const { user } = useAuth();
   const router = useRouter();
   const [state, setState] = useState<TypingState>("setup");
+  const [source, setSource] = useState<TypingSource>("learned");
   const [words, setWords] = useState<DictionaryEntry[]>([]);
   const [loading, setLoading] = useState(false);
   const [stats, setStats] = useState({ correct: 0, wrong: 0 });
@@ -19,18 +24,66 @@ export default function TypingPracticePage() {
   const startPractice = async (count: number) => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/dictionary`);
-      const data = await response.json();
+      let entries: DictionaryEntry[] = [];
 
-      if (data.entries && data.entries.length > 0) {
-        // Shuffle and pick random words
-        const shuffled = [...data.entries].sort(() => Math.random() - 0.5);
-        const selected = shuffled.slice(0, Math.min(count, shuffled.length));
-        setWords(selected);
-        setState("practice");
+      if (source === "all") {
+        // Fetch all dictionary words
+        const { data, error } = await supabase
+          .from("dictionary")
+          .select("*")
+          .order("word", { ascending: true });
+
+        if (error) {
+          console.error("Error fetching words:", error);
+          alert("Failed to load words. Please try again.");
+          setLoading(false);
+          return;
+        }
+
+        entries = data || [];
       } else {
-        alert("No words available. Please sync the dictionary first!");
+        // Fetch learned words
+        if (!user) {
+          alert("Please sign in to practice with learned words");
+          setLoading(false);
+          return;
+        }
+
+        const { data, error } = await supabase
+          .from("learned_words")
+          .select(`
+            dictionary (*)
+          `)
+          .eq("user_id", user.id);
+
+        if (error) {
+          console.error("Error fetching learned words:", error);
+          alert("Failed to load learned words. Please try again.");
+          setLoading(false);
+          return;
+        }
+
+        // Extract dictionary entries
+        entries = (data || [])
+          .map((item: any) => item.dictionary)
+          .filter((entry: any) => entry !== null);
       }
+
+      if (entries.length === 0) {
+        alert(
+          source === "learned"
+            ? "No learned words yet. Complete some lessons first!"
+            : "No words available in dictionary yet!"
+        );
+        setLoading(false);
+        return;
+      }
+
+      // Shuffle and pick random words
+      const shuffled = [...entries].sort(() => Math.random() - 0.5);
+      const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+      setWords(selected);
+      setState("practice");
     } catch (error) {
       console.error("Error loading words:", error);
       alert("Failed to load words. Please try again.");
@@ -66,6 +119,37 @@ export default function TypingPracticePage() {
               Practice typing Korean words
             </p>
 
+            {/* Tabs for Learned/All Words */}
+            <div className="flex justify-center gap-2 mb-8">
+              <button
+                onClick={() => setSource("learned")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  source === "learned"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                Learned Words
+              </button>
+              <button
+                onClick={() => setSource("all")}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                  source === "all"
+                    ? "bg-garden-pink text-garden-earth shadow-md"
+                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
+                }`}
+              >
+                All Words
+              </button>
+            </div>
+
+            {/* Warning for non-authenticated users on learned mode */}
+            {!user && source === "learned" && (
+              <div className="mb-6 p-4 bg-yellow-100 text-yellow-800 rounded-lg">
+                Please sign in to practice with learned words
+              </div>
+            )}
+
             <Card>
               <CardContent className="pt-6">
                 <p className="text-garden-earth/70 mb-6">
@@ -74,7 +158,7 @@ export default function TypingPracticePage() {
                 <div className="grid gap-4">
                   <Button
                     onClick={() => startPractice(5)}
-                    disabled={loading}
+                    disabled={loading || (source === "learned" && !user)}
                     variant="outline"
                     className="py-6"
                   >
@@ -82,7 +166,7 @@ export default function TypingPracticePage() {
                   </Button>
                   <Button
                     onClick={() => startPractice(10)}
-                    disabled={loading}
+                    disabled={loading || (source === "learned" && !user)}
                     variant="default"
                     className="py-6"
                   >
@@ -90,7 +174,7 @@ export default function TypingPracticePage() {
                   </Button>
                   <Button
                     onClick={() => startPractice(20)}
-                    disabled={loading}
+                    disabled={loading || (source === "learned" && !user)}
                     variant="secondary"
                     className="py-6"
                   >

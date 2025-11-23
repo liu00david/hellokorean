@@ -8,36 +8,78 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const typeParam = searchParams.get("type") as QuizType | null;
     const countParam = searchParams.get("count");
-    const lessonIdParam = searchParams.get("lessonId");
+    const sourceParam = searchParams.get("source") || "all"; // "learned" or "all"
+    const userIdParam = searchParams.get("userId");
 
     const count = countParam ? parseInt(countParam) : 10;
 
-    // Fetch dictionary entries
-    let query = supabase.from("dictionary").select("*");
+    let entries: any[] = [];
 
-    // TODO: Filter by lesson if needed (would need lesson_id column in dictionary)
-    // if (lessonIdParam) {
-    //   query = query.eq("lesson_id", lessonIdParam);
-    // }
+    if (sourceParam === "learned" && userIdParam) {
+      // Fetch only learned words for this user
+      const { data, error } = await supabase
+        .from("learned_words")
+        .select(`
+          word_id,
+          dictionary (*)
+        `)
+        .eq("user_id", userIdParam);
 
-    const { data: entries, error } = await query;
+      if (error) {
+        console.error("Error fetching learned words:", error);
+        return NextResponse.json(
+          { error: "Failed to fetch learned words" },
+          { status: 500 }
+        );
+      }
 
-    if (error) {
-      console.error("Error fetching dictionary:", error);
-      return NextResponse.json(
-        { error: "Failed to fetch dictionary entries" },
-        { status: 500 }
-      );
-    }
+      // Extract dictionary entries from the joined data
+      entries = (data || [])
+        .map((item: any) => item.dictionary)
+        .filter((entry: any) => entry !== null);
 
-    if (!entries || entries.length < 4) {
-      return NextResponse.json(
-        { error: "Not enough dictionary entries to generate quiz (need at least 4)" },
-        { status: 400 }
-      );
+      if (entries.length === 0) {
+        return NextResponse.json(
+          { error: "No learned words yet. Complete some lessons first!" },
+          { status: 400 }
+        );
+      }
+
+      // If we have fewer words than needed for quiz, we'll generate with what we have
+      // and the generateQuiz function will handle repeating questions
+      if (entries.length < 4) {
+        return NextResponse.json(
+          { error: "Need at least 4 learned words to generate a quiz" },
+          { status: 400 }
+        );
+      }
+    } else {
+      // Fetch all dictionary entries
+      const { data, error } = await supabase
+        .from("dictionary")
+        .select("*")
+        .order("word", { ascending: true });
+
+      if (error) {
+        console.error("Error fetching dictionary:", error);
+        return NextResponse.json(
+          { error: "Failed to fetch dictionary entries" },
+          { status: 500 }
+        );
+      }
+
+      entries = data || [];
+
+      if (entries.length < 4) {
+        return NextResponse.json(
+          { error: "Not enough dictionary entries to generate quiz (need at least 4)" },
+          { status: 400 }
+        );
+      }
     }
 
     // Generate quiz questions
+    // The generateQuiz function will handle repeating questions if needed
     const questions = generateQuiz(entries, count, typeParam || undefined);
 
     return NextResponse.json({
