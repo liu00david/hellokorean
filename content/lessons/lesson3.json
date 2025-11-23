@@ -1,0 +1,89 @@
+{
+  "id": "lesson3",
+  "title": "Numbers and Counting",
+  "prerequisite": "lesson2",
+  "objectives": [
+    "Learn Sino-Korean numbers (1-10)",
+    "Learn Native Korean numbers (1-10)",
+    "Understand when to use each number system"
+  ],
+  "vocabulary": [
+    {
+      "word": "일",
+      "english": "one (Sino-Korean)",
+      "romanization": "il",
+      "type": "noun"
+    },
+    {
+      "word": "이",
+      "english": "two (Sino-Korean)",
+      "romanization": "i",
+      "type": "noun"
+    },
+    {
+      "word": "삼",
+      "english": "three (Sino-Korean)",
+      "romanization": "sam",
+      "type": "noun"
+    },
+    {
+      "word": "하나",
+      "english": "one (Native Korean)",
+      "romanization": "hana",
+      "type": "noun"
+    },
+    {
+      "word": "둘",
+      "english": "two (Native Korean)",
+      "romanization": "dul",
+      "type": "noun"
+    },
+    {
+      "word": "셋",
+      "english": "three (Native Korean)",
+      "romanization": "set",
+      "type": "noun"
+    },
+    {
+      "word": "개",
+      "english": "counter for things",
+      "romanization": "gae",
+      "type": "particle"
+    },
+    {
+      "word": "명",
+      "english": "counter for people",
+      "romanization": "myeong",
+      "type": "particle"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "사과 한 개",
+      "english": "One apple",
+      "romanization": "sagwa han gae"
+    },
+    {
+      "korean": "학생 두 명",
+      "english": "Two students",
+      "romanization": "haksaeng du myeong"
+    },
+    {
+      "korean": "삼월",
+      "english": "March (month 3)",
+      "romanization": "samwol"
+    },
+    {
+      "korean": "일 더하기 이는 삼",
+      "english": "One plus two is three",
+      "romanization": "il deohagi ineun sam"
+    }
+  ],
+  "explanation": [
+    "Korean has two number systems: Sino-Korean (Chinese-origin) and Native Korean numbers.",
+    "Sino-Korean numbers (일, 이, 삼...) are used for: dates, months, money, phone numbers, addresses, and math.",
+    "Native Korean numbers (하나, 둘, 셋...) are used for: counting objects, people, ages (up to 99), and hours.",
+    "When counting objects with Native Korean numbers, the number changes slightly: 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, 넷 becomes 네.",
+    "Counters (like 개, 명) are essential in Korean - you can't just say 'three', you must say 'three [counter]'."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "lesson1",
+  "title": "Greetings and Basic Phrases",
+  "prerequisite": null,
+  "objectives": [
+    "Learn basic Korean greetings",
+    "Understand polite and informal forms",
+    "Practice common daily expressions"
+  ],
+  "vocabulary": [
+    {
+      "word": "안녕하세요",
+      "english": "hello (formal)",
+      "romanization": "annyeonghaseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕",
+      "english": "hello/hi (informal)",
+      "romanization": "annyeong",
+      "type": "phrase"
+    },
+    {
+      "word": "감사합니다",
+      "english": "thank you",
+      "romanization": "gamsahamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "죄송합니다",
+      "english": "I'm sorry",
+      "romanization": "joesonghamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "네",
+      "english": "yes",
+      "romanization": "ne",
+      "type": "particle"
+    },
+    {
+      "word": "아니요",
+      "english": "no",
+      "romanization": "aniyo",
+      "type": "particle"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "안녕하세요",
+      "english": "Hello (formal greeting)",
+      "romanization": "annyeonghaseyo"
+    },
+    {
+      "korean": "감사합니다",
+      "english": "Thank you",
+      "romanization": "gamsahamnida"
+    },
+    {
+      "korean": "죄송합니다",
+      "english": "I'm sorry",
+      "romanization": "joesonghamnida"
+    },
+    {
+      "korean": "안녕히 가세요",
+      "english": "Goodbye (to person leaving)",
+      "romanization": "annyeonghi gaseyo"
+    },
+    {
+      "korean": "안녕히 계세요",
+      "english": "Goodbye (when you're leaving)",
+      "romanization": "annyeonghi gyeseyo"
+    }
+  ],
+  "explanation": [
+    "안녕하세요 (annyeonghaseyo) is the most common polite greeting in Korean, used any time of day.",
+    "Korean has different levels of politeness. 안녕하세요 is formal/polite, while 안녕 is casual and used with close friends.",
+    "감사합니다 (gamsahamnida) is a polite way to say thank you. The more casual form is 고마워요 (gomawoyo).",
+    "When saying goodbye, the phrase changes depending on who is leaving. Use 안녕히 가세요 to someone who is leaving, and 안녕히 계세요 when you are the one leaving."
+  ]
+}

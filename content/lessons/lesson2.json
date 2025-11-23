@@ -1,0 +1,94 @@
+{
+  "id": "lesson2",
+  "title": "Self Introduction",
+  "prerequisite": "lesson1",
+  "objectives": [
+    "Learn how to introduce yourself",
+    "Practice saying your name and nationality",
+    "Ask basic questions about others"
+  ],
+  "vocabulary": [
+    {
+      "word": "저",
+      "english": "I (formal)",
+      "romanization": "jeo",
+      "type": "pronoun"
+    },
+    {
+      "word": "는",
+      "english": "topic particle",
+      "romanization": "neun",
+      "type": "particle"
+    },
+    {
+      "word": "이름",
+      "english": "name",
+      "romanization": "ireum",
+      "type": "noun"
+    },
+    {
+      "word": "학생",
+      "english": "student",
+      "romanization": "haksaeng",
+      "type": "noun"
+    },
+    {
+      "word": "선생님",
+      "english": "teacher",
+      "romanization": "seonsaengnim",
+      "type": "noun"
+    },
+    {
+      "word": "미국",
+      "english": "America/USA",
+      "romanization": "miguk",
+      "type": "noun"
+    },
+    {
+      "word": "한국",
+      "english": "Korea",
+      "romanization": "hanguk",
+      "type": "noun"
+    },
+    {
+      "word": "사람",
+      "english": "person",
+      "romanization": "saram",
+      "type": "noun"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "저는 학생이에요",
+      "english": "I am a student",
+      "romanization": "jeoneun haksaeng-ieyo"
+    },
+    {
+      "korean": "제 이름은 데이비드예요",
+      "english": "My name is David",
+      "romanization": "je ireumeun deibideuyeyo"
+    },
+    {
+      "korean": "저는 미국 사람이에요",
+      "english": "I am American",
+      "romanization": "jeoneun miguk saram-ieyo"
+    },
+    {
+      "korean": "이름이 뭐예요?",
+      "english": "What is your name?",
+      "romanization": "ireumi mwoyeyo?"
+    },
+    {
+      "korean": "만나서 반가워요",
+      "english": "Nice to meet you",
+      "romanization": "mannaseo bangawoyo"
+    }
+  ],
+  "explanation": [
+    "저 (jeo) is the formal way to say 'I' or 'me'. The informal version is 나 (na).",
+    "는/은 is a topic marking particle. Use 는 after vowels and 은 after consonants.",
+    "이에요/예요 means 'to be'. Use 이에요 after consonants and 예요 after vowels.",
+    "When introducing yourself, start with 저는 (jeoneun) which means 'As for me' or 'I'.",
+    "To ask someone's name, say 이름이 뭐예요? (What is your name?)"
+  ]
+}
