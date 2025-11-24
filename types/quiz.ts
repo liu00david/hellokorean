@@ -6,8 +6,11 @@ export interface QuizQuestion {
   type: QuizType;
   direction?: QuizDirection;
   question: string;
+  questionRomanization?: string;
   answer: string;
+  answerRomanization?: string;
   options: string[];
+  optionsRomanization?: string[];
   lessonId?: string;
 }
 

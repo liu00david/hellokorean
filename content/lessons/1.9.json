@@ -1,0 +1,161 @@
+{
+  "id": "1.9",
+  "version": "0.0.1",
+  "title": "Directions & Transportation",
+  "objectives": [
+    "Learn transportation vocabulary for navigating cities",
+    "Master basic directional words and phrases",
+    "Practice asking for and giving directions",
+    "Understand how to use Korean public transportation"
+  ],
+  "context": [
+    "Korea has one of the best public transportation systems in the world! From the efficient Seoul subway to intercity buses and KTX high-speed trains, you'll need to know transportation vocabulary to get around. This lesson will help you navigate Korean cities like a local.",
+    "Did you know? Seoul's subway system has over 20 lines and is famous for being clean, safe, and punctual. Signs are in Korean and English, but knowing how to ask for directions in Korean will make your travel much smoother and help you connect with locals!",
+    "This lesson teaches you essential transportation vocabulary, directional words (left, right, straight), and how to ask 'Where is...?' in Korean. You'll learn phrases for taking taxis, buses, and subways - crucial for anyone visiting or living in Korea.",
+    "Koreans are generally very helpful when you ask for directions, so don't be shy! With the phrases in this lesson, you'll be able to navigate confidently and maybe even make some Korean friends along the way."
+  ],
+  "vocabulary": [
+    {
+      "word": "지하철",
+      "english": "subway, metro",
+      "romanization": "jihacheol",
+      "type": "noun"
+    },
+    {
+      "word": "버스",
+      "english": "bus",
+      "romanization": "beoseu",
+      "type": "noun"
+    },
+    {
+      "word": "택시",
+      "english": "taxi",
+      "romanization": "taeksi",
+      "type": "noun"
+    },
+    {
+      "word": "기차",
+      "english": "train",
+      "romanization": "gicha",
+      "type": "noun"
+    },
+    {
+      "word": "비행기",
+      "english": "airplane",
+      "romanization": "bihaenggi",
+      "type": "noun"
+    },
+    {
+      "word": "타다",
+      "english": "to ride, to take (transportation)",
+      "romanization": "tada",
+      "type": "verb"
+    },
+    {
+      "word": "내리다",
+      "english": "to get off, to descend",
+      "romanization": "naerida",
+      "type": "verb"
+    },
+    {
+      "word": "오른쪽",
+      "english": "right side",
+      "romanization": "oreunjjok",
+      "type": "noun"
+    },
+    {
+      "word": "왼쪽",
+      "english": "left side",
+      "romanization": "oenjjok",
+      "type": "noun"
+    },
+    {
+      "word": "직진",
+      "english": "straight ahead",
+      "romanization": "jikjin",
+      "type": "noun"
+    },
+    {
+      "word": "길",
+      "english": "road, street, way",
+      "romanization": "gil",
+      "type": "noun"
+    },
+    {
+      "word": "건너편",
+      "english": "across, opposite side",
+      "romanization": "geonneopyeon",
+      "type": "noun"
+    },
+    {
+      "word": "가까다",
+      "english": "to be close, near",
+      "romanization": "gakkada",
+      "type": "adjective"
+    },
+    {
+      "word": "멀다",
+      "english": "to be far",
+      "romanization": "meolda",
+      "type": "adjective"
+    },
+    {
+      "word": "걸어가다",
+      "english": "to walk, to go by walking",
+      "romanization": "georeogada",
+      "type": "verb"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "지하철역이 어디예요?",
+      "english": "Where is the subway station?",
+      "romanization": "jihacheol-yeogi eodiyeyo?"
+    },
+    {
+      "korean": "버스를 타요",
+      "english": "I take/ride the bus",
+      "romanization": "beoseureul tayo"
+    },
+    {
+      "korean": "여기서 내려요",
+      "english": "I get off here",
+      "romanization": "yeogiseo naeryeoyo"
+    },
+    {
+      "korean": "오른쪽으로 가세요",
+      "english": "Please go to the right",
+      "romanization": "oreunjjogeuro gaseyo"
+    },
+    {
+      "korean": "직진하세요",
+      "english": "Please go straight",
+      "romanization": "jikjinhaseyo"
+    },
+    {
+      "korean": "가까워요",
+      "english": "It's close/near",
+      "romanization": "gakkawoyo"
+    },
+    {
+      "korean": "걸어가요",
+      "english": "I walk there / I go by walking",
+      "romanization": "georeogayo"
+    },
+    {
+      "korean": "저 건물 건너편에 있어요",
+      "english": "It's across from that building",
+      "romanization": "jeo geonmul geonneopyeone isseoyo"
+    }
+  ],
+  "explanation": [
+    "Transportation Verbs: 타다 (to ride/take) is used for all transportation. 버스를 타다 (take the bus), 지하철을 타다 (take the subway), 택시를 타다 (take a taxi). 내리다 (to get off) is the opposite.",
+    "Directional Words: 오른쪽 (right side), 왼쪽 (left side), 직진 (straight), 앞 (front), 뒤 (back). Add 으로/로 for direction: 오른쪽으로 (toward the right), 왼쪽으로 (toward the left).",
+    "으로/로 Particle: Indicates direction or method. Use 으로 after consonants, 로 after vowels. Examples: 오른쪽으로 (to the right), 학교로 (toward school), 버스로 (by bus).",
+    "Asking Where: 어디예요? (where is it?) or 어디에 있어요? (where is it located?). Examples: 화장실이 어디예요? (Where's the bathroom?), 지하철역이 어디에 있어요? (Where's the subway station?).",
+    "Command Form -세요: To give directions politely, use verb stem + 세요. 가다 → 가세요 (please go), 오다 → 오세요 (please come), 타다 → 타세요 (please take/ride). Very useful for directions!",
+    "가깝다 vs 멀다: 가깝다 = to be close/near (conjugates to 가까워요), 멀다 = to be far (conjugates to 멀어요). These are adjectives describing distance. Example: 학교가 가까워요 (school is close).",
+    "걸어가다: Literally 'walk + go' = to go by walking. Korean often combines verbs like this. 걸어오다 = walk + come = to come by walking. 뛰어가다 = run + go = to go by running.",
+    "Transportation Etiquette: In Korea, give up your seat for elderly people and pregnant women on public transport. It's considered very rude not to! The designated elderly seats are strictly reserved."
+  ]
+}

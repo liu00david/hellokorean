@@ -54,6 +54,7 @@ function generateKoreanToEnglish(
     type: "vocab",
     direction: "korean-to-english",
     question: entry.word,
+    questionRomanization: entry.romanization,
     answer: entry.english,
     options,
   };
@@ -67,16 +68,18 @@ function generateEnglishToKorean(
   // Get unique wrong answers (filter out correct answer and duplicates)
   const uniqueAnswers = new Set<string>();
   const wrongAnswers: string[] = [];
+  const wrongAnswersRomanization: string[] = [];
 
   // Filter out the current entry and shuffle
   const candidates = shuffle(allEntries.filter((e) => e.id !== entry.id));
 
-  // Collect unique wrong answers
+  // Collect unique wrong answers with romanization
   for (const candidate of candidates) {
     if (candidate.word !== entry.word &&
         !uniqueAnswers.has(candidate.word)) {
       uniqueAnswers.add(candidate.word);
       wrongAnswers.push(candidate.word);
+      wrongAnswersRomanization.push(candidate.romanization);
       if (wrongAnswers.length >= 3) break;
     }
   }
@@ -84,12 +87,23 @@ function generateEnglishToKorean(
   // If we don't have enough unique answers, pad with what we have
   while (wrongAnswers.length < 3 && wrongAnswers.length < allEntries.length - 1) {
     wrongAnswers.push(`[보기 ${wrongAnswers.length + 1}]`); // "Option" in Korean
+    wrongAnswersRomanization.push('');
   }
 
   // Combine with correct answer and shuffle
   // Use Set to ensure no duplicates, then convert back to array
   const uniqueOptions = Array.from(new Set([entry.word, ...wrongAnswers]));
-  const options = shuffle(uniqueOptions);
+  const allOptionsRomanization = [entry.romanization, ...wrongAnswersRomanization];
+
+  // Create paired array and shuffle together
+  const paired = uniqueOptions.map((opt, i) => ({
+    option: opt,
+    romanization: allOptionsRomanization[i]
+  }));
+  const shuffledPaired = shuffle(paired);
+
+  const options = shuffledPaired.map(p => p.option);
+  const optionsRomanization = shuffledPaired.map(p => p.romanization);
 
   return {
     id: `q-${entry.id}-ek`,
@@ -97,7 +111,9 @@ function generateEnglishToKorean(
     direction: "english-to-korean",
     question: entry.english,
     answer: entry.word,
+    answerRomanization: entry.romanization,
     options,
+    optionsRomanization,
   };
 }
 
@@ -144,6 +160,7 @@ function generateSentenceQuestion(
       type: "sentence",
       direction: "korean-to-english",
       question: example.korean,
+      questionRomanization: example.romanization,
       answer: example.english,
       options,
     };
@@ -151,6 +168,7 @@ function generateSentenceQuestion(
     // English to Korean
     const uniqueAnswers = new Set<string>();
     const wrongAnswers: string[] = [];
+    const wrongAnswersRomanization: string[] = [];
 
     const candidates = allEntries.filter(
       (e) => e.id !== entry.id && e.examples && e.examples.length > 0
@@ -161,6 +179,7 @@ function generateSentenceQuestion(
       if (answer !== example.korean && !uniqueAnswers.has(answer)) {
         uniqueAnswers.add(answer);
         wrongAnswers.push(answer);
+        wrongAnswersRomanization.push(candidate.examples[0].romanization);
         if (wrongAnswers.length >= 3) break;
       }
     }
@@ -170,7 +189,17 @@ function generateSentenceQuestion(
     }
 
     const uniqueOptions = Array.from(new Set([example.korean, ...wrongAnswers]));
-    const options = shuffle(uniqueOptions);
+    const allOptionsRomanization = [example.romanization, ...wrongAnswersRomanization];
+
+    // Create paired array and shuffle together
+    const paired = uniqueOptions.map((opt, i) => ({
+      option: opt,
+      romanization: allOptionsRomanization[i]
+    }));
+    const shuffledPaired = shuffle(paired);
+
+    const options = shuffledPaired.map(p => p.option);
+    const optionsRomanization = shuffledPaired.map(p => p.romanization);
 
     return {
       id: `q-${entry.id}-sent-ek`,
@@ -178,7 +207,9 @@ function generateSentenceQuestion(
       direction: "english-to-korean",
       question: example.english,
       answer: example.korean,
+      answerRomanization: example.romanization,
       options,
+      optionsRomanization,
     };
   }
 }

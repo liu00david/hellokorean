@@ -8,7 +8,7 @@ export default function Home() {
           {/* Header */}
           <div className="mb-12">
             <h1 className="text-6xl font-bold mb-4 text-garden-earth">
-              🌸 Hangeul Garden
+              Hangeul Garden
             </h1>
             <p className="text-2xl text-garden-earth/80 font-noto">
               한글 정원

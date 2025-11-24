@@ -1,0 +1,191 @@
+{
+  "id": "1.8",
+  "version": "0.0.1",
+  "title": "Time, Days & Simple Scheduling",
+  "objectives": [
+    "Learn to tell time in Korean",
+    "Master days of the week and time expressions",
+    "Practice talking about schedules and plans",
+    "Use 고 싶다 to express wants and desires"
+  ],
+  "context": [
+    "Being able to talk about time is essential for making plans, scheduling meetings, catching trains, and organizing your daily life. Korean uses both Sino-Korean and Native Korean numbers for time, but don't worry - the patterns are logical once you learn them!",
+    "Did you know? Korean days of the week use elements from nature and Asian philosophy! Monday is 'moon day', Tuesday is 'fire day', Wednesday is 'water day', Thursday is 'wood day', Friday is 'metal day', Saturday is 'earth day', and Sunday is 'sun day'. Beautiful, right?",
+    "This lesson will teach you how to tell time, talk about days and dates, and express your wants using 고 싶어요 (I want to...). You'll be able to say things like 'I want to meet tomorrow at 3pm' or 'Let's watch a movie on Friday!'",
+    "Time expressions are crucial for making plans in Korean culture, where punctuality and scheduling are highly valued. Master this lesson and you'll never miss a meeting or date in Korea!"
+  ],
+  "vocabulary": [
+    {
+      "word": "시",
+      "english": "o'clock (hour counter)",
+      "romanization": "si",
+      "type": "noun"
+    },
+    {
+      "word": "분",
+      "english": "minute",
+      "romanization": "bun",
+      "type": "noun"
+    },
+    {
+      "word": "시간",
+      "english": "time, hour",
+      "romanization": "sigan",
+      "type": "noun"
+    },
+    {
+      "word": "오늘",
+      "english": "today",
+      "romanization": "oneul",
+      "type": "noun"
+    },
+    {
+      "word": "어제",
+      "english": "yesterday",
+      "romanization": "eoje",
+      "type": "noun"
+    },
+    {
+      "word": "내일",
+      "english": "tomorrow",
+      "romanization": "naeil",
+      "type": "noun"
+    },
+    {
+      "word": "모레",
+      "english": "day after tomorrow",
+      "romanization": "more",
+      "type": "noun"
+    },
+    {
+      "word": "월요일",
+      "english": "Monday",
+      "romanization": "woryoil",
+      "type": "noun"
+    },
+    {
+      "word": "화요일",
+      "english": "Tuesday",
+      "romanization": "hwayoil",
+      "type": "noun"
+    },
+    {
+      "word": "수요일",
+      "english": "Wednesday",
+      "romanization": "suyoil",
+      "type": "noun"
+    },
+    {
+      "word": "목요일",
+      "english": "Thursday",
+      "romanization": "mogyoil",
+      "type": "noun"
+    },
+    {
+      "word": "금요일",
+      "english": "Friday",
+      "romanization": "geumyoil",
+      "type": "noun"
+    },
+    {
+      "word": "토요일",
+      "english": "Saturday",
+      "romanization": "toyoil",
+      "type": "noun"
+    },
+    {
+      "word": "일요일",
+      "english": "Sunday",
+      "romanization": "iryoil",
+      "type": "noun"
+    },
+    {
+      "word": "아침",
+      "english": "morning, breakfast",
+      "romanization": "achim",
+      "type": "noun"
+    },
+    {
+      "word": "점심",
+      "english": "lunch, midday",
+      "romanization": "jeomsim",
+      "type": "noun"
+    },
+    {
+      "word": "저녁",
+      "english": "evening, dinner",
+      "romanization": "jeonyeok",
+      "type": "noun"
+    },
+    {
+      "word": "만나다",
+      "english": "to meet",
+      "romanization": "mannada",
+      "type": "verb"
+    },
+    {
+      "word": "고 싶다",
+      "english": "to want to (verb ending)",
+      "romanization": "go sipda",
+      "type": "verb"
+    },
+    {
+      "word": "언제",
+      "english": "when",
+      "romanization": "eonje",
+      "type": "pronoun"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "지금 몇 시예요?",
+      "english": "What time is it now?",
+      "romanization": "jigeum myeot siyeyo?"
+    },
+    {
+      "korean": "세 시예요",
+      "english": "It's 3 o'clock",
+      "romanization": "se siyeyo"
+    },
+    {
+      "korean": "내일 만나요",
+      "english": "Let's meet tomorrow",
+      "romanization": "naeil mannayo"
+    },
+    {
+      "korean": "금요일에 영화 보고 싶어요",
+      "english": "I want to watch a movie on Friday",
+      "romanization": "geumyoire yeonghwa bogo sipeoyo"
+    },
+    {
+      "korean": "오늘 시간 있어요?",
+      "english": "Do you have time today?",
+      "romanization": "oneul sigan isseoyo?"
+    },
+    {
+      "korean": "점심 먹고 싶어요",
+      "english": "I want to eat lunch",
+      "romanization": "jeomsim meokgo sipeoyo"
+    },
+    {
+      "korean": "언제 와요?",
+      "english": "When are you coming?",
+      "romanization": "eonje wayo?"
+    },
+    {
+      "korean": "월요일에 학교에 가요",
+      "english": "I go to school on Monday",
+      "romanization": "woryoire hakgyoe gayo"
+    }
+  ],
+  "explanation": [
+    "Telling Time - Hours: Use NATIVE Korean numbers (한, 두, 세...) + 시. Examples: 한 시 (1 o'clock), 두 시 (2 o'clock), 세 시 (3 o'clock). Remember: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네!",
+    "Telling Time - Minutes: Use SINO-Korean numbers (일, 이, 삼...) + 분. Examples: 십 분 (10 minutes), 이십 분 (20 minutes), 삼십 분 (30 minutes). So 3:15 = 세 시 십오 분.",
+    "Days of the Week Pattern: All days end in 요일 (yoil = day). 월 (moon), 화 (fire), 수 (water), 목 (wood), 금 (metal/gold), 토 (earth), 일 (sun). Add 요일: 월요일 (Monday), 화요일 (Tuesday), etc.",
+    "Time Particle 에: Use 에 particle to mark specific times. 세 시에 (at 3 o'clock), 월요일에 (on Monday), 내일에 (tomorrow). But 내일, 오늘, 어제 can drop 에 in casual speech.",
+    "고 싶다 (Want to): To express wants, use [verb stem] + 고 싶어요. Examples: 가다 → 가고 싶어요 (want to go), 먹다 → 먹고 싶어요 (want to eat), 보다 → 보고 싶어요 (want to see/watch).",
+    "보고 싶다: Literally 'want to see' but commonly means 'I miss you'! When saying you miss someone: 보고 싶어요 is perfect. Beautiful double meaning in Korean!",
+    "Time Words: 오늘 (today), 어제 (yesterday), 내일 (tomorrow), 모레 (day after tomorrow), 그저께 (day before yesterday), 지금 (now), 나중에 (later). Essential for daily conversation!",
+    "아침/점심/저녁: Mean both the TIME (morning/midday/evening) AND the MEAL (breakfast/lunch/dinner). 아침 먹어요 = eat breakfast. 아침에 = in the morning. Context makes it clear!"
+  ]
+}

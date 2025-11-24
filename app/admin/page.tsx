@@ -49,7 +49,28 @@ export default function AdminPage() {
       const data = await response.json()
 
       if (response.ok) {
-        showMessage('success', `Synced ${data.lessonsCount} lessons and ${data.wordsCount} words`)
+        let msg = `Synced ${data.lessonsTotal} lessons: ${data.lessonsUpdated} updated, ${data.lessonsSkipped} skipped.`
+
+        if (data.wordsSyncSkipped) {
+          msg += ` Dictionary sync skipped (no changes).`
+        } else {
+          msg += ` ${data.wordsCount} dictionary words synced.`
+        }
+
+        if (data.updatedLessons && data.updatedLessons.length > 0) {
+          msg += `\n\nUpdated lessons: ${data.updatedLessons.join(', ')}`
+        }
+
+        if (data.skippedLessons && data.skippedLessons.length > 0) {
+          msg += `\n\nSkipped lessons (unchanged): ${data.skippedLessons.join(', ')}`
+        }
+
+        // Add quick summary at the end
+        if (data.wordsSyncSkipped) {
+          msg += `\n\n✨ No changes detected - sync completed instantly!`
+        }
+
+        showMessage('success', msg)
       } else {
         showMessage('error', data.error || 'Failed to sync content')
       }
@@ -145,7 +166,7 @@ export default function AdminPage() {
                 : 'bg-red-100 text-red-800 border border-red-200'
             }`}
           >
-            {message.text}
+            <pre className="whitespace-pre-wrap font-sans">{message.text}</pre>
           </div>
         )}
 
@@ -155,6 +176,7 @@ export default function AdminPage() {
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">Sync Content</h2>
             <p className="text-gray-600 mb-4">
               Sync all lessons and dictionary words from JSON files to the database.
+              Only lessons with changed versions will be updated.
             </p>
             <button
               onClick={handleSyncContent}
@@ -163,6 +185,10 @@ export default function AdminPage() {
             >
               {loading ? 'Syncing...' : 'Sync Content'}
             </button>
+            <p className="text-sm text-gray-500 mt-3">
+              💡 Tip: Only lessons with different version numbers will be synced.
+              To update a lesson, change its version (e.g., from 0.0.1 to 0.0.2).
+            </p>
           </div>
 
           {/* Delete User */}

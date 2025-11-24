@@ -26,6 +26,7 @@ export default function QuizPage() {
   const [loading, setLoading] = useState(false);
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [completedLessonQuizzes, setCompletedLessonQuizzes] = useState<Set<string>>(new Set());
+  const [showRomanization, setShowRomanization] = useState(false);
 
   useEffect(() => {
     loadLessons();
@@ -373,6 +374,8 @@ export default function QuizPage() {
           totalQuestions={questions.length}
           onAnswer={handleAnswer}
           onNext={handleNext}
+          showRomanization={showRomanization}
+          onToggleRomanization={() => setShowRomanization(!showRomanization)}
         />
       </div>
     </div>

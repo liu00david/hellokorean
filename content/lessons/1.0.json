@@ -18,121 +18,121 @@
     {
       "word": "ㄱ",
       "english": "consonant 'g/k' (as in 'gap' or 'kit')",
-      "romanization": "giyeok",
+      "romanization": "가 = ga",
       "type": "consonant"
     },
     {
       "word": "ㄴ",
       "english": "consonant 'n' (as in 'note')",
-      "romanization": "nieun",
+      "romanization": "나 = na",
       "type": "consonant"
     },
     {
       "word": "ㄷ",
       "english": "consonant 'd/t' (as in 'dog' or 'top')",
-      "romanization": "digeut",
+      "romanization": "다 = da",
       "type": "consonant"
     },
     {
       "word": "ㄹ",
       "english": "consonant 'r/l' (between 'r' and 'l')",
-      "romanization": "rieul",
+      "romanization": "라 = la",
       "type": "consonant"
     },
     {
       "word": "ㅁ",
       "english": "consonant 'm' (as in 'moon')",
-      "romanization": "mieum",
+      "romanization": "마 = ma",
       "type": "consonant"
     },
     {
       "word": "ㅂ",
       "english": "consonant 'b/p' (as in 'boat' or 'pot')",
-      "romanization": "bieup",
+      "romanization": "바 = ba",
       "type": "consonant"
     },
     {
       "word": "ㅅ",
       "english": "consonant 's' (as in 'sea')",
-      "romanization": "siot",
+      "romanization": "사 = sa",
       "type": "consonant"
     },
     {
       "word": "ㅇ",
       "english": "silent consonant (or 'ng' sound at end)",
-      "romanization": "ieung",
+      "romanization": "아 = a",
       "type": "consonant"
     },
     {
       "word": "ㅈ",
       "english": "consonant 'j' (as in 'joy')",
-      "romanization": "jieut",
+      "romanization": "자 = ja",
       "type": "consonant"
     },
     {
       "word": "ㅊ",
       "english": "consonant 'ch' (as in 'church')",
-      "romanization": "chieut",
+      "romanization": "차 = cha",
       "type": "consonant"
     },
     {
       "word": "ㅋ",
       "english": "consonant 'k' (aspirated, as in 'key')",
-      "romanization": "kieuk",
+      "romanization": "카 = ka",
       "type": "consonant"
     },
     {
       "word": "ㅌ",
       "english": "consonant 't' (aspirated, as in 'top')",
-      "romanization": "tieut",
+      "romanization": "타 = ta",
       "type": "consonant"
     },
     {
       "word": "ㅍ",
       "english": "consonant 'p' (aspirated, as in 'pop')",
-      "romanization": "pieup",
+      "romanization": "파 = pa",
       "type": "consonant"
     },
     {
       "word": "ㅎ",
       "english": "consonant 'h' (as in 'house')",
-      "romanization": "hieut",
+      "romanization": "하 = ha",
       "type": "consonant"
     },
     {
       "word": "ㅏ",
       "english": "vowel 'a' (as in 'father')",
-      "romanization": "a",
+      "romanization": "아 = a",
       "type": "vowel"
     },
     {
       "word": "ㅓ",
       "english": "vowel 'eo' (as in 'under')",
-      "romanization": "eo",
+      "romanization": "어 = eo",
       "type": "vowel"
     },
     {
       "word": "ㅗ",
       "english": "vowel 'o' (as in 'go')",
-      "romanization": "o",
+      "romanization": "오 = o",
       "type": "vowel"
     },
     {
       "word": "ㅜ",
       "english": "vowel 'u' (as in 'moon')",
-      "romanization": "u",
+      "romanization": "우 = u",
       "type": "vowel"
     },
     {
       "word": "ㅡ",
       "english": "vowel 'eu' (as in 'brook', lips unrounded)",
-      "romanization": "eu",
+      "romanization": "으 = eu",
       "type": "vowel"
     },
     {
       "word": "ㅣ",
       "english": "vowel 'i' (as in 'see')",
-      "romanization": "i",
+      "romanization": "이 = hi",
       "type": "vowel"
     }
   ],

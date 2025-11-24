@@ -61,6 +61,31 @@ export async function POST(request: Request) {
     const lessons: Lesson[] = []
     const allWords: Map<string, any> = new Map()
 
+    // First, fetch existing lessons from database to check versions
+    const { data: existingLessons, error: fetchError } = await supabase
+      .from('lessons')
+      .select('id, version')
+
+    if (fetchError) {
+      console.error('Error fetching existing lessons:', fetchError)
+    }
+
+    // Create a map of existing lesson versions
+    const existingVersions = new Map<string, string>()
+    if (existingLessons) {
+      existingLessons.forEach(lesson => {
+        existingVersions.set(lesson.id, lesson.version || '')
+      })
+    }
+
+    const syncStats = {
+      total: 0,
+      updated: 0,
+      skipped: 0,
+      updatedLessons: [] as string[],
+      skippedLessons: [] as string[]
+    }
+
     // Read each lesson file
     for (let i = 0; i < lessonFiles.length; i++) {
       const file = lessonFiles[i]
@@ -69,8 +94,9 @@ export async function POST(request: Request) {
       const lesson: Lesson = JSON.parse(content)
 
       lessons.push(lesson)
+      syncStats.total++
 
-      // Extract vocabulary for dictionary
+      // Extract vocabulary for dictionary (always do this to keep dictionary updated)
       lesson.vocabulary.forEach((vocab) => {
         const key = vocab.word.toLowerCase()
 
@@ -108,55 +134,85 @@ export async function POST(request: Request) {
       })
     }
 
-    // Insert/update lessons in database
+    // Insert/update lessons in database (only if version changed or new)
     for (let i = 0; i < lessons.length; i++) {
       const lesson = lessons[i]
-      const { error: lessonError } = await supabase
-        .from('lessons')
-        .upsert({
-          id: lesson.id,
-          version: lesson.version,
-          title: lesson.title,
-          objectives: lesson.objectives,
-          context: lesson.context || [],
-          vocabulary: lesson.vocabulary,
-          sentences: lesson.sentences,
-          explanation: lesson.explanation,
-          order_index: i
-        }, {
-          onConflict: 'id'
-        })
+      const existingVersion = existingVersions.get(lesson.id)
 
-      if (lessonError) {
-        console.error('Error upserting lesson:', lesson.id, lessonError)
+      // Check if we need to sync this lesson
+      const needsSync = !existingVersion || existingVersion !== lesson.version
+
+      if (needsSync) {
+        const { error: lessonError } = await supabase
+          .from('lessons')
+          .upsert({
+            id: lesson.id,
+            version: lesson.version,
+            title: lesson.title,
+            objectives: lesson.objectives,
+            context: lesson.context || [],
+            vocabulary: lesson.vocabulary,
+            sentences: lesson.sentences,
+            explanation: lesson.explanation,
+            order_index: i
+          }, {
+            onConflict: 'id'
+          })
+
+        if (lessonError) {
+          console.error('Error upserting lesson:', lesson.id, lessonError)
+        } else {
+          syncStats.updated++
+          syncStats.updatedLessons.push(lesson.id)
+        }
+      } else {
+        syncStats.skipped++
+        syncStats.skippedLessons.push(lesson.id)
+        console.log(`Skipped lesson ${lesson.id} - version unchanged (${lesson.version})`)
       }
     }
 
-    // Insert/update dictionary words
+    // Insert/update dictionary words (only if any lessons were updated)
     const wordsArray = Array.from(allWords.values())
-    for (const word of wordsArray) {
-      const { error: wordError } = await supabase
-        .from('dictionary')
-        .upsert({
-          word: word.word,
-          english: word.english,
-          romanization: word.romanization,
-          type: word.type,
-          examples: word.examples,
-          lessons: word.lessons
-        }, {
-          onConflict: 'word'
-        })
+    let wordsSyncCount = 0
 
-      if (wordError) {
-        console.error('Error upserting word:', word.word, wordError)
+    if (syncStats.updated > 0) {
+      // Only sync words if at least one lesson was updated
+      // This maintains correct lesson associations across all words
+      for (const word of wordsArray) {
+        const { error: wordError } = await supabase
+          .from('dictionary')
+          .upsert({
+            word: word.word,
+            english: word.english,
+            romanization: word.romanization,
+            type: word.type,
+            examples: word.examples,
+            lessons: word.lessons
+          }, {
+            onConflict: 'word'
+          })
+
+        if (wordError) {
+          console.error('Error upserting word:', word.word, wordError)
+        } else {
+          wordsSyncCount++
+        }
       }
+      console.log(`Synced ${wordsSyncCount} dictionary words (lessons changed)`)
+    } else {
+      console.log('Skipped dictionary sync - no lesson changes detected')
     }
 
     return NextResponse.json({
       success: true,
-      lessonsCount: lessons.length,
-      wordsCount: wordsArray.length
+      lessonsTotal: syncStats.total,
+      lessonsUpdated: syncStats.updated,
+      lessonsSkipped: syncStats.skipped,
+      updatedLessons: syncStats.updatedLessons,
+      skippedLessons: syncStats.skippedLessons,
+      wordsCount: wordsSyncCount,
+      wordsSyncSkipped: syncStats.updated === 0
     })
   } catch (error) {
     console.error('Error syncing content:', error)

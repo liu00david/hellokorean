@@ -182,7 +182,7 @@ export default function DictionaryPage() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Search Korean, English, or romanization..."
+                    placeholder="Search Kor/Eng"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"

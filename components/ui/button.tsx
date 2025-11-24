@@ -20,9 +20,9 @@ const buttonVariants = cva(
         link: "text-garden-earth underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-10 px-4 py-2",
+        default: "h-9 rounded-lg px-3",
         sm: "h-9 rounded-lg px-3",
-        lg: "h-11 rounded-xl px-8",
+        lg: "h-9 rounded-lg px-3",
         icon: "h-10 w-10",
       },
     },
