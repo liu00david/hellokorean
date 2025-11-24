@@ -177,11 +177,6 @@ export default function ProfilePage() {
                     📖 Browse Dictionary
                   </Button>
                 </Link>
-                <Link href="/training/flashcards">
-                  <Button variant="outline" className="w-full gap-2">
-                    🎴 Practice Flashcards
-                  </Button>
-                </Link>
                 <Link href="/quiz">
                   <Button variant="outline" className="w-full gap-2">
                     ✏️ Take a Quiz

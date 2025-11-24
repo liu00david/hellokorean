@@ -71,7 +71,7 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
         return;
       }
 
-      // Add vocabulary words to flashcard deck
+      // Add vocabulary words to learned words
       if (lesson && lesson.vocabulary && lesson.vocabulary.length > 0) {
         const words = lesson.vocabulary.map((v) => v.word);
 
@@ -100,7 +100,7 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
             });
 
           if (learnedError) {
-            console.error("Error adding words to flashcards:", learnedError);
+            console.error("Error adding words to learned words:", learnedError);
           }
         }
       }
@@ -114,30 +114,6 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
     }
   };
 
-  const markAsIncomplete = async () => {
-    if (!user) return;
-
-    setLoading(true);
-    try {
-      const { error } = await supabase
-        .from("progress")
-        .delete()
-        .eq("user_id", user.id)
-        .eq("lesson_id", lessonId);
-
-      if (error) {
-        console.error("Error unmarking lesson:", error);
-        alert("Failed to unmark lesson. Please try again.");
-      } else {
-        setIsCompleted(false);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   if (checking) {
     return (
@@ -160,19 +136,9 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
         {user ? (
           <>
             {isCompleted ? (
-              <div className="flex items-center gap-2">
-                <span className="text-sm text-garden-leaf font-semibold">
-                  ✓ Completed
-                </span>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={markAsIncomplete}
-                  disabled={loading}
-                >
-                  {loading ? "..." : "Unmark"}
-                </Button>
-              </div>
+              <span className="text-lg text-garden-leaf font-semibold flex items-center gap-2">
+                <span className="text-2xl">✓</span> Completed
+              </span>
             ) : (
               <Button
                 variant="default"

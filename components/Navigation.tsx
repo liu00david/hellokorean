@@ -12,7 +12,6 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/lessons", label: "Lessons" },
   { href: "/dictionary", label: "Dictionary" },
-  { href: "/training/flashcards", label: "Training" },
   { href: "/quiz", label: "Quiz" },
 ];
 
@@ -23,8 +22,6 @@ export function Navigation() {
   const { user, loading } = useAuth();
   const [loggingIn, setLoggingIn] = useState(false);
 
-  // Debug: log user info
-  console.log('Navigation user:', { email: user?.email, isAdmin: user?.email === ADMIN_EMAIL });
 
   const handleSignIn = async () => {
     setLoggingIn(true);

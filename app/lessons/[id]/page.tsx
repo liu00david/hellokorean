@@ -33,11 +33,6 @@ export default async function LessonPage({ params }: LessonPageProps) {
           <h1 className="text-5xl font-bold mb-4 text-garden-earth">
             {lesson.title}
           </h1>
-          {lesson.prerequisite && (
-            <p className="text-garden-earth/60">
-              Prerequisite: <Link href={`/lessons/${lesson.prerequisite}`} className="underline hover:text-garden-pink">{lesson.prerequisite}</Link>
-            </p>
-          )}
         </div>
 
         {/* Lesson Content */}

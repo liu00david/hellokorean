@@ -45,7 +45,9 @@ function generateKoreanToEnglish(
   }
 
   // Combine with correct answer and shuffle
-  const options = shuffle([entry.english, ...wrongAnswers]);
+  // Use Set to ensure no duplicates, then convert back to array
+  const uniqueOptions = Array.from(new Set([entry.english, ...wrongAnswers]));
+  const options = shuffle(uniqueOptions);
 
   return {
     id: `q-${entry.id}-ke`,
@@ -85,7 +87,9 @@ function generateEnglishToKorean(
   }
 
   // Combine with correct answer and shuffle
-  const options = shuffle([entry.word, ...wrongAnswers]);
+  // Use Set to ensure no duplicates, then convert back to array
+  const uniqueOptions = Array.from(new Set([entry.word, ...wrongAnswers]));
+  const options = shuffle(uniqueOptions);
 
   return {
     id: `q-${entry.id}-ek`,
@@ -112,16 +116,28 @@ function generateSentenceQuestion(
 
   if (direction === "korean-to-english") {
     // Get wrong answers from other entries' examples
-    const wrongAnswers = allEntries
-      .filter((e) => e.id !== entry.id && e.examples && e.examples.length > 0)
-      .slice(0, 3)
-      .map((e) => e.examples[0].english);
+    const uniqueAnswers = new Set<string>();
+    const wrongAnswers: string[] = [];
+
+    const candidates = allEntries.filter(
+      (e) => e.id !== entry.id && e.examples && e.examples.length > 0
+    );
+
+    for (const candidate of candidates) {
+      const answer = candidate.examples[0].english;
+      if (answer !== example.english && !uniqueAnswers.has(answer)) {
+        uniqueAnswers.add(answer);
+        wrongAnswers.push(answer);
+        if (wrongAnswers.length >= 3) break;
+      }
+    }
 
     if (wrongAnswers.length < 3) {
       return null; // Not enough wrong answers
     }
 
-    const options = shuffle([example.english, ...wrongAnswers]);
+    const uniqueOptions = Array.from(new Set([example.english, ...wrongAnswers]));
+    const options = shuffle(uniqueOptions);
 
     return {
       id: `q-${entry.id}-sent-ke`,
@@ -133,16 +149,28 @@ function generateSentenceQuestion(
     };
   } else {
     // English to Korean
-    const wrongAnswers = allEntries
-      .filter((e) => e.id !== entry.id && e.examples && e.examples.length > 0)
-      .slice(0, 3)
-      .map((e) => e.examples[0].korean);
+    const uniqueAnswers = new Set<string>();
+    const wrongAnswers: string[] = [];
+
+    const candidates = allEntries.filter(
+      (e) => e.id !== entry.id && e.examples && e.examples.length > 0
+    );
+
+    for (const candidate of candidates) {
+      const answer = candidate.examples[0].korean;
+      if (answer !== example.korean && !uniqueAnswers.has(answer)) {
+        uniqueAnswers.add(answer);
+        wrongAnswers.push(answer);
+        if (wrongAnswers.length >= 3) break;
+      }
+    }
 
     if (wrongAnswers.length < 3) {
       return null;
     }
 
-    const options = shuffle([example.korean, ...wrongAnswers]);
+    const uniqueOptions = Array.from(new Set([example.korean, ...wrongAnswers]));
+    const options = shuffle(uniqueOptions);
 
     return {
       id: `q-${entry.id}-sent-ek`,

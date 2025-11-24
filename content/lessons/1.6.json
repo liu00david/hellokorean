@@ -1,0 +1,196 @@
+{
+  "id": "1.6",
+  "version": "0.0.1",
+  "title": "Food & Ordering",
+  "objectives": [
+    "Learn essential Korean food vocabulary",
+    "Practice ordering at restaurants and cafes",
+    "Master the polite request form (주세요)",
+    "Understand counters for food items"
+  ],
+  "context": [
+    "Korean food is world-renowned and incredibly diverse! From kimchi to bibimbap to Korean BBQ, food is central to Korean culture. Being able to talk about food and order at restaurants is not only practical but also a delicious way to immerse yourself in Korean culture.",
+    "Did you know? Koreans have beautiful phrases for meals: 잘 먹겠습니다 (jal meokgesseumnida) before eating means 'I will eat well' - showing gratitude. After eating, you say 잘 먹었습니다 (jal meogeosseumnida) meaning 'I ate well'. Using these shows respect and good manners!",
+    "This lesson will equip you with essential food vocabulary and dining phrases. You'll learn how to order food, express your preferences, and use polite expressions at meals. These are crucial skills for anyone visiting Korea, eating at Korean restaurants, or enjoying Korean cuisine!",
+    "You'll also learn about counters - special words used when counting objects. In Korean, you can't just say 'two coffees', you must say 'coffee two [counter]'. It seems complex at first, but you'll get the hang of it!"
+  ],
+  "vocabulary": [
+    {
+      "word": "음식",
+      "english": "food",
+      "romanization": "eumsik",
+      "type": "noun"
+    },
+    {
+      "word": "김치",
+      "english": "kimchi (fermented vegetables)",
+      "romanization": "gimchi",
+      "type": "noun"
+    },
+    {
+      "word": "비빔밥",
+      "english": "bibimbap (mixed rice with vegetables)",
+      "romanization": "bibimbap",
+      "type": "noun"
+    },
+    {
+      "word": "불고기",
+      "english": "bulgogi (Korean BBQ beef)",
+      "romanization": "bulgogi",
+      "type": "noun"
+    },
+    {
+      "word": "라면",
+      "english": "ramyeon (instant noodles)",
+      "romanization": "ramyeon",
+      "type": "noun"
+    },
+    {
+      "word": "김밥",
+      "english": "gimbap (Korean rice roll)",
+      "romanization": "gimbap",
+      "type": "noun"
+    },
+    {
+      "word": "떡볶이",
+      "english": "tteokbokki (spicy rice cakes)",
+      "romanization": "tteokbokki",
+      "type": "noun"
+    },
+    {
+      "word": "치킨",
+      "english": "chicken (fried chicken)",
+      "romanization": "chikin",
+      "type": "noun"
+    },
+    {
+      "word": "커피",
+      "english": "coffee",
+      "romanization": "keopi",
+      "type": "noun"
+    },
+    {
+      "word": "차",
+      "english": "tea",
+      "romanization": "cha",
+      "type": "noun"
+    },
+    {
+      "word": "맥주",
+      "english": "beer",
+      "romanization": "maekju",
+      "type": "noun"
+    },
+    {
+      "word": "소주",
+      "english": "soju (Korean alcohol)",
+      "romanization": "soju",
+      "type": "noun"
+    },
+    {
+      "word": "주세요",
+      "english": "please give me",
+      "romanization": "juseyo",
+      "type": "verb"
+    },
+    {
+      "word": "맛있다",
+      "english": "to be delicious",
+      "romanization": "masitda",
+      "type": "adjective"
+    },
+    {
+      "word": "맵다",
+      "english": "to be spicy",
+      "romanization": "maepda",
+      "type": "adjective"
+    },
+    {
+      "word": "달다",
+      "english": "to be sweet",
+      "romanization": "dalda",
+      "type": "adjective"
+    },
+    {
+      "word": "잔",
+      "english": "cup, glass (counter)",
+      "romanization": "jan",
+      "type": "noun"
+    },
+    {
+      "word": "병",
+      "english": "bottle (counter)",
+      "romanization": "byeong",
+      "type": "noun"
+    },
+    {
+      "word": "그릇",
+      "english": "bowl (counter)",
+      "romanization": "geureut",
+      "type": "noun"
+    },
+    {
+      "word": "좀",
+      "english": "a little, some (softener)",
+      "romanization": "jom",
+      "type": "adverb"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "비빔밥 주세요",
+      "english": "Bibimbap, please",
+      "romanization": "bibimbap juseyo"
+    },
+    {
+      "korean": "커피 한 잔 주세요",
+      "english": "One cup of coffee, please",
+      "romanization": "keopi han jan juseyo"
+    },
+    {
+      "korean": "물 좀 주세요",
+      "english": "Some water, please",
+      "romanization": "mul jom juseyo"
+    },
+    {
+      "korean": "김치가 맛있어요",
+      "english": "Kimchi is delicious",
+      "romanization": "gimchiga masisseoyo"
+    },
+    {
+      "korean": "매워요?",
+      "english": "Is it spicy?",
+      "romanization": "maewoyo?"
+    },
+    {
+      "korean": "잘 먹겠습니다",
+      "english": "I will eat well (said before eating)",
+      "romanization": "jal meokgesseumnida"
+    },
+    {
+      "korean": "잘 먹었습니다",
+      "english": "I ate well (said after eating)",
+      "romanization": "jal meogeosseumnida"
+    },
+    {
+      "korean": "맥주 두 병 주세요",
+      "english": "Two bottles of beer, please",
+      "romanization": "maekju du byeong juseyo"
+    },
+    {
+      "korean": "라면 세 그릇 주세요",
+      "english": "Three bowls of ramen, please",
+      "romanization": "ramyeon se geureut juseyo"
+    }
+  ],
+  "explanation": [
+    "주세요 (Please Give Me): The essential ordering phrase! Structure: [item] + 주세요. Examples: 물 주세요 (water please), 김밥 주세요 (gimbap please). Add 좀 (a little) to be more polite: 물 좀 주세요.",
+    "Counters Basics: Korean requires counters when counting objects. Structure: [item] + [number] + [counter]. Examples: 커피 한 잔 (coffee one cup), 맥주 두 병 (beer two bottles). The counter matches the type of object!",
+    "Native Korean Numbers with Counters: Use native Korean numbers (하나, 둘, 셋) with counters, but they change form! 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. So: 한 잔 (one cup), 두 병 (two bottles), 세 그릇 (three bowls).",
+    "Common Food Counters: 잔 (cups/glasses), 병 (bottles), 그릇 (bowls), 개 (general items), 명 (people). Examples: 커피 한 잔, 소주 한 병, 비빔밥 한 그릇.",
+    "밥 (Rice/Meal): Literally means 'rice' but also means 'meal'. 밥 먹었어요? (Did you eat?) is a common greeting. Koreans often refer to any meal as 밥, showing how central rice is to Korean cuisine!",
+    "잘 먹겠습니다/잘 먹었습니다: ALWAYS say these at meals! Before eating: 잘 먹겠습니다 (I will eat well). After eating: 잘 먹었습니다 (I ate well). Shows gratitude and respect - crucial in Korean culture!",
+    "Adjectives as Verbs: In Korean, adjectives work like verbs. 맛있다 (to be delicious) conjugates like a verb: 맛있어요 (it's delicious), 맛있었어요 (it was delicious). Same with 맵다 (spicy): 매워요 (it's spicy).",
+    "좀 (A Little): A softening word that makes requests more polite. 물 주세요 vs 물 좀 주세요 - the second is gentler. 좀 literally means 'a little' but is used broadly to soften any request!"
+  ]
+}

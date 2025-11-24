@@ -42,7 +42,7 @@ export default function Home() {
               <div className="text-4xl mb-3">🎯</div>
               <h3 className="font-nunito font-bold text-lg mb-2">Practice & Quizzes</h3>
               <p className="text-sm text-garden-earth/70">
-                Flashcards, matching games, and adaptive quizzes
+                Test your knowledge with adaptive quizzes
               </p>
             </div>
           </div>

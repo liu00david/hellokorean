@@ -16,7 +16,14 @@ export default function DictionaryPage() {
   const [filteredEntries, setFilteredEntries] = useState<DictionaryEntry[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [typeFilter, setTypeFilter] = useState<string>("all");
+  const [lessonFilter, setLessonFilter] = useState<string>("all");
   const [loading, setLoading] = useState(true);
+  const [lessons, setLessons] = useState<{ id: string; title: string }[]>([]);
+
+  // Fetch lessons for the lesson filter
+  useEffect(() => {
+    fetchLessons();
+  }, []);
 
   // Fetch dictionary entries based on active tab
   useEffect(() => {
@@ -47,8 +54,26 @@ export default function DictionaryPage() {
       filtered = filtered.filter((entry) => entry.type === typeFilter);
     }
 
+    // Apply lesson filter
+    if (lessonFilter !== "all") {
+      filtered = filtered.filter((entry: any) =>
+        entry.lessons && entry.lessons.includes(lessonFilter)
+      );
+    }
+
     setFilteredEntries(filtered);
-  }, [searchTerm, typeFilter, allEntries, learnedEntries, activeTab]);
+  }, [searchTerm, typeFilter, lessonFilter, allEntries, learnedEntries, activeTab]);
+
+  const fetchLessons = async () => {
+    const { data, error } = await supabase
+      .from("lessons")
+      .select("id, title")
+      .order("order_index", { ascending: true });
+
+    if (!error && data) {
+      setLessons(data);
+    }
+  };
 
   const fetchAllWords = async () => {
     setLoading(true);
@@ -149,7 +174,7 @@ export default function DictionaryPage() {
         <div className="max-w-4xl mx-auto mb-8">
           <Card>
             <CardContent className="pt-6">
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-3 gap-4">
                 {/* Search */}
                 <div>
                   <label className="block text-sm font-medium mb-2 text-garden-earth">
@@ -178,6 +203,25 @@ export default function DictionaryPage() {
                     {types.map((type) => (
                       <option key={type} value={type}>
                         {type}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Lesson Filter */}
+                <div>
+                  <label className="block text-sm font-medium mb-2 text-garden-earth">
+                    Lesson
+                  </label>
+                  <select
+                    value={lessonFilter}
+                    onChange={(e) => setLessonFilter(e.target.value)}
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                  >
+                    <option value="all">All Lessons</option>
+                    {lessons.map((lesson) => (
+                      <option key={lesson.id} value={lesson.id}>
+                        {lesson.title}
                       </option>
                     ))}
                   </select>

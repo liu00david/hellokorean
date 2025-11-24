@@ -1,0 +1,191 @@
+{
+  "id": "1.7",
+  "version": "0.0.1",
+  "title": "Describing Things (Adjectives)",
+  "objectives": [
+    "Learn essential Korean adjectives for description",
+    "Master adjective conjugation in present tense",
+    "Practice describing people, things, and situations",
+    "Understand how adjectives work as verbs in Korean"
+  ],
+  "context": [
+    "Being able to describe things is crucial for expressing yourself! Whether you're talking about the weather, describing your friend, or shopping for clothes, adjectives are essential. Korean adjectives are unique because they conjugate like verbs - they're actually called 'descriptive verbs' in Korean grammar!",
+    "Did you know? In Korean, there's no verb 'to be' with adjectives like in English. Instead of saying 'The weather IS good', you literally say 'The weather good-does' (날씨가 좋아요). The adjective itself acts as the verb, which is why Korean adjectives conjugate!",
+    "This lesson covers essential adjectives you'll use every day: big, small, good, bad, hot, cold, expensive, cheap, and more. You'll learn how to describe everything from food (맛있어요 - it's delicious!) to weather (더워요 - it's hot!) to people (예뻐요 - they're pretty!).",
+    "Adjectives in Korean follow the same conjugation patterns as verbs, so if you mastered lesson 1.4, you're already halfway there! Let's start describing the world around you in Korean!"
+  ],
+  "vocabulary": [
+    {
+      "word": "크다",
+      "english": "to be big, large",
+      "romanization": "keuda",
+      "type": "adjective"
+    },
+    {
+      "word": "작다",
+      "english": "to be small",
+      "romanization": "jakda",
+      "type": "adjective"
+    },
+    {
+      "word": "좋다",
+      "english": "to be good",
+      "romanization": "jota",
+      "type": "adjective"
+    },
+    {
+      "word": "나쁘다",
+      "english": "to be bad",
+      "romanization": "nappeuda",
+      "type": "adjective"
+    },
+    {
+      "word": "많다",
+      "english": "to be many, much",
+      "romanization": "manta",
+      "type": "adjective"
+    },
+    {
+      "word": "적다",
+      "english": "to be few, little",
+      "romanization": "jeokda",
+      "type": "adjective"
+    },
+    {
+      "word": "비싸다",
+      "english": "to be expensive",
+      "romanization": "bissada",
+      "type": "adjective"
+    },
+    {
+      "word": "싸다",
+      "english": "to be cheap",
+      "romanization": "ssada",
+      "type": "adjective"
+    },
+    {
+      "word": "덥다",
+      "english": "to be hot (weather)",
+      "romanization": "deopda",
+      "type": "adjective"
+    },
+    {
+      "word": "춥다",
+      "english": "to be cold (weather)",
+      "romanization": "chupda",
+      "type": "adjective"
+    },
+    {
+      "word": "예쁘다",
+      "english": "to be pretty",
+      "romanization": "yeppeuda",
+      "type": "adjective"
+    },
+    {
+      "word": "멋있다",
+      "english": "to be cool, stylish, handsome",
+      "romanization": "meositda",
+      "type": "adjective"
+    },
+    {
+      "word": "재미있다",
+      "english": "to be fun, interesting",
+      "romanization": "jaemiitda",
+      "type": "adjective"
+    },
+    {
+      "word": "재미없다",
+      "english": "to be boring, not fun",
+      "romanization": "jaemieopda",
+      "type": "adjective"
+    },
+    {
+      "word": "어렵다",
+      "english": "to be difficult",
+      "romanization": "eoryeopda",
+      "type": "adjective"
+    },
+    {
+      "word": "쉽다",
+      "english": "to be easy",
+      "romanization": "swipda",
+      "type": "adjective"
+    },
+    {
+      "word": "날씨",
+      "english": "weather",
+      "romanization": "nalssi",
+      "type": "noun"
+    },
+    {
+      "word": "이거",
+      "english": "this thing",
+      "romanization": "igeo",
+      "type": "pronoun"
+    },
+    {
+      "word": "그거",
+      "english": "that thing",
+      "romanization": "geugeo",
+      "type": "pronoun"
+    },
+    {
+      "word": "저거",
+      "english": "that thing (over there)",
+      "romanization": "jeogeo",
+      "type": "pronoun"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "날씨가 좋아요",
+      "english": "The weather is good",
+      "romanization": "nalssiga joayo"
+    },
+    {
+      "korean": "이거 비싸요",
+      "english": "This is expensive",
+      "romanization": "igeo bissayo"
+    },
+    {
+      "korean": "한국어가 어려워요",
+      "english": "Korean is difficult",
+      "romanization": "hangugeoga eoryeowoyo"
+    },
+    {
+      "korean": "오늘 더워요",
+      "english": "Today is hot",
+      "romanization": "oneul deowoyo"
+    },
+    {
+      "korean": "영화가 재미있어요",
+      "english": "The movie is interesting",
+      "romanization": "yeonghwaga jaemiisseoyo"
+    },
+    {
+      "korean": "저 사람 예뻐요",
+      "english": "That person is pretty",
+      "romanization": "jeo saram yeppeoyo"
+    },
+    {
+      "korean": "음식이 많아요",
+      "english": "There's a lot of food",
+      "romanization": "eumsigi manayo"
+    },
+    {
+      "korean": "집이 커요",
+      "english": "The house is big",
+      "romanization": "jibi keoyo"
+    }
+  ],
+  "explanation": [
+    "Adjectives as Verbs: Korean adjectives ARE verbs! They conjugate exactly like verbs. 좋다 (to be good) → 좋아요 (it's good). 크다 (to be big) → 커요 (it's big). No need for a separate 'to be' verb!",
+    "Adjective Conjugation: Same rules as verbs! Drop 다, add 아요/어요. If stem has ㅏ/ㅗ → 아요. Otherwise → 어요. Examples: 작다 → 작아요, 많다 → 많아요, 크다 → 커요, 예쁘다 → 예뻐요.",
+    "Irregular Adjectives: Some adjectives are irregular. 덥다 → 더워요 (not 덥아요), 춥다 → 추워요 (not 춥아요), 예쁘다 → 예뻐요 (ㅡ drops). Like verb irregulars, memorize through practice!",
+    "Subject Particle with Adjectives: Usually use subject particle 이/가 with adjectives, not topic particle 는/은. 날씨가 좋아요 (weather is good), 음식이 매워요 (food is spicy). Shows you're describing a characteristic.",
+    "Demonstratives: 이거 (this thing), 그거 (that thing near you), 저거 (that thing far away). Use these to point at and describe things: 이거 비싸요 (this is expensive), 저거 예뻐요 (that over there is pretty).",
+    "Opposite Pairs: Korean loves opposite pairs! 크다/작다 (big/small), 비싸다/싸다 (expensive/cheap), 덥다/춥다 (hot/cold), 많다/적다 (many/few). Learning in pairs helps memorization!",
+    "Modifying Nouns: To modify nouns with adjectives, use the form [adjective stem + ㄴ/은 + noun]. Example: 좋다 → 좋은 날씨 (good weather), 작다 → 작은 집 (small house). Advanced topic for later!",
+    "재미있다/재미없다: 재미 = fun/interest. 있다 = to have, 없다 = to not have. So 재미있다 = to have fun = fun/interesting. 재미없다 = to not have fun = boring. Logical compound words!"
+  ]
+}

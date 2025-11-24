@@ -15,7 +15,7 @@ const config: Config = {
           mint: "#D8F3DC",
           lavender: "#E7D8F7",
           leaf: "#A7D477",
-          earth: "#A68B6A",
+          earth: "#706253",
           white: "#FFFDF9",
         },
         background: "hsl(var(--background))",

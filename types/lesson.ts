@@ -13,9 +13,10 @@ export interface Sentence {
 
 export interface Lesson {
   id: string;
+  version?: string;
   title: string;
-  prerequisite: string | null;
   objectives: string[];
+  context: string[];
   vocabulary: VocabularyEntry[];
   sentences: Sentence[];
   explanation: string[];

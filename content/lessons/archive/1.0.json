@@ -1,0 +1,151 @@
+{
+  "id": "1.0",
+  "version": "0.0.1",
+  "title": "Greetings and Basic Phrases",
+  "objectives": [
+    "Learn basic Korean greetings",
+    "Understand polite and informal forms",
+    "Practice common daily expressions"
+  ],
+  "context": [
+    "Greetings are the foundation of any language learning journey. In Korean culture, proper greetings are especially important as they reflect respect and social hierarchy. The level of formality you use depends on the age, social status, and relationship with the person you're speaking to.",
+    "Did you know? The word '안녕' (annyeong) literally means 'peace' or 'well-being'. When you say 안녕하세요, you're essentially wishing someone peace and wellness!",
+    "Korean has one of the most sophisticated systems of honorifics in the world. Don't worry - you'll start with the most common polite forms that work in most situations. As you progress, you'll naturally pick up when to use different levels of formality."
+  ],
+  "vocabulary": [
+    {
+      "word": "안녕하세요",
+      "english": "hello (formal)",
+      "romanization": "annyeonghaseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕",
+      "english": "hello/hi (informal)",
+      "romanization": "annyeong",
+      "type": "phrase"
+    },
+    {
+      "word": "감사합니다",
+      "english": "thank you",
+      "romanization": "gamsahamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "고맙습니다",
+      "english": "thank you (alternative)",
+      "romanization": "gomapseumnida",
+      "type": "phrase"
+    },
+    {
+      "word": "죄송합니다",
+      "english": "I'm sorry (formal)",
+      "romanization": "joesonghamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "미안해요",
+      "english": "I'm sorry (casual)",
+      "romanization": "mianhaeyo",
+      "type": "phrase"
+    },
+    {
+      "word": "네",
+      "english": "yes",
+      "romanization": "ne",
+      "type": "particle"
+    },
+    {
+      "word": "아니요",
+      "english": "no",
+      "romanization": "aniyo",
+      "type": "particle"
+    },
+    {
+      "word": "괜찮아요",
+      "english": "it's okay/I'm fine",
+      "romanization": "gwaenchanayo",
+      "type": "phrase"
+    },
+    {
+      "word": "잠시만요",
+      "english": "just a moment",
+      "romanization": "jamsimanyo",
+      "type": "phrase"
+    },
+    {
+      "word": "실례합니다",
+      "english": "excuse me",
+      "romanization": "sillyehamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕히 가세요",
+      "english": "goodbye (to someone leaving)",
+      "romanization": "annyeonghi gaseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕히 계세요",
+      "english": "goodbye (when you're leaving)",
+      "romanization": "annyeonghi gyeseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "잘 가",
+      "english": "bye (informal to someone leaving)",
+      "romanization": "jal ga",
+      "type": "phrase"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "안녕하세요",
+      "english": "Hello (formal greeting)",
+      "romanization": "annyeonghaseyo"
+    },
+    {
+      "korean": "감사합니다",
+      "english": "Thank you",
+      "romanization": "gamsahamnida"
+    },
+    {
+      "korean": "죄송합니다",
+      "english": "I'm sorry",
+      "romanization": "joesonghamnida"
+    },
+    {
+      "korean": "실례합니다",
+      "english": "Excuse me",
+      "romanization": "sillyehamnida"
+    },
+    {
+      "korean": "괜찮아요",
+      "english": "It's okay / I'm fine",
+      "romanization": "gwaenchanayo"
+    },
+    {
+      "korean": "안녕히 가세요",
+      "english": "Goodbye (to person leaving)",
+      "romanization": "annyeonghi gaseyo"
+    },
+    {
+      "korean": "안녕히 계세요",
+      "english": "Goodbye (when you're leaving)",
+      "romanization": "annyeonghi gyeseyo"
+    },
+    {
+      "korean": "잠시만요",
+      "english": "Just a moment please",
+      "romanization": "jamsimanyo"
+    }
+  ],
+  "explanation": [
+    "안녕하세요 (annyeonghaseyo) is the most common polite greeting in Korean, used any time of day. It's safe to use with anyone you don't know well or who is older than you.",
+    "Korean has different levels of politeness. 안녕하세요 is formal/polite, while 안녕 is casual and used with close friends or people younger than you.",
+    "감사합니다 (gamsahamnida) is a polite way to say thank you. The more casual form is 고마워요 (gomawoyo). There's also 고맙습니다 (gomapseumnida), which is equally polite but has a slightly warmer, more personal feeling.",
+    "When saying goodbye, the phrase changes depending on who is leaving. Use 안녕히 가세요 (go in peace) to someone who is leaving, and 안녕히 계세요 (stay in peace) when you are the one leaving.",
+    "실례합니다 (excuse me) is useful when you need to get someone's attention, pass by someone, or politely interrupt. It literally means 'I'm being rude'.",
+    "괜찮아요 is incredibly versatile - use it to say you're okay, something is fine, or to reassure someone after they apologize."
+  ]
+}

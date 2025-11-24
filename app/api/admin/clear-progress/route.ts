@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase-server'
+import { supabaseAdmin } from '@/lib/supabase-admin'
 
 const ADMIN_EMAIL = 'liu00david@gmail.com'
 
@@ -37,33 +38,61 @@ export async function POST(request: Request) {
 
     const userId = profile.id
 
-    // Count records before deletion
-    const { count: learnedCount } = await supabase
+    // Count records before deletion (use admin client to bypass RLS)
+    const { count: learnedCount } = await supabaseAdmin
       .from('learned_words')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', userId)
 
-    const { count: progressCount } = await supabase
+    const { count: progressCount } = await supabaseAdmin
       .from('progress')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', userId)
 
-    const { count: quizCount } = await supabase
+    const { count: quizCount } = await supabaseAdmin
       .from('quiz_results')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', userId)
 
-    // Delete progress data
-    await supabase.from('learned_words').delete().eq('user_id', userId)
-    await supabase.from('quiz_results').delete().eq('user_id', userId)
-    await supabase.from('progress').delete().eq('user_id', userId)
+    // Delete progress data (use admin client to bypass RLS)
+    const { error: learnedError } = await supabaseAdmin
+      .from('learned_words')
+      .delete()
+      .eq('user_id', userId)
+
+    if (learnedError) {
+      console.error('Error deleting learned_words:', learnedError)
+    }
+
+    const { error: quizError } = await supabaseAdmin
+      .from('quiz_results')
+      .delete()
+      .eq('user_id', userId)
+
+    if (quizError) {
+      console.error('Error deleting quiz_results:', quizError)
+    }
+
+    const { error: progressError } = await supabaseAdmin
+      .from('progress')
+      .delete()
+      .eq('user_id', userId)
+
+    if (progressError) {
+      console.error('Error deleting progress:', progressError)
+    }
 
     return NextResponse.json({
       success: true,
       message: `Progress cleared for ${email}`,
       deleted_lessons: progressCount || 0,
       deleted_words: learnedCount || 0,
-      deleted_quizzes: quizCount || 0
+      deleted_quizzes: quizCount || 0,
+      errors: {
+        learned_words: learnedError?.message,
+        quiz_results: quizError?.message,
+        progress: progressError?.message
+      }
     })
   } catch (error) {
     console.error('Error clearing progress:', error)

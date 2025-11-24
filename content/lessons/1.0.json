@@ -1,0 +1,221 @@
+{
+  "id": "1.0",
+  "version": "0.0.1",
+  "title": "Hangul Basics: Consonants & Vowels",
+  "objectives": [
+    "Learn the Korean alphabet (Hangul) - one of the most logical writing systems in the world",
+    "Master all 14 basic consonants and their sounds",
+    "Master all 6 basic vowels and their sounds",
+    "Understand how to form simple syllable blocks"
+  ],
+  "context": [
+    "Welcome to your Korean learning journey! Before you can speak or read Korean, you need to learn Hangul (한글), the Korean alphabet. Unlike learning thousands of Chinese characters, Hangul was scientifically designed in 1443 by King Sejong the Great to be easy to learn. In fact, it's often called the most logical writing system in the world!",
+    "Did you know? Hangul has only 24 letters (14 consonants and 10 vowels), and you can learn to read Korean in just a few hours! The letters are designed based on the shape your mouth makes when pronouncing them. For example, ㄱ (g/k) represents the tongue touching the back of the throat.",
+    "Korean is written in syllable blocks, not in a line like English. Each block combines consonants and vowels. The most basic pattern is Consonant + Vowel (like 가, 너, 도). Don't worry about writing just yet - focus on recognizing and pronouncing each letter. By the end of this lesson, you'll be able to read simple Korean syllables!",
+    "Important: Korean consonants can sound different depending on their position. For example, ㄱ sounds like 'g' in the middle of words but 'k' at the beginning. We'll start with the basic sounds - you'll naturally pick up the variations as you practice."
+  ],
+  "vocabulary": [
+    {
+      "word": "ㄱ",
+      "english": "consonant 'g/k' (as in 'gap' or 'kit')",
+      "romanization": "giyeok",
+      "type": "consonant"
+    },
+    {
+      "word": "ㄴ",
+      "english": "consonant 'n' (as in 'note')",
+      "romanization": "nieun",
+      "type": "consonant"
+    },
+    {
+      "word": "ㄷ",
+      "english": "consonant 'd/t' (as in 'dog' or 'top')",
+      "romanization": "digeut",
+      "type": "consonant"
+    },
+    {
+      "word": "ㄹ",
+      "english": "consonant 'r/l' (between 'r' and 'l')",
+      "romanization": "rieul",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅁ",
+      "english": "consonant 'm' (as in 'moon')",
+      "romanization": "mieum",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅂ",
+      "english": "consonant 'b/p' (as in 'boat' or 'pot')",
+      "romanization": "bieup",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅅ",
+      "english": "consonant 's' (as in 'sea')",
+      "romanization": "siot",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅇ",
+      "english": "silent consonant (or 'ng' sound at end)",
+      "romanization": "ieung",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅈ",
+      "english": "consonant 'j' (as in 'joy')",
+      "romanization": "jieut",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅊ",
+      "english": "consonant 'ch' (as in 'church')",
+      "romanization": "chieut",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅋ",
+      "english": "consonant 'k' (aspirated, as in 'key')",
+      "romanization": "kieuk",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅌ",
+      "english": "consonant 't' (aspirated, as in 'top')",
+      "romanization": "tieut",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅍ",
+      "english": "consonant 'p' (aspirated, as in 'pop')",
+      "romanization": "pieup",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅎ",
+      "english": "consonant 'h' (as in 'house')",
+      "romanization": "hieut",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅏ",
+      "english": "vowel 'a' (as in 'father')",
+      "romanization": "a",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅓ",
+      "english": "vowel 'eo' (as in 'under')",
+      "romanization": "eo",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅗ",
+      "english": "vowel 'o' (as in 'go')",
+      "romanization": "o",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅜ",
+      "english": "vowel 'u' (as in 'moon')",
+      "romanization": "u",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅡ",
+      "english": "vowel 'eu' (as in 'brook', lips unrounded)",
+      "romanization": "eu",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅣ",
+      "english": "vowel 'i' (as in 'see')",
+      "romanization": "i",
+      "type": "vowel"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "가",
+      "english": "ga (consonant ㄱ + vowel ㅏ)",
+      "romanization": "ga"
+    },
+    {
+      "korean": "너",
+      "english": "neo (consonant ㄴ + vowel ㅓ)",
+      "romanization": "neo"
+    },
+    {
+      "korean": "도",
+      "english": "do (consonant ㄷ + vowel ㅗ)",
+      "romanization": "do"
+    },
+    {
+      "korean": "루",
+      "english": "ru (consonant ㄹ + vowel ㅜ)",
+      "romanization": "ru"
+    },
+    {
+      "korean": "므",
+      "english": "meu (consonant ㅁ + vowel ㅡ)",
+      "romanization": "meu"
+    },
+    {
+      "korean": "비",
+      "english": "bi (consonant ㅂ + vowel ㅣ)",
+      "romanization": "bi"
+    },
+    {
+      "korean": "사",
+      "english": "sa (consonant ㅅ + vowel ㅏ)",
+      "romanization": "sa"
+    },
+    {
+      "korean": "오",
+      "english": "o (silent ㅇ + vowel ㅗ)",
+      "romanization": "o"
+    },
+    {
+      "korean": "저",
+      "english": "jeo (consonant ㅈ + vowel ㅓ)",
+      "romanization": "jeo"
+    },
+    {
+      "korean": "초",
+      "english": "cho (consonant ㅊ + vowel ㅗ)",
+      "romanization": "cho"
+    },
+    {
+      "korean": "쿠",
+      "english": "ku (consonant ㅋ + vowel ㅜ)",
+      "romanization": "ku"
+    },
+    {
+      "korean": "트",
+      "english": "teu (consonant ㅌ + vowel ㅡ)",
+      "romanization": "teu"
+    },
+    {
+      "korean": "피",
+      "english": "pi (consonant ㅍ + vowel ㅣ)",
+      "romanization": "pi"
+    },
+    {
+      "korean": "하",
+      "english": "ha (consonant ㅎ + vowel ㅏ)",
+      "romanization": "ha"
+    }
+  ],
+  "explanation": [
+    "Hangul Structure: Korean letters are arranged in blocks, not written in a line. Each syllable block needs at least one consonant and one vowel. Blocks are read left-to-right, top-to-bottom.",
+    "Syllable Pattern CV: The most basic pattern is Consonant + Vowel (CV). For example: ㄱ + ㅏ = 가 (ga), ㄴ + ㅓ = 너 (neo).",
+    "Vertical vs Horizontal Vowels: Vowels ㅏ ㅓ ㅣ are written vertically (to the right of consonants). Vowels ㅗ ㅜ ㅡ are written horizontally (below consonants). This affects how you arrange the syllable block!",
+    "The Silent ㅇ: When ㅇ appears at the START of a syllable, it's completely silent - it's just a placeholder because every syllable needs a consonant. For example, 오 is just pronounced 'o'. But at the END of a syllable, ㅇ sounds like 'ng'!",
+    "Aspirated Consonants: ㅋ, ㅌ, ㅍ, and ㅊ are 'aspirated' versions of ㄱ, ㄷ, ㅂ, and ㅈ. This means you pronounce them with a strong puff of air - like the difference between 'kin' (aspirated) and 'gin' (not aspirated).",
+    "Practice Tip: Don't try to memorize all these at once! Start with a few consonants and vowels, practice combining them, then gradually add more. The key is repetition - try reading Korean signs, K-pop lyrics, or Korean food menus to practice!",
+    "Names of Letters: Each Hangul letter has a name (like how we say 'gee' for G in English). For example, ㄱ is called 'giyeok' (기역). You don't need to memorize these names - they're mainly used when spelling things out loud.",
+    "Historical Note: King Sejong the Great created Hangul because Chinese characters were too difficult for common people to learn. He wanted everyone to be able to read and write. The shapes of consonants are based on how your mouth/throat looks when making that sound - truly scientific!"
+  ]
+}

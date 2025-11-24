@@ -27,9 +27,11 @@ interface LessonExplanation {
 
 interface Lesson {
   id: string
+  version?: string
   title: string
   prerequisite?: string
   objectives: string[]
+  context?: string[]
   vocabulary: LessonVocabulary[]
   sentences: LessonSentence[]
   explanation: LessonExplanation[]
@@ -71,23 +73,37 @@ export async function POST(request: Request) {
       // Extract vocabulary for dictionary
       lesson.vocabulary.forEach((vocab) => {
         const key = vocab.word.toLowerCase()
-        if (!allWords.has(key)) {
-          // Find example sentences from the lesson
-          const examples = lesson.sentences
-            .filter(s => s.korean.includes(vocab.word))
-            .map(s => ({
-              korean: s.korean,
-              english: s.english,
-              romanization: s.romanization
-            }))
 
+        // Find example sentences from the lesson
+        const examples = lesson.sentences
+          .filter(s => s.korean.includes(vocab.word))
+          .map(s => ({
+            korean: s.korean,
+            english: s.english,
+            romanization: s.romanization
+          }))
+
+        if (!allWords.has(key)) {
           allWords.set(key, {
             word: vocab.word,
             english: vocab.english,
             romanization: vocab.romanization,
             type: vocab.type || 'unknown',
-            examples: examples.length > 0 ? examples : null
+            examples: examples.length > 0 ? examples : null,
+            lessons: [lesson.id] // Track which lessons this word appears in
           })
+        } else {
+          // Word already exists, add this lesson to its lessons array
+          const existing = allWords.get(key)
+          if (!existing.lessons.includes(lesson.id)) {
+            existing.lessons.push(lesson.id)
+          }
+          // Merge examples
+          if (examples.length > 0) {
+            existing.examples = existing.examples
+              ? [...existing.examples, ...examples]
+              : examples
+          }
         }
       })
     }
@@ -99,9 +115,10 @@ export async function POST(request: Request) {
         .from('lessons')
         .upsert({
           id: lesson.id,
+          version: lesson.version,
           title: lesson.title,
-          prerequisite: lesson.prerequisite,
           objectives: lesson.objectives,
+          context: lesson.context || [],
           vocabulary: lesson.vocabulary,
           sentences: lesson.sentences,
           explanation: lesson.explanation,
@@ -125,7 +142,8 @@ export async function POST(request: Request) {
           english: word.english,
           romanization: word.romanization,
           type: word.type,
-          examples: word.examples
+          examples: word.examples,
+          lessons: word.lessons
         }, {
           onConflict: 'word'
         })

@@ -1,21 +1,47 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { createServerClient } from "@/lib/supabase-server";
 import { generateQuiz } from "@/lib/generateQuiz";
 import { QuizType } from "@/types/quiz";
 
 export async function GET(request: Request) {
   try {
+    const supabase = await createServerClient();
+
     const { searchParams } = new URL(request.url);
     const typeParam = searchParams.get("type") as QuizType | null;
     const countParam = searchParams.get("count");
     const sourceParam = searchParams.get("source") || "all"; // "learned" or "all"
     const userIdParam = searchParams.get("userId");
+    const lessonIdParam = searchParams.get("lessonId");
 
     const count = countParam ? parseInt(countParam) : 10;
 
     let entries: any[] = [];
 
-    if (sourceParam === "learned" && userIdParam) {
+    if (lessonIdParam) {
+      // Fetch entries for a specific lesson
+      const { data, error } = await supabase
+        .from("dictionary")
+        .select("*")
+        .contains("lessons", [lessonIdParam]);
+
+      if (error) {
+        console.error("Error fetching lesson words:", error);
+        return NextResponse.json(
+          { error: "Failed to fetch lesson words" },
+          { status: 500 }
+        );
+      }
+
+      entries = data || [];
+
+      if (entries.length < 4) {
+        return NextResponse.json(
+          { error: "Not enough words in this lesson to generate quiz (need at least 4)" },
+          { status: 400 }
+        );
+      }
+    } else if (sourceParam === "learned" && userIdParam) {
       // Fetch only learned words for this user
       const { data, error } = await supabase
         .from("learned_words")

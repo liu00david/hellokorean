@@ -54,9 +54,10 @@ export async function getLessonIds(): Promise<string[]> {
 function transformLesson(dbLesson: any): Lesson {
   return {
     id: dbLesson.id,
+    version: dbLesson.version,
     title: dbLesson.title,
-    prerequisite: dbLesson.prerequisite,
     objectives: dbLesson.objectives,
+    context: dbLesson.context || [],
     vocabulary: dbLesson.vocabulary,
     sentences: dbLesson.sentences,
     explanation: dbLesson.explanation,

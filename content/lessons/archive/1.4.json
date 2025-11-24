@@ -1,0 +1,134 @@
+{
+  "id": "1.4",
+  "version": "0.0.1",
+  "title": "Basic Verbs and Daily Activities",
+  "objectives": [
+    "Learn common action verbs for daily activities",
+    "Understand present tense verb conjugation",
+    "Practice describing your daily routine"
+  ],
+  "context": [
+    "Now that you can introduce yourself and talk about your family, it's time to express what you do! Verbs are the heart of any sentence, and Korean verbs have a unique feature: they come at the end of the sentence. This might feel backwards at first, but you'll get used to it quickly.",
+    "Did you know? Korean verbs don't change based on person (I, you, he, she) like they do in English. The same verb form works for everyone! However, they do change based on politeness level and tense.",
+    "This lesson introduces basic daily activity verbs in the present tense polite form (해요 form). This is the most useful form for beginners, as it's polite enough for most situations while being easy to conjugate."
+  ],
+  "vocabulary": [
+    {
+      "word": "가다",
+      "english": "to go",
+      "romanization": "gada",
+      "type": "verb"
+    },
+    {
+      "word": "오다",
+      "english": "to come",
+      "romanization": "oda",
+      "type": "verb"
+    },
+    {
+      "word": "먹다",
+      "english": "to eat",
+      "romanization": "meokda",
+      "type": "verb"
+    },
+    {
+      "word": "마시다",
+      "english": "to drink",
+      "romanization": "masida",
+      "type": "verb"
+    },
+    {
+      "word": "자다",
+      "english": "to sleep",
+      "romanization": "jada",
+      "type": "verb"
+    },
+    {
+      "word": "공부하다",
+      "english": "to study",
+      "romanization": "gongbuhada",
+      "type": "verb"
+    },
+    {
+      "word": "일하다",
+      "english": "to work",
+      "romanization": "ilhada",
+      "type": "verb"
+    },
+    {
+      "word": "보다",
+      "english": "to see/watch",
+      "romanization": "boda",
+      "type": "verb"
+    },
+    {
+      "word": "학교",
+      "english": "school",
+      "romanization": "hakgyo",
+      "type": "noun"
+    },
+    {
+      "word": "집",
+      "english": "home/house",
+      "romanization": "jip",
+      "type": "noun"
+    },
+    {
+      "word": "물",
+      "english": "water",
+      "romanization": "mul",
+      "type": "noun"
+    },
+    {
+      "word": "에",
+      "english": "to/at (location particle)",
+      "romanization": "e",
+      "type": "particle"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "학교에 가요",
+      "english": "I go to school",
+      "romanization": "hakgyoe gayo"
+    },
+    {
+      "korean": "집에 와요",
+      "english": "I come home",
+      "romanization": "jibe wayo"
+    },
+    {
+      "korean": "아침을 먹어요",
+      "english": "I eat breakfast",
+      "romanization": "achimeul meogeoyo"
+    },
+    {
+      "korean": "물을 마셔요",
+      "english": "I drink water",
+      "romanization": "mureul masyeoyo"
+    },
+    {
+      "korean": "한국어를 공부해요",
+      "english": "I study Korean",
+      "romanization": "hangugeoreul gongbuhaeyo"
+    },
+    {
+      "korean": "영화를 봐요",
+      "english": "I watch a movie",
+      "romanization": "yeonghwareul bwayo"
+    },
+    {
+      "korean": "밤에 자요",
+      "english": "I sleep at night",
+      "romanization": "bame jayo"
+    }
+  ],
+  "explanation": [
+    "Korean verbs in the dictionary form end in 다 (da). To make the polite present tense, drop 다 and add 아요/어요/해요 depending on the vowel.",
+    "The particle 을/를 marks the object of a sentence. Use 을 after consonants and 를 after vowels. For example: 물을 (water + object marker).",
+    "The particle 에 indicates location ('at') or direction ('to'). 학교에 가요 = 'go to school', 집에 있어요 = 'at home'.",
+    "Korean sentence order is Subject-Object-Verb (SOV), unlike English which is Subject-Verb-Object (SVO). For example: 저는 물을 마셔요 = 'I water drink'.",
+    "Verbs ending in 하다 (hada) are action verbs often made from nouns. Just replace 하다 with 해요: 공부하다 → 공부해요 (study).",
+    "Many verbs undergo vowel changes when conjugated. For example: 먹다 → 먹어요 (meokda → meogeoyo), 자다 → 자요 (jada → jayo)."
+  ]
+}

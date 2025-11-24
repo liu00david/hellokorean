@@ -1,11 +1,16 @@
 {
-  "id": "lesson3",
+  "id": "1.2",
+  "version": "0.0.3",
   "title": "Numbers and Counting",
-  "prerequisite": "lesson2",
   "objectives": [
     "Learn Sino-Korean numbers (1-10)",
     "Learn Native Korean numbers (1-10)",
     "Understand when to use each number system"
+  ],
+  "context": [
+    "Numbers are fundamental to daily communication, whether you're shopping, telling time, or talking about dates. However, Korean has a unique feature that can initially seem confusing: it uses TWO different number systems! Don't worry - with practice, you'll naturally know which one to use.",
+    "Did you know? The dual number system in Korean reflects its historical Chinese influence (Sino-Korean numbers) while also preserving its native Korean roots (Native Korean numbers). This is similar to how English uses both Germanic and Latin-based words.",
+    "Understanding when to use each number system is crucial. Think of Sino-Korean numbers as more 'formal' and used for official contexts like dates and money, while Native Korean numbers are used for everyday counting of objects and people. This lesson will help you master both systems!"
   ],
   "vocabulary": [
     {

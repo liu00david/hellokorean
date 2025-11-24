@@ -1,0 +1,129 @@
+{
+  "id": "1.3",
+  "version": "0.0.1",
+  "title": "Family Members",
+  "objectives": [
+    "Learn vocabulary for immediate family members",
+    "Understand honorific forms for family",
+    "Practice talking about your family"
+  ],
+  "context": [
+    "Family is incredibly important in Korean culture, and knowing how to talk about family members is essential. Korean has specific words for family members depending on whether you're referring to your own family or someone else's family, reflecting the language's respect-based hierarchy.",
+    "Did you know? Korean has different words for older and younger siblings, and even distinguishes between an older brother of a male versus an older brother of a female! This specificity reflects the importance of age and relationship dynamics in Korean culture.",
+    "This lesson will teach you the basic family vocabulary you need to introduce your family members and ask about others' families. You'll also learn about the particle 의 (ui) which shows possession, similar to 's in English."
+  ],
+  "vocabulary": [
+    {
+      "word": "가족",
+      "english": "family",
+      "romanization": "gajok",
+      "type": "noun"
+    },
+    {
+      "word": "어머니",
+      "english": "mother (formal)",
+      "romanization": "eomeoni",
+      "type": "noun"
+    },
+    {
+      "word": "아버지",
+      "english": "father (formal)",
+      "romanization": "abeoji",
+      "type": "noun"
+    },
+    {
+      "word": "엄마",
+      "english": "mom",
+      "romanization": "eomma",
+      "type": "noun"
+    },
+    {
+      "word": "아빠",
+      "english": "dad",
+      "romanization": "appa",
+      "type": "noun"
+    },
+    {
+      "word": "형",
+      "english": "older brother (of a male)",
+      "romanization": "hyeong",
+      "type": "noun"
+    },
+    {
+      "word": "누나",
+      "english": "older sister (of a male)",
+      "romanization": "nuna",
+      "type": "noun"
+    },
+    {
+      "word": "오빠",
+      "english": "older brother (of a female)",
+      "romanization": "oppa",
+      "type": "noun"
+    },
+    {
+      "word": "언니",
+      "english": "older sister (of a female)",
+      "romanization": "eonni",
+      "type": "noun"
+    },
+    {
+      "word": "동생",
+      "english": "younger sibling",
+      "romanization": "dongsaeng",
+      "type": "noun"
+    },
+    {
+      "word": "의",
+      "english": "possessive particle ('s)",
+      "romanization": "ui",
+      "type": "particle"
+    },
+    {
+      "word": "있어요",
+      "english": "have/there is",
+      "romanization": "isseoyo",
+      "type": "verb"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "저는 가족이 다섯 명이에요",
+      "english": "I have five family members",
+      "romanization": "jeoneun gajogi daseot myeong-ieyo"
+    },
+    {
+      "korean": "어머니는 선생님이에요",
+      "english": "My mother is a teacher",
+      "romanization": "eomeonineun seonsaengnim-ieyo"
+    },
+    {
+      "korean": "형이 두 명 있어요",
+      "english": "I have two older brothers",
+      "romanization": "hyeongi du myeong isseoyo"
+    },
+    {
+      "korean": "동생이 있어요?",
+      "english": "Do you have younger siblings?",
+      "romanization": "dongsaengi isseoyo?"
+    },
+    {
+      "korean": "제 아버지의 이름은 존이에요",
+      "english": "My father's name is John",
+      "romanization": "je abeojiui ireumeun jon-ieyo"
+    },
+    {
+      "korean": "가족이 몇 명이에요?",
+      "english": "How many family members do you have?",
+      "romanization": "gajogi myeot myeong-ieyo?"
+    }
+  ],
+  "explanation": [
+    "의 (ui) is the possessive particle, like 's in English. 저의 (my) is often shortened to 제 (je).",
+    "Korean distinguishes between older siblings based on the speaker's gender. Males use 형 (older brother) and 누나 (older sister), while females use 오빠 (older brother) and 언니 (older sister).",
+    "있어요 (isseoyo) means 'to have' or 'there is/exists'. It's very versatile and commonly used.",
+    "When talking about family, use 어머니/아버지 in formal situations or when referring to others' parents. Use 엄마/아빠 casually for your own parents.",
+    "몇 (myeot) means 'how many' and is used with counters to ask about quantity.",
+    "When counting people in your family, include yourself in the count. 가족이 다섯 명 means 'five people including me'."
+  ]
+}

@@ -66,6 +66,24 @@ export function LessonRenderer({ lesson }: LessonRendererProps) {
         </CardContent>
       </Card>
 
+      {/* Context & Introduction */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <span>📚</span> About This Lesson
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-3">
+            {lesson.context.map((paragraph, index) => (
+              <p key={index} className="text-garden-earth/80 leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Vocabulary */}
       <Card>
         <CardHeader>

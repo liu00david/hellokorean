@@ -1,11 +1,16 @@
 {
-  "id": "lesson2",
+  "id": "1.1",
+  "version": "0.0.2",
   "title": "Self Introduction",
-  "prerequisite": "lesson1",
   "objectives": [
     "Learn how to introduce yourself",
     "Practice saying your name and nationality",
     "Ask basic questions about others"
+  ],
+  "context": [
+    "Now that you've learned basic greetings, it's time to introduce yourself! Being able to say who you are, where you're from, and what you do is essential in any language. In Korean culture, self-introductions are a key part of building relationships, whether in formal or casual settings.",
+    "Did you know? In Korea, it's common to introduce yourself with your full name and occupation or school when meeting someone for the first time. The level of detail you provide depends on the formality of the situation.",
+    "This lesson will teach you the fundamental building blocks for self-introduction. You'll learn about the topic particle (는/은), which is one of the most important particles in Korean grammar, and how to use basic identity statements."
   ],
   "vocabulary": [
     {

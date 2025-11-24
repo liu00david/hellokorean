@@ -4,18 +4,19 @@ import { useState, useEffect } from "react";
 import { QuizQuestion } from "@/components/QuizQuestion";
 import { QuizResults } from "@/components/QuizResults";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { QuizQuestion as QuizQuestionType } from "@/types/quiz";
 import { useAuth } from "@/components/AuthProvider";
 import { supabase } from "@/lib/supabase";
+import { getAllLessons } from "@/lib/lessons";
+import { Lesson } from "@/types/lesson";
 
 type QuizState = "setup" | "quiz" | "results";
-type QuizSource = "learned" | "all";
 
 export default function QuizPage() {
   const { user } = useAuth();
   const [state, setState] = useState<QuizState>("setup");
-  const [quizSource, setQuizSource] = useState<QuizSource>("learned");
+  const [currentQuizId, setCurrentQuizId] = useState<string>("");
   const [questions, setQuestions] = useState<QuizQuestionType[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -23,14 +24,57 @@ export default function QuizPage() {
     { question: string; selected: string; correct: string; isCorrect: boolean }[]
   >([]);
   const [loading, setLoading] = useState(false);
+  const [lessons, setLessons] = useState<Lesson[]>([]);
+  const [completedLessonQuizzes, setCompletedLessonQuizzes] = useState<Set<string>>(new Set());
 
-  const startQuiz = async (count: number = 10) => {
+  useEffect(() => {
+    loadLessons();
+    if (user) {
+      loadCompletedLessonQuizzes();
+    }
+  }, [user]);
+
+  const loadLessons = async () => {
+    const lessonsData = await getAllLessons();
+    setLessons(lessonsData);
+  };
+
+  const loadCompletedLessonQuizzes = async () => {
+    if (!user) return;
+
+    try {
+      const { data, error } = await supabase
+        .from("quiz_results")
+        .select("quiz_id")
+        .eq("user_id", user.id)
+        .like("quiz_id", "lesson-%");
+
+      if (!error && data) {
+        // Extract lesson IDs from quiz_ids (format: lesson-1.0-timestamp)
+        const lessonIds = data
+          .map((result) => {
+            const match = result.quiz_id.match(/^lesson-([^-]+)/);
+            return match ? match[1] : null;
+          })
+          .filter(Boolean) as string[];
+        setCompletedLessonQuizzes(new Set(lessonIds));
+      }
+    } catch (error) {
+      console.error("Error loading completed lesson quizzes:", error);
+    }
+  };
+
+  const startQuiz = async (count: number, source: "learned" | "all", lessonId?: string) => {
     setLoading(true);
     try {
       const userId = user?.id || "";
-      const response = await fetch(
-        `/api/generate-quiz?count=${count}&source=${quizSource}&userId=${userId}`
-      );
+      let url = `/api/generate-quiz?count=${count}&source=${source}&userId=${userId}`;
+
+      if (lessonId) {
+        url += `&lessonId=${lessonId}`;
+      }
+
+      const response = await fetch(url);
       const data = await response.json();
 
       if (data.questions) {
@@ -38,6 +82,13 @@ export default function QuizPage() {
         setCurrentQuestionIndex(0);
         setScore(0);
         setAnswers([]);
+
+        // Set quiz ID for saving results later
+        const quizId = lessonId
+          ? `lesson-${lessonId}-${Date.now()}`
+          : `${source}-${Date.now()}`;
+        setCurrentQuizId(quizId);
+
         setState("quiz");
       } else {
         alert("Failed to generate quiz: " + (data.error || "Unknown error"));
@@ -88,9 +139,14 @@ export default function QuizPage() {
 
       await supabase.from("quiz_results").insert({
         user_id: user.id,
-        quiz_id: `quiz-${Date.now()}`,
+        quiz_id: currentQuizId,
         score: percentage,
       });
+
+      // Reload completed lesson quizzes if this was a lesson quiz
+      if (currentQuizId.startsWith("lesson-")) {
+        await loadCompletedLessonQuizzes();
+      }
     } catch (error) {
       console.error("Error saving quiz results:", error);
     }
@@ -102,91 +158,160 @@ export default function QuizPage() {
     setCurrentQuestionIndex(0);
     setScore(0);
     setAnswers([]);
+    setCurrentQuizId("");
   };
 
   if (state === "setup") {
     return (
       <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
         <div className="container mx-auto px-4 py-12">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="text-6xl mb-6">✏️</div>
-            <h1 className="text-5xl font-bold mb-4 text-garden-earth">
-              Quiz Center
-            </h1>
-            <p className="text-xl text-garden-earth/70 mb-8">
-              Test your Korean knowledge with auto-generated quizzes
-            </p>
-
-            {/* Tabs for Learned/All Words */}
-            <div className="flex justify-center gap-2 mb-8">
-              <button
-                onClick={() => setQuizSource("learned")}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                  quizSource === "learned"
-                    ? "bg-garden-pink text-garden-earth shadow-md"
-                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
-                }`}
-              >
-                Learned Words
-              </button>
-              <button
-                onClick={() => setQuizSource("all")}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                  quizSource === "all"
-                    ? "bg-garden-pink text-garden-earth shadow-md"
-                    : "bg-white/50 text-garden-earth/60 hover:bg-white/80"
-                }`}
-              >
-                All Words
-              </button>
+          <div className="max-w-4xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <div className="text-6xl mb-6">✏️</div>
+              <h1 className="text-5xl font-bold mb-4 text-garden-earth">
+                Quiz Center
+              </h1>
+              <p className="text-xl text-garden-earth/70">
+                Test your Korean knowledge with auto-generated quizzes
+              </p>
             </div>
 
-            {/* Warning for non-authenticated users on learned mode */}
-            {!user && quizSource === "learned" && (
-              <div className="mb-6 p-4 bg-yellow-100 text-yellow-800 rounded-lg">
-                Please sign in to quiz yourself on learned words
-              </div>
-            )}
+            <div className="space-y-8">
+              {/* Learned Words Section */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="text-2xl">📚</span>
+                    Learned Words
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {!user ? (
+                    <div className="p-4 bg-yellow-100 text-yellow-800 rounded-lg text-center">
+                      Please sign in to quiz yourself on learned words
+                    </div>
+                  ) : (
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <Button
+                        onClick={() => startQuiz(5, "learned")}
+                        disabled={loading}
+                        variant="outline"
+                        className="py-6"
+                      >
+                        5 Questions
+                      </Button>
+                      <Button
+                        onClick={() => startQuiz(10, "learned")}
+                        disabled={loading}
+                        variant="outline"
+                        className="py-6"
+                      >
+                        10 Questions
+                      </Button>
+                      <Button
+                        onClick={() => startQuiz(20, "learned")}
+                        disabled={loading}
+                        variant="outline"
+                        className="py-6"
+                      >
+                        20 Questions
+                      </Button>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardContent className="pt-6">
-                <p className="text-garden-earth/70 mb-6">
-                  Choose how many questions you'd like:
-                </p>
-                <div className="grid gap-4">
-                  <Button
-                    onClick={() => startQuiz(5)}
-                    disabled={loading || (quizSource === "learned" && !user)}
-                    variant="outline"
-                    className="py-6"
-                  >
-                    Quick Quiz (5 questions)
-                  </Button>
-                  <Button
-                    onClick={() => startQuiz(10)}
-                    disabled={loading || (quizSource === "learned" && !user)}
-                    variant="default"
-                    className="py-6"
-                  >
-                    Standard Quiz (10 questions)
-                  </Button>
-                  <Button
-                    onClick={() => startQuiz(20)}
-                    disabled={loading || (quizSource === "learned" && !user)}
-                    variant="secondary"
-                    className="py-6"
-                  >
-                    Challenge Quiz (20 questions)
-                  </Button>
-                </div>
+              {/* All Words Section */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="text-2xl">📖</span>
+                    All Words
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <Button
+                      onClick={() => startQuiz(5, "all")}
+                      disabled={loading}
+                      variant="outline"
+                      className="py-6"
+                    >
+                      5 Questions
+                    </Button>
+                    <Button
+                      onClick={() => startQuiz(10, "all")}
+                      disabled={loading}
+                      variant="outline"
+                      className="py-6"
+                    >
+                      10 Questions
+                    </Button>
+                    <Button
+                      onClick={() => startQuiz(20, "all")}
+                      disabled={loading}
+                      variant="outline"
+                      className="py-6"
+                    >
+                      20 Questions
+                    </Button>
+                  </div>
+                  {!user && (
+                    <p className="mt-4 text-sm text-garden-earth/60 text-center">
+                      💡 Sign in to save your quiz results!
+                    </p>
+                  )}
+                </CardContent>
+              </Card>
 
-                {!user && quizSource === "all" && (
-                  <p className="mt-6 text-sm text-garden-earth/60">
-                    💡 Sign in to save your quiz results!
-                  </p>
-                )}
-              </CardContent>
-            </Card>
+              {/* By Lesson Section */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="text-2xl">🎯</span>
+                    Quiz by Lesson
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    {lessons.map((lesson) => {
+                      const isCompleted = completedLessonQuizzes.has(lesson.id);
+                      return (
+                        <div
+                          key={lesson.id}
+                          className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all ${
+                            isCompleted
+                              ? "bg-green-50 border-green-300"
+                              : "bg-white/50 border-garden-earth/10"
+                          }`}
+                        >
+                          <div className="flex-1">
+                            <div className="font-semibold text-garden-earth flex items-center gap-2">
+                              Lesson {lesson.id}: {lesson.title}
+                              {isCompleted && (
+                                <span className="text-green-600 text-sm">✓ Completed</span>
+                              )}
+                            </div>
+                            <div className="text-sm text-garden-earth/60">
+                              10 questions from this lesson
+                            </div>
+                          </div>
+                          <Button
+                            onClick={() => startQuiz(10, "all", lesson.id)}
+                            disabled={loading}
+                            variant={isCompleted ? "outline" : "default"}
+                            className="ml-4"
+                          >
+                            {isCompleted ? "Retake" : "Start Quiz"}
+                          </Button>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
@@ -211,6 +336,17 @@ export default function QuizPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
       <div className="container mx-auto px-4 py-12">
+        {/* Exit Button */}
+        <div className="max-w-2xl mx-auto mb-4">
+          <Button
+            onClick={resetQuiz}
+            variant="outline"
+            className="gap-2"
+          >
+            ← Exit Quiz
+          </Button>
+        </div>
+
         {/* Progress Bar */}
         <div className="max-w-2xl mx-auto mb-6">
           <div className="flex justify-between text-sm text-garden-earth/60 mb-2">
