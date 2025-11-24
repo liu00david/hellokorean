@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useAuth } from "./AuthProvider";
@@ -145,10 +146,12 @@ export function Navigation() {
                 <Link href="/profile">
                   <Button variant="ghost" size="sm" className="gap-2">
                     {user.user_metadata?.avatar_url && (
-                      <img
+                      <Image
                         src={user.user_metadata.avatar_url}
                         alt="Profile"
-                        className="w-6 h-6 rounded-full"
+                        width={24}
+                        height={24}
+                        className="rounded-full"
                       />
                     )}
                     <span className="hidden sm:inline">
@@ -228,10 +231,12 @@ export function Navigation() {
                   <Link href="/profile" onClick={() => setMobileMenuOpen(false)}>
                     <Button variant="ghost" size="sm" className="w-full gap-2 justify-start">
                       {user.user_metadata?.avatar_url && (
-                        <img
+                        <Image
                           src={user.user_metadata.avatar_url}
                           alt="Profile"
-                          className="w-6 h-6 rounded-full"
+                          width={24}
+                          height={24}
+                          className="rounded-full"
                         />
                       )}
                       <span>

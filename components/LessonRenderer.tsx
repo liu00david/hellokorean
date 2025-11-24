@@ -18,7 +18,6 @@ export function LessonRenderer({ lesson }: LessonRendererProps) {
   // Function to render Korean text with clickable words
   const renderKoreanText = (text: string) => {
     const words: JSX.Element[] = [];
-    let currentWord = "";
 
     // Simple tokenization - split by spaces and check if each part has a vocab entry
     const parts = text.split(" ");
@@ -28,7 +27,7 @@ export function LessonRenderer({ lesson }: LessonRendererProps) {
 
       if (entry) {
         words.push(
-          <WordTooltip key={`${part}-${index}`} word={part} entry={entry}>
+          <WordTooltip key={`${part}-${index}`} entry={entry}>
             {part}
           </WordTooltip>
         );

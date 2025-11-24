@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 })
     }
 
-    const userId = profile.id
+    const userId = (profile as { id: string; email: string }).id
 
     // Count records before deletion (use admin client to bypass RLS)
     const { count: learnedCount } = await supabaseAdmin

@@ -50,8 +50,20 @@ export async function getLessonIds(): Promise<string[]> {
   return (data || []).map((lesson) => lesson.id);
 }
 
+// Database lesson type (matches Supabase schema)
+interface DbLesson {
+  id: string;
+  version?: string;
+  title: string;
+  objectives: string[];
+  context?: string[];
+  vocabulary: Lesson['vocabulary'];
+  sentences: Lesson['sentences'];
+  explanation: string[];
+}
+
 // Transform database lesson to Lesson type
-function transformLesson(dbLesson: any): Lesson {
+function transformLesson(dbLesson: DbLesson): Lesson {
   return {
     id: dbLesson.id,
     version: dbLesson.version,

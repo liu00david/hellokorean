@@ -4,12 +4,11 @@ import * as HoverCard from "@radix-ui/react-hover-card";
 import { VocabularyEntry } from "@/types/lesson";
 
 interface WordTooltipProps {
-  word: string;
   entry: VocabularyEntry;
   children: React.ReactNode;
 }
 
-export function WordTooltip({ word, entry, children }: WordTooltipProps) {
+export function WordTooltip({ entry, children }: WordTooltipProps) {
   return (
     <HoverCard.Root openDelay={200}>
       <HoverCard.Trigger asChild>

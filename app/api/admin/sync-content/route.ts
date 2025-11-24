@@ -73,7 +73,7 @@ export async function POST(request: Request) {
     // Create a map of existing lesson versions
     const existingVersions = new Map<string, string>()
     if (existingLessons) {
-      existingLessons.forEach(lesson => {
+      existingLessons.forEach((lesson: { id: string; version?: string | null }) => {
         existingVersions.set(lesson.id, lesson.version || '')
       })
     }
