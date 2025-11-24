@@ -1,6 +1,6 @@
 {
   "id": "1.6",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Food & Ordering",
   "objectives": [
     "Learn essential Korean food vocabulary",
@@ -85,6 +85,12 @@
       "word": "소주",
       "english": "soju (Korean alcohol)",
       "romanization": "soju",
+      "type": "noun"
+    },
+    {
+      "word": "소맥",
+      "english": "Somaek (cocktail made with soju and beer)",
+      "romanization": "somaek",
       "type": "noun"
     },
     {
