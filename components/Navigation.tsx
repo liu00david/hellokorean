@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { useAuth } from "./AuthProvider";
 import { signInWithGoogle, signOut } from "@/lib/auth";
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -21,7 +21,18 @@ export function Navigation() {
   const pathname = usePathname();
   const { user, loading } = useAuth();
   const [loggingIn, setLoggingIn] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleSignIn = async () => {
     setLoggingIn(true);
@@ -53,7 +64,7 @@ export function Navigation() {
             </span>
           </Link>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => {
               const isActive = pathname === item.href ||
@@ -89,8 +100,44 @@ export function Navigation() {
             )}
           </div>
 
-          {/* Auth Buttons */}
-          <div className="flex items-center gap-2">
+          {/* Mobile Menu Button (only show when scrolled) */}
+          <div className="md:hidden">
+            {isScrolled && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {mobileMenuOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </Button>
+            )}
+          </div>
+
+          {/* Auth Buttons (desktop) */}
+          <div className="hidden md:flex items-center gap-2">
             {loading ? (
               <div className="text-sm text-garden-earth/50">...</div>
             ) : user ? (
@@ -128,6 +175,94 @@ export function Navigation() {
                 {loggingIn ? "Signing in..." : "Sign in with Google"}
               </Button>
             )}
+          </div>
+        </div>
+
+        {/* Mobile Navigation Links (always show at top, dropdown when scrolled) */}
+        <div className={cn(
+          "md:hidden",
+          !isScrolled ? "block pb-4" : mobileMenuOpen ? "block pb-4 border-t pt-4 mt-2" : "hidden"
+        )}>
+          <div className="flex flex-col gap-2">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href ||
+                (item.href !== "/" && pathname.startsWith(item.href));
+
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={cn(
+                    "px-4 py-2 rounded-lg font-nunito transition-colors",
+                    isActive
+                      ? "bg-garden-pink text-garden-earth font-semibold"
+                      : "text-garden-earth/70 hover:bg-garden-mint/20 hover:text-garden-earth"
+                  )}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+            {user && user.email === ADMIN_EMAIL && (
+              <Link
+                href="/admin"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn(
+                  "px-4 py-2 rounded-lg font-nunito transition-colors",
+                  pathname === "/admin"
+                    ? "bg-purple-500 text-white font-semibold"
+                    : "text-purple-600 hover:bg-purple-50 hover:text-purple-700"
+                )}
+              >
+                Admin
+              </Link>
+            )}
+
+            {/* Auth Buttons (mobile) */}
+            <div className="flex flex-col gap-2 mt-2 pt-2 border-t">
+              {loading ? (
+                <div className="text-sm text-garden-earth/50 px-4">...</div>
+              ) : user ? (
+                <>
+                  <Link href="/profile" onClick={() => setMobileMenuOpen(false)}>
+                    <Button variant="ghost" size="sm" className="w-full gap-2 justify-start">
+                      {user.user_metadata?.avatar_url && (
+                        <img
+                          src={user.user_metadata.avatar_url}
+                          alt="Profile"
+                          className="w-6 h-6 rounded-full"
+                        />
+                      )}
+                      <span>
+                        {user.user_metadata?.name || user.email}
+                      </span>
+                    </Button>
+                  </Link>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => {
+                      handleSignOut();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="w-full"
+                  >
+                    Sign Out
+                  </Button>
+                </>
+              ) : (
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={handleSignIn}
+                  disabled={loggingIn}
+                  className="w-full gap-2"
+                >
+                  {loggingIn ? "Signing in..." : "Sign in with Google"}
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       </div>
