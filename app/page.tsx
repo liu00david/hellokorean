@@ -22,29 +22,29 @@ export default function Home() {
 
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <Link href="/lessons" className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
               <div className="text-4xl mb-3">📚</div>
               <h3 className="font-nunito font-bold text-lg mb-2">Interactive Lessons</h3>
               <p className="text-sm text-garden-earth/70">
                 Structured learning path from basics to conversation
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <Link href="/dictionary" className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
               <div className="text-4xl mb-3">📖</div>
               <h3 className="font-nunito font-bold text-lg mb-2">Smart Dictionary</h3>
               <p className="text-sm text-garden-earth/70">
                 Auto-generated from lessons with instant translations
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <Link href="/quiz" className="bg-white/50 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
               <div className="text-4xl mb-3">🎯</div>
               <h3 className="font-nunito font-bold text-lg mb-2">Practice & Quizzes</h3>
               <p className="text-sm text-garden-earth/70">
                 Test your knowledge with adaptive quizzes
               </p>
-            </div>
+            </Link>
           </div>
 
           {/* CTA Buttons */}

@@ -101,40 +101,38 @@ export function Navigation() {
             )}
           </div>
 
-          {/* Mobile Menu Button (only show when scrolled) */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
-            {isScrolled && (
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2"
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {mobileMenuOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
-              </Button>
-            )}
+                {mobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </Button>
           </div>
 
           {/* Auth Buttons (desktop) */}
@@ -181,10 +179,10 @@ export function Navigation() {
           </div>
         </div>
 
-        {/* Mobile Navigation Links (always show at top, dropdown when scrolled) */}
+        {/* Mobile Navigation Links (dropdown menu) */}
         <div className={cn(
           "md:hidden",
-          !isScrolled ? "block pb-4" : mobileMenuOpen ? "block pb-4 border-t pt-4 mt-2" : "hidden"
+          mobileMenuOpen ? "block pb-4 border-t pt-4 mt-2" : "hidden"
         )}>
           <div className="flex flex-col gap-2">
             {navItems.map((item) => {
