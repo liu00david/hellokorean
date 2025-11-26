@@ -44,11 +44,26 @@ CREATE POLICY "Authenticated users can modify lessons"
 -- ============================================
 -- 3. Create function to check if user is admin
 -- ============================================
+-- DEPRECATED: Use the admins table instead (see 20251126-add-admins-table.sql)
+-- This function is kept for backwards compatibility only
 CREATE OR REPLACE FUNCTION is_admin(user_email TEXT)
 RETURNS BOOLEAN AS $$
+DECLARE
+  user_uuid UUID;
 BEGIN
-  -- Hardcoded admin email
-  RETURN user_email = 'liu00david@gmail.com';
+  -- Find user by email
+  SELECT id INTO user_uuid
+  FROM auth.users
+  WHERE email = user_email;
+
+  IF user_uuid IS NULL THEN
+    RETURN false;
+  END IF;
+
+  -- Check if user is in admins table
+  RETURN EXISTS (
+    SELECT 1 FROM admins WHERE user_id = user_uuid
+  );
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 

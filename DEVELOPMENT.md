@@ -63,6 +63,53 @@ Lesson Groups (1, 2, 3...)
 - No external dependencies or API costs
 - Speaker icons (🔊) on vocabulary words, sentences, dictionary entries
 
+## Admin Management
+
+### Admin Permissions
+
+Admins are managed via the `admins` table in the database. Admin status is checked at both the frontend (via AuthProvider) and backend (via API routes) levels.
+
+**Security Features:**
+- No hardcoded emails in code
+- Admin status stored in database
+- Checked on every protected route
+- RLS policies ensure only service role can modify admins table
+
+### Adding a New Admin
+
+To grant admin access to a user, run this SQL in Supabase Dashboard → SQL Editor:
+
+```sql
+-- Add admin by email
+INSERT INTO admins (user_id)
+SELECT id FROM auth.users WHERE email = 'user@example.com'
+ON CONFLICT (user_id) DO NOTHING;
+```
+
+Or if you know the user's UUID:
+
+```sql
+-- Add admin by UUID
+INSERT INTO admins (user_id) VALUES ('user-uuid-here')
+ON CONFLICT (user_id) DO NOTHING;
+```
+
+### Removing an Admin
+
+```sql
+-- Remove admin by email
+DELETE FROM admins
+WHERE user_id = (SELECT id FROM auth.users WHERE email = 'user@example.com');
+```
+
+### Listing All Admins
+
+```sql
+SELECT u.email, a.created_at
+FROM admins a
+JOIN auth.users u ON a.user_id = u.id;
+```
+
 ## Common Tasks
 
 ### Clearing User Progress

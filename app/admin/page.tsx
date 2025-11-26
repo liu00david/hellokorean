@@ -4,10 +4,8 @@ import { useState, useEffect } from 'react'
 import { useAuth } from '@/components/AuthProvider'
 import { useRouter } from 'next/navigation'
 
-const ADMIN_EMAIL = 'liu00david@gmail.com'
-
 export default function AdminPage() {
-  const { user } = useAuth()
+  const { user, isAdmin, loading: authLoading } = useAuth()
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
@@ -18,16 +16,22 @@ export default function AdminPage() {
 
   // Check if user is admin
   useEffect(() => {
-    if (!user) {
-      router.push('/')
-      return
-    }
-    if (user.email !== ADMIN_EMAIL) {
-      router.push('/')
-    }
-  }, [user, router])
+    if (authLoading) return; // Wait for auth to load
 
-  if (!user || user.email !== ADMIN_EMAIL) {
+    if (!user || !isAdmin) {
+      router.push('/')
+    }
+  }, [user, isAdmin, authLoading, router])
+
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-gray-600">Loading...</p>
+      </div>
+    )
+  }
+
+  if (!user || !isAdmin) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p className="text-gray-600">Access denied. Admin only.</p>

@@ -3,6 +3,7 @@ import { Nunito, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { AuthProvider } from "@/components/AuthProvider";
+import { ToastProvider } from "@/components/ToastProvider";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -29,10 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} ${notoSansKR.variable}`}>
       <body className="antialiased min-h-screen">
-        <AuthProvider>
-          <Navigation />
-          {children}
-        </AuthProvider>
+        <ToastProvider>
+          <AuthProvider>
+            <Navigation />
+            {children}
+          </AuthProvider>
+        </ToastProvider>
       </body>
     </html>
   );

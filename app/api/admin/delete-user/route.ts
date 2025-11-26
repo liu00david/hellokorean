@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-
-const ADMIN_EMAIL = 'liu00david@gmail.com'
+import { requireAdmin } from '@/lib/admin-server'
 
 // Create admin client with service role key for user deletion
 const getAdminClient = () => {
@@ -33,8 +32,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    // Check if user is admin
-    if (user.email !== ADMIN_EMAIL) {
+    // Check if user is admin (throws error if not)
+    try {
+      await requireAdmin(user)
+    } catch (error) {
       return NextResponse.json({ error: 'Admin access required' }, { status: 403 })
     }
 
@@ -45,8 +46,8 @@ export async function POST(request: Request) {
     }
 
     // Prevent admin from deleting themselves
-    if (email === ADMIN_EMAIL) {
-      return NextResponse.json({ error: 'Cannot delete admin account' }, { status: 400 })
+    if (user.email === email) {
+      return NextResponse.json({ error: 'Cannot delete your own account' }, { status: 400 })
     }
 
     // Find user by email

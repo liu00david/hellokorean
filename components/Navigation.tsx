@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useAuth } from "./AuthProvider";
+import { useToast } from "./ToastProvider";
 import { signInWithGoogle, signOut } from "@/lib/auth";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
@@ -16,11 +17,10 @@ const navItems = [
   { href: "/quiz", label: "Quiz" },
 ];
 
-const ADMIN_EMAIL = "liu00david@gmail.com";
-
 export function Navigation() {
   const pathname = usePathname();
-  const { user, loading } = useAuth();
+  const { user, loading, isAdmin } = useAuth();
+  const { showToast } = useToast();
   const [loggingIn, setLoggingIn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -48,8 +48,10 @@ export function Navigation() {
   const handleSignOut = async () => {
     try {
       await signOut();
+      showToast("Signed out successfully");
     } catch (error) {
       console.error("Sign out error:", error);
+      showToast("Failed to sign out", "error");
     }
   };
 
@@ -86,7 +88,7 @@ export function Navigation() {
                 </Link>
               );
             })}
-            {user && user.email === ADMIN_EMAIL && (
+            {isAdmin && (
               <Link
                 href="/admin"
                 className={cn(
@@ -138,7 +140,14 @@ export function Navigation() {
           {/* Auth Buttons (desktop) */}
           <div className="hidden md:flex items-center gap-2">
             {loading ? (
-              <div className="text-sm text-garden-earth/50">...</div>
+              <Button
+                variant="default"
+                size="sm"
+                disabled
+                className="gap-2 opacity-50 min-w-[160px]"
+              >
+                Sign in with Google
+              </Button>
             ) : user ? (
               <>
                 <Link href="/profile">
@@ -205,7 +214,7 @@ export function Navigation() {
                 </Link>
               );
             })}
-            {user && user.email === ADMIN_EMAIL && (
+            {isAdmin && (
               <Link
                 href="/admin"
                 onClick={() => setMobileMenuOpen(false)}
@@ -223,7 +232,14 @@ export function Navigation() {
             {/* Auth Buttons (mobile) */}
             <div className="flex flex-col gap-2 mt-2 pt-2 border-t">
               {loading ? (
-                <div className="text-sm text-garden-earth/50 px-4">...</div>
+                <Button
+                  variant="default"
+                  size="sm"
+                  disabled
+                  className="w-full gap-2 opacity-50"
+                >
+                  Sign in with Google
+                </Button>
               ) : user ? (
                 <>
                   <Link href="/profile" onClick={() => setMobileMenuOpen(false)}>
