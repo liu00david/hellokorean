@@ -3,6 +3,7 @@
 import { Lesson, VocabularyEntry } from "@/types/lesson";
 import { WordTooltip } from "./WordTooltip";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { SpeakerButton } from "./SpeakerButton";
 
 interface LessonRendererProps {
   lesson: Lesson;
@@ -97,8 +98,11 @@ export function LessonRenderer({ lesson }: LessonRendererProps) {
                 key={index}
                 className="p-4 bg-garden-white rounded-xl border border-garden-earth/10 hover:border-garden-pink transition-colors"
               >
-                <div className="text-2xl font-bold text-garden-earth mb-1 font-noto">
-                  {entry.word}
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="text-2xl font-bold text-garden-earth font-noto">
+                    {entry.word}
+                  </div>
+                  <SpeakerButton text={entry.word} size="sm" />
                 </div>
                 <div className="text-lg text-garden-earth/80 mb-1">
                   {entry.english}
@@ -131,8 +135,11 @@ export function LessonRenderer({ lesson }: LessonRendererProps) {
                 key={index}
                 className="p-4 bg-garden-mint/10 rounded-xl border border-garden-earth/5"
               >
-                <div className="text-2xl font-bold text-garden-earth mb-2 font-noto">
-                  {renderKoreanText(sentence.korean)}
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl font-bold text-garden-earth font-noto flex-1">
+                    {renderKoreanText(sentence.korean)}
+                  </div>
+                  <SpeakerButton text={sentence.korean} size="sm" />
                 </div>
                 <div className="text-lg text-garden-earth/80 mb-1">
                   {sentence.english}

@@ -5,6 +5,7 @@ import { supabase } from "@/lib/supabase";
 import { DictionaryEntry } from "@/types/dictionary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/components/AuthProvider";
+import { SpeakerButton } from "@/components/SpeakerButton";
 
 type TabType = "learned" | "all";
 type SortType = "korean" | "english" | "lesson" | "type";
@@ -20,7 +21,7 @@ export default function DictionaryPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [lessonFilter, setLessonFilter] = useState<string>("all");
-  const [sortBy, setSortBy] = useState<SortType>("korean");
+  const [sortBy, setSortBy] = useState<SortType>("lesson");
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [lessons, setLessons] = useState<{ id: string; title: string }[]>([]);
@@ -329,9 +330,12 @@ export default function DictionaryPage() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <CardTitle className="text-3xl mb-2 font-noto">
-                        {entry.word}
-                      </CardTitle>
+                      <div className="flex items-center gap-2 mb-2">
+                        <CardTitle className="text-3xl font-noto">
+                          {entry.word}
+                        </CardTitle>
+                        <SpeakerButton text={entry.word} size="md" />
+                      </div>
                       <div className="text-lg text-garden-earth/80 mb-1">
                         {entry.english}
                       </div>
@@ -356,8 +360,11 @@ export default function DictionaryPage() {
                           key={idx}
                           className="p-2 bg-garden-mint/10 rounded-lg text-sm"
                         >
-                          <div className="font-noto text-garden-earth">
-                            {example.korean}
+                          <div className="flex items-center gap-2">
+                            <div className="font-noto text-garden-earth flex-1">
+                              {example.korean}
+                            </div>
+                            <SpeakerButton text={example.korean} size="sm" />
                           </div>
                           <div className="text-garden-earth/70">
                             {example.english}
