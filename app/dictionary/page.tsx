@@ -7,6 +7,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/components/AuthProvider";
 
 type TabType = "learned" | "all";
+type SortType = "korean" | "english" | "lesson" | "type";
+
+const ITEMS_PER_PAGE = 20;
 
 export default function DictionaryPage() {
   const { user } = useAuth();
@@ -17,6 +20,8 @@ export default function DictionaryPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [lessonFilter, setLessonFilter] = useState<string>("all");
+  const [sortBy, setSortBy] = useState<SortType>("korean");
+  const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [lessons, setLessons] = useState<{ id: string; title: string }[]>([]);
 
@@ -29,12 +34,19 @@ export default function DictionaryPage() {
   useEffect(() => {
     if (activeTab === "all") {
       fetchAllWords();
-    } else if (activeTab === "learned" && user) {
-      fetchLearnedWords();
+    } else if (activeTab === "learned") {
+      if (user) {
+        fetchLearnedWords();
+      } else {
+        // User not signed in, clear learned entries and stop loading
+        setLearnedEntries([]);
+        setFilteredEntries([]);
+        setLoading(false);
+      }
     }
   }, [activeTab, user]);
 
-  // Filter entries when search or filter changes
+  // Filter and sort entries when search, filter, or sort changes
   useEffect(() => {
     const currentEntries = activeTab === "learned" ? learnedEntries : allEntries;
     let filtered = currentEntries;
@@ -61,8 +73,29 @@ export default function DictionaryPage() {
       );
     }
 
-    setFilteredEntries(filtered);
-  }, [searchTerm, typeFilter, lessonFilter, allEntries, learnedEntries, activeTab]);
+    // Apply sorting
+    const sorted = [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case "korean":
+          return a.word.localeCompare(b.word, "ko");
+        case "english":
+          return a.english.localeCompare(b.english, "en");
+        case "lesson":
+          // Sort by first lesson ID if available
+          const aLesson = (a as any).lessons?.[0] || "";
+          const bLesson = (b as any).lessons?.[0] || "";
+          return aLesson.localeCompare(bLesson);
+        case "type":
+          return a.type.localeCompare(b.type);
+        default:
+          return 0;
+      }
+    });
+
+    setFilteredEntries(sorted);
+    // Reset to page 1 when filters change
+    setCurrentPage(1);
+  }, [searchTerm, typeFilter, lessonFilter, sortBy, allEntries, learnedEntries, activeTab]);
 
   const fetchLessons = async () => {
     const { data, error } = await supabase
@@ -126,6 +159,17 @@ export default function DictionaryPage() {
   const currentEntries = activeTab === "learned" ? learnedEntries : allEntries;
   const types = Array.from(new Set(currentEntries.map((e) => e.type))).sort();
 
+  // Pagination calculations
+  const totalPages = Math.ceil(filteredEntries.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedEntries = filteredEntries.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
       <div className="container mx-auto px-4 py-12">
@@ -174,7 +218,7 @@ export default function DictionaryPage() {
         <div className="max-w-4xl mx-auto mb-8">
           <Card>
             <CardContent className="pt-6">
-              <div className="grid md:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-4 gap-4">
                 {/* Search */}
                 <div>
                   <label className="block text-sm font-medium mb-2 text-garden-earth">
@@ -221,16 +265,34 @@ export default function DictionaryPage() {
                     <option value="all">All Lessons</option>
                     {lessons.map((lesson) => (
                       <option key={lesson.id} value={lesson.id}>
-                        {lesson.title}
+                        Lesson {lesson.id}: {lesson.title}
                       </option>
                     ))}
+                  </select>
+                </div>
+
+                {/* Sort By */}
+                <div>
+                  <label className="block text-sm font-medium mb-2 text-garden-earth">
+                    Sort By
+                  </label>
+                  <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value as SortType)}
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                  >
+                    <option value="korean">Korean (가-하)</option>
+                    <option value="english">English (A-Z)</option>
+                    <option value="lesson">Lesson Order</option>
+                    <option value="type">Word Type</option>
                   </select>
                 </div>
               </div>
 
               {/* Results Count */}
               <div className="mt-4 text-sm text-garden-earth/60">
-                Showing {filteredEntries.length} of {currentEntries.length} words
+                Showing {filteredEntries.length > 0 ? startIndex + 1 : 0}-{Math.min(endIndex, filteredEntries.length)} of {filteredEntries.length} words
+                {filteredEntries.length !== currentEntries.length && ` (filtered from ${currentEntries.length} total)`}
               </div>
             </CardContent>
           </Card>
@@ -257,11 +319,12 @@ export default function DictionaryPage() {
             )}
           </div>
         ) : (
+          <>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-            {filteredEntries.map((entry) => (
+            {paginatedEntries.map((entry) => (
               <Card
                 key={entry.id}
-                className="hover:shadow-lg transition-all bg-white/80 backdrop-blur border-garden-earth/10 hover:border-garden-pink"
+                className="hover:shadow-lg transition-all bg-white/80 backdrop-blur border-garden-earth/10 hover:border-garden-pink relative"
               >
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -282,8 +345,8 @@ export default function DictionaryPage() {
                   </div>
                 </CardHeader>
 
-                {entry.examples && entry.examples.length > 0 && (
-                  <CardContent>
+                {entry.examples && entry.examples.length > 0 ? (
+                  <CardContent className="pb-8">
                     <div className="text-sm font-semibold mb-2 text-garden-earth">
                       Examples:
                     </div>
@@ -303,10 +366,88 @@ export default function DictionaryPage() {
                       ))}
                     </div>
                   </CardContent>
+                ) : (
+                  <CardContent className="pb-8"></CardContent>
+                )}
+
+                {/* Lesson numbers at bottom right */}
+                {(entry as any).lessons && (entry as any).lessons.length > 0 && (
+                  <div className="absolute bottom-2 right-2 text-xs text-garden-earth/50">
+                    {(entry as any).lessons.slice(0, 3).join(', ')}
+                    {(entry as any).lessons.length > 3 && ` +${(entry as any).lessons.length - 3}`}
+                  </div>
                 )}
               </Card>
             ))}
           </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="max-w-4xl mx-auto mt-8 flex justify-center items-center gap-2">
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                  currentPage === 1
+                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    : "bg-white text-garden-earth hover:bg-garden-pink"
+                }`}
+              >
+                Previous
+              </button>
+
+              <div className="flex gap-1">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+                  // Show first page, last page, current page, and pages around current
+                  const showPage =
+                    page === 1 ||
+                    page === totalPages ||
+                    (page >= currentPage - 1 && page <= currentPage + 1);
+
+                  const showEllipsis =
+                    (page === currentPage - 2 && currentPage > 3) ||
+                    (page === currentPage + 2 && currentPage < totalPages - 2);
+
+                  if (showEllipsis) {
+                    return (
+                      <span key={page} className="px-2 py-2 text-garden-earth/50">
+                        ...
+                      </span>
+                    );
+                  }
+
+                  if (!showPage) return null;
+
+                  return (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                        currentPage === page
+                          ? "bg-garden-pink text-garden-earth"
+                          : "bg-white text-garden-earth hover:bg-garden-pink/50"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                  currentPage === totalPages
+                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    : "bg-white text-garden-earth hover:bg-garden-pink"
+                }`}
+              >
+                Next
+              </button>
+            </div>
+          )}
+          </>
         )}
       </div>
     </div>

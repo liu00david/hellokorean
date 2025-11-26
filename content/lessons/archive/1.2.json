@@ -1,94 +1,179 @@
 {
   "id": "1.2",
-  "version": "0.0.3",
-  "title": "Numbers and Counting",
+  "version": "0.0.1",
+  "title": "Greetings & Basic Phrases",
   "objectives": [
-    "Learn Sino-Korean numbers (1-10)",
-    "Learn Native Korean numbers (1-10)",
-    "Understand when to use each number system"
+    "Learn essential Korean greetings for any time of day",
+    "Understand polite vs informal speech levels",
+    "Master basic courtesy expressions",
+    "Practice common daily phrases"
   ],
   "context": [
-    "Numbers are fundamental to daily communication, whether you're shopping, telling time, or talking about dates. However, Korean has a unique feature that can initially seem confusing: it uses TWO different number systems! Don't worry - with practice, you'll naturally know which one to use.",
-    "Did you know? The dual number system in Korean reflects its historical Chinese influence (Sino-Korean numbers) while also preserving its native Korean roots (Native Korean numbers). This is similar to how English uses both Germanic and Latin-based words.",
-    "Understanding when to use each number system is crucial. Think of Sino-Korean numbers as more 'formal' and used for official contexts like dates and money, while Native Korean numbers are used for everyday counting of objects and people. This lesson will help you master both systems!"
+    "Now that you can read Hangul, let's start speaking! Greetings are the foundation of any language learning journey. In Korean culture, proper greetings are especially important as they reflect respect and social awareness. The level of formality you use depends on age, social status, and your relationship with the person.",
+    "Did you know? The word '안녕' (annyeong) literally means 'peace' or 'well-being'. When you say 안녕하세요, you're essentially wishing someone peace and wellness! Similarly, when saying goodbye, Koreans use different phrases depending on who is leaving - reflecting their attention to relationships.",
+    "Korean has one of the most sophisticated systems of politeness levels in the world. Don't worry - we'll start with the polite -요 (yo) ending, which is appropriate for most situations. As you progress, you'll learn when to use formal, polite, and casual speech.",
+    "This lesson covers the essential phrases you'll use every day: hello, thank you, sorry, goodbye, and more. These are phrases you absolutely need to know, whether you're visiting Korea, watching K-dramas, or chatting with Korean friends!"
   ],
   "vocabulary": [
     {
-      "word": "일",
-      "english": "one (Sino-Korean)",
-      "romanization": "il",
-      "type": "noun"
+      "word": "안녕하세요",
+      "english": "hello, hi (polite greeting)",
+      "romanization": "annyeonghaseyo",
+      "type": "phrase"
     },
     {
-      "word": "이",
-      "english": "two (Sino-Korean)",
-      "romanization": "i",
-      "type": "noun"
+      "word": "안녕",
+      "english": "hello, hi, bye (informal)",
+      "romanization": "annyeong",
+      "type": "phrase"
     },
     {
-      "word": "삼",
-      "english": "three (Sino-Korean)",
-      "romanization": "sam",
-      "type": "noun"
-    },
-    {
-      "word": "하나",
-      "english": "one (Native Korean)",
-      "romanization": "hana",
-      "type": "noun"
-    },
-    {
-      "word": "둘",
-      "english": "two (Native Korean)",
-      "romanization": "dul",
-      "type": "noun"
-    },
-    {
-      "word": "셋",
-      "english": "three (Native Korean)",
-      "romanization": "set",
-      "type": "noun"
-    },
-    {
-      "word": "개",
-      "english": "counter for things",
-      "romanization": "gae",
+      "word": "네",
+      "english": "yes",
+      "romanization": "ne",
       "type": "particle"
     },
     {
-      "word": "명",
-      "english": "counter for people",
-      "romanization": "myeong",
+      "word": "아니요",
+      "english": "no",
+      "romanization": "aniyo",
       "type": "particle"
+    },
+    {
+      "word": "감사합니다",
+      "english": "thank you (formal)",
+      "romanization": "gamsahamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "고마워요",
+      "english": "thank you (casual polite)",
+      "romanization": "gomawoyo",
+      "type": "phrase"
+    },
+    {
+      "word": "죄송합니다",
+      "english": "I'm sorry (formal apology)",
+      "romanization": "joesonghamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "미안해요",
+      "english": "I'm sorry (casual polite)",
+      "romanization": "mianhaeyo",
+      "type": "phrase"
+    },
+    {
+      "word": "괜찮아요",
+      "english": "it's okay, I'm fine, no problem",
+      "romanization": "gwaenchanayo",
+      "type": "phrase"
+    },
+    {
+      "word": "실례합니다",
+      "english": "excuse me (when interrupting)",
+      "romanization": "sillyehamnida",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕히 가세요",
+      "english": "goodbye (to person leaving)",
+      "romanization": "annyeonghi gaseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "안녕히 계세요",
+      "english": "goodbye (when you're leaving)",
+      "romanization": "annyeonghi gyeseyo",
+      "type": "phrase"
+    },
+    {
+      "word": "잘 가",
+      "english": "bye (informal to person leaving)",
+      "romanization": "jal ga",
+      "type": "phrase"
+    },
+    {
+      "word": "잘 있어",
+      "english": "bye (informal when you're leaving)",
+      "romanization": "jal isseo",
+      "type": "phrase"
+    },
+    {
+      "word": "잠시만요",
+      "english": "just a moment, wait a second",
+      "romanization": "jamsimanyo",
+      "type": "phrase"
+    },
+    {
+      "word": "알겠습니다",
+      "english": "I understand, I got it",
+      "romanization": "algetsseumnida",
+      "type": "phrase"
+    },
+    {
+      "word": "모르겠어요",
+      "english": "I don't know, I don't understand",
+      "romanization": "moreugesseoyo",
+      "type": "phrase"
+    },
+    {
+      "word": "천만에요",
+      "english": "you're welcome",
+      "romanization": "cheonmaneyo",
+      "type": "phrase"
     }
   ],
   "sentences": [
     {
-      "korean": "사과 한 개",
-      "english": "One apple",
-      "romanization": "sagwa han gae"
+      "korean": "안녕하세요. 만나서 반가워요",
+      "english": "Hello. Nice to meet you",
+      "romanization": "annyeonghaseyo. mannaseo bangawoyo"
     },
     {
-      "korean": "학생 두 명",
-      "english": "Two students",
-      "romanization": "haksaeng du myeong"
+      "korean": "감사합니다. 괜찮아요",
+      "english": "Thank you. It's okay",
+      "romanization": "gamsahamnida. gwaenchanayo"
     },
     {
-      "korean": "삼월",
-      "english": "March (month 3)",
-      "romanization": "samwol"
+      "korean": "죄송합니다. 잠시만요",
+      "english": "I'm sorry. Just a moment",
+      "romanization": "joesonghamnida. jamsimanyo"
     },
     {
-      "korean": "일 더하기 이는 삼",
-      "english": "One plus two is three",
-      "romanization": "il deohagi ineun sam"
+      "korean": "네, 알겠습니다",
+      "english": "Yes, I understand",
+      "romanization": "ne, algetsseumnida"
+    },
+    {
+      "korean": "아니요, 모르겠어요",
+      "english": "No, I don't know",
+      "romanization": "aniyo, moreugesseoyo"
+    },
+    {
+      "korean": "실례합니다. 질문 있어요",
+      "english": "Excuse me. I have a question",
+      "romanization": "sillyehamnida. jilmun isseoyo"
+    },
+    {
+      "korean": "안녕히 가세요. 또 만나요",
+      "english": "Goodbye (to leaving person). See you again",
+      "romanization": "annyeonghi gaseyo. tto mannayo"
+    },
+    {
+      "korean": "고마워요. 천만에요",
+      "english": "Thank you. You're welcome",
+      "romanization": "gomawoyo. cheonmaneyo"
     }
   ],
   "explanation": [
-    "Korean has two number systems: Sino-Korean (Chinese-origin) and Native Korean numbers.",
-    "Sino-Korean numbers (일, 이, 삼...) are used for: dates, months, money, phone numbers, addresses, and math.",
-    "Native Korean numbers (하나, 둘, 셋...) are used for: counting objects, people, ages (up to 99), and hours.",
-    "When counting objects with Native Korean numbers, the number changes slightly: 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, 넷 becomes 네.",
-    "Counters (like 개, 명) are essential in Korean - you can't just say 'three', you must say 'three [counter]'."
+    "안녕하세요 is THE most important phrase in Korean! It's used for 'hello' any time of day. Unlike English (good morning, afternoon, evening), Korean uses one greeting for all times. It literally means 'are you at peace?'",
+    "Goodbye Depends on Who's Leaving: 안녕히 가세요 (annyeonghi gaseyo) means 'go peacefully' - said to someone who is leaving. 안녕히 계세요 (annyeonghi gyeseyo) means 'stay peacefully' - said when YOU are leaving. This is unique to Korean!",
+    "Multiple Words for Thank You: 감사합니다 is formal and safe to use anywhere. 고마워요 is more casual but still polite. With close friends, you can say 고마워 (gomawo). All mean 'thank you' but vary in formality.",
+    "Polite Endings: Notice how many words end in -요 (yo) or -니다 (nida)? These are polite endings. -습니다/-ㅂ니다 is formal (used in news, presentations), -요 is polite casual (everyday conversations). Start with -요 forms.",
+    "괜찮아요 is Super Versatile: This phrase means 'it's okay', 'I'm fine', 'no problem', or 'it's alright' depending on context. When someone apologizes, say 괜찮아요. When asked if you're okay, say 괜찮아요. It's very useful!",
+    "실례합니다 Literally Means 'I'm Being Rude': When you need to get someone's attention, interrupt, or squeeze past someone, say 실례합니다. It shows awareness that you're disrupting them - very Korean cultural value!",
+    "네 vs 예: Both mean 'yes', but 네 (ne) is more common in casual speech. You might hear 예 (ye) in formal situations or on the phone. They're interchangeable for beginners.",
+    "Cultural Tip: Koreans often greet with 밥 먹었어요? (Did you eat?) instead of 'How are you?'. This reflects how important meals are in Korean culture. You can respond with 네, 먹었어요 (Yes, I ate) even if you haven't - it's just a greeting!"
   ]
 }

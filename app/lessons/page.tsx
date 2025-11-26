@@ -1,17 +1,24 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getAllLessons } from "@/lib/lessons";
+import { getAllLessonGroups } from "@/lib/lessons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { useAuth } from "@/components/AuthProvider";
 import { supabase } from "@/lib/supabase";
-import { Lesson } from "@/types/lesson";
+import { LessonGroup } from "@/types/lesson";
+
+interface GroupProgress {
+  groupId: string;
+  completed: number;
+  total: number;
+  percentage: number;
+}
 
 export default function LessonsPage() {
   const { user } = useAuth();
-  const [lessons, setLessons] = useState<Lesson[]>([]);
-  const [completedLessons, setCompletedLessons] = useState<Set<string>>(new Set());
+  const [lessonGroups, setLessonGroups] = useState<LessonGroup[]>([]);
+  const [groupProgress, setGroupProgress] = useState<Map<string, GroupProgress>>(new Map());
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,11 +28,23 @@ export default function LessonsPage() {
   const loadData = async () => {
     setLoading(true);
 
-    // Fetch lessons
-    const lessonsData = await getAllLessons();
-    setLessons(lessonsData);
+    // Fetch lesson groups
+    const groups = await getAllLessonGroups();
+    setLessonGroups(groups);
+
+    // Fetch all lessons to calculate group progress
+    const { data: allLessons, error: lessonsError } = await supabase
+      .from("lessons")
+      .select("id, group_id");
+
+    if (lessonsError) {
+      console.error("Error fetching lessons:", lessonsError);
+      setLoading(false);
+      return;
+    }
 
     // Fetch user progress if logged in
+    let completedLessonIds = new Set<string>();
     if (user) {
       const { data, error } = await supabase
         .from("progress")
@@ -33,10 +52,27 @@ export default function LessonsPage() {
         .eq("user_id", user.id);
 
       if (!error && data) {
-        setCompletedLessons(new Set(data.map(p => p.lesson_id)));
+        completedLessonIds = new Set(data.map(p => p.lesson_id));
       }
     }
 
+    // Calculate progress for each group
+    const progressMap = new Map<string, GroupProgress>();
+    groups.forEach(group => {
+      const groupLessons = allLessons?.filter(l => l.group_id === group.id) || [];
+      const completed = groupLessons.filter(l => completedLessonIds.has(l.id)).length;
+      const total = groupLessons.length;
+      const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+      progressMap.set(group.id, {
+        groupId: group.id,
+        completed,
+        total,
+        percentage
+      });
+    });
+
+    setGroupProgress(progressMap);
     setLoading(false);
   };
 
@@ -53,52 +89,71 @@ export default function LessonsPage() {
           </p>
         </div>
 
-        {/* Lessons Grid */}
+        {/* Lesson Groups Grid */}
         <div className="max-w-4xl mx-auto grid gap-6">
           {loading ? (
             <div className="text-center text-garden-earth/70">Loading lessons...</div>
           ) : (
-            lessons.map((lesson, index) => {
-              const isCompleted = completedLessons.has(lesson.id);
+            lessonGroups.map((group, index) => {
+              const progress = groupProgress.get(group.id);
+              const isComplete = progress?.percentage === 100;
+              const hasProgress = progress && progress.percentage > 0;
+
               return (
-                <Link key={lesson.id} href={`/lessons/${lesson.id}`}>
+                <Link key={group.id} href={`/lessons/${group.id}`}>
                   <Card className={`hover:shadow-lg transition-all cursor-pointer backdrop-blur ${
-                    isCompleted
+                    isComplete
                       ? "bg-green-50 border-green-300 hover:border-green-400"
+                      : hasProgress
+                      ? "bg-blue-50 border-blue-200 hover:border-blue-300"
                       : "bg-white/80 border-garden-earth/10 hover:border-garden-pink"
                   }`}>
                     <CardHeader>
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="text-sm text-garden-earth/60 mb-2 flex items-center gap-2">
-                            Lesson {lesson.id}
-                            {isCompleted && <span className="text-green-600 font-semibold">✓ Completed</span>}
+                            Lesson {group.id}
+                            {isComplete && <span className="text-green-600 font-semibold">✓ Complete</span>}
+                            {hasProgress && !isComplete && (
+                              <span className="text-blue-600 font-semibold">{progress.percentage}% Progress</span>
+                            )}
                           </div>
                           <CardTitle className="text-2xl mb-2">
-                            {lesson.title}
+                            {group.title}
                           </CardTitle>
                           <CardDescription className="text-garden-earth/70">
-                            {lesson.objectives[0]}
+                            {group.description}
                           </CardDescription>
                         </div>
                         <div className="text-4xl ml-4">
-                          {isCompleted ? "✅" : index === 0 ? "🌱" : index === 1 ? "🌿" : "🌸"}
+                          {isComplete ? "✅" : hasProgress ? "📖" : index === 0 ? "🌱" : index === 1 ? "🌿" : "🌸"}
                         </div>
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        <div className="text-sm text-garden-earth/60">
-                          <span className="font-semibold">{lesson.vocabulary.length}</span> words
-                        </div>
-                        <div className="text-garden-earth/40">•</div>
-                        <div className="text-sm text-garden-earth/60">
-                          <span className="font-semibold">{lesson.sentences.length}</span> sentences
-                        </div>
-                        <div className="text-garden-earth/40">•</div>
-                        <div className="text-sm text-garden-earth/60">
-                          <span className="font-semibold">{lesson.explanation.length}</span> explanations
-                        </div>
+                      <div className="flex items-center gap-4">
+                        {/* Progress Bar */}
+                        {progress && progress.total > 0 && (
+                          <div className="flex-1">
+                            <div className="flex justify-between text-xs text-garden-earth/60 mb-1">
+                              <span>{progress.completed} of {progress.total} lessons completed</span>
+                              <span>{progress.percentage}%</span>
+                            </div>
+                            <div className="w-full bg-garden-earth/10 rounded-full h-2">
+                              <div
+                                className={`h-2 rounded-full transition-all ${
+                                  isComplete ? "bg-green-500" : "bg-blue-500"
+                                }`}
+                                style={{ width: `${progress.percentage}%` }}
+                              />
+                            </div>
+                          </div>
+                        )}
+                        {(!progress || progress.total === 0) && (
+                          <div className="text-sm text-garden-earth/50 italic">
+                            Coming soon
+                          </div>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
@@ -109,7 +164,7 @@ export default function LessonsPage() {
         </div>
 
         {/* Coming Soon */}
-        {lessons.length === 0 && (
+        {lessonGroups.length === 0 && !loading && (
           <div className="max-w-2xl mx-auto text-center p-12 bg-white/50 rounded-2xl">
             <p className="text-xl text-garden-earth/70">
               🌱 Lessons are being prepared...

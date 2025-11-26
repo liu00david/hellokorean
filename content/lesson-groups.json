@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Hangul Basics - Reading & Writing",
+    "description": "Master the Korean alphabet (Hangul) from consonants and vowels to syllable formation",
+    "order_index": 0
+  },
+  {
+    "id": "2",
+    "title": "First Words - Greetings & Basics",
+    "description": "Essential greetings, courtesy phrases, and simple self-introduction",
+    "order_index": 1
+  },
+  {
+    "id": "3",
+    "title": "Building Blocks - Common Verbs",
+    "description": "Learn essential Korean verbs and present tense conjugation",
+    "order_index": 2
+  },
+  {
+    "id": "4",
+    "title": "Everyday Life - People & Places",
+    "description": "Talk about places, locations, and getting around",
+    "order_index": 3
+  },
+  {
+    "id": "5",
+    "title": "Food & Dining",
+    "description": "Order food, discuss Korean cuisine, and navigate restaurants",
+    "order_index": 4
+  },
+  {
+    "id": "6",
+    "title": "Describing the World - Adjectives",
+    "description": "Describe people, things, and situations with common adjectives",
+    "order_index": 5
+  },
+  {
+    "id": "7",
+    "title": "Time & Scheduling",
+    "description": "Tell time, talk about days of the week, and make plans",
+    "order_index": 6
+  },
+  {
+    "id": "8",
+    "title": "Getting Around - Directions & Transportation",
+    "description": "Navigate cities, ask for directions, and use public transportation",
+    "order_index": 7
+  },
+  {
+    "id": "9",
+    "title": "Numbers & Counting",
+    "description": "Learn both Korean number systems and how to count objects",
+    "order_index": 8
+  },
+  {
+    "id": "10",
+    "title": "Travel Essentials",
+    "description": "Survival phrases for airports, hotels, shopping, and emergencies",
+    "order_index": 9
+  }
+]

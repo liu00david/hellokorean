@@ -1,186 +1,82 @@
 {
   "id": "1.1",
-  "version": "0.0.1",
-  "title": "Complex Vowels & Batchim (Final Consonants)",
+  "group_id": "1",
+  "version": "2.0.0",
+  "title": "More Consonants",
   "objectives": [
-    "Learn all 10 complex/compound vowels (diphthongs)",
-    "Understand batchim - consonants at the end of syllables",
-    "Master the CVC syllable structure (Consonant-Vowel-Consonant)",
-    "Start reading real Korean words"
+    "Learn 4 more Korean consonants",
+    "Understand the pronunciation of ㅅ ㅇ ㅈ ㅎ",
+    "Practice combining consonants with vowels"
   ],
   "context": [
-    "Great job learning the basic Hangul letters! Now it's time to complete your alphabet knowledge. In this lesson, you'll learn complex vowels (also called compound vowels or diphthongs) - these are combinations of basic vowels that create new sounds.",
-    "Did you know? Complex vowels might look intimidating, but they're actually quite logical! Many are just combinations of basic vowels. For example, ㅘ is literally ㅗ + ㅏ combined (wah). Once you understand the pattern, they become much easier to remember.",
-    "You'll also learn about batchim (받침), which means 'supporting base' - these are consonants that appear at the BOTTOM of a syllable block. For example, in 한 (han), the ㄴ is the batchim. Batchim changes how you pronounce the syllable and is crucial for reading real Korean words.",
-    "By the end of this lesson, you'll be able to read actual Korean words like 물 (water), 밥 (rice), 집 (house), and 삶 (life). You'll know the complete Hangul alphabet and be ready to start building vocabulary!"
+    "You've learned your first 6 consonants! Now let's add 4 more common consonants.",
+    "These include ㅇ which is special - it's silent at the start of syllables but pronounced 'ng' at the end.",
+    "With these 10 consonants, you'll be able to read many Korean words!"
   ],
   "vocabulary": [
     {
-      "word": "ㅐ",
-      "english": "vowel 'ae' (as in 'cat')",
-      "romanization": "ae",
-      "type": "vowel"
+      "word": "ㅅ",
+      "english": "consonant 's'",
+      "romanization": "siot",
+      "type": "consonant"
     },
     {
-      "word": "ㅔ",
-      "english": "vowel 'e' (as in 'bet')",
-      "romanization": "e",
-      "type": "vowel"
+      "word": "ㅇ",
+      "english": "consonant 'ng' (silent at start)",
+      "romanization": "ieung",
+      "type": "consonant"
     },
     {
-      "word": "ㅒ",
-      "english": "vowel 'yae' (as in 'yeah')",
-      "romanization": "yae",
-      "type": "vowel"
+      "word": "ㅈ",
+      "english": "consonant 'j'",
+      "romanization": "jieut",
+      "type": "consonant"
     },
     {
-      "word": "ㅖ",
-      "english": "vowel 'ye' (as in 'yes')",
-      "romanization": "ye",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅘ",
-      "english": "vowel 'wa' (as in 'wand')",
-      "romanization": "wa",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅙ",
-      "english": "vowel 'wae' (like 'wa' + 'e')",
-      "romanization": "wae",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅚ",
-      "english": "vowel 'oe' (as in 'way')",
-      "romanization": "oe",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅝ",
-      "english": "vowel 'wo' (as in 'won't')",
-      "romanization": "wo",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅞ",
-      "english": "vowel 'we' (as in 'wet')",
-      "romanization": "we",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅟ",
-      "english": "vowel 'wi' (as in 'we')",
-      "romanization": "wi",
-      "type": "vowel"
-    },
-    {
-      "word": "ㅢ",
-      "english": "vowel 'ui' (as in 'we' but with ㅡ)",
-      "romanization": "ui",
-      "type": "vowel"
-    },
-    {
-      "word": "밥",
-      "english": "rice, meal",
-      "romanization": "bap",
-      "type": "noun"
-    },
-    {
-      "word": "물",
-      "english": "water",
-      "romanization": "mul",
-      "type": "noun"
-    },
-    {
-      "word": "집",
-      "english": "house, home",
-      "romanization": "jip",
-      "type": "noun"
-    },
-    {
-      "word": "밤",
-      "english": "night",
-      "romanization": "bam",
-      "type": "noun"
-    },
-    {
-      "word": "김",
-      "english": "seaweed, also a common surname (Kim)",
-      "romanization": "gim",
-      "type": "noun"
-    },
-    {
-      "word": "손",
-      "english": "hand",
-      "romanization": "son",
-      "type": "noun"
-    },
-    {
-      "word": "불",
-      "english": "fire",
-      "romanization": "bul",
-      "type": "noun"
-    },
-    {
-      "word": "눈",
-      "english": "eye, snow (context dependent)",
-      "romanization": "nun",
-      "type": "noun"
-    },
-    {
-      "word": "산",
-      "english": "mountain",
-      "romanization": "san",
-      "type": "noun"
+      "word": "ㅎ",
+      "english": "consonant 'h'",
+      "romanization": "hieut",
+      "type": "consonant"
     }
   ],
   "sentences": [
     {
-      "korean": "밥 먹어요",
-      "english": "I eat rice/meal",
-      "romanization": "bap meogeoyo"
+      "korean": "사",
+      "english": "sa (like in 'saw')",
+      "romanization": "sa"
     },
     {
-      "korean": "물 주세요",
-      "english": "Water, please",
-      "romanization": "mul juseyo"
+      "korean": "아",
+      "english": "a (like in 'ah') - ㅇ is silent here",
+      "romanization": "a"
     },
     {
-      "korean": "집에 가요",
-      "english": "I go home",
-      "romanization": "jibe gayo"
+      "korean": "자",
+      "english": "ja (like in 'jar')",
+      "romanization": "ja"
     },
     {
-      "korean": "밤이에요",
-      "english": "It's night",
-      "romanization": "bamieyo"
+      "korean": "하",
+      "english": "ha (like in 'haha')",
+      "romanization": "ha"
     },
     {
-      "korean": "김 선생님",
-      "english": "Teacher Kim",
-      "romanization": "gim seonsaengnim"
+      "korean": "강",
+      "english": "gang (river) - ㅇ as 'ng' at end",
+      "romanization": "gang"
     },
     {
-      "korean": "손이 커요",
-      "english": "The hand is big",
-      "romanization": "soni keoyo"
-    },
-    {
-      "korean": "산에 가요",
-      "english": "I go to the mountain",
-      "romanization": "sane gayo"
+      "korean": "산",
+      "english": "san (mountain)",
+      "romanization": "san"
     }
   ],
   "explanation": [
-    "Complex Vowels Formation: Many complex vowels are combinations: ㅘ = ㅗ + ㅏ (wa), ㅝ = ㅜ + ㅓ (wo), ㅢ = ㅡ + ㅣ (ui). Understanding this pattern makes them easier to remember!",
-    "Batchim Basics: Batchim (받침) are consonants at the bottom of syllable blocks. Structure: Initial consonant + Vowel + Final consonant (batchim). Example: 한 = ㅎ (h) + ㅏ (a) + ㄴ (n) = 'han'.",
-    "CVC Syllable Pattern: With batchim, you get the CVC (Consonant-Vowel-Consonant) pattern. Examples: 밥 (bap), 집 (jip), 손 (son). This is very common in Korean!",
-    "Seven Final Sounds Rule: Although many consonants can be batchim, they're only pronounced as one of 7 sounds: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ (ng). For example, ㅅ, ㅈ, ㅊ, ㅌ at the end all sound like 'ㄷ' (t).",
-    "Double Batchim: Some syllables have TWO consonants as batchim (like 닭 - chicken). But you typically only pronounce one of them. Don't worry about these yet - they're advanced!",
-    "ㅐ vs ㅔ: In modern Korean, ㅐ (ae) and ㅔ (e) sound almost identical to most speakers, both like 'e' in 'bet'. Same with ㅒ (yae) and ㅖ (ye). The distinction is historical, so don't stress about it!",
-    "Reading Practice Tip: Now that you know all Hangul letters, practice reading everything! Korean street signs, K-pop lyrics, Korean restaurant menus, product labels - even if you don't know what the words mean yet, practice sounding them out!",
-    "Congratulations: You now know the complete Hangul alphabet! 24 letters total (14 consonants + 10 basic/complex vowels). This is a huge milestone - from now on, you'll be learning actual words and grammar, not just letters!"
+    "ㅅ is pronounced like 's' in 'see'. At the end of syllables, it's still 's' or sometimes 't' sound.",
+    "ㅇ is the most unique! At the start of a syllable, it's completely silent (아 = 'a'). At the end, it's the 'ng' sound (강 = 'gang').",
+    "ㅈ sounds like 'j' in 'jump'. It's between an English 'j' and 'ch' sound.",
+    "ㅎ is like 'h' in 'hello'. Simple and consistent!",
+    "Try reading: 하나 (hana = one), 사과 (sagwa = apple), 자다 (jada = to sleep)",
+    "Remember: ㅇ at the start is silent, ㅇ at the end is 'ng'!"
   ]
 }

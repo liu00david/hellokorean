@@ -1,179 +1,91 @@
 {
   "id": "2.0",
-  "version": "0.0.1",
-  "title": "Travel Survival Phrases",
+  "group_id": "2",
+  "version": "2.0.0",
+  "title": "Essential Greetings",
   "objectives": [
-    "Master essential phrases for traveling in Korea",
-    "Learn shopping and money-related vocabulary",
-    "Practice asking for help in various situations",
-    "Build confidence for real-world Korean interactions"
+    "Learn 6 essential Korean greetings",
+    "Understand when to use each greeting",
+    "Practice proper pronunciation"
   ],
   "context": [
-    "Congratulations! You've learned the fundamentals of Korean - from Hangul alphabet to basic grammar. This final lesson brings it all together with practical survival phrases you'll use constantly when traveling in Korea or interacting with Korean speakers.",
-    "Did you know? Korea is an incredibly safe and tourist-friendly country. Most Koreans are very patient with learners and appreciate any effort to speak Korean, even just a few phrases. Don't be afraid to make mistakes - your effort will be warmly received!",
-    "This lesson covers essential travel scenarios: shopping, asking for help, dealing with emergencies, and polite requests. These phrases will help you navigate markets, stores, hotels, and unexpected situations with confidence.",
-    "By the end of this lesson, you'll have a complete beginner's toolkit for Korean communication! You'll know how to read, introduce yourself, order food, get around, and handle common travel situations. You're ready to start your Korean adventure!"
+    "Congratulations on learning Hangul! Now let's put it to use with real Korean phrases.",
+    "Korean culture values politeness, so greetings are very important. The phrases you'll learn here work in most situations.",
+    "Notice that many greetings end with 요 (yo) - this makes them polite!"
   ],
   "vocabulary": [
     {
-      "word": "얼마",
-      "english": "how much (price)",
-      "romanization": "eolma",
-      "type": "pronoun"
+      "word": "안녕하세요",
+      "english": "hello",
+      "romanization": "annyeonghaseyo",
+      "type": "phrase"
     },
     {
-      "word": "돈",
-      "english": "money",
-      "romanization": "don",
-      "type": "noun"
+      "word": "안녕히 가세요",
+      "english": "goodbye (to someone leaving)",
+      "romanization": "annyeonghi gaseyo",
+      "type": "phrase"
     },
     {
-      "word": "원",
-      "english": "won (Korean currency)",
-      "romanization": "won",
-      "type": "noun"
+      "word": "안녕히 계세요",
+      "english": "goodbye (when you're leaving)",
+      "romanization": "annyeonghi gyeseyo",
+      "type": "phrase"
     },
     {
-      "word": "카드",
-      "english": "card (credit/debit card)",
-      "romanization": "kadeu",
-      "type": "noun"
+      "word": "감사합니다",
+      "english": "thank you",
+      "romanization": "gamsahamnida",
+      "type": "phrase"
     },
     {
-      "word": "현금",
-      "english": "cash",
-      "romanization": "hyeongeum",
-      "type": "noun"
+      "word": "죄송합니다",
+      "english": "I'm sorry",
+      "romanization": "joesonghamnida",
+      "type": "phrase"
     },
     {
-      "word": "도와주다",
-      "english": "to help",
-      "romanization": "dowajuda",
-      "type": "verb"
+      "word": "네",
+      "english": "yes",
+      "romanization": "ne",
+      "type": "phrase"
     },
     {
-      "word": "필요하다",
-      "english": "to need",
-      "romanization": "piryohada",
-      "type": "verb"
-    },
-    {
-      "word": "할인",
-      "english": "discount",
-      "romanization": "harin",
-      "type": "noun"
-    },
-    {
-      "word": "영어",
-      "english": "English (language)",
-      "romanization": "yeongeo",
-      "type": "noun"
-    },
-    {
-      "word": "하다",
-      "english": "to speak (a language), to do",
-      "romanization": "hada",
-      "type": "verb"
-    },
-    {
-      "word": "천천히",
-      "english": "slowly",
-      "romanization": "cheoncheonhi",
-      "type": "adverb"
-    },
-    {
-      "word": "다시",
-      "english": "again, once more",
-      "romanization": "dasi",
-      "type": "adverb"
-    },
-    {
-      "word": "잃어버리다",
-      "english": "to lose (something)",
-      "romanization": "ireobeoRida",
-      "type": "verb"
-    },
-    {
-      "word": "찾다",
-      "english": "to find, to look for",
-      "romanization": "chatda",
-      "type": "verb"
-    },
-    {
-      "word": "사진",
-      "english": "photo, picture",
-      "romanization": "sajin",
-      "type": "noun"
-    },
-    {
-      "word": "찍다",
-      "english": "to take (a photo)",
-      "romanization": "jjikda",
-      "type": "verb"
+      "word": "아니요",
+      "english": "no",
+      "romanization": "aniyo",
+      "type": "phrase"
     }
   ],
   "sentences": [
     {
-      "korean": "이거 얼마예요?",
-      "english": "How much is this?",
-      "romanization": "igeo eolmayeyo?"
+      "korean": "안녕하세요. 만나서 반갑습니다.",
+      "english": "Hello. Nice to meet you.",
+      "romanization": "annyeonghaseyo. mannaseo bangapseumnida."
     },
     {
-      "korean": "카드 돼요?",
-      "english": "Can I use a card? / Do you accept cards?",
-      "romanization": "kadeu dwaeyo?"
+      "korean": "감사합니다. 안녕히 가세요.",
+      "english": "Thank you. Goodbye (to the person leaving).",
+      "romanization": "gamsahamnida. annyeonghi gaseyo."
     },
     {
-      "korean": "도와주세요",
-      "english": "Please help me",
-      "romanization": "dowajuseyo"
+      "korean": "죄송합니다. 괜찮아요.",
+      "english": "I'm sorry. It's okay.",
+      "romanization": "joesonghamnida. gwaenchanayo."
     },
     {
-      "korean": "영어 하세요?",
-      "english": "Do you speak English?",
-      "romanization": "yeongeo haseyo?"
-    },
-    {
-      "korean": "천천히 말해 주세요",
-      "english": "Please speak slowly",
-      "romanization": "cheoncheonhi malhae juseyo"
-    },
-    {
-      "korean": "다시 한 번 말해 주세요",
-      "english": "Please say it again / Please say it one more time",
-      "romanization": "dasi han beon malhae juseyo"
-    },
-    {
-      "korean": "여권을 잃어버렸어요",
-      "english": "I lost my passport",
-      "romanization": "yeogwoneul ireobeoRyeosseoyo"
-    },
-    {
-      "korean": "화장실을 찾고 있어요",
-      "english": "I'm looking for the bathroom",
-      "romanization": "hwajangsireul chatgo isseoyo"
-    },
-    {
-      "korean": "사진 찍어 주세요",
-      "english": "Please take a photo (for me)",
-      "romanization": "sajin jjigeo juseyo"
-    },
-    {
-      "korean": "할인 돼요?",
-      "english": "Can you give a discount? / Is there a discount?",
-      "romanization": "harin dwaeyo?"
+      "korean": "네, 알겠습니다.",
+      "english": "Yes, I understand.",
+      "romanization": "ne, algesseumnida."
     }
   ],
   "explanation": [
-    "얼마예요? (How Much?): Essential shopping phrase! 얼마 = how much. Add 예요 to make it polite. Always use this when asking prices. 이거 얼마예요? (How much is this?), 저거 얼마예요? (How much is that?).",
-    "돼요? (Is it okay?): From 되다 (to become/work). Used to ask if something is possible or acceptable. 카드 돼요? (Is card okay?), 사진 돼요? (Is photo okay?), 여기 돼요? (Is here okay?). Very versatile!",
-    "주세요 Requests: [Action] + 주세요 = please do [action] for me. Examples: 도와주세요 (please help), 말해 주세요 (please speak), 기다려 주세요 (please wait). The -아/어 주세요 pattern shows someone doing something FOR you.",
-    "천천히 & 다시: 천천히 (slowly) + 말해 주세요 (please speak) = please speak slowly. 다시 (again) + 말해 주세요 = please speak again. Add 한 번 (one time) = 다시 한 번 = once more. Perfect for when you don't understand!",
-    "Language Questions: [Language] + 하세요? = Do you speak [language]? Examples: 영어 하세요? (Do you speak English?), 한국어 하세요? (Do you speak Korean?), 중국어 하세요? (Do you speak Chinese?).",
-    "잃어버리다 (To Lose): Verb for losing things. 잃어버렸어요 = I lost it (past tense). Examples: 지갑을 잃어버렸어요 (I lost my wallet), 핸드폰을 잃어버렸어요 (I lost my phone). Hope you never need this!",
-    "찾다 vs 찾고 있다: 찾다 = to find/look for. 찾고 있어요 = I am looking for (present continuous). Use -고 있다 to show ongoing action. 화장실을 찾고 있어요 (I'm looking for the bathroom).",
-    "Korean Won: Korean currency is 원 (won). Prices use Sino-Korean numbers: 천 원 (1,000 won), 만 원 (10,000 won). 만 (10,000) is an important unit! 1,000,000 won = 백만 원 or 100 만원.",
-    "Cultural Tips: Koreans appreciate ANY attempt to speak Korean, even if you make mistakes! Always bow slightly when greeting or thanking. Use two hands when giving/receiving money or cards. In stores, items are often placed in trays rather than handed directly - it's polite custom, not impersonal!",
-    "Emergency Phrases: 도와주세요 (help!), 119 (ambulance/fire), 112 (police). Korean emergency services are excellent! Most major cities have English-speaking operators. Stay calm and speak clearly."
+    "안녕하세요 (annyeonghaseyo) literally means 'Are you at peace?' It's used for hello/hi in polite situations.",
+    "There are TWO goodbyes in Korean! 안녕히 가세요 = 'go peacefully' (say to someone leaving). 안녕히 계세요 = 'stay peacefully' (say when you're leaving).",
+    "감사합니다 (gamsahamnida) is formal 'thank you'. You can also say 고맙습니다 (gomapseumnida) which is slightly less formal.",
+    "죄송합니다 (joesonghamnida) is formal apology. For casual 'sorry' you can say 미안해요 (mianhaeyo).",
+    "네 (ne) means yes. Sometimes Koreans say 예 (ye) which is more formal.",
+    "아니요 (aniyo) means no. In casual speech, you might hear 아니 (ani).",
+    "Pro tip: When answering the phone, Koreans say 여보세요 (yeoboseyo) = hello!"
   ]
 }

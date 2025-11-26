@@ -1,0 +1,96 @@
+{
+  "id": "2.1",
+  "group_id": "2",
+  "version": "2.0.0",
+  "title": "Self Introduction",
+  "objectives": [
+    "Learn how to introduce yourself in Korean",
+    "Practice saying your name and nationality",
+    "Use basic sentence structures for self-introduction"
+  ],
+  "context": [
+    "In Korean culture, proper introductions are important! You'll often introduce yourself by name, then add information about where you're from.",
+    "The word order is different from English: 'I + name + am' becomes '저는 [name]이에요/예요' (jeoneun [name]ieyo/yeyo).",
+    "Let's learn the essentials for introducing yourself in any situation!"
+  ],
+  "vocabulary": [
+    {
+      "word": "저",
+      "english": "I (polite)",
+      "romanization": "jeo",
+      "type": "pronoun"
+    },
+    {
+      "word": "이름",
+      "english": "name",
+      "romanization": "ireum",
+      "type": "noun"
+    },
+    {
+      "word": "이에요",
+      "english": "is (after consonant)",
+      "romanization": "ieyo",
+      "type": "verb"
+    },
+    {
+      "word": "예요",
+      "english": "is (after vowel)",
+      "romanization": "yeyo",
+      "type": "verb"
+    },
+    {
+      "word": "입니다",
+      "english": "is (formal)",
+      "romanization": "imnida",
+      "type": "verb"
+    },
+    {
+      "word": "만나서 반갑습니다",
+      "english": "nice to meet you",
+      "romanization": "mannaseo bangapseumnida",
+      "type": "phrase"
+    },
+    {
+      "word": "미국",
+      "english": "America/USA",
+      "romanization": "miguk",
+      "type": "noun"
+    }
+  ],
+  "sentences": [
+    {
+      "korean": "저는 데이비드예요.",
+      "english": "I am David.",
+      "romanization": "jeoneun deibideu-yeyo"
+    },
+    {
+      "korean": "제 이름은 사라입니다.",
+      "english": "My name is Sarah.",
+      "romanization": "je ireumeun sara-imnida"
+    },
+    {
+      "korean": "저는 미국 사람이에요.",
+      "english": "I am American.",
+      "romanization": "jeoneun miguk saram-ieyo"
+    },
+    {
+      "korean": "만나서 반갑습니다.",
+      "english": "Nice to meet you.",
+      "romanization": "mannaseo bangapseumnida"
+    },
+    {
+      "korean": "저는 학생이에요.",
+      "english": "I am a student.",
+      "romanization": "jeoneun haksaeng-ieyo"
+    }
+  ],
+  "explanation": [
+    "저 (jeo) is the polite form of 'I/me'. In casual speech, you'd use 나 (na), but 저 is safer for introductions.",
+    "는 (neun) is a topic particle that follows nouns. 저는 (jeoneun) means 'As for me...' or simply 'I'.",
+    "이에요 vs 예요: Use 이에요 after words ending in consonants (데이비드이에요), use 예요 after vowels (사라예요).",
+    "입니다 (imnida) is more formal than 이에요/예요. Use it in professional settings or formal situations.",
+    "제 (je) is possessive 'my'. It's 저 + 의 combined. So 제 이름 = 'my name'.",
+    "Countries: 미국 (America), 한국 (Korea), 중국 (China), 일본 (Japan), 영국 (England).",
+    "Add 사람 (saram = person) after country names to say nationality: 미국 사람 = American person."
+  ]
+}

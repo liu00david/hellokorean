@@ -1,129 +1,179 @@
 {
   "id": "1.3",
   "version": "0.0.1",
-  "title": "Family Members",
+  "title": "Self Introduction & Polite Form",
   "objectives": [
-    "Learn vocabulary for immediate family members",
-    "Understand honorific forms for family",
-    "Practice talking about your family"
+    "Learn how to introduce yourself in Korean",
+    "Master the polite -이에요/예요 structure (to be)",
+    "Understand topic and subject particles (는/은, 이/가)",
+    "Practice asking basic questions about others"
   ],
   "context": [
-    "Family is incredibly important in Korean culture, and knowing how to talk about family members is essential. Korean has specific words for family members depending on whether you're referring to your own family or someone else's family, reflecting the language's respect-based hierarchy.",
-    "Did you know? Korean has different words for older and younger siblings, and even distinguishes between an older brother of a male versus an older brother of a female! This specificity reflects the importance of age and relationship dynamics in Korean culture.",
-    "This lesson will teach you the basic family vocabulary you need to introduce your family members and ask about others' families. You'll also learn about the particle 의 (ui) which shows possession, similar to 's in English."
+    "Now that you can greet people, it's time to introduce yourself! Being able to say who you are, where you're from, and what you do is essential in any language. In Korean culture, proper self-introductions are crucial for building relationships, whether in formal business settings or casual social situations.",
+    "Did you know? In Korea, it's common to introduce yourself with your full name, age, and occupation or school when meeting someone for the first time. Koreans also often add their hometown or where they live. The level of detail depends on the formality of the situation and the social context.",
+    "This lesson introduces the polite 'to be' form: 이에요/예요. This is one of the most important sentence structures in Korean. You'll use it constantly to identify things, describe yourself, and talk about others. It's the foundation for making basic sentences!",
+    "You'll also learn about particles - small markers that show the role of words in a sentence. Korean uses particles instead of word order to show meaning. The topic particle (는/은) and subject particle (이/가) are fundamental to Korean grammar."
   ],
   "vocabulary": [
     {
-      "word": "가족",
-      "english": "family",
-      "romanization": "gajok",
-      "type": "noun"
+      "word": "저",
+      "english": "I, me (formal/polite)",
+      "romanization": "jeo",
+      "type": "pronoun"
     },
     {
-      "word": "어머니",
-      "english": "mother (formal)",
-      "romanization": "eomeoni",
-      "type": "noun"
+      "word": "나",
+      "english": "I, me (informal)",
+      "romanization": "na",
+      "type": "pronoun"
     },
     {
-      "word": "아버지",
-      "english": "father (formal)",
-      "romanization": "abeoji",
-      "type": "noun"
-    },
-    {
-      "word": "엄마",
-      "english": "mom",
-      "romanization": "eomma",
-      "type": "noun"
-    },
-    {
-      "word": "아빠",
-      "english": "dad",
-      "romanization": "appa",
-      "type": "noun"
-    },
-    {
-      "word": "형",
-      "english": "older brother (of a male)",
-      "romanization": "hyeong",
-      "type": "noun"
-    },
-    {
-      "word": "누나",
-      "english": "older sister (of a male)",
-      "romanization": "nuna",
-      "type": "noun"
-    },
-    {
-      "word": "오빠",
-      "english": "older brother (of a female)",
-      "romanization": "oppa",
-      "type": "noun"
-    },
-    {
-      "word": "언니",
-      "english": "older sister (of a female)",
-      "romanization": "eonni",
-      "type": "noun"
-    },
-    {
-      "word": "동생",
-      "english": "younger sibling",
-      "romanization": "dongsaeng",
-      "type": "noun"
-    },
-    {
-      "word": "의",
-      "english": "possessive particle ('s)",
-      "romanization": "ui",
+      "word": "는",
+      "english": "topic particle (after vowel)",
+      "romanization": "neun",
       "type": "particle"
     },
     {
-      "word": "있어요",
-      "english": "have/there is",
-      "romanization": "isseoyo",
-      "type": "verb"
+      "word": "은",
+      "english": "topic particle (after consonant)",
+      "romanization": "eun",
+      "type": "particle"
+    },
+    {
+      "word": "이름",
+      "english": "name",
+      "romanization": "ireum",
+      "type": "noun"
+    },
+    {
+      "word": "학생",
+      "english": "student",
+      "romanization": "haksaeng",
+      "type": "noun"
+    },
+    {
+      "word": "선생님",
+      "english": "teacher",
+      "romanization": "seonsaengnim",
+      "type": "noun"
+    },
+    {
+      "word": "사람",
+      "english": "person",
+      "romanization": "saram",
+      "type": "noun"
+    },
+    {
+      "word": "미국",
+      "english": "America, USA",
+      "romanization": "miguk",
+      "type": "noun"
+    },
+    {
+      "word": "한국",
+      "english": "Korea",
+      "romanization": "hanguk",
+      "type": "noun"
+    },
+    {
+      "word": "중국",
+      "english": "China",
+      "romanization": "jungguk",
+      "type": "noun"
+    },
+    {
+      "word": "일본",
+      "english": "Japan",
+      "romanization": "ilbon",
+      "type": "noun"
+    },
+    {
+      "word": "회사원",
+      "english": "office worker, company employee",
+      "romanization": "hoesawon",
+      "type": "noun"
+    },
+    {
+      "word": "의사",
+      "english": "doctor",
+      "romanization": "uisa",
+      "type": "noun"
+    },
+    {
+      "word": "친구",
+      "english": "friend",
+      "romanization": "chingu",
+      "type": "noun"
+    },
+    {
+      "word": "뭐",
+      "english": "what",
+      "romanization": "mwo",
+      "type": "pronoun"
+    },
+    {
+      "word": "누구",
+      "english": "who",
+      "romanization": "nugu",
+      "type": "pronoun"
+    },
+    {
+      "word": "만나서 반갑습니다",
+      "english": "nice to meet you (formal)",
+      "romanization": "mannaseo bangapseumnida",
+      "type": "phrase"
     }
   ],
   "sentences": [
     {
-      "korean": "저는 가족이 다섯 명이에요",
-      "english": "I have five family members",
-      "romanization": "jeoneun gajogi daseot myeong-ieyo"
+      "korean": "저는 학생이에요",
+      "english": "I am a student",
+      "romanization": "jeoneun haksaeng-ieyo"
     },
     {
-      "korean": "어머니는 선생님이에요",
-      "english": "My mother is a teacher",
-      "romanization": "eomeonineun seonsaengnim-ieyo"
+      "korean": "제 이름은 데이비드예요",
+      "english": "My name is David",
+      "romanization": "je ireumeun deibideu-yeyo"
     },
     {
-      "korean": "형이 두 명 있어요",
-      "english": "I have two older brothers",
-      "romanization": "hyeongi du myeong isseoyo"
+      "korean": "저는 미국 사람이에요",
+      "english": "I am American (America person)",
+      "romanization": "jeoneun miguk saram-ieyo"
     },
     {
-      "korean": "동생이 있어요?",
-      "english": "Do you have younger siblings?",
-      "romanization": "dongsaengi isseoyo?"
+      "korean": "이름이 뭐예요?",
+      "english": "What is your name?",
+      "romanization": "ireumi mwoyeyo?"
     },
     {
-      "korean": "제 아버지의 이름은 존이에요",
-      "english": "My father's name is John",
-      "romanization": "je abeojiui ireumeun jon-ieyo"
+      "korean": "누구예요?",
+      "english": "Who is it? Who are you?",
+      "romanization": "nuguyeyo?"
     },
     {
-      "korean": "가족이 몇 명이에요?",
-      "english": "How many family members do you have?",
-      "romanization": "gajogi myeot myeong-ieyo?"
+      "korean": "저는 의사예요",
+      "english": "I am a doctor",
+      "romanization": "jeoneun uisa-yeyo"
+    },
+    {
+      "korean": "친구예요",
+      "english": "It's a friend / They're a friend",
+      "romanization": "chingu-yeyo"
+    },
+    {
+      "korean": "저는 회사원이에요. 만나서 반갑습니다",
+      "english": "I am an office worker. Nice to meet you",
+      "romanization": "jeoneun hoesawon-ieyo. mannaseo bangapseumnida"
     }
   ],
   "explanation": [
-    "의 (ui) is the possessive particle, like 's in English. 저의 (my) is often shortened to 제 (je).",
-    "Korean distinguishes between older siblings based on the speaker's gender. Males use 형 (older brother) and 누나 (older sister), while females use 오빠 (older brother) and 언니 (older sister).",
-    "있어요 (isseoyo) means 'to have' or 'there is/exists'. It's very versatile and commonly used.",
-    "When talking about family, use 어머니/아버지 in formal situations or when referring to others' parents. Use 엄마/아빠 casually for your own parents.",
-    "몇 (myeot) means 'how many' and is used with counters to ask about quantity.",
-    "When counting people in your family, include yourself in the count. 가족이 다섯 명 means 'five people including me'."
+    "저 (jeo) vs 나 (na): Both mean 'I/me'. Use 저 in polite situations (default for beginners). Use 나 only with close friends or people younger than you. When in doubt, always use 저!",
+    "Topic Particle 는/은: Marks the topic of the sentence ('as for...'). Use 는 after vowels, 은 after consonants. 저는 = 'as for me'. 이름은 = 'as for the name'. Very common in Korean!",
+    "이에요/예요 Structure: Means 'to be' (am, is, are). Use 이에요 after consonants, 예요 after vowels. Examples: 학생이에요 (student + 이에요), 의사예요 (doctor + 예요). This is one of the most essential Korean structures!",
+    "저 + 는 = 저는: When saying 'I' as a topic, combine 저 + 는 → 저는 (jeoneun). This contraction is standard. Similarly, 저의 (my) → 제 (je). So 제 이름 = 'my name'.",
+    "Nationality Pattern: To say nationality, use [Country] + 사람 (person). 미국 사람 = American, 한국 사람 = Korean, 일본 사람 = Japanese. Simple and logical!",
+    "Question Words: 뭐 (what), 누구 (who), 어디 (where), 언제 (when), 왜 (why), 어떻게 (how). Add 예요 to make polite questions: 뭐예요? (what is it?), 누구예요? (who is it?).",
+    "Dropping Subjects: Korean often drops subjects if they're obvious from context. 'I am a student' can be just 학생이에요 without 저는, if it's clear you're talking about yourself. This is very natural in Korean!",
+    "만나서 반갑습니다: Literally means 'having met you, I'm happy'. It's the formal way to say 'nice to meet you'. The casual version is 만나서 반가워요. Use this when introducing yourself after stating your name!"
   ]
 }

@@ -1,151 +1,221 @@
 {
   "id": "1.0",
   "version": "0.0.1",
-  "title": "Greetings and Basic Phrases",
+  "title": "Hangul Basics: Consonants & Vowels",
   "objectives": [
-    "Learn basic Korean greetings",
-    "Understand polite and informal forms",
-    "Practice common daily expressions"
+    "Learn the Korean alphabet (Hangul) - one of the most logical writing systems in the world",
+    "Master all 14 basic consonants and their sounds",
+    "Master all 6 basic vowels and their sounds",
+    "Understand how to form simple syllable blocks"
   ],
   "context": [
-    "Greetings are the foundation of any language learning journey. In Korean culture, proper greetings are especially important as they reflect respect and social hierarchy. The level of formality you use depends on the age, social status, and relationship with the person you're speaking to.",
-    "Did you know? The word '안녕' (annyeong) literally means 'peace' or 'well-being'. When you say 안녕하세요, you're essentially wishing someone peace and wellness!",
-    "Korean has one of the most sophisticated systems of honorifics in the world. Don't worry - you'll start with the most common polite forms that work in most situations. As you progress, you'll naturally pick up when to use different levels of formality."
+    "Welcome to your Korean learning journey! Before you can speak or read Korean, you need to learn Hangul (한글), the Korean alphabet. Unlike learning thousands of Chinese characters, Hangul was scientifically designed in 1443 by King Sejong the Great to be easy to learn. In fact, it's often called the most logical writing system in the world!",
+    "Did you know? Hangul has only 24 letters (14 consonants and 10 vowels), and you can learn to read Korean in just a few hours! The letters are designed based on the shape your mouth makes when pronouncing them. For example, ㄱ (g/k) represents the tongue touching the back of the throat.",
+    "Korean is written in syllable blocks, not in a line like English. Each block combines consonants and vowels. The most basic pattern is Consonant + Vowel (like 가, 너, 도). Don't worry about writing just yet - focus on recognizing and pronouncing each letter. By the end of this lesson, you'll be able to read simple Korean syllables!",
+    "Important: Korean consonants can sound different depending on their position. For example, ㄱ sounds like 'g' in the middle of words but 'k' at the beginning. We'll start with the basic sounds - you'll naturally pick up the variations as you practice."
   ],
   "vocabulary": [
     {
-      "word": "안녕하세요",
-      "english": "hello (formal)",
-      "romanization": "annyeonghaseyo",
-      "type": "phrase"
+      "word": "ㄱ",
+      "english": "consonant 'g/k' (as in 'gap' or 'kit')",
+      "romanization": "가 = ga",
+      "type": "consonant"
     },
     {
-      "word": "안녕",
-      "english": "hello/hi (informal)",
-      "romanization": "annyeong",
-      "type": "phrase"
+      "word": "ㄴ",
+      "english": "consonant 'n' (as in 'note')",
+      "romanization": "나 = na",
+      "type": "consonant"
     },
     {
-      "word": "감사합니다",
-      "english": "thank you",
-      "romanization": "gamsahamnida",
-      "type": "phrase"
+      "word": "ㄷ",
+      "english": "consonant 'd/t' (as in 'dog' or 'top')",
+      "romanization": "다 = da",
+      "type": "consonant"
     },
     {
-      "word": "고맙습니다",
-      "english": "thank you (alternative)",
-      "romanization": "gomapseumnida",
-      "type": "phrase"
+      "word": "ㄹ",
+      "english": "consonant 'r/l' (between 'r' and 'l')",
+      "romanization": "라 = la",
+      "type": "consonant"
     },
     {
-      "word": "죄송합니다",
-      "english": "I'm sorry (formal)",
-      "romanization": "joesonghamnida",
-      "type": "phrase"
+      "word": "ㅁ",
+      "english": "consonant 'm' (as in 'moon')",
+      "romanization": "마 = ma",
+      "type": "consonant"
     },
     {
-      "word": "미안해요",
-      "english": "I'm sorry (casual)",
-      "romanization": "mianhaeyo",
-      "type": "phrase"
+      "word": "ㅂ",
+      "english": "consonant 'b/p' (as in 'boat' or 'pot')",
+      "romanization": "바 = ba",
+      "type": "consonant"
     },
     {
-      "word": "네",
-      "english": "yes",
-      "romanization": "ne",
-      "type": "particle"
+      "word": "ㅅ",
+      "english": "consonant 's' (as in 'sea')",
+      "romanization": "사 = sa",
+      "type": "consonant"
     },
     {
-      "word": "아니요",
-      "english": "no",
-      "romanization": "aniyo",
-      "type": "particle"
+      "word": "ㅇ",
+      "english": "silent consonant (or 'ng' sound at end)",
+      "romanization": "아 = a",
+      "type": "consonant"
     },
     {
-      "word": "괜찮아요",
-      "english": "it's okay/I'm fine",
-      "romanization": "gwaenchanayo",
-      "type": "phrase"
+      "word": "ㅈ",
+      "english": "consonant 'j' (as in 'joy')",
+      "romanization": "자 = ja",
+      "type": "consonant"
     },
     {
-      "word": "잠시만요",
-      "english": "just a moment",
-      "romanization": "jamsimanyo",
-      "type": "phrase"
+      "word": "ㅊ",
+      "english": "consonant 'ch' (as in 'church')",
+      "romanization": "차 = cha",
+      "type": "consonant"
     },
     {
-      "word": "실례합니다",
-      "english": "excuse me",
-      "romanization": "sillyehamnida",
-      "type": "phrase"
+      "word": "ㅋ",
+      "english": "consonant 'k' (aspirated, as in 'key')",
+      "romanization": "카 = ka",
+      "type": "consonant"
     },
     {
-      "word": "안녕히 가세요",
-      "english": "goodbye (to someone leaving)",
-      "romanization": "annyeonghi gaseyo",
-      "type": "phrase"
+      "word": "ㅌ",
+      "english": "consonant 't' (aspirated, as in 'top')",
+      "romanization": "타 = ta",
+      "type": "consonant"
     },
     {
-      "word": "안녕히 계세요",
-      "english": "goodbye (when you're leaving)",
-      "romanization": "annyeonghi gyeseyo",
-      "type": "phrase"
+      "word": "ㅍ",
+      "english": "consonant 'p' (aspirated, as in 'pop')",
+      "romanization": "파 = pa",
+      "type": "consonant"
     },
     {
-      "word": "잘 가",
-      "english": "bye (informal to someone leaving)",
-      "romanization": "jal ga",
-      "type": "phrase"
+      "word": "ㅎ",
+      "english": "consonant 'h' (as in 'house')",
+      "romanization": "하 = ha",
+      "type": "consonant"
+    },
+    {
+      "word": "ㅏ",
+      "english": "vowel 'a' (as in 'father')",
+      "romanization": "아 = a",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅓ",
+      "english": "vowel 'eo' (as in 'under')",
+      "romanization": "어 = eo",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅗ",
+      "english": "vowel 'o' (as in 'go')",
+      "romanization": "오 = o",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅜ",
+      "english": "vowel 'u' (as in 'moon')",
+      "romanization": "우 = u",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅡ",
+      "english": "vowel 'eu' (as in 'brook', lips unrounded)",
+      "romanization": "으 = eu",
+      "type": "vowel"
+    },
+    {
+      "word": "ㅣ",
+      "english": "vowel 'i' (as in 'see')",
+      "romanization": "이 = hi",
+      "type": "vowel"
     }
   ],
   "sentences": [
     {
-      "korean": "안녕하세요",
-      "english": "Hello (formal greeting)",
-      "romanization": "annyeonghaseyo"
+      "korean": "가",
+      "english": "ga (consonant ㄱ + vowel ㅏ)",
+      "romanization": "ga"
     },
     {
-      "korean": "감사합니다",
-      "english": "Thank you",
-      "romanization": "gamsahamnida"
+      "korean": "너",
+      "english": "neo (consonant ㄴ + vowel ㅓ)",
+      "romanization": "neo"
     },
     {
-      "korean": "죄송합니다",
-      "english": "I'm sorry",
-      "romanization": "joesonghamnida"
+      "korean": "도",
+      "english": "do (consonant ㄷ + vowel ㅗ)",
+      "romanization": "do"
     },
     {
-      "korean": "실례합니다",
-      "english": "Excuse me",
-      "romanization": "sillyehamnida"
+      "korean": "루",
+      "english": "ru (consonant ㄹ + vowel ㅜ)",
+      "romanization": "ru"
     },
     {
-      "korean": "괜찮아요",
-      "english": "It's okay / I'm fine",
-      "romanization": "gwaenchanayo"
+      "korean": "므",
+      "english": "meu (consonant ㅁ + vowel ㅡ)",
+      "romanization": "meu"
     },
     {
-      "korean": "안녕히 가세요",
-      "english": "Goodbye (to person leaving)",
-      "romanization": "annyeonghi gaseyo"
+      "korean": "비",
+      "english": "bi (consonant ㅂ + vowel ㅣ)",
+      "romanization": "bi"
     },
     {
-      "korean": "안녕히 계세요",
-      "english": "Goodbye (when you're leaving)",
-      "romanization": "annyeonghi gyeseyo"
+      "korean": "사",
+      "english": "sa (consonant ㅅ + vowel ㅏ)",
+      "romanization": "sa"
     },
     {
-      "korean": "잠시만요",
-      "english": "Just a moment please",
-      "romanization": "jamsimanyo"
+      "korean": "오",
+      "english": "o (silent ㅇ + vowel ㅗ)",
+      "romanization": "o"
+    },
+    {
+      "korean": "저",
+      "english": "jeo (consonant ㅈ + vowel ㅓ)",
+      "romanization": "jeo"
+    },
+    {
+      "korean": "초",
+      "english": "cho (consonant ㅊ + vowel ㅗ)",
+      "romanization": "cho"
+    },
+    {
+      "korean": "쿠",
+      "english": "ku (consonant ㅋ + vowel ㅜ)",
+      "romanization": "ku"
+    },
+    {
+      "korean": "트",
+      "english": "teu (consonant ㅌ + vowel ㅡ)",
+      "romanization": "teu"
+    },
+    {
+      "korean": "피",
+      "english": "pi (consonant ㅍ + vowel ㅣ)",
+      "romanization": "pi"
+    },
+    {
+      "korean": "하",
+      "english": "ha (consonant ㅎ + vowel ㅏ)",
+      "romanization": "ha"
     }
   ],
   "explanation": [
-    "안녕하세요 (annyeonghaseyo) is the most common polite greeting in Korean, used any time of day. It's safe to use with anyone you don't know well or who is older than you.",
-    "Korean has different levels of politeness. 안녕하세요 is formal/polite, while 안녕 is casual and used with close friends or people younger than you.",
-    "감사합니다 (gamsahamnida) is a polite way to say thank you. The more casual form is 고마워요 (gomawoyo). There's also 고맙습니다 (gomapseumnida), which is equally polite but has a slightly warmer, more personal feeling.",
-    "When saying goodbye, the phrase changes depending on who is leaving. Use 안녕히 가세요 (go in peace) to someone who is leaving, and 안녕히 계세요 (stay in peace) when you are the one leaving.",
-    "실례합니다 (excuse me) is useful when you need to get someone's attention, pass by someone, or politely interrupt. It literally means 'I'm being rude'.",
-    "괜찮아요 is incredibly versatile - use it to say you're okay, something is fine, or to reassure someone after they apologize."
+    "Hangul Structure: Korean letters are arranged in blocks, not written in a line. Each syllable block needs at least one consonant and one vowel. Blocks are read left-to-right, top-to-bottom.",
+    "Syllable Pattern CV: The most basic pattern is Consonant + Vowel (CV). For example: ㄱ + ㅏ = 가 (ga), ㄴ + ㅓ = 너 (neo).",
+    "Vertical vs Horizontal Vowels: Vowels ㅏ ㅓ ㅣ are written vertically (to the right of consonants). Vowels ㅗ ㅜ ㅡ are written horizontally (below consonants). This affects how you arrange the syllable block!",
+    "The Silent ㅇ: When ㅇ appears at the START of a syllable, it's completely silent - it's just a placeholder because every syllable needs a consonant. For example, 오 is just pronounced 'o'. But at the END of a syllable, ㅇ sounds like 'ng'!",
+    "Aspirated Consonants: ㅋ, ㅌ, ㅍ, and ㅊ are 'aspirated' versions of ㄱ, ㄷ, ㅂ, and ㅈ. This means you pronounce them with a strong puff of air - like the difference between 'kin' (aspirated) and 'gin' (not aspirated).",
+    "Practice Tip: Don't try to memorize all these at once! Start with a few consonants and vowels, practice combining them, then gradually add more. The key is repetition - try reading Korean signs, K-pop lyrics, or Korean food menus to practice!",
+    "Names of Letters: Each Hangul letter has a name (like how we say 'gee' for G in English). For example, ㄱ is called 'giyeok' (기역). You don't need to memorize these names - they're mainly used when spelling things out loud.",
+    "Historical Note: King Sejong the Great created Hangul because Chinese characters were too difficult for common people to learn. He wanted everyone to be able to read and write. The shapes of consonants are based on how your mouth/throat looks when making that sound - truly scientific!"
   ]
 }

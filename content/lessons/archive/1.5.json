@@ -1,139 +1,185 @@
 {
   "id": "1.5",
   "version": "0.0.1",
-  "title": "Food and Dining",
+  "title": "Locations & Going Places",
   "objectives": [
-    "Learn basic food vocabulary",
-    "Practice ordering at a restaurant",
-    "Understand food-related expressions and phrases"
+    "Learn vocabulary for common places and locations",
+    "Master location particles (에, 에서, 로)",
+    "Practice giving and understanding directions",
+    "Use 있다/없다 to express existence and location"
   ],
   "context": [
-    "Korean food is world-renowned and incredibly diverse! From kimchi to bibimbap to Korean BBQ, food is a central part of Korean culture. Being able to talk about food and order at restaurants is not only practical but also a great way to immerse yourself in Korean culture.",
-    "Did you know? Koreans have a beautiful phrase '잘 먹겠습니다' (jal meokgesseumnida) said before eating, which means 'I will eat well' - a way of showing gratitude for the meal. After eating, you say '잘 먹었습니다' (jal meogeosseumnida) meaning 'I ate well'.",
-    "This lesson will equip you with essential food vocabulary and dining phrases. You'll learn how to order food, express your preferences, and use polite expressions at meals - crucial skills for anyone visiting Korea or enjoying Korean cuisine!"
+    "Being able to talk about places and navigate is essential, whether you're traveling in Korea, meeting friends, or just talking about your day. Korean uses specific particles to mark locations, which makes expressing 'at', 'to', 'from', and 'in' very precise.",
+    "Did you know? Korean has different location particles depending on whether you're talking about movement (going TO a place) or static location (being AT a place). This distinction is built into the grammar through particles, making Korean very specific about spatial relationships!",
+    "This lesson will teach you common places you'll encounter in daily life - from home and school to restaurants and subway stations. You'll also learn how to ask 'where?' and give simple directions using location particles.",
+    "You'll master 있어요/없어요 (to exist/not exist), which is used for both 'I have' and 'there is'. This versatile verb is one of the most important in Korean!"
   ],
   "vocabulary": [
     {
-      "word": "음식",
-      "english": "food",
-      "romanization": "eumsik",
+      "word": "여기",
+      "english": "here, this place",
+      "romanization": "yeogi",
       "type": "noun"
     },
     {
-      "word": "밥",
-      "english": "rice/meal",
-      "romanization": "bap",
+      "word": "저기",
+      "english": "there, that place (far)",
+      "romanization": "jeogi",
       "type": "noun"
     },
     {
-      "word": "김치",
-      "english": "kimchi",
-      "romanization": "gimchi",
+      "word": "거기",
+      "english": "there, that place (near listener)",
+      "romanization": "geogi",
       "type": "noun"
     },
     {
-      "word": "비빔밥",
-      "english": "bibimbap (mixed rice)",
-      "romanization": "bibimbap",
+      "word": "어디",
+      "english": "where",
+      "romanization": "eodi",
+      "type": "pronoun"
+    },
+    {
+      "word": "학교",
+      "english": "school",
+      "romanization": "hakgyo",
       "type": "noun"
     },
     {
-      "word": "불고기",
-      "english": "bulgogi (Korean BBQ beef)",
-      "romanization": "bulgogi",
+      "word": "식당",
+      "english": "restaurant",
+      "romanization": "sikdang",
       "type": "noun"
     },
     {
-      "word": "라면",
-      "english": "ramen/instant noodles",
-      "romanization": "ramyeon",
+      "word": "카페",
+      "english": "cafe",
+      "romanization": "kape",
       "type": "noun"
     },
     {
-      "word": "커피",
-      "english": "coffee",
-      "romanization": "keopi",
+      "word": "병원",
+      "english": "hospital",
+      "romanization": "byeongwon",
       "type": "noun"
     },
     {
-      "word": "차",
-      "english": "tea",
-      "romanization": "cha",
+      "word": "은행",
+      "english": "bank",
+      "romanization": "eunhaeng",
       "type": "noun"
     },
     {
-      "word": "주세요",
-      "english": "please give me",
-      "romanization": "juseyo",
+      "word": "공원",
+      "english": "park",
+      "romanization": "gongwon",
+      "type": "noun"
+    },
+    {
+      "word": "시장",
+      "english": "market",
+      "romanization": "sijang",
+      "type": "noun"
+    },
+    {
+      "word": "역",
+      "english": "station",
+      "romanization": "yeok",
+      "type": "noun"
+    },
+    {
+      "word": "에",
+      "english": "to, at (location particle)",
+      "romanization": "e",
+      "type": "particle"
+    },
+    {
+      "word": "에서",
+      "english": "at, in (action location particle)",
+      "romanization": "eseo",
+      "type": "particle"
+    },
+    {
+      "word": "있다",
+      "english": "to exist, to have, to be (somewhere)",
+      "romanization": "itda",
       "type": "verb"
     },
     {
-      "word": "맛있다",
-      "english": "delicious",
-      "romanization": "masitda",
-      "type": "adjective"
-    },
-    {
-      "word": "맵다",
-      "english": "spicy",
-      "romanization": "maepda",
-      "type": "adjective"
-    },
-    {
-      "word": "좋아하다",
-      "english": "to like",
-      "romanization": "joahada",
+      "word": "없다",
+      "english": "to not exist, to not have",
+      "romanization": "eopda",
       "type": "verb"
+    },
+    {
+      "word": "앞",
+      "english": "front",
+      "romanization": "ap",
+      "type": "noun"
+    },
+    {
+      "word": "뒤",
+      "english": "back, behind",
+      "romanization": "dwi",
+      "type": "noun"
+    },
+    {
+      "word": "옆",
+      "english": "side, next to",
+      "romanization": "yeop",
+      "type": "noun"
     }
   ],
   "sentences": [
     {
-      "korean": "비빔밥 주세요",
-      "english": "Bibimbap, please",
-      "romanization": "bibimbap juseyo"
+      "korean": "학교에 가요",
+      "english": "I go to school",
+      "romanization": "hakgyoe gayo"
     },
     {
-      "korean": "커피 한 잔 주세요",
-      "english": "One cup of coffee, please",
-      "romanization": "keopi han jan juseyo"
+      "korean": "집에 있어요",
+      "english": "I'm at home / It's at home",
+      "romanization": "jibe isseoyo"
     },
     {
-      "korean": "김치가 맛있어요",
-      "english": "Kimchi is delicious",
-      "romanization": "gimchiga masisseoyo"
+      "korean": "식당에서 밥을 먹어요",
+      "english": "I eat at a restaurant",
+      "romanization": "sikdangeseo babeul meogeoyo"
     },
     {
-      "korean": "매워요?",
-      "english": "Is it spicy?",
-      "romanization": "maewoyo?"
+      "korean": "카페가 어디에 있어요?",
+      "english": "Where is the cafe?",
+      "romanization": "kapega eodie isseoyo?"
     },
     {
-      "korean": "한국 음식을 좋아해요",
-      "english": "I like Korean food",
-      "romanization": "hanguk eumsigeul joahaeyo"
+      "korean": "여기 은행이 없어요",
+      "english": "There's no bank here",
+      "romanization": "yeogi eunhaengi eopseoyo"
     },
     {
-      "korean": "잘 먹겠습니다",
-      "english": "I will eat well (said before eating)",
-      "romanization": "jal meokgesseumnida"
+      "korean": "학교 앞에 공원이 있어요",
+      "english": "There's a park in front of the school",
+      "romanization": "hakgyo ape gongwoni isseoyo"
     },
     {
-      "korean": "잘 먹었습니다",
-      "english": "I ate well (said after eating)",
-      "romanization": "jal meogeosseumnida"
+      "korean": "병원은 시장 옆에 있어요",
+      "english": "The hospital is next to the market",
+      "romanization": "byeongwoneun sijang yeope isseoyo"
     },
     {
-      "korean": "물 좀 주세요",
-      "english": "Some water, please",
-      "romanization": "mul jom juseyo"
+      "korean": "저기 역이에요",
+      "english": "That's a station over there",
+      "romanization": "jeogi yeogieyo"
     }
   ],
   "explanation": [
-    "주세요 (juseyo) is an essential phrase meaning 'please give me'. Use it to order: [item] + 주세요. For example: 커피 주세요 (coffee please).",
-    "밥 (bap) literally means 'rice' but is also used to mean 'meal'. 밥 먹었어요? (Did you eat rice?) is a common greeting asking if someone has eaten.",
-    "The particle 가/이 marks the subject of a sentence. Use 가 after vowels and 이 after consonants. 김치가 맛있어요 = 'Kimchi is delicious'.",
-    "좋아하다 (joahada) means 'to like'. The object of what you like takes the 을/를 particle: 음식을 좋아해요 (I like food).",
-    "잘 먹겠습니다 (before eating) and 잘 먹었습니다 (after eating) are polite expressions showing gratitude for the meal. Always use these!",
-    "좀 (jom) means 'a little' or 'some' and softens requests. 물 좀 주세요 sounds more polite than just 물 주세요."
+    "Location Particle 에: Used for destination (to) and static location (at). Examples: 학교에 가요 (go TO school), 집에 있어요 (at home). Use 에 with location verbs like 가다, 오다, 있다.",
+    "Action Location 에서: Used when an ACTION happens AT a location. Examples: 식당에서 먹어요 (eat AT restaurant), 공원에서 일해요 (work AT park). Don't confuse with 에!",
+    "에 vs 에서: Key difference - 에 = destination/static location, 에서 = action location. 'I'm at home' = 집에 있어요 (에). 'I work at home' = 집에서 일해요 (에서). Both use 'at' in English!",
+    "있다 (to exist/have): Very versatile verb! Meanings: 1) To exist/be located: 여기 있어요 (it's here), 2) To have: 친구가 있어요 (I have friends), 3) To be present: 집에 있어요 (I'm at home).",
+    "없다 (to not exist): Opposite of 있다. Examples: 시간이 없어요 (I don't have time), 여기 없어요 (it's not here). Conjugates to 없어요, not 없아요!",
+    "Positional Nouns: 앞 (front), 뒤 (back), 옆 (side), 위 (above), 아래 (below), 안 (inside), 밖 (outside). Add 에 for 'at/in': 앞에 (in front), 옆에 (next to), 안에 (inside).",
+    "여기/거기/저기: 여기 (here, near me), 거기 (there, near you), 저기 (over there, far from both). Similar to this/that/that over there. Add 에 for 'at': 여기에, 거기에, 저기에.",
+    "Asking Where: 어디 (where) + 예요 = 어디예요? (where is it?). For more formal: 어디에 있어요? (where is it located?). Example: 화장실이 어디예요? (Where is the bathroom?)"
   ]
 }

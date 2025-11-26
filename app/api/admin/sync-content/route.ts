@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase-server'
+import { supabaseAdmin } from '@/lib/supabase-admin'
 import { readdir, readFile } from 'fs/promises'
 import { join } from 'path'
 
@@ -27,6 +28,7 @@ interface LessonExplanation {
 
 interface Lesson {
   id: string
+  group_id: string
   version?: string
   title: string
   prerequisite?: string
@@ -34,7 +36,14 @@ interface Lesson {
   context?: string[]
   vocabulary: LessonVocabulary[]
   sentences: LessonSentence[]
-  explanation: LessonExplanation[]
+  explanation: string[]
+}
+
+interface LessonGroup {
+  id: string
+  title: string
+  description: string
+  order_index: number
 }
 
 export async function POST(request: Request) {
@@ -53,10 +62,32 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Admin access required' }, { status: 403 })
     }
 
-    // Read all lesson files from content/lessons directory
+    // Step 1: Sync lesson groups (use admin client to bypass RLS)
+    const groupsFilePath = join(process.cwd(), 'content', 'lesson-groups.json')
+    const groupsContent = await readFile(groupsFilePath, 'utf-8')
+    const lessonGroups: LessonGroup[] = JSON.parse(groupsContent)
+
+    for (const group of lessonGroups) {
+      const { error: groupError } = await supabaseAdmin
+        .from('lesson_groups')
+        .upsert({
+          id: group.id,
+          title: group.title,
+          description: group.description,
+          order_index: group.order_index
+        }, {
+          onConflict: 'id'
+        })
+
+      if (groupError) {
+        console.error('Error upserting lesson group:', group.id, groupError)
+      }
+    }
+
+    // Step 2: Read all lesson files from content/lessons directory
     const lessonsDir = join(process.cwd(), 'content', 'lessons')
     const files = await readdir(lessonsDir)
-    const lessonFiles = files.filter(file => file.endsWith('.json'))
+    const lessonFiles = files.filter(file => file.endsWith('.json') && !file.includes('archive'))
 
     const lessons: Lesson[] = []
     const allWords: Map<string, any> = new Map()
@@ -143,10 +174,11 @@ export async function POST(request: Request) {
       const needsSync = !existingVersion || existingVersion !== lesson.version
 
       if (needsSync) {
-        const { error: lessonError } = await supabase
+        const { error: lessonError } = await supabaseAdmin
           .from('lessons')
           .upsert({
             id: lesson.id,
+            group_id: lesson.group_id,
             version: lesson.version,
             title: lesson.title,
             objectives: lesson.objectives,
@@ -180,7 +212,7 @@ export async function POST(request: Request) {
       // Only sync words if at least one lesson was updated
       // This maintains correct lesson associations across all words
       for (const word of wordsArray) {
-        const { error: wordError } = await supabase
+        const { error: wordError } = await supabaseAdmin
           .from('dictionary')
           .upsert({
             word: word.word,
