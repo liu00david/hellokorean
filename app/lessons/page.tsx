@@ -1,15 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getAllLessonGroups } from "@/lib/lessons";
+import { getLessonGroupsWithProgress } from "@/lib/lessons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { useAuth } from "@/components/AuthProvider";
-import { supabase } from "@/lib/supabase";
 import { LessonGroup } from "@/types/lesson";
 
 interface GroupProgress {
-  groupId: string;
   completed: number;
   total: number;
   percentage: number;
@@ -28,52 +26,22 @@ export default function LessonsPage() {
   const loadData = async () => {
     setLoading(true);
 
-    // Fetch lesson groups
-    const groups = await getAllLessonGroups();
-    setLessonGroups(groups);
+    try {
+      console.log('Loading lesson groups with progress for user:', user?.id);
 
-    // Fetch all lessons to calculate group progress
-    const { data: allLessons, error: lessonsError } = await supabase
-      .from("lessons")
-      .select("id, group_id");
+      // Fetch lesson groups with progress in one optimized call
+      const { groups, progress } = await getLessonGroupsWithProgress(user?.id);
 
-    if (lessonsError) {
-      console.error("Error fetching lessons:", lessonsError);
+      console.log('Loaded groups:', groups.length, 'progress entries:', progress.size);
+      console.log('Progress Map details:', Array.from(progress.entries()));
+
+      setLessonGroups(groups);
+      setGroupProgress(progress);
+    } catch (error) {
+      console.error('Error loading lesson data:', error);
+    } finally {
       setLoading(false);
-      return;
     }
-
-    // Fetch user progress if logged in
-    let completedLessonIds = new Set<string>();
-    if (user) {
-      const { data, error } = await supabase
-        .from("progress")
-        .select("lesson_id")
-        .eq("user_id", user.id);
-
-      if (!error && data) {
-        completedLessonIds = new Set(data.map(p => p.lesson_id));
-      }
-    }
-
-    // Calculate progress for each group
-    const progressMap = new Map<string, GroupProgress>();
-    groups.forEach(group => {
-      const groupLessons = allLessons?.filter(l => l.group_id === group.id) || [];
-      const completed = groupLessons.filter(l => completedLessonIds.has(l.id)).length;
-      const total = groupLessons.length;
-      const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
-
-      progressMap.set(group.id, {
-        groupId: group.id,
-        completed,
-        total,
-        percentage
-      });
-    });
-
-    setGroupProgress(progressMap);
-    setLoading(false);
   };
 
   return (
@@ -98,6 +66,8 @@ export default function LessonsPage() {
               const progress = groupProgress.get(group.id);
               const isComplete = progress?.percentage === 100;
               const hasProgress = progress && progress.percentage > 0;
+
+              console.log(`Rendering group ${group.id}:`, progress);
 
               return (
                 <Link key={group.id} href={`/lessons/${group.id}`}>

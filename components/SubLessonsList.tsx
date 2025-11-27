@@ -19,7 +19,7 @@ export function SubLessonsList({ groupId, lessons }: SubLessonsListProps) {
 
   useEffect(() => {
     loadProgress();
-  }, [user]);
+  }, [user, lessons]);
 
   const loadProgress = async () => {
     if (!user) {
@@ -27,10 +27,19 @@ export function SubLessonsList({ groupId, lessons }: SubLessonsListProps) {
       return;
     }
 
+    // Only fetch progress for lessons in this group
+    const lessonIdsInGroup = lessons.map(l => l.id);
+
+    if (lessonIdsInGroup.length === 0) {
+      setLoading(false);
+      return;
+    }
+
     const { data, error } = await supabase
       .from("progress")
       .select("lesson_id")
-      .eq("user_id", user.id);
+      .eq("user_id", user.id)
+      .in("lesson_id", lessonIdsInGroup);
 
     if (!error && data) {
       setCompletedLessons(new Set(data.map(p => p.lesson_id)));

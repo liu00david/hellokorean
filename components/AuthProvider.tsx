@@ -17,11 +17,98 @@ const AuthContext = createContext<AuthContextType>({
   isAdmin: false,
 });
 
+// Cache admin status to avoid repeated database calls
+const ADMIN_CACHE_KEY = 'hellokorean_admin_status';
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+interface AdminCache {
+  userId: string;
+  isAdmin: boolean;
+  timestamp: number;
+}
+
+function getCachedAdminStatus(userId: string): boolean | null {
+  // Check if we're in the browser
+  if (typeof window === 'undefined') return null;
+
+  try {
+    const cached = localStorage.getItem(ADMIN_CACHE_KEY);
+    if (!cached) return null;
+
+    const data: AdminCache = JSON.parse(cached);
+    const isExpired = Date.now() - data.timestamp > CACHE_DURATION;
+
+    if (data.userId === userId && !isExpired) {
+      return data.isAdmin;
+    }
+  } catch (error) {
+    console.warn('Error reading admin cache:', error);
+  }
+  return null;
+}
+
+function setCachedAdminStatus(userId: string, isAdmin: boolean) {
+  // Check if we're in the browser
+  if (typeof window === 'undefined') return;
+
+  try {
+    const data: AdminCache = {
+      userId,
+      isAdmin,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(ADMIN_CACHE_KEY, JSON.stringify(data));
+  } catch (error) {
+    console.warn('Error setting admin cache:', error);
+  }
+}
+
+function clearAdminCache() {
+  // Check if we're in the browser
+  if (typeof window === 'undefined') return;
+
+  try {
+    localStorage.removeItem(ADMIN_CACHE_KEY);
+  } catch (error) {
+    console.warn('Error clearing admin cache:', error);
+  }
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
   const [initialized, setInitialized] = useState(false);
+
+  // Helper function to check admin status with caching
+  const checkAdminStatus = async (userId: string): Promise<boolean> => {
+    // Check cache first
+    const cached = getCachedAdminStatus(userId);
+    if (cached !== null) {
+      console.log('Using cached admin status:', cached);
+      return cached;
+    }
+
+    // Not in cache, query database with timeout
+    try {
+      // Add timeout to prevent hanging
+      const timeoutPromise = new Promise<boolean>((resolve) => {
+        setTimeout(() => {
+          console.warn('Admin status check timed out, assuming false');
+          resolve(false);
+        }, 3000);
+      });
+
+      const adminPromise = isAdminWithClient(supabase, userId);
+      const adminStatus = await Promise.race([adminPromise, timeoutPromise]);
+
+      setCachedAdminStatus(userId, adminStatus);
+      return adminStatus;
+    } catch (error) {
+      console.warn('Failed to check admin status:', error);
+      return false;
+    }
+  };
 
   useEffect(() => {
     // Set a timeout to ensure loading doesn't get stuck
@@ -38,17 +125,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const currentUser = session?.user ?? null;
       setUser(currentUser);
 
-      // Check if user is admin (with error handling)
+      // Check if user is admin (with caching)
       if (currentUser) {
-        try {
-          const adminStatus = await isAdminWithClient(supabase, currentUser.id);
-          setIsAdmin(adminStatus);
-        } catch (error) {
-          console.warn('Failed to check admin status:', error);
-          setIsAdmin(false);
-        }
+        const adminStatus = await checkAdminStatus(currentUser.id);
+        setIsAdmin(adminStatus);
       } else {
         setIsAdmin(false);
+        clearAdminCache();
       }
 
       setLoading(false);
@@ -72,17 +155,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const currentUser = session?.user ?? null;
       setUser(currentUser);
 
-      // Check if user is admin (with error handling)
+      // Check if user is admin (with caching)
       if (currentUser) {
-        try {
-          const adminStatus = await isAdminWithClient(supabase, currentUser.id);
-          setIsAdmin(adminStatus);
-        } catch (error) {
-          console.warn('Failed to check admin status:', error);
-          setIsAdmin(false);
-        }
+        const adminStatus = await checkAdminStatus(currentUser.id);
+        setIsAdmin(adminStatus);
       } else {
         setIsAdmin(false);
+        clearAdminCache();
       }
 
       // Only set loading false if we haven't initialized yet
