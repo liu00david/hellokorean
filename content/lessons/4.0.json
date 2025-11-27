@@ -1,0 +1,42 @@
+{
+  "id": "4.0",
+  "group_id": "4",
+  "version": "2.0.0",
+  "title": "People & Relationships",
+  "objectives": [
+    "Name common people and relationships",
+    "Use possessives to show 'my/your'",
+    "Combine topics with 은/는 and subjects with 이/가"
+  ],
+  "context": [
+    "Talking about family, friends, and coworkers is everyday conversation.",
+    "Possessive 제/제 친구 adds warmth and clarity when introducing people.",
+    "Particles help mark who we're talking about and who is acting."
+  ],
+  "vocabulary": [
+    {"word": "가족", "english": "family", "romanization": "gajok", "type": "noun"},
+    {"word": "친구", "english": "friend", "romanization": "chingu", "type": "noun"},
+    {"word": "동료", "english": "coworker", "romanization": "dongnyo", "type": "noun"},
+    {"word": "부모님", "english": "parents", "romanization": "bumonim", "type": "noun"},
+    {"word": "남편", "english": "husband", "romanization": "nampyeon", "type": "noun"},
+    {"word": "아내", "english": "wife", "romanization": "anae", "type": "noun"},
+    {"word": "아이", "english": "child", "romanization": "ai", "type": "noun"},
+    {"word": "선생님", "english": "teacher (polite)", "romanization": "seonsaengnim", "type": "noun"},
+    {"word": "제", "english": "my (polite)", "romanization": "je", "type": "pronoun"},
+    {"word": "당신", "english": "you (formal; careful use)", "romanization": "dangsin", "type": "pronoun"}
+  ],
+  "sentences": [
+    {"korean": "저는 가족이 커요.", "english": "My family is big.", "romanization": "jeoneun gajogi keoyo."},
+    {"korean": "제 친구는 한국 사람이에요.", "english": "My friend is Korean.", "romanization": "je chinguneun hanguk saram-ieyo."},
+    {"korean": "동료가 아주 친절해요.", "english": "My coworker is very kind.", "romanization": "dongnyoga aju chinjeolhaeyo."},
+    {"korean": "부모님은 부산에 계세요.", "english": "My parents are in Busan.", "romanization": "bumonimeun busane gyeseyo."},
+    {"korean": "아이가 학교에 있어요.", "english": "The child is at school.", "romanization": "aiga hakgyoe isseoyo."}
+  ],
+  "explanation": [
+    "제 is the polite 'my' (from 저 + 의). Use 내 for casual. 제 친구, 제 부모님 are safer than 내 with new people.",
+    "당신 is rarely used in conversation except between spouses or in customer service. Use 이름+씨 (e.g., 민수 씨) to say 'you.'",
+    "은/는 sets the topic (제 친구는...), 이/가 marks the subject (동료가...). Both can appear in one sentence if needed.",
+    "For respect toward elders/parents, use honorific verbs like 계시다 (to be/exist honorifically) instead of 있다: 부모님이 계세요.",
+    "To introduce someone: 이쪽은 제 친구 민수예요 = This is my friend Minsu."
+  ]
+}

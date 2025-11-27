@@ -1,0 +1,42 @@
+{
+  "id": "10.1",
+  "group_id": "10",
+  "version": "2.0.0",
+  "title": "Hotels & Stays",
+  "objectives": [
+    "Book, check in, and check out smoothly",
+    "Request essentials like Wi‑Fi and extra items",
+    "Handle room problems politely"
+  ],
+  "context": [
+    "Hotels and guesthouses use many English loanwords, but polite Korean earns quick help.",
+    "Short requests with 있어요?/주세요 cover most needs.",
+    "Be ready to explain issues with simple adjectives (안 나와요/고장 났어요)."
+  ],
+  "vocabulary": [
+    {"word": "예약", "english": "reservation", "romanization": "yeyak", "type": "noun"},
+    {"word": "체크인", "english": "check-in", "romanization": "chekeuin", "type": "noun"},
+    {"word": "체크아웃", "english": "check-out", "romanization": "chekeuaut", "type": "noun"},
+    {"word": "방", "english": "room", "romanization": "bang", "type": "noun"},
+    {"word": "열쇠", "english": "key", "romanization": "yeolsoe", "type": "noun"},
+    {"word": "와이파이", "english": "Wi‑Fi", "romanization": "waipai", "type": "noun"},
+    {"word": "비밀번호", "english": "password", "romanization": "bimilbeonho", "type": "noun"},
+    {"word": "수건", "english": "towel", "romanization": "sugeon", "type": "noun"},
+    {"word": "고장 났어요", "english": "It's broken", "romanization": "gojang nasseoyo", "type": "phrase"},
+    {"word": "안 나와요", "english": "It doesn't come out (water/power)", "romanization": "an nawayo", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "예약했어요. 체크인하고 싶어요.", "english": "I have a reservation. I'd like to check in.", "romanization": "yeyakhaesseoyo. chekeuinhago sipeoyo."},
+    {"korean": "두 시부터 체크인이에요.", "english": "Check-in is from 2 p.m.", "romanization": "du sibuteo chekeuin-ieyo."},
+    {"korean": "와이파이 비밀번호가 뭐예요?", "english": "What's the Wi‑Fi password?", "romanization": "waipai bimilbeonhoga mwoyeyo?"},
+    {"korean": "수건 좀 더 주세요.", "english": "Please give me more towels.", "romanization": "sugeon jom deo juseyo."},
+    {"korean": "샤워기가 안 나와요. 방을 바꿔 주세요.", "english": "The shower doesn't work. Please change the room.", "romanization": "syawogi-ga an nawayo. bangeul bakkwo juseyo."}
+  ],
+  "explanation": [
+    "체크인/체크아웃 times are usually stated in English numbers. Ask '체크아웃이 몇 시예요?'",
+    "비밀번호 literally 'secret number.' Some places say 비번 for short.",
+    "안 나와요 works for water/electricity: 물이 안 나와요 (no water). For broken items, use 고장 났어요.",
+    "Extra items: 담요(=blanket) 좀 더 주세요, 베개(=pillow) 하나만 더 주세요.",
+    "To request cleaning: 객실 청소 해 주세요 / 오늘은 청소 안 해도 돼요 (No cleaning needed today)."
+  ]
+}

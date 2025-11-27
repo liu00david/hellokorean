@@ -1,0 +1,40 @@
+{
+  "id": "9.2",
+  "group_id": "9",
+  "version": "2.0.0",
+  "title": "Practical Counting: Money, Time, Age",
+  "objectives": [
+    "Talk about prices and change",
+    "Tell time and age with correct systems",
+    "Use common counters like 시/분/살/층"
+  ],
+  "context": [
+    "Korean swaps between Sino and native numbers depending on what you're counting.",
+    "Money, dates, minutes use Sino numbers; hours and age use native (with some exceptions).",
+    "Practice mixing both systems in one sentence for real-life fluency."
+  ],
+  "vocabulary": [
+    {"word": "원", "english": "won (currency)", "romanization": "won", "type": "counter"},
+    {"word": "시", "english": "hour (native)", "romanization": "si", "type": "counter"},
+    {"word": "분", "english": "minute (Sino)", "romanization": "bun", "type": "counter"},
+    {"word": "살", "english": "years old", "romanization": "sal", "type": "counter"},
+    {"word": "층", "english": "floor/story", "romanization": "cheung", "type": "counter"},
+    {"word": "번", "english": "number/time", "romanization": "beon", "type": "counter"},
+    {"word": "시간", "english": "hour (duration)", "romanization": "sigan", "type": "noun"},
+    {"word": "잔돈", "english": "change (money)", "romanization": "jandon", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "이거 얼마예요?", "english": "How much is this?", "romanization": "igeo eolmayeyo?"},
+    {"korean": "오천오백 원이에요.", "english": "It's 5,500 won.", "romanization": "ocheonobaek won-ieyo."},
+    {"korean": "한 시 십 분에 만나요.", "english": "Let's meet at 1:10.", "romanization": "han si sip bune mannayo."},
+    {"korean": "저는 스물아홉 살이에요.", "english": "I'm 29 years old.", "romanization": "jeoneun seumulahop sarieyo."},
+    {"korean": "방은 7층이에요.", "english": "The room is on the 7th floor.", "romanization": "bang-eun chil cheung-ieyo."}
+  ],
+  "explanation": [
+    "가격/돈 use Sino numbers + 원: 삼만 칠천 원 (37,000 won). Asking price: 얼마예요?",
+    "Clock time mixes systems: hours = native (한 시, 두 시), minutes = Sino (십 분, 이십오 분).",
+    "Age uses native numbers with 살: 스물다섯 살 (25). In very formal settings, Sino with 세 sometimes appears, but 살 covers most cases.",
+    "층 uses Sino: 1층 (il cheung), 7층 (chil cheung). 번 marks order/number: 몇 번 버스예요? (Which bus number is it?).",
+    "Duration 'for X hours/minutes' uses -동안 or just counters: 두 시간 동안 공부했어요 (studied for two hours), 10분만 기다려 주세요 (please wait only 10 minutes)."
+  ]
+}

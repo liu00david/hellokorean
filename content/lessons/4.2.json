@@ -1,0 +1,42 @@
+{
+  "id": "4.2",
+  "group_id": "4",
+  "version": "2.0.0",
+  "title": "There Is / There Isn't",
+  "objectives": [
+    "Use 있다/없다 for existence and possession",
+    "Describe where things are with location words",
+    "Answer 'Do you have...?' confidently"
+  ],
+  "context": [
+    "있다/없다 covers 'to have,' 'to be located,' and 'to exist.'",
+    "Combine with location markers to place objects and people.",
+    "These patterns appear everywhere: shops, directions, home descriptions."
+  ],
+  "vocabulary": [
+    {"word": "있다", "english": "to exist / to have", "romanization": "itda", "type": "verb"},
+    {"word": "없다", "english": "to not exist / to not have", "romanization": "eopda", "type": "verb"},
+    {"word": "여기", "english": "here", "romanization": "yeogi", "type": "adverb"},
+    {"word": "거기", "english": "there (near listener)", "romanization": "geogi", "type": "adverb"},
+    {"word": "저기", "english": "over there (far)", "romanization": "jeogi", "type": "adverb"},
+    {"word": "앞", "english": "front", "romanization": "ap", "type": "noun"},
+    {"word": "뒤", "english": "back/behind", "romanization": "dwi", "type": "noun"},
+    {"word": "옆", "english": "side/next to", "romanization": "yeop", "type": "noun"},
+    {"word": "위", "english": "above/on", "romanization": "wi", "type": "noun"},
+    {"word": "아래", "english": "below/under", "romanization": "arae", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "여기 화장실 있어요?", "english": "Is there a restroom here?", "romanization": "yeogi hwajangsil isseoyo?"},
+    {"korean": "지갑이 없어요.", "english": "I don't have my wallet.", "romanization": "jigabi eopseoyo."},
+    {"korean": "카페가 역 앞에 있어요.", "english": "The cafe is in front of the station.", "romanization": "kapega yeok ape isseoyo."},
+    {"korean": "버스 정류장은 저기 있어요.", "english": "The bus stop is over there.", "romanization": "beoseu jeongnyujangeun jeogi isseoyo."},
+    {"korean": "집에 고양이가 있어요.", "english": "There is a cat at home.", "romanization": "jibe goyangiga isseoyo."}
+  ],
+  "explanation": [
+    "있다/없다 conjugate to 있어요/없어요 in polite present. With subjects, use 이/가: 화장실이 있어요? 아니요, 없어요.",
+    "For possession, Korean literally says 'Something exists (for me)': 저한테 시간 있어요 = I have time. 지갑이 없어요 = I don't have my wallet.",
+    "Location structure: [Place/Thing] + 이/가 + [Location word] + 에 있어요. Example: 은행이 시장 옆에 있어요.",
+    "여기/거기/저기 can replace a full place name when pointing. Add 에 to mark location: 거기에 있어요 = It's there.",
+    "없다 can sound abrupt alone; soften with 죄송하지만 or 미안해요 when refusing politely."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "10.3",
+  "group_id": "10",
+  "version": "2.0.0",
+  "title": "Emergencies & Health",
+  "objectives": [
+    "Get help quickly in urgent situations",
+    "Describe symptoms and needs",
+    "Call or direct someone to emergency services"
+  ],
+  "context": [
+    "Keep sentences short and clear in emergencies—keywords matter more than grammar.",
+    "119 is Korea's emergency number (ambulance/fire). 112 is police.",
+    "At pharmacies or clinics, describing symptoms simply gets you quick aid."
+  ],
+  "vocabulary": [
+    {"word": "도와주세요!", "english": "Help, please!", "romanization": "dowajuseyo!", "type": "phrase"},
+    {"word": "119/112", "english": "emergency numbers", "romanization": "il-il-gu / il-il-i", "type": "number"},
+    {"word": "아파요", "english": "It hurts/I'm sick", "romanization": "apayo", "type": "phrase"},
+    {"word": "응급실", "english": "emergency room", "romanization": "eunggeupsil", "type": "noun"},
+    {"word": "병원", "english": "hospital", "romanization": "byeongwon", "type": "noun"},
+    {"word": "약국", "english": "pharmacy", "romanization": "yakguk", "type": "noun"},
+    {"word": "증상", "english": "symptom", "romanization": "jeungsang", "type": "noun"},
+    {"word": "두통", "english": "headache", "romanization": "dutong", "type": "noun"},
+    {"word": "복통", "english": "stomachache", "romanization": "boktong", "type": "noun"},
+    {"word": "알레르기", "english": "allergy", "romanization": "allereugi", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "도와주세요! 친구가 아파요!", "english": "Help! My friend is hurt!", "romanization": "dowajuseyo! chinguga apayo!"},
+    {"korean": "119에 전화해 주세요.", "english": "Please call 119.", "romanization": "il-il-gu-e jeonhwahae juseyo."},
+    {"korean": "병원 응급실이 어디예요?", "english": "Where is the hospital emergency room?", "romanization": "byeongwon eunggeupsili eodieyo?"},
+    {"korean": "두통이 심해요. 약 있어요?", "english": "I have a bad headache. Do you have medicine?", "romanization": "dutongi simhaeyo. yak isseoyo?"},
+    {"korean": "저는 땅콩 알레르기가 있어요. 이 약 먹어도 돼요?", "english": "I have a peanut allergy. Can I take this medicine?", "romanization": "jeoneun ttangkong allereugi-ga isseoyo. i yak meogeodo dwaeyo?"}
+  ],
+  "explanation": [
+    "Shout 도와주세요! or 경찰 불러 주세요! (Please call the police). Mention the issue fast: 사고 났어요 (There was an accident).",
+    "Emergency numbers: 119 for ambulance/fire, 112 for police. Say 위치 (location) + 상황 (situation).",
+    "At a pharmacy, say 증상이 뭐예요? (What are the symptoms?) or name them: 두통/복통/기침(=cough). Add 며칠째예요 (for how many days).",
+    "Use -아/어도 돼요? for permission: 이 약 먹어도 돼요? (Is it okay to take this?).",
+    "If you have allergies or conditions, say it first: 저는 ___ 알레르기가 있어요 / 저는 약에 알레르기 있어요."
+  ]
+}

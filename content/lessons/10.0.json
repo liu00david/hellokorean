@@ -1,0 +1,41 @@
+{
+  "id": "10.0",
+  "group_id": "10",
+  "version": "2.0.0",
+  "title": "Airport & Immigration",
+  "objectives": [
+    "Handle check-in and security",
+    "Answer basic immigration questions",
+    "Ask for help with boarding and baggage"
+  ],
+  "context": [
+    "Airports use predictable phrases about passports, tickets, and luggage.",
+    "Immigration officers often ask about purpose of visit and length of stay.",
+    "Keep answers short and polite—simple present/future tense works well."
+  ],
+  "vocabulary": [
+    {"word": "여권", "english": "passport", "romanization": "yeogwon", "type": "noun"},
+    {"word": "탑승권", "english": "boarding pass", "romanization": "tapseunggwon", "type": "noun"},
+    {"word": "수하물", "english": "checked baggage", "romanization": "suhamul", "type": "noun"},
+    {"word": "기내 반입", "english": "carry-on", "romanization": "ginae banip", "type": "noun"},
+    {"word": "면세점", "english": "duty-free shop", "romanization": "myeonsejeom", "type": "noun"},
+    {"word": "입국 심사", "english": "immigration check", "romanization": "ipguk simsa", "type": "noun"},
+    {"word": "목적", "english": "purpose", "romanization": "mokjeok", "type": "noun"},
+    {"word": "체류 기간", "english": "length of stay", "romanization": "cheryu gigan", "type": "noun"},
+    {"word": "환승", "english": "transfer/layover", "romanization": "hwanseung", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "여권과 탑승권 보여 주세요.", "english": "Please show your passport and boarding pass.", "romanization": "yeogwongwa tapseunggwon boyeo juseyo."},
+    {"korean": "수하물 두 개 부쳤어요.", "english": "I checked two bags.", "romanization": "suhamul du gae bucheosseoyo."},
+    {"korean": "여행 목적이 뭐예요?", "english": "What is the purpose of your trip?", "romanization": "yeohaeng mokjeogi mwoyeyo?"},
+    {"korean": "관광이에요. 1주일 있을 거예요.", "english": "Tourism. I'll stay one week.", "romanization": "gwangwang-ieyo. il-ju-il isseul geoyeyo."},
+    {"korean": "환승 승객이에요. 어디로 가야 해요?", "english": "I'm a transfer passenger. Where should I go?", "romanization": "hwanseung seunggaeg-ieyo. eodiro gaya haeyo?"}
+  ],
+  "explanation": [
+    "입국 심사에서 you'll hear '여행 목적이 뭐예요?' (purpose) and '체류 기간이 얼마예요?' (length of stay). Prepare short answers: 관광/출장 (business) / 가족 방문.",
+    "Checked bag = 수하물, carry-on = 기내 반입. 부치다 means to check luggage. 수하물 찾는 곳 = baggage claim.",
+    "환승 means transfer. If you have a layover, say 환승이에요 and ask for the gate: 게이트가 어디예요?",
+    "Security asks '액체 있어요?' (Any liquids?) or '노트북 꺼내 주세요' (Please take out your laptop).",
+    "Numbers for dates use Sino: 1주일 (one week), 3일 (three days), 2달 (two months using native counter 달)."
+  ]
+}

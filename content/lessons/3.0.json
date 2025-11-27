@@ -1,0 +1,40 @@
+{
+  "id": "3.0",
+  "group_id": "3",
+  "version": "2.0.0",
+  "title": "Verb Basics & Present Tense",
+  "objectives": [
+    "Learn must-know base verbs",
+    "Conjugate to polite present tense (-아요/어요)",
+    "Build simple 'I do' sentences"
+  ],
+  "context": [
+    "Korean verbs are the engine of sentences. You need only the verb to make a full idea!",
+    "Dictionary forms end with -다. To speak politely, you change that ending to -아요/어요/해요.",
+    "Most verbs follow simple patterns once you know the final vowel."
+  ],
+  "vocabulary": [
+    {"word": "가다", "english": "to go", "romanization": "gada", "type": "verb"},
+    {"word": "오다", "english": "to come", "romanization": "oda", "type": "verb"},
+    {"word": "하다", "english": "to do", "romanization": "hada", "type": "verb"},
+    {"word": "먹다", "english": "to eat", "romanization": "meokda", "type": "verb"},
+    {"word": "마시다", "english": "to drink", "romanization": "masida", "type": "verb"},
+    {"word": "보다", "english": "to see/watch", "romanization": "boda", "type": "verb"},
+    {"word": "살다", "english": "to live", "romanization": "salda", "type": "verb"},
+    {"word": "알다", "english": "to know", "romanization": "alda", "type": "verb"}
+  ],
+  "sentences": [
+    {"korean": "저는 집에 가요.", "english": "I go home.", "romanization": "jeoneun jibe gayo."},
+    {"korean": "친구가 와요.", "english": "My friend is coming.", "romanization": "chinguga wayo."},
+    {"korean": "지금 점심 먹어요.", "english": "I'm eating lunch now.", "romanization": "jigeum jeomsim meogeoyo."},
+    {"korean": "물 마셔요. 커피도 마셔요.", "english": "I drink water. I drink coffee too.", "romanization": "mul masyeoyo. keopido masyeoyo."},
+    {"korean": "넷플릭스 봐요. 재밌어요!", "english": "I watch Netflix. It's fun!", "romanization": "netpeullikseu bwayo. jaemisseoyo!"}
+  ],
+  "explanation": [
+    "Drop 다 and add -아요 after bright vowels (ㅏ/ㅗ): 가다 → 가요, 보다 → 봐요. Add -어요 after other vowels: 먹다 → 먹어요, 마시다 → 마셔요.",
+    "하다 verbs always become 해요: 하다 → 해요 (운동해요, 공부해요, 일해요).",
+    "은/는 marks topics, 이/가 marks subjects. You can often omit them in casual speech when context is clear.",
+    "Present tense in Korean covers present and near future, like 'I go/I will go' depending on context.",
+    "Stress syllables smoothly. No strong stress like English; keep rhythm even."
+  ]
+}

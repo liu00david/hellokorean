@@ -1,0 +1,40 @@
+{
+  "id": "7.2",
+  "group_id": "7",
+  "version": "2.0.0",
+  "title": "Making Plans & Future Tense",
+  "objectives": [
+    "Invite and suggest plans",
+    "Use -(으)ㄹ 거예요 for future",
+    "Confirm availability politely"
+  ],
+  "context": [
+    "Future tense is simple: verb stem + -(으)ㄹ 거예요 handles intentions and predictions.",
+    "Korean invitations often use 같이 (together) and -ㄹ래요?/갈래요? to propose gently.",
+    "Polite checking phrases keep scheduling smooth."
+  ],
+  "vocabulary": [
+    {"word": "같이", "english": "together", "romanization": "gachi", "type": "adverb"},
+    {"word": "-(으)ㄹ 거예요", "english": "will/going to", "romanization": "-(eu)l geoyeyo", "type": "grammar"},
+    {"word": "-ㄹ래요?", "english": "Would you like to...?", "romanization": "-llaeyo?", "type": "grammar"},
+    {"word": "만나다", "english": "to meet", "romanization": "mannada", "type": "verb"},
+    {"word": "가능하다", "english": "to be possible", "romanization": "ganeunghada", "type": "verb"},
+    {"word": "어렵다", "english": "to be difficult", "romanization": "eoryeopda", "type": "adjective"},
+    {"word": "일정", "english": "schedule", "romanization": "iljeong", "type": "noun"},
+    {"word": "확인하다", "english": "to check/confirm", "romanization": "hwaginhada", "type": "verb"}
+  ],
+  "sentences": [
+    {"korean": "내일 같이 점심 먹을래요?", "english": "Do you want to have lunch together tomorrow?", "romanization": "nae-il gachi jeomsim meogeullaeyo?"},
+    {"korean": "저녁에 운동할 거예요.", "english": "I'm going to work out in the evening.", "romanization": "jeonyeoge undonghal geoyeyo."},
+    {"korean": "주말에는 시간이 없을 것 같아요.", "english": "I think I won't have time on the weekend.", "romanization": "jumaleneun sigani eopseul geot gatayo."},
+    {"korean": "일정 확인하고 알려줄게요.", "english": "I'll check my schedule and let you know.", "romanization": "iljeong hwaginhago allyeojulgeyo."},
+    {"korean": "그날은 조금 어려워요. 다른 날 가능해요?", "english": "That day is a bit difficult. Is another day possible?", "romanization": "geunareun jogeum eoryeowoyo. dareun nal ganeunghaeyo?"}
+  ],
+  "explanation": [
+    "-(으)ㄹ 거예요 adds a future/intent meaning. Add -을 after consonants, -ㄹ after vowels: 가다 → 갈 거예요, 먹다 → 먹을 거예요.",
+    "-ㄹ래요? suggests plans softly: 커피 마실래요? 같이 갈래요? It's more casual than -(으)실래요? but polite enough with 요.",
+    "가능해요 = It's possible. 어려워요 = It's hard/difficult. Combine with 조금 to soften refusals.",
+    "일정 확인하고 알려줄게요 literally 'I'll check the schedule and will let you know.' -줄게요 is a friendly promise.",
+    "Use 것 같아요 to hedge: 아마 늦을 것 같아요 (I think I'll be late)."
+  ]
+}

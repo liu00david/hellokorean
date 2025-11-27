@@ -1,0 +1,40 @@
+{
+  "id": "3.1",
+  "group_id": "3",
+  "version": "2.0.0",
+  "title": "Daily Routine Verbs",
+  "objectives": [
+    "Talk about morning-to-night activities",
+    "Chain verbs with time words",
+    "Use object particles naturally"
+  ],
+  "context": [
+    "A few core verbs cover most of your day: waking, working, studying, meeting, relaxing.",
+    "Add time words like 아침에 (in the morning) or 지금 (now) to give simple structure.",
+    "Object particles 을/를 attach to the thing you act on, but they often drop in speech."
+  ],
+  "vocabulary": [
+    {"word": "일어나다", "english": "to wake up", "romanization": "ireonada", "type": "verb"},
+    {"word": "씻다", "english": "to wash/cleanse", "romanization": "ssitda", "type": "verb"},
+    {"word": "일하다", "english": "to work", "romanization": "ilhada", "type": "verb"},
+    {"word": "공부하다", "english": "to study", "romanization": "gongbuhada", "type": "verb"},
+    {"word": "운동하다", "english": "to exercise", "romanization": "undonghada", "type": "verb"},
+    {"word": "쉬다", "english": "to rest", "romanization": "swida", "type": "verb"},
+    {"word": "만나다", "english": "to meet", "romanization": "mannada", "type": "verb"},
+    {"word": "잠자다", "english": "to sleep", "romanization": "jamjada", "type": "verb"}
+  ],
+  "sentences": [
+    {"korean": "아침에 일어나서 세수해요.", "english": "I wake up in the morning and wash my face.", "romanization": "achime ireonaseo sesuhaeyo."},
+    {"korean": "회사에서 일해요. 점심에는 동료를 만나요.", "english": "I work at the office. At lunch I meet a coworker.", "romanization": "hoesaseo ilhaeyo. jeomsimeneun dongnyoreul mannayo."},
+    {"korean": "저녁에 운동하고 쉬어요.", "english": "In the evening I work out and rest.", "romanization": "jeonyeoge undonghago swieoyo."},
+    {"korean": "주말에 한국어를 공부해요.", "english": "I study Korean on the weekend.", "romanization": "jumare hangugeoreul gongbuhaeyo."},
+    {"korean": "열두 시쯤에 잠자요.", "english": "I go to sleep around midnight.", "romanization": "yeoldu sijjeume jamjayo."}
+  ],
+  "explanation": [
+    "Object particles: 을 after consonant (한국어를), 를 after vowel (커피를). They can drop if the meaning is clear: 한국어 공부해요.",
+    "-아서/어서 links actions in sequence with cause/flow: 일어나서 씻어요 = I wake up and wash (right after).",
+    "Company/workplace phrases often use 에서 to show where an action happens: 회사에서 일해요, 집에서 쉬어요.",
+    "Time markers: 아침에 (in the morning), 점심에 (at lunchtime), 저녁에 (in the evening), 밤에 (at night).",
+    "For routines, present tense alone implies habit: 주말에 운동해요 = I work out on weekends."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "5.0",
+  "group_id": "5",
+  "version": "2.0.0",
+  "title": "Korean Food Words & Flavors",
+  "objectives": [
+    "Name staple Korean foods and drinks",
+    "Talk about taste with key adjectives",
+    "Express likes/dislikes about food"
+  ],
+  "context": [
+    "Food is central in Korean culture—knowing dishes helps you order confidently.",
+    "Describing flavors with simple adjectives goes a long way.",
+    "You can mix food nouns with 맛있어요/없어요 and other adjectives to react naturally."
+  ],
+  "vocabulary": [
+    {"word": "밥", "english": "rice/meal", "romanization": "bap", "type": "noun"},
+    {"word": "김치", "english": "kimchi", "romanization": "gimchi", "type": "noun"},
+    {"word": "불고기", "english": "bulgogi", "romanization": "bulgogi", "type": "noun"},
+    {"word": "비빔밥", "english": "bibimbap", "romanization": "bibimbap", "type": "noun"},
+    {"word": "라면", "english": "ramen/instant noodles", "romanization": "ramyeon", "type": "noun"},
+    {"word": "물", "english": "water", "romanization": "mul", "type": "noun"},
+    {"word": "소주", "english": "soju", "romanization": "soju", "type": "noun"},
+    {"word": "맛있어요", "english": "It's tasty", "romanization": "masisseoyo", "type": "phrase"},
+    {"word": "맵다", "english": "to be spicy", "romanization": "maepda", "type": "adjective"},
+    {"word": "싱거워요", "english": "It's bland", "romanization": "singgeowoyo", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "김치 정말 맛있어요.", "english": "Kimchi is really delicious.", "romanization": "gimchi jeongmal masisseoyo."},
+    {"korean": "불고기는 안 매워요.", "english": "Bulgogi isn't spicy.", "romanization": "bulgogineun an maewoyo."},
+    {"korean": "물 좀 주세요.", "english": "Please give me some water.", "romanization": "mul jom juseyo."},
+    {"korean": "라면은 조금 맵지만 맛있어요.", "english": "Ramen is a bit spicy but tasty.", "romanization": "ramyeoneun jogeum maepjiman masisseoyo."},
+    {"korean": "이 국은 조금 싱거워요.", "english": "This soup is a little bland.", "romanization": "i gugeun jogeum singgeowoyo."}
+  ],
+  "explanation": [
+    "맛있어요 = It's tasty. 맛없어요 = It's not tasty. Add 정말/진짜/너무 to intensify: 정말 맛있어요!",
+    "맵다 (to be spicy) conjugates to 매워요. Many Korean dishes are 맵고 짜요 (spicy and salty) but balanced.",
+    "밥 can mean 'rice' or 'meal.' 밥 먹었어요? often means 'Have you eaten? / How are you?'.",
+    "Use 조금 (a little) or 아주/정말 (very) before adjectives: 조금 매워요, 아주 맛있어요.",
+    "Add 은/는 to highlight contrast: 불고기는 안 매워요, 하지만 김치는 매워요."
+  ]
+}

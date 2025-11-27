@@ -1,0 +1,42 @@
+{
+  "id": "7.0",
+  "group_id": "7",
+  "version": "2.0.0",
+  "title": "Days & Time Words",
+  "objectives": [
+    "Name days and simple time markers",
+    "Place time expressions naturally in sentences",
+    "Ask and answer 'when' questions"
+  ],
+  "context": [
+    "Knowing when something happens is often more important than the full sentence.",
+    "Korean time words go before the verb and often before particles like 에 (at).",
+    "Combine with present tense to talk about plans, routines, and recent past."
+  ],
+  "vocabulary": [
+    {"word": "오늘", "english": "today", "romanization": "oneul", "type": "noun"},
+    {"word": "어제", "english": "yesterday", "romanization": "eoje", "type": "noun"},
+    {"word": "내일", "english": "tomorrow", "romanization": "nae-il", "type": "noun"},
+    {"word": "지금", "english": "now", "romanization": "jigeum", "type": "adverb"},
+    {"word": "곧", "english": "soon", "romanization": "got", "type": "adverb"},
+    {"word": "아침", "english": "morning", "romanization": "achim", "type": "noun"},
+    {"word": "점심", "english": "lunch/noon", "romanization": "jeomsim", "type": "noun"},
+    {"word": "저녁", "english": "evening/dinner", "romanization": "jeonyeok", "type": "noun"},
+    {"word": "주말", "english": "weekend", "romanization": "jumal", "type": "noun"},
+    {"word": "언제", "english": "when", "romanization": "eonje", "type": "question"}
+  ],
+  "sentences": [
+    {"korean": "오늘 뭐 해요?", "english": "What are you doing today?", "romanization": "oneul mwo haeyo?"},
+    {"korean": "내일 아침에 회의가 있어요.", "english": "I have a meeting tomorrow morning.", "romanization": "nae-il achime hoeui-ga isseoyo."},
+    {"korean": "주말에 쉬어요.", "english": "I rest on the weekend.", "romanization": "jumare swieoyo."},
+    {"korean": "곧 시작해요.", "english": "It starts soon.", "romanization": "got sijakhaeyo."},
+    {"korean": "언제 시간 돼요?", "english": "When are you free?", "romanization": "eonje sigan dwaeyo?"}
+  ],
+  "explanation": [
+    "Time words usually come early: [Time] + [Place] + [Verb]. Example: 내일 회사에서 일해요 (Tomorrow I work at the office).",
+    "아침/점심/저녁 can pair with 에 to mean 'in/at': 아침에, 점심에, 저녁에.",
+    "언제 is flexible: 언제 만나요? 언제 출발해요?", 
+    "주말 (weekend) vs 주중 (during the week). Add 이번/다음/지난 before weeks or months: 이번 주, 다음 주.",
+    "곧 (soon) and 지금 (now) don't take 에. They act like adverbs right before the verb."
+  ]
+}

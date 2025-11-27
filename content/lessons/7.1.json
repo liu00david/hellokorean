@@ -1,0 +1,41 @@
+{
+  "id": "7.1",
+  "group_id": "7",
+  "version": "2.0.0",
+  "title": "Clock Time & Appointments",
+  "objectives": [
+    "Tell time with hours and minutes",
+    "Set meetings and appointments",
+    "Use -에 for specific times"
+  ],
+  "context": [
+    "Hours use native numbers (한 시, 두 시), minutes use Sino numbers (십 분, 삼십 분).",
+    "에 marks specific clock times: 세 시에 만나요 (Let's meet at 3).",
+    "약속 (appointment) and 시간 (time) show up constantly when scheduling."
+  ],
+  "vocabulary": [
+    {"word": "시", "english": "hour/o'clock", "romanization": "si", "type": "counter"},
+    {"word": "분", "english": "minute", "romanization": "bun", "type": "counter"},
+    {"word": "반", "english": "half past", "romanization": "ban", "type": "noun"},
+    {"word": "시작", "english": "start", "romanization": "sijak", "type": "noun"},
+    {"word": "끝", "english": "end/finish", "romanization": "kkeut", "type": "noun"},
+    {"word": "약속", "english": "appointment/promise", "romanization": "yaksok", "type": "noun"},
+    {"word": "회의", "english": "meeting", "romanization": "hoeui", "type": "noun"},
+    {"word": "시간 있어요?", "english": "Do you have time?", "romanization": "sigan isseoyo?", "type": "phrase"},
+    {"word": "예약하다", "english": "to book/reserve", "romanization": "yeyakhada", "type": "verb"}
+  ],
+  "sentences": [
+    {"korean": "두 시 반에 만나요.", "english": "Let's meet at 2:30.", "romanization": "du si bane mannayo."},
+    {"korean": "회의가 세 시에 시작해요.", "english": "The meeting starts at 3.", "romanization": "hoeui-ga se sie sijakhaeyo."},
+    {"korean": "네 시 십오 분에 끝나요.", "english": "It ends at 4:15.", "romanization": "ne si sibo bune kkeunnayo."},
+    {"korean": "내일 약속 있어요?", "english": "Do you have plans tomorrow?", "romanization": "nae-il yaksok isseoyo?"},
+    {"korean": "여섯 시로 예약했어요.", "english": "I booked it for 6 o'clock.", "romanization": "yeoseot siro yeyakhaesseoyo."}
+  ],
+  "explanation": [
+    "Hours use native numbers: 한/두/세/네/다섯/여섯/일곱/여덟/아홉/열 시. Minutes use Sino numbers: 십 분 (10), 이십 분 (20), 삼십 분 (30).",
+    "반 = half past: 두 시 반 (2:30). For quarter past, say 십오 분 (15 minutes).",
+    "Use -에 for specific times: 오전 아홉 시에 (at 9 a.m.). For 'around,' add 쯤: 여섯 시쯤에.",
+    "시간 있어요? = Do you have time? 없어요 = I don't. 조금 있어요 = I have a little.",
+    "예약하다 combines 예약 (reservation) + 하다. You can 예약했어요 (I reserved) or 예약하고 싶어요 (I want to book)."
+  ]
+}

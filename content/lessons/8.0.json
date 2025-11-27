@@ -1,0 +1,44 @@
+{
+  "id": "8.0",
+  "group_id": "8",
+  "version": "2.0.0",
+  "title": "Transportation Essentials",
+  "objectives": [
+    "Name common transport options",
+    "Use ride/transfer/get-off verbs",
+    "Handle tickets and payment basics"
+  ],
+  "context": [
+    "Public transit in Korea is extensive—knowing the key words keeps you moving.",
+    "타다 (to ride) and 내리다 (to get off) pair with any vehicle.",
+    "Cards are king: a 교통카드 works on buses, subways, and some taxis."
+  ],
+  "vocabulary": [
+    {"word": "버스", "english": "bus", "romanization": "beoseu", "type": "noun"},
+    {"word": "지하철", "english": "subway", "romanization": "jihacheol", "type": "noun"},
+    {"word": "택시", "english": "taxi", "romanization": "taegsi", "type": "noun"},
+    {"word": "기차", "english": "train", "romanization": "gicha", "type": "noun"},
+    {"word": "비행기", "english": "airplane", "romanization": "bihaenggi", "type": "noun"},
+    {"word": "정류장", "english": "(bus) stop", "romanization": "jeongnyujang", "type": "noun"},
+    {"word": "역", "english": "station", "romanization": "yeok", "type": "noun"},
+    {"word": "타다", "english": "to ride", "romanization": "tada", "type": "verb"},
+    {"word": "내리다", "english": "to get off", "romanization": "naerida", "type": "verb"},
+    {"word": "갈아타다", "english": "to transfer", "romanization": "garatada", "type": "verb"},
+    {"word": "교통카드", "english": "transit card", "romanization": "gyotongkadeu", "type": "noun"},
+    {"word": "표", "english": "ticket", "romanization": "pyo", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "버스를 타고 회사에 가요.", "english": "I take the bus to the office.", "romanization": "beoseureul tago hoesa-e gayo."},
+    {"korean": "두 정류장 전에 내렸어요.", "english": "I got off two stops earlier.", "romanization": "du jeongnyujang jeone naeryeosseoyo."},
+    {"korean": "강남역에서 2호선으로 갈아타요.", "english": "At Gangnam Station I transfer to Line 2.", "romanization": "gangnam-yeogeseo iho-seon-euro garatayo."},
+    {"korean": "교통카드 있어요? 충전했어요?", "english": "Do you have a transit card? Did you top it up?", "romanization": "gyotongkadeu isseoyo? chungjeonhaesseoyo?"},
+    {"korean": "표 두 장 주세요.", "english": "Two tickets, please.", "romanization": "pyo du jang juseyo."}
+  ],
+  "explanation": [
+    "Vehicles take object particle sometimes but often omitted: 버스(를) 타요. Use 에서 with stations for actions: 역에서 갈아타요.",
+    "호선 is subway line: 2호선 (line 2), 9호선 (line 9). Attach 으로/로 after the line number.",
+    "충전하다 = to recharge/top up (a card). 잔액 means remaining balance: 잔액이 없어요 (no balance).",
+    "Taxis often ask '카드요? 현금요?' Answer with the method. Some taxis accept 교통카드 taps too.",
+    "For buses, press the stop button before your stop: 다음 정류장에서 내릴게요 (I'll get off at the next stop)."
+  ]
+}

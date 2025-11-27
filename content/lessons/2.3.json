@@ -1,0 +1,41 @@
+{
+  "id": "2.3",
+  "group_id": "2",
+  "version": "2.0.0",
+  "title": "Getting Attention & Simple Requests",
+  "objectives": [
+    "Get someone's attention politely",
+    "Ask for simple help or items",
+    "Check understanding in real conversations"
+  ],
+  "context": [
+    "These phrases are lifesavers when you need help or clarification.",
+    "They are short, polite, and work in almost any everyday situation.",
+    "Focus on tone: keep your voice gentle and end with 요 to stay polite."
+  ],
+  "vocabulary": [
+    {"word": "저기요", "english": "Excuse me (to get attention)", "romanization": "jeogiyo", "type": "phrase"},
+    {"word": "잠시만요", "english": "Just a moment", "romanization": "jamsimanyo", "type": "phrase"},
+    {"word": "실례합니다", "english": "Excuse me (formal/apology)", "romanization": "sillyehamnida", "type": "phrase"},
+    {"word": "이거 주세요", "english": "Please give me this", "romanization": "igeo juseyo", "type": "phrase"},
+    {"word": "도와주세요", "english": "Please help me", "romanization": "dowajuseyo", "type": "phrase"},
+    {"word": "천천히 말해 주세요", "english": "Please speak slowly", "romanization": "cheoncheonhi malhae juseyo", "type": "phrase"},
+    {"word": "다시 말해 주세요", "english": "Please say that again", "romanization": "dasi malhae juseyo", "type": "phrase"},
+    {"word": "이해 못 했어요", "english": "I didn't understand", "romanization": "ihae mot haesseoyo", "type": "phrase"},
+    {"word": "괜찮아요", "english": "It's okay / Are you okay?", "romanization": "gwaenchanayo", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "저기요, 여기 자리 있어요?", "english": "Excuse me, is this seat taken?", "romanization": "jeogiyo, yeogi jari isseoyo?"},
+    {"korean": "잠시만요. 조금만 기다려 주세요.", "english": "One moment. Please wait just a bit.", "romanization": "jamsimanyo. jogeumman gidaryeo juseyo."},
+    {"korean": "이거 주세요. 카드로 계산할게요.", "english": "Please give me this. I'll pay by card.", "romanization": "igeo juseyo. kadeuro gyesanalgeyo."},
+    {"korean": "천천히 말해 주세요. 이해 못 했어요.", "english": "Please speak slowly. I didn't understand.", "romanization": "cheoncheonhi malhae juseyo. ihae mot haesseoyo."},
+    {"korean": "괜찮아요? 도와드릴까요?", "english": "Are you okay? Can I help you?", "romanization": "gwaenchanayo? dowadeurilkkayo?"}
+  ],
+  "explanation": [
+    "저기요 gets attention politely, like saying 'excuse me' to a waiter. 실례합니다 is stronger/apologetic (e.g., squeezing by someone).",
+    "주세요 is the magic polite request ending. Attach it after nouns (이거 주세요 = this please) or verb stems (도와주세요 = help me please).",
+    "천천히 말해 주세요 + 다시 말해 주세요 are key for learners. Don't be shy to use them—they're common and appreciated.",
+    "못 했어요 means 'couldn't do it/didn't manage.' 이해 못 했어요 = I didn't (couldn't) understand.",
+    "괜찮아요 works both ways: as a question ('Are you okay?') and as a response ('It's fine/I'm okay')."
+  ]
+}

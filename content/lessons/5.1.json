@@ -1,0 +1,41 @@
+{
+  "id": "5.1",
+  "group_id": "5",
+  "version": "2.0.0",
+  "title": "Ordering Food Like a Local",
+  "objectives": [
+    "Order food and drinks politely",
+    "Point and choose items with 이거/저거",
+    "Handle quantities and takeout requests"
+  ],
+  "context": [
+    "Korean restaurants often use direct but polite phrases with 주세요.",
+    "Pointing with 이거 (this) and using numbers + 개 makes ordering simple even without reading the menu.",
+    "Takeout, dine-in, and payment each have short standard lines."
+  ],
+  "vocabulary": [
+    {"word": "메뉴", "english": "menu", "romanization": "menyu", "type": "noun"},
+    {"word": "이거", "english": "this (near me)", "romanization": "igeo", "type": "pronoun"},
+    {"word": "저거", "english": "that (over there)", "romanization": "jeogeo", "type": "pronoun"},
+    {"word": "주세요", "english": "please give", "romanization": "juseyo", "type": "phrase"},
+    {"word": "추천", "english": "recommendation", "romanization": "chucheon", "type": "noun"},
+    {"word": "하나/둘/셋", "english": "one/two/three (native numbers)", "romanization": "hana/dul/set", "type": "number"},
+    {"word": "개", "english": "item counter", "romanization": "gae", "type": "counter"},
+    {"word": "포장", "english": "takeout", "romanization": "pojang", "type": "noun"},
+    {"word": "계산서", "english": "bill/check", "romanization": "gyesanseo", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "메뉴 추천해 주세요.", "english": "Please recommend a menu item.", "romanization": "menyu chucheonhae juseyo."},
+    {"korean": "이거 하나, 저거 둘 주세요.", "english": "This one (1) and that one (2), please.", "romanization": "igeo hana, jeogeo dul juseyo."},
+    {"korean": "물은 무료예요?", "english": "Is water free?", "romanization": "mureun muryoyeyo?"},
+    {"korean": "포장해 주세요.", "english": "Please make it to go.", "romanization": "pojanghae juseyo."},
+    {"korean": "계산서 주세요. 카드로 할게요.", "english": "Bill, please. I'll pay by card.", "romanization": "gyesanseo juseyo. kadeuro halgeyo."}
+  ],
+  "explanation": [
+    "Point + number + counter + 주세요 is the core ordering pattern: 이거 두 개 주세요 (Please give me two of these).",
+    "Native numbers 1-4 often shorten before counters: 하나→한, 둘→두, 셋→세, 넷→네: 불고기 두 개 주세요.",
+    "For dine-in vs takeout, staff may ask '드시고 가세요?' Reply: 네, 먹고 갈게요 (eat here) / 포장해 주세요 (to go).",
+    "카드로요? 현금으로요? means 'By card? By cash?' Reply with the method you prefer.",
+    "After paying, you'll often hear 수고하세요 (take care/thanks for your effort) as you leave."
+  ]
+}

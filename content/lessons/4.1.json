@@ -1,0 +1,42 @@
+{
+  "id": "4.1",
+  "group_id": "4",
+  "version": "2.0.0",
+  "title": "Places & Location Particles",
+  "objectives": [
+    "Name everyday places",
+    "Use 에 vs 에서 correctly",
+    "Combine places with go/come/work verbs"
+  ],
+  "context": [
+    "에 marks location or destination; 에서 marks where an action happens.",
+    "Knowing a few building words helps with errands and commuting.",
+    "Attach place + 에/에서 before the verb—no prepositions needed."
+  ],
+  "vocabulary": [
+    {"word": "집", "english": "home/house", "romanization": "jip", "type": "noun"},
+    {"word": "학교", "english": "school", "romanization": "hakgyo", "type": "noun"},
+    {"word": "회사", "english": "company/office", "romanization": "hoesa", "type": "noun"},
+    {"word": "카페", "english": "cafe", "romanization": "kape", "type": "noun"},
+    {"word": "병원", "english": "hospital", "romanization": "byeongwon", "type": "noun"},
+    {"word": "공원", "english": "park", "romanization": "gongwon", "type": "noun"},
+    {"word": "은행", "english": "bank", "romanization": "eunhaeng", "type": "noun"},
+    {"word": "시장", "english": "market", "romanization": "sijang", "type": "noun"},
+    {"word": "도서관", "english": "library", "romanization": "doseogwan", "type": "noun"},
+    {"word": "마트", "english": "mart/supermarket", "romanization": "mateu", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "지금 회사에 가요.", "english": "I'm going to the office now.", "romanization": "jigeum hoesa-e gayo."},
+    {"korean": "카페에서 일해요.", "english": "I work at a cafe.", "romanization": "kape-eseo ilhaeyo."},
+    {"korean": "주말에는 공원에서 운동해요.", "english": "On weekends I exercise at the park.", "romanization": "jumaleneun gongwon-eseo undonghaeyo."},
+    {"korean": "은행은 시장 옆에 있어요.", "english": "The bank is next to the market.", "romanization": "eunhaengeun sijang yeope isseoyo."},
+    {"korean": "도서관에 책이 많아요.", "english": "There are many books at the library.", "romanization": "doseogwane chaegi manayo."}
+  ],
+  "explanation": [
+    "에 answers 'to/at/in' for states or destinations: 집에 있어요 (at home), 학교에 가요 (go to school).",
+    "에서 answers 'at/in' for actions: 집에서 공부해요 (study at home), 회사에서 일해요 (work at the office).",
+    "With movement verbs 가다/오다, use 에: 집에 가요. With action verbs like 일하다/공부하다, use 에서.",
+    "Position words pair with 에: 학교 옆에 (next to), 시장 안에 (inside), 공원 근처에 (near the park).",
+    "Order: [Place + particle] + [time word] + verb is flexible. Common flow: 오늘 학교에서 수업해요 (Today at school I have class)."
+  ]
+}

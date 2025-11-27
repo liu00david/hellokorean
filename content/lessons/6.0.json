@@ -1,0 +1,40 @@
+{
+  "id": "6.0",
+  "group_id": "6",
+  "version": "2.0.0",
+  "title": "Adjective Basics",
+  "objectives": [
+    "Learn common descriptive adjectives",
+    "Conjugate adjectives to -아요/어요",
+    "React naturally with 맛있어요/괜찮아요 patterns"
+  ],
+  "context": [
+    "Korean 'adjectives' are actually descriptive verbs ending in -다.",
+    "They conjugate just like action verbs to make polite statements.",
+    "A few versatile adjectives cover taste, price, size, and looks."
+  ],
+  "vocabulary": [
+    {"word": "맛있다", "english": "to be delicious", "romanization": "masitda", "type": "adjective"},
+    {"word": "맛없다", "english": "to taste bad", "romanization": "madeopda", "type": "adjective"},
+    {"word": "비싸다", "english": "to be expensive", "romanization": "bissada", "type": "adjective"},
+    {"word": "싸다", "english": "to be cheap", "romanization": "ssada", "type": "adjective"},
+    {"word": "크다", "english": "to be big", "romanization": "keuda", "type": "adjective"},
+    {"word": "작다", "english": "to be small", "romanization": "jakda", "type": "adjective"},
+    {"word": "예쁘다", "english": "to be pretty", "romanization": "yeppeuda", "type": "adjective"},
+    {"word": "괜찮다", "english": "to be okay/fine", "romanization": "gwaenchantda", "type": "adjective"}
+  ],
+  "sentences": [
+    {"korean": "이 옷 예뻐요.", "english": "This outfit is pretty.", "romanization": "i ot yeppeoyo."},
+    {"korean": "가격이 비싸요.", "english": "The price is expensive.", "romanization": "gagyeogi bissayo."},
+    {"korean": "방이 좀 작아요.", "english": "The room is a bit small.", "romanization": "bangi jom jagayo."},
+    {"korean": "괜찮아요. 좋아요.", "english": "It's okay. It's good.", "romanization": "gwaenchanayo. joayo."},
+    {"korean": "이 커피 맛있어요!", "english": "This coffee is delicious!", "romanization": "i keopi masisseoyo!"}
+  ],
+  "explanation": [
+    "Drop 다, add -아요/어요: 비싸다 → 비싸요, 싸다 → 싸요, 괜찮다 → 괜찮아요.",
+    "ㅂ irregular not here yet; these are regular. Notice 예쁘다 → 예뻐요 (merge ㅡ to ㅓ).",
+    "Add 조금/좀 to soften: 좀 비싸요 (a bit pricey). Add 아주/정말 to strengthen: 정말 예뻐요.",
+    "괜찮아요 means 'It's fine/I'm fine' and is a polite neutral response in many contexts.",
+    "Adjectives can stand as sentences: 맛있어요! (It's delicious!), 따뜻해요 (It's warm)."
+  ]
+}

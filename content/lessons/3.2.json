@@ -1,0 +1,40 @@
+{
+  "id": "3.2",
+  "group_id": "3",
+  "version": "2.0.0",
+  "title": "Questions, Likes, and Negatives",
+  "objectives": [
+    "Turn verbs into questions",
+    "Express likes/wants politely",
+    "Say you don't do something using 안/못"
+  ],
+  "context": [
+    "Two small words open up conversation: 좋아하다 (to like) and -고 싶다 (to want).",
+    "안 and 못 sit before verbs to make simple negatives. 안 = don't, 못 = can't (unable).",
+    "Rising intonation turns statements into questions, or add -아요/어요? with a question mark."
+  ],
+  "vocabulary": [
+    {"word": "좋아하다", "english": "to like", "romanization": "joahada", "type": "verb"},
+    {"word": "원하다", "english": "to want", "romanization": "wonhada", "type": "verb"},
+    {"word": "싶다", "english": "to want to (auxiliary)", "romanization": "sipda", "type": "verb"},
+    {"word": "필요하다", "english": "to need", "romanization": "piryohada", "type": "verb"},
+    {"word": "알고 싶어요", "english": "I want to know", "romanization": "algo sipeoyo", "type": "phrase"},
+    {"word": "안 가요", "english": "I don't go", "romanization": "an gayo", "type": "phrase"},
+    {"word": "못 먹어요", "english": "I can't eat (unable)", "romanization": "mot meogeoyo", "type": "phrase"},
+    {"word": "괜찮아요?", "english": "Is it okay? / Are you okay?", "romanization": "gwaenchanayo?", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "한국 음식 좋아해요?", "english": "Do you like Korean food?", "romanization": "hanguk eumsik joahaeyo?"},
+    {"korean": "저는 매운 거 안 먹어요.", "english": "I don't eat spicy things.", "romanization": "jeoneun maeun geo an meogeoyo."},
+    {"korean": "커피 마시고 싶어요.", "english": "I want to drink coffee.", "romanization": "keopi masigo sipeoyo."},
+    {"korean": "오늘은 못 가요. 내일 가능해요.", "english": "I can't go today. Tomorrow works.", "romanization": "oneureun mot gayo. nae-il ganeunghaeyo."},
+    {"korean": "필요해요? 아니요, 괜찮아요.", "english": "Do you need it? No, it's okay.", "romanization": "piryohaeyo? aniyo, gwaenchanayo."}
+  ],
+  "explanation": [
+    "Add -아요/어요? with rising tone to ask yes/no questions. WH-words (뭐/언제/어디/누구/왜/어떻게) stay in place: 누구 좋아해요?",
+    "좋아하다 takes an object: 커피를 좋아해요. 'I like coffee.'",
+    "-고 싶어요 attaches to verb stems to express desire: 가고 싶어요 (I want to go), 배우고 싶어요 (I want to learn).",
+    "안 + verb = don't/won't (choice). 못 + verb = can't (ability/circumstance).", 
+    "필요하다 means 'to need.' You can say 필요 없어요 = I don't need it."
+  ]
+}

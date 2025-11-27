@@ -1,0 +1,40 @@
+{
+  "id": "2.2",
+  "group_id": "2",
+  "version": "2.0.0",
+  "title": "Friendly Checks & Small Talk",
+  "objectives": [
+    "Ask and answer 'How are you?' naturally",
+    "Use polite phrases for everyday encounters",
+    "Respond to casual small talk with confidence"
+  ],
+  "context": [
+    "After greeting someone, Koreans often check in with a quick small-talk question.",
+    "Polite endings like 요 keep things friendly without being too formal.",
+    "These phrases help you connect quickly without needing long sentences."
+  ],
+  "vocabulary": [
+    {"word": "잘 지내요?", "english": "How are you?", "romanization": "jal jinaeyo?", "type": "phrase"},
+    {"word": "네, 잘 지내요", "english": "Yes, I'm doing well", "romanization": "ne, jal jinaeyo", "type": "phrase"},
+    {"word": "그럭저럭이에요", "english": "I'm so-so", "romanization": "geureokjeoreogieyo", "type": "phrase"},
+    {"word": "오랜만이에요", "english": "Long time no see", "romanization": "oraenmanieyo", "type": "phrase"},
+    {"word": "처음 뵙겠습니다", "english": "Nice to meet you (very polite)", "romanization": "cheoeum boepgetseumnida", "type": "phrase"},
+    {"word": "좋은 아침이에요", "english": "Good morning", "romanization": "joeun achim-ieyo", "type": "phrase"},
+    {"word": "좋은 하루 보내세요", "english": "Have a good day", "romanization": "joeun haru bonaeseyo", "type": "phrase"},
+    {"word": "잘 부탁드립니다", "english": "Please take care of me / Let's work well together", "romanization": "jal butakdeurimnida", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "안녕하세요. 잘 지내요?", "english": "Hello. How are you?", "romanization": "annyeonghaseyo. jal jinaeyo?"},
+    {"korean": "네, 잘 지내요. 오랜만이에요!", "english": "Yes, I'm good. Long time no see!", "romanization": "ne, jal jinaeyo. oraenmanieyo!"},
+    {"korean": "처음 뵙겠습니다. 잘 부탁드립니다.", "english": "Nice to meet you. Please take care of me.", "romanization": "cheoeum boepgetseumnida. jal butakdeurimnida."},
+    {"korean": "좋은 아침이에요. 좋은 하루 보내세요.", "english": "Good morning. Have a good day.", "romanization": "joeun achim-ieyo. joeun haru bonaeseyo."},
+    {"korean": "그럭저럭이에요, 조금 피곤해요.", "english": "I'm so-so, a little tired.", "romanization": "geureokjeoreogieyo, jogeum pigonhaeyo."}
+  ],
+  "explanation": [
+    "잘 지내요? is the standard 'How are you?' for casual-polite settings. Answer with 네, 잘 지내요 or so-so: 그럭저럭이에요.",
+    "오랜만이에요 literally means 'It's been a long time.' Great for meeting someone after a while.",
+    "처음 뵙겠습니다 is business-level polite. Follow it with 잘 부탁드립니다 when starting a relationship or project.",
+    "좋은 아침이에요 is used less often than in English, but it's understood. Koreans often just say 안녕하세요 in the morning too.",
+    "좋은 하루 보내세요 is a warm send-off. You can also say 좋은 밤 되세요 (Have a good night)."
+  ]
+}

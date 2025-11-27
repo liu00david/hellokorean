@@ -1,0 +1,42 @@
+{
+  "id": "10.2",
+  "group_id": "10",
+  "version": "2.0.0",
+  "title": "Shopping & Payment",
+  "objectives": [
+    "Ask about prices, sizes, and colors",
+    "Try on items and request discounts",
+    "Handle receipts, tax refunds, and bags"
+  ],
+  "context": [
+    "Markets and shops are friendly to short, clear Korean. Many staff reply in simple English, but Korean gets better service.",
+    "Size and fit words are often English loanwords—listen for 사이즈, 라지, 스몰.",
+    "Receipts and tax-free forms are common for tourists; know the key terms."
+  ],
+  "vocabulary": [
+    {"word": "얼마예요?", "english": "How much is it?", "romanization": "eolmayeyo?", "type": "phrase"},
+    {"word": "사이즈", "english": "size", "romanization": "saijeu", "type": "noun"},
+    {"word": "색/색깔", "english": "color", "romanization": "saek/saekkkal", "type": "noun"},
+    {"word": "입어 봐도 돼요?", "english": "May I try it on?", "romanization": "ibeo bwado dwaeyo?", "type": "phrase"},
+    {"word": "좀 더 큰", "english": "a bit bigger", "romanization": "jom deo keun", "type": "phrase"},
+    {"word": "할인", "english": "discount", "romanization": "harin", "type": "noun"},
+    {"word": "영수증", "english": "receipt", "romanization": "yeongsujeung", "type": "noun"},
+    {"word": "면세", "english": "tax-free", "romanization": "myeonse", "type": "noun"},
+    {"word": "봉투", "english": "bag", "romanization": "bongtu", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "이거 얼마예요?", "english": "How much is this?", "romanization": "igeo eolmayeyo?"},
+    {"korean": "한 사이즈 더 있어요?", "english": "Do you have one size bigger?", "romanization": "han saijeu deo isseoyo?"},
+    {"korean": "검은색 말고 다른 색 있어요?", "english": "Do you have another color besides black?", "romanization": "geomeunsaek malgo dareun saek isseoyo?"},
+    {"korean": "입어 봐도 돼요?", "english": "Can I try it on?", "romanization": "ibeo bwado dwaeyo?"},
+    {"korean": "할인돼요? 면세 가능해요?", "english": "Is there a discount? Is tax-free possible?", "romanization": "harindwaeyo? myeonse ganeunghaeyo?"},
+    {"korean": "봉투 필요 없어요.", "english": "I don't need a bag.", "romanization": "bongtu piryo eopseoyo."}
+  ],
+  "explanation": [
+    "사이즈 uses English letter sizes: 스몰/미디엄/라지. Numbers for shoes are in mm (e.g., 250).",
+    "입어 봐도 돼요? uses the permission pattern -아/어도 돼요? meaning 'Is it okay if...?'",
+    "할인 (discount) pairs with 카드 할인, 멤버십 할인. If price feels high, ask 조금만 깎아 주세요 (Please lower it a little).",
+    "면세 (tax-free) often requires a passport. 영수증 주세요 = Please give me a receipt.",
+    "For bags at stores: 봉투 필요하세요? Reply 필요 없어요 (No need) or 하나 주세요 (One please)."
+  ]
+}

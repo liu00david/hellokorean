@@ -1,0 +1,43 @@
+{
+  "id": "9.0",
+  "group_id": "9",
+  "version": "2.0.0",
+  "title": "Sino-Korean Numbers",
+  "objectives": [
+    "Count with 일 이 삼 사 오 and beyond",
+    "Use Sino numbers for dates, money, and minutes",
+    "Read large numbers smoothly"
+  ],
+  "context": [
+    "Korean has two number systems. Sino-Korean numbers (한자어 수) come from Chinese and handle money, minutes, phone numbers, floors, months, and more.",
+    "Pattern is regular: 일(1) 이(2) 삼(3) 사(4) 오(5) 육(6) 칠(7) 팔(8) 구(9) 십(10).",
+    "Combine tens and hundreds like Lego blocks: 이십(20), 삼십오(35), 백오십(150)."
+  ],
+  "vocabulary": [
+    {"word": "공", "english": "zero (phone numbers)", "romanization": "gong", "type": "number"},
+    {"word": "영", "english": "zero", "romanization": "yeong", "type": "number"},
+    {"word": "일", "english": "one", "romanization": "il", "type": "number"},
+    {"word": "이", "english": "two", "romanization": "i", "type": "number"},
+    {"word": "삼", "english": "three", "romanization": "sam", "type": "number"},
+    {"word": "사", "english": "four", "romanization": "sa", "type": "number"},
+    {"word": "오", "english": "five", "romanization": "o", "type": "number"},
+    {"word": "십", "english": "ten", "romanization": "sip", "type": "number"},
+    {"word": "백", "english": "hundred", "romanization": "baek", "type": "number"},
+    {"word": "천", "english": "thousand", "romanization": "cheon", "type": "number"},
+    {"word": "만", "english": "ten thousand", "romanization": "man", "type": "number"}
+  ],
+  "sentences": [
+    {"korean": "오늘은 3월 15일이에요.", "english": "Today is March 15th.", "romanization": "oneureun sam-wol sip-o-il-ieyo."},
+    {"korean": "가격이 만 오천 원이에요.", "english": "The price is 15,000 won.", "romanization": "gagyeogi man ocheon won-ieyo."},
+    {"korean": "회의가 30분 걸려요.", "english": "The meeting takes 30 minutes.", "romanization": "hoeui-ga samsip bun geollyeoyo."},
+    {"korean": "제 번호는 010-9876-5432예요.", "english": "My number is 010-9876-5432.", "romanization": "je beonhoneun gong-il-gong, gu-pal-chil-yuk, o-sa-sam-i-yeyo."},
+    {"korean": "십이층에 살아요.", "english": "I live on the 12th floor.", "romanization": "sibi cheunge sarayo."}
+  ],
+  "explanation": [
+    "십 to 백 to 천 to 만 build up: 이십(20) = 2×10, 삼십사(34) = 3×10 + 4, 이천오백(2,500) = 2×1000 + 5×100.",
+    "Dates use Sino numbers for months and days: 3월 15일 (March 15th). Months are number + 월; days are number + 일.",
+    "Phone numbers often use 공 (0) instead of 영. Read digits individually: 010 → 공-일-공.",
+    "Money uses 원 with Sino numbers: 만 원 (10,000 won), 삼만 육천 원 (36,000 won).",
+    "Floors also Sino: 1층 (il cheung), 12층 (sibi cheung)."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "6.1",
+  "group_id": "6",
+  "version": "2.0.0",
+  "title": "Describing People & Things",
+  "objectives": [
+    "Use adjectives for mood, condition, and personality",
+    "Place adjectives before nouns using -은/-ㄴ",
+    "Softly agree or disagree with descriptions"
+  ],
+  "context": [
+    "Korean often puts adjectives directly before nouns using a short modifier form.",
+    "Describing how people feel or act helps with daily check-ins.",
+    "Use intensifiers like 정말/좀 to fine-tune your tone."
+  ],
+  "vocabulary": [
+    {"word": "친절하다", "english": "to be kind", "romanization": "chinjeolhada", "type": "adjective"},
+    {"word": "바쁘다", "english": "to be busy", "romanization": "bappeuda", "type": "adjective"},
+    {"word": "피곤하다", "english": "to be tired", "romanization": "pigonhada", "type": "adjective"},
+    {"word": "건강하다", "english": "to be healthy", "romanization": "geonganghada", "type": "adjective"},
+    {"word": "시원하다", "english": "to be cool/refreshing", "romanization": "siwonhada", "type": "adjective"},
+    {"word": "따뜻하다", "english": "to be warm", "romanization": "ttatteuthada", "type": "adjective"},
+    {"word": "재미있다", "english": "to be fun/interesting", "romanization": "jaemiitda", "type": "adjective"},
+    {"word": "지루하다", "english": "to be boring", "romanization": "jiruhada", "type": "adjective"}
+  ],
+  "sentences": [
+    {"korean": "오늘 좀 피곤해요.", "english": "I'm a bit tired today.", "romanization": "oneul jom pigonhaeyo."},
+    {"korean": "친절한 사람을 좋아해요.", "english": "I like kind people.", "romanization": "chinjeolhan sarameul joahaeyo."},
+    {"korean": "따뜻한 커피 주세요.", "english": "Please give me warm coffee.", "romanization": "ttatteuthan keopi juseyo."},
+    {"korean": "회의가 지루해요.", "english": "The meeting is boring.", "romanization": "hoeui-ga jiruhaeyo."},
+    {"korean": "날씨가 시원하고 좋아요.", "english": "The weather is cool and nice.", "romanization": "nalssiga siwonhago joayo."}
+  ],
+  "explanation": [
+    "Adjectives before nouns use -은/-ㄴ after dropping 다: 친절하다 → 친절한 사람, 따뜻하다 → 따뜻한 커피. With ㅂ irregulars (e.g., 따뜻하다 regular), other irregular rules apply later.",
+    "Add 너무/정말 for stronger tone: 너무 바빠요 (I'm very busy). Add 조금/좀 to soften complaints: 좀 피곤해요.",
+    "하다 adjectives like 건강하다 behave like verbs but still describe state: 저는 건강해요.",
+    "When agreeing politely: 맞아요/네, 그래요. When soft disagreeing: 그런 것 같아요 (I think it's like that), 조금 다른 것 같아요 (I think it's a bit different).",
+    "재미있다 is often pronounced 재미있다/재밌다 (both common). Both conjugate to 재미있어요/재밌어요."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "9.1",
+  "group_id": "9",
+  "version": "2.0.0",
+  "title": "Native Numbers & Basic Counters",
+  "objectives": [
+    "Count with native Korean numbers 1-10",
+    "Use common counters like 개/명/마리",
+    "Order small quantities in real situations"
+  ],
+  "context": [
+    "Native numbers handle age (살), hours (시), and everyday counting up to about 99.",
+    "Counters follow the number to match the type of thing you're counting.",
+    "Numbers 1-4 often shorten before counters (한/두/세/네)."
+  ],
+  "vocabulary": [
+    {"word": "하나", "english": "one", "romanization": "hana", "type": "number"},
+    {"word": "둘", "english": "two", "romanization": "dul", "type": "number"},
+    {"word": "셋", "english": "three", "romanization": "set", "type": "number"},
+    {"word": "넷", "english": "four", "romanization": "net", "type": "number"},
+    {"word": "다섯", "english": "five", "romanization": "daseot", "type": "number"},
+    {"word": "열", "english": "ten", "romanization": "yeol", "type": "number"},
+    {"word": "개", "english": "item counter", "romanization": "gae", "type": "counter"},
+    {"word": "명", "english": "people counter", "romanization": "myeong", "type": "counter"},
+    {"word": "마리", "english": "animal counter", "romanization": "mari", "type": "counter"},
+    {"word": "병", "english": "bottle counter", "romanization": "byeong", "type": "counter"}
+  ],
+  "sentences": [
+    {"korean": "사과 세 개 주세요.", "english": "Three apples, please.", "romanization": "sagwa se gae juseyo."},
+    {"korean": "친구 네 명이 와요.", "english": "Four friends are coming.", "romanization": "chingu ne myeongi wayo."},
+    {"korean": "맥주 두 병 주문했어요.", "english": "I ordered two bottles of beer.", "romanization": "maekju du byeong jumonhaesseoyo."},
+    {"korean": "강아지 한 마리 키워요.", "english": "I raise one dog.", "romanization": "gangaji han mari kiwoyo."},
+    {"korean": "열 개 있어요.", "english": "There are ten (items).", "romanization": "yeol gae isseoyo."}
+  ],
+  "explanation": [
+    "Short forms before counters: 하나→한, 둘→두, 셋→세, 넷→네. Example: 두 개, 세 명, 네 시.",
+    "개 is the all-purpose counter for inanimate items. 명 is for people (분 is the honorific people counter).",
+    "Use native numbers for age with 살: 저는 스물다섯 살이에요 (I'm 25).",
+    "Up to 99 uses native numbers: 열하나 (11), 스물 (20), 서른 (30), 마흔 (40), 쉰 (50). Sino numbers take over for large counts.",
+    "Counters come right after numbers: 사탕 다섯 개, 학생 여섯 명."
+  ]
+}

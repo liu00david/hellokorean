@@ -1,0 +1,40 @@
+{
+  "id": "6.2",
+  "group_id": "6",
+  "version": "2.0.0",
+  "title": "Comparisons & Degree",
+  "objectives": [
+    "Compare things using 더/덜 and 제일",
+    "Soften or strengthen adjectives with adverbs",
+    "Give opinions with 'I think...' patterns"
+  ],
+  "context": [
+    "Comparatives in Korean are simple—no verb changes, just add 더 (more) or 덜 (less).",
+    "Use 제일/가장 for 'the most' and 조금/정말/너무 to dial intensity.",
+    "Adding 것 같아요 expresses a thoughtful opinion rather than a blunt fact."
+  ],
+  "vocabulary": [
+    {"word": "더", "english": "more", "romanization": "deo", "type": "adverb"},
+    {"word": "덜", "english": "less", "romanization": "deol", "type": "adverb"},
+    {"word": "제일", "english": "the most", "romanization": "jeil", "type": "adverb"},
+    {"word": "가장", "english": "the most (formal)", "romanization": "gajang", "type": "adverb"},
+    {"word": "조금", "english": "a little", "romanization": "jogeum", "type": "adverb"},
+    {"word": "너무", "english": "too/very", "romanization": "neomu", "type": "adverb"},
+    {"word": "정말", "english": "really", "romanization": "jeongmal", "type": "adverb"},
+    {"word": "것 같아요", "english": "I think/It seems", "romanization": "geot gatayo", "type": "phrase"}
+  ],
+  "sentences": [
+    {"korean": "이 가방이 더 예뻐요.", "english": "This bag is prettier.", "romanization": "i gabangi deo yeppeoyo."},
+    {"korean": "이 식당이 덜 매워요.", "english": "This restaurant is less spicy.", "romanization": "i sikdangi deol maewoyo."},
+    {"korean": "서울이 제일 비싸요.", "english": "Seoul is the most expensive.", "romanization": "seouri jeil bissayo."},
+    {"korean": "조금 피곤한 것 같아요.", "english": "I think I'm a little tired.", "romanization": "jogeum pigonhan geot gatayo."},
+    {"korean": "이게 더 좋은 것 같아요.", "english": "I think this one is better.", "romanization": "ige deo joheun geot gatayo."}
+  ],
+  "explanation": [
+    "더/덜 go before the adjective: 더 커요 (bigger), 덜 매워요 (less spicy). No need for 'than' word; context or a phrase like X보다 clarifies: 서울보다 부산이 덜 비싸요.",
+    "제일/가장 before adjectives mark the superlative: 제일 맛있어요 = It's the most delicious.",
+    "너무 can mean 'too' or 'very' depending on tone. For positive emphasis without 'too,' use 정말/진짜.",
+    "것 같아요 softens statements into opinions: 따뜻한 것 같아요 (It seems warm). You can add '제 생각에는' = In my opinion.",
+    "Combine: 저는 덜 짠 음식이 제일 좋아요 = I like less salty food the most."
+  ]
+}

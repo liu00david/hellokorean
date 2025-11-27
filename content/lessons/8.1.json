@@ -1,0 +1,41 @@
+{
+  "id": "8.1",
+  "group_id": "8",
+  "version": "2.0.0",
+  "title": "Asking for Directions",
+  "objectives": [
+    "Understand and give basic directions",
+    "Use location nouns like 왼쪽/오른쪽/직진",
+    "Form polite direction questions"
+  ],
+  "context": [
+    "Short, direct phrases are best when asking strangers for help.",
+    "Directional nouns pair with 으로/로 to indicate movement.",
+    "Landmark-based directions are more common than exact addresses."
+  ],
+  "vocabulary": [
+    {"word": "왼쪽", "english": "left", "romanization": "oenjjok", "type": "noun"},
+    {"word": "오른쪽", "english": "right", "romanization": "oreunjjok", "type": "noun"},
+    {"word": "직진", "english": "go straight", "romanization": "jikjin", "type": "noun"},
+    {"word": "신호등", "english": "traffic light", "romanization": "sinhodeung", "type": "noun"},
+    {"word": "횡단보도", "english": "crosswalk", "romanization": "hoengdambodo", "type": "noun"},
+    {"word": "입구", "english": "entrance", "romanization": "ipgu", "type": "noun"},
+    {"word": "출구", "english": "exit", "romanization": "chulgu", "type": "noun"},
+    {"word": "근처", "english": "nearby/around", "romanization": "geuncheo", "type": "noun"},
+    {"word": "맞은편", "english": "across from", "romanization": "majeunpyeon", "type": "noun"}
+  ],
+  "sentences": [
+    {"korean": "지하철역이 어디에 있어요?", "english": "Where is the subway station?", "romanization": "jihacheol-yeogi eodie isseoyo?"},
+    {"korean": "저기 횡단보도에서 왼쪽으로 가세요.", "english": "At that crosswalk over there, go left.", "romanization": "jeogi hoengdambodoseo oenjjogeuro gaseyo."},
+    {"korean": "두 블록 직진하고 오른쪽으로 도세요.", "english": "Go straight two blocks and turn right.", "romanization": "du beullok jikjinhago oreunjjogeuro doseyo."},
+    {"korean": "출구는 반대편에 있어요.", "english": "The exit is on the opposite side.", "romanization": "chulguneun bandaepyeone isseoyo."},
+    {"korean": "근처에 카페 있어요?", "english": "Is there a cafe nearby?", "romanization": "geuncheoe kape isseoyo?"}
+  ],
+  "explanation": [
+    "Direction question frame: [Place] 어디에 있어요? Use 에 to mark static location. To ask how to get there, switch to 어떻게 가요?",
+    "-으로/로 after a direction shows route: 왼쪽으로 가세요 (go to the left), 직진하세요 (go straight).",
+    "Landmarks are key: 신호등/횡단보도/편의점/은행 + 에서/앞에서 give clear instructions.",
+    "맞은편 = across from. 건너편 also works. Use -에 to mark: 역 맞은편에 있어요 (It's across from the station).",
+    "In subway stations, 출구 numbers matter: 3번 출구로 나가세요 (exit through gate 3)."
+  ]
+}
