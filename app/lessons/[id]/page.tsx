@@ -81,7 +81,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
           </div>
 
           {/* Lesson Actions (Client Component) */}
-          <div className="max-w-4xl mx-auto mt-12">
+          <div className="max-w-4xl mx-auto mt-8">
             <LessonActions lessonId={id} lesson={lesson} />
           </div>
         </div>

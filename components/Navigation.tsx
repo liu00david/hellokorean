@@ -49,6 +49,10 @@ export function Navigation() {
     try {
       await signOut();
       showToast("Signed out successfully");
+      // Refresh page to clear all cached state
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 500); // Small delay to show toast
     } catch (error) {
       console.error("Sign out error:", error);
       showToast("Failed to sign out", "error");
@@ -140,14 +144,23 @@ export function Navigation() {
           {/* Auth Buttons (desktop) */}
           <div className="hidden md:flex items-center gap-2">
             {loading ? (
-              <Button
-                variant="default"
-                size="sm"
-                disabled
-                className="gap-2 opacity-50 min-w-[160px]"
-              >
-                Sign in with Google
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="default"
+                  size="sm"
+                  disabled
+                  className="gap-2 opacity-50 min-w-[160px]"
+                >
+                  Sign in with Google
+                </Button>
+                <button
+                  onClick={() => window.location.reload()}
+                  className="text-xs text-garden-earth/60 hover:text-garden-earth underline"
+                  title="Click if button stays greyed out"
+                >
+                  Stuck?
+                </button>
+              </div>
             ) : user ? (
               <>
                 <Link href="/profile">
@@ -232,14 +245,22 @@ export function Navigation() {
             {/* Auth Buttons (mobile) */}
             <div className="flex flex-col gap-2 mt-2 pt-2 border-t">
               {loading ? (
-                <Button
-                  variant="default"
-                  size="sm"
-                  disabled
-                  className="w-full gap-2 opacity-50"
-                >
-                  Sign in with Google
-                </Button>
+                <div className="space-y-2">
+                  <Button
+                    variant="default"
+                    size="sm"
+                    disabled
+                    className="w-full gap-2 opacity-50"
+                  >
+                    Sign in with Google
+                  </Button>
+                  <button
+                    onClick={() => window.location.reload()}
+                    className="text-xs text-garden-earth/60 hover:text-garden-earth underline w-full"
+                  >
+                    Button stuck? Click to reload
+                  </button>
+                </div>
               ) : user ? (
                 <>
                   <Link href="/profile" onClick={() => setMobileMenuOpen(false)}>

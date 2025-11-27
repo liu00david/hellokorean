@@ -153,85 +153,73 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
 
   if (checking) {
     return (
-      <div className="flex justify-between items-center">
-        {groupId && (
-          <Link href={`/lessons/${groupId}`}>
-            <Button variant="outline">← Back to Lesson Group</Button>
-          </Link>
-        )}
-        <div className="text-sm text-garden-earth/50">Loading...</div>
+      <div className="py-4 border-t border-garden-earth/10">
+        <div className="flex justify-between items-center">
+          {groupId && (
+            <Link href={`/lessons/${groupId}`}>
+              <Button variant="outline" size="sm">← Back to Lessons</Button>
+            </Link>
+          )}
+          <div className="text-sm text-garden-earth/50">Loading...</div>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="space-y-4">
-      {/* Navigation buttons at top */}
-      <div className="flex justify-between items-center gap-4 flex-wrap">
-        {groupId && (
-          <Link href={`/lessons/${groupId}`}>
-            <Button variant="outline">← Back to Lesson Group</Button>
-          </Link>
-        )}
-
-        <div className="flex items-center gap-4">
-          {user ? (
-            <>
-              {isCompleted ? (
-                <span className="text-lg text-garden-leaf font-semibold flex items-center gap-2">
-                  <span className="text-2xl">✓</span> Completed
-                </span>
-              ) : (
-                <Button
-                  variant="default"
-                  onClick={markAsComplete}
-                  disabled={loading}
-                  className="gap-2"
-                >
-                  {loading ? "Saving..." : "✓ Mark as Complete"}
-                </Button>
-              )}
-            </>
-          ) : (
-            <p className="text-sm text-garden-earth/60">
-              Sign in to track your progress
-            </p>
-          )}
-
-          <Link href="/quiz">
-            <Button variant="secondary" className="gap-2">
-              Take Quiz ✏️
-            </Button>
-          </Link>
-        </div>
+    <div className="space-y-8">
+      {/* Quiz button - Above the divider line */}
+      <div className="flex justify-center">
+        <Link href={`/quiz?lessonId=${lessonId}`} className="w-full sm:w-auto">
+          <Button variant="secondary" size="sm" className="w-full sm:w-auto">
+            Take Lesson Quiz
+          </Button>
+        </Link>
       </div>
 
-      {/* Continue to next lesson button - only show when completed and there's a next lesson */}
-      {isCompleted && nextLessonId && (
-        <div className="flex justify-center">
-          <Link href={`/lessons/${nextLessonId}`}>
-            <Button variant="default" size="lg" className="gap-2">
-              Continue to Next Lesson →
-            </Button>
-          </Link>
-        </div>
-      )}
-
-      {/* Show completion message if it's the last lesson */}
-      {isCompleted && !nextLessonId && (
-        <div className="flex justify-center">
-          <div className="p-4 bg-green-50 border border-green-300 rounded-xl text-center">
-            <p className="text-lg text-green-800 font-semibold mb-2">
-              🎉 You've completed all lessons in this group!
-            </p>
+      {/* Divider and navigation section */}
+      <div className="py-3 border-t border-garden-earth/10">
+        {/* Horizontal Row on all screen sizes */}
+        <div className="flex justify-between items-center gap-2">
+          {/* Left: Back to Lessons */}
+          {groupId && (
             <Link href={`/lessons/${groupId}`}>
-              <Button variant="outline" className="mt-2">
-                Back to Lesson Group
+              <Button variant="outline" size="sm">← Back to Lessons</Button>
+            </Link>
+          )}
+
+          {/* Right: Primary Action (Next Lesson or Mark Complete) */}
+          {isCompleted && nextLessonId ? (
+            <Link href={`/lessons/${nextLessonId}`}>
+              <Button
+                size="sm"
+                className="bg-green-600 hover:bg-green-700 text-white"
+              >
+                Done! Next Lesson →
               </Button>
             </Link>
-          </div>
+          ) : !isCompleted && user ? (
+            <Button
+              variant="default"
+              size="sm"
+              onClick={markAsComplete}
+              disabled={loading}
+              className="gap-1"
+            >
+              {loading ? "Saving..." : "✓ Mark as Completed"}
+            </Button>
+          ) : null}
         </div>
-      )}
+
+        {/* Celebration message for last lesson */}
+        {isCompleted && !nextLessonId && (
+          <div className="mt-3 p-4 bg-green-50 border border-green-300 rounded-lg text-center">
+            <p className="text-sm text-green-800 font-semibold">
+              🎉 You've completed all lessons in this group!
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

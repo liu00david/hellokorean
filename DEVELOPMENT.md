@@ -127,6 +127,25 @@ Admin panel at `/admin`:
 
 ## Troubleshooting
 
+### Sign In Button Greyed Out
+
+If the "Sign in with Google" button appears greyed out and unclickable:
+
+**Immediate Fix:**
+1. Click the "Stuck?" link next to the greyed button (auto-reload)
+2. Or wait 5 seconds (auto-fixes)
+3. Or open browser console (F12), run `localStorage.clear()`, then refresh
+
+**Why This Happens:**
+- Auth state can get stuck in loading state during initial load
+- The app now has multiple protections against this
+
+**Multi-Tab Behavior:**
+- Like Gmail, refreshing one tab won't disrupt other tabs
+- Auth state syncs across tabs silently (no loading spinner after initial load)
+- Only the first load shows a spinner, subsequent auth changes are seamless
+- Signing out in one tab will sign out all tabs (security feature)
+
 ### Build Errors
 
 ```bash

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { QuizQuestion } from "@/components/QuizQuestion";
 import { QuizResults } from "@/components/QuizResults";
 import { Button } from "@/components/ui/button";
@@ -13,8 +14,11 @@ import { Lesson } from "@/types/lesson";
 
 type QuizState = "setup" | "quiz" | "results";
 
-export default function QuizPage() {
+function QuizPageContent() {
   const { user } = useAuth();
+  const searchParams = useSearchParams();
+  const lessonIdFromUrl = searchParams.get("lessonId");
+
   const [state, setState] = useState<QuizState>("setup");
   const [currentQuizId, setCurrentQuizId] = useState<string>("");
   const [questions, setQuestions] = useState<QuizQuestionType[]>([]);
@@ -34,6 +38,14 @@ export default function QuizPage() {
       loadCompletedLessonQuizzes();
     }
   }, [user]);
+
+  // Auto-start quiz if lessonId is provided in URL
+  useEffect(() => {
+    if (lessonIdFromUrl && state === "setup" && !loading) {
+      // Auto-start with 10 questions from the specific lesson
+      startQuiz(10, "all", lessonIdFromUrl);
+    }
+  }, [lessonIdFromUrl, state]);
 
   const loadLessons = async () => {
     const lessonsData = await getAllLessons();
@@ -379,5 +391,17 @@ export default function QuizPage() {
         />
       </div>
     </div>
+  );
+}
+
+export default function QuizPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10 flex items-center justify-center">
+        <p className="text-garden-earth/70">Loading quiz...</p>
+      </div>
+    }>
+      <QuizPageContent />
+    </Suspense>
   );
 }
