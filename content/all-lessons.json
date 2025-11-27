@@ -1,0 +1,3455 @@
+[
+  {
+    "id": "1.0",
+    "group_id": "1",
+    "version": "2.0.0",
+    "title": "Basic Consonants",
+    "objectives": [
+      "Learn the first 6 Korean consonants",
+      "Understand how to pronounce ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ",
+      "Recognize these consonants in syllable blocks"
+    ],
+    "context": [
+      "Korean uses an alphabet called Hangul (한글), created in 1443. Unlike Chinese characters, Hangul is phonetic - each letter represents a sound.",
+      "Consonants and vowels combine into syllable blocks. Each block represents one syllable. For example: 가 = ㄱ + ㅏ (g + a = ga).",
+      "Let's start with the first 6 consonants. These are the most common and easiest to learn!"
+    ],
+    "vocabulary": [
+      {
+        "word": "ㄱ",
+        "english": "consonant 'g/k'",
+        "romanization": "giyeok",
+        "type": "consonant"
+      },
+      {
+        "word": "ㄴ",
+        "english": "consonant 'n'",
+        "romanization": "nieun",
+        "type": "consonant"
+      },
+      {
+        "word": "ㄷ",
+        "english": "consonant 'd/t'",
+        "romanization": "digeut",
+        "type": "consonant"
+      },
+      {
+        "word": "ㄹ",
+        "english": "consonant 'r/l'",
+        "romanization": "rieul",
+        "type": "consonant"
+      },
+      {
+        "word": "ㅁ",
+        "english": "consonant 'm'",
+        "romanization": "mieum",
+        "type": "consonant"
+      },
+      {
+        "word": "ㅂ",
+        "english": "consonant 'b/p'",
+        "romanization": "bieup",
+        "type": "consonant"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "가",
+        "english": "ga (like in 'garden')",
+        "romanization": "ga"
+      },
+      {
+        "korean": "나",
+        "english": "na (like in 'nah')",
+        "romanization": "na"
+      },
+      {
+        "korean": "다",
+        "english": "da (like in 'doll')",
+        "romanization": "da"
+      },
+      {
+        "korean": "라",
+        "english": "ra (like in 'la' in music)",
+        "romanization": "ra"
+      },
+      {
+        "korean": "마",
+        "english": "ma (like in 'mama')",
+        "romanization": "ma"
+      },
+      {
+        "korean": "바",
+        "english": "ba (like in 'bar')",
+        "romanization": "ba"
+      }
+    ],
+    "explanation": [
+      "ㄱ sounds like 'g' at the start of a word (like 'go'), but like 'k' at the end (like 'book').",
+      "ㄴ is always pronounced like 'n' in 'no'. Very consistent!",
+      "ㄷ sounds like 'd' at the start (like 'dog'), but like 't' at the end (like 'cat').",
+      "ㄹ is tricky! It's between 'r' and 'l'. At the start it's more like 'r', in the middle/end more like 'l'.",
+      "ㅁ is always 'm' like in 'mom'. Easy!",
+      "ㅂ sounds like 'b' at the start (like 'ball'), but like 'p' at the end (like 'cup').",
+      "Notice: Korean consonants can sound different depending on where they are in a word. This is normal!",
+      "Practice tip: Say each consonant + 'ah' sound (아) to practice: 가, 나, 다, 라, 마, 바"
+    ]
+  },
+  {
+    "id": "1.1",
+    "group_id": "1",
+    "version": "2.0.0",
+    "title": "More Consonants",
+    "objectives": [
+      "Learn 4 more Korean consonants",
+      "Understand the pronunciation of ㅅ ㅇ ㅈ ㅎ",
+      "Practice combining consonants with vowels"
+    ],
+    "context": [
+      "You've learned your first 6 consonants! Now let's add 4 more common consonants.",
+      "These include ㅇ which is special - it's silent at the start of syllables but pronounced 'ng' at the end.",
+      "With these 10 consonants, you'll be able to read many Korean words!"
+    ],
+    "vocabulary": [
+      {
+        "word": "ㅅ",
+        "english": "consonant 's'",
+        "romanization": "siot",
+        "type": "consonant"
+      },
+      {
+        "word": "ㅇ",
+        "english": "consonant 'ng' (silent at start)",
+        "romanization": "ieung",
+        "type": "consonant"
+      },
+      {
+        "word": "ㅈ",
+        "english": "consonant 'j'",
+        "romanization": "jieut",
+        "type": "consonant"
+      },
+      {
+        "word": "ㅎ",
+        "english": "consonant 'h'",
+        "romanization": "hieut",
+        "type": "consonant"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "사",
+        "english": "sa (like in 'saw')",
+        "romanization": "sa"
+      },
+      {
+        "korean": "아",
+        "english": "a (like in 'ah') - ㅇ is silent here",
+        "romanization": "a"
+      },
+      {
+        "korean": "자",
+        "english": "ja (like in 'jar')",
+        "romanization": "ja"
+      },
+      {
+        "korean": "하",
+        "english": "ha (like in 'haha')",
+        "romanization": "ha"
+      },
+      {
+        "korean": "강",
+        "english": "gang (river) - ㅇ as 'ng' at end",
+        "romanization": "gang"
+      },
+      {
+        "korean": "산",
+        "english": "san (mountain)",
+        "romanization": "san"
+      }
+    ],
+    "explanation": [
+      "ㅅ is pronounced like 's' in 'see'. At the end of syllables, it's still 's' or sometimes 't' sound.",
+      "ㅇ is the most unique! At the start of a syllable, it's completely silent (아 = 'a'). At the end, it's the 'ng' sound (강 = 'gang').",
+      "ㅈ sounds like 'j' in 'jump'. It's between an English 'j' and 'ch' sound.",
+      "ㅎ is like 'h' in 'hello'. Simple and consistent!",
+      "Try reading: 하나 (hana = one), 사과 (sagwa = apple), 자다 (jada = to sleep)",
+      "Remember: ㅇ at the start is silent, ㅇ at the end is 'ng'!"
+    ]
+  },
+  {
+    "id": "1.2",
+    "group_id": "1",
+    "version": "2.0.0",
+    "title": "Basic Vowels",
+    "objectives": [
+      "Learn the 6 basic Korean vowels",
+      "Understand how vowels combine with consonants",
+      "Practice reading simple syllable blocks"
+    ],
+    "context": [
+      "Now that you know consonants, let's learn vowels! Korean has 21 vowels total, but we'll start with the 6 most basic ones.",
+      "Korean vowels are designed based on three elements: sky (·), earth (ㅡ), and human (ㅣ). This philosophy makes them easier to remember!",
+      "Once you know these 6 vowels + the 10 consonants you learned, you can make over 60 different syllables!"
+    ],
+    "vocabulary": [
+      {
+        "word": "ㅏ",
+        "english": "vowel 'a'",
+        "romanization": "a",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅓ",
+        "english": "vowel 'eo'",
+        "romanization": "eo",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅗ",
+        "english": "vowel 'o'",
+        "romanization": "o",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅜ",
+        "english": "vowel 'u'",
+        "romanization": "u",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅡ",
+        "english": "vowel 'eu'",
+        "romanization": "eu",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅣ",
+        "english": "vowel 'i'",
+        "romanization": "i",
+        "type": "vowel"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "아버지",
+        "english": "father",
+        "romanization": "abeoji"
+      },
+      {
+        "korean": "어머니",
+        "english": "mother",
+        "romanization": "eomeoni"
+      },
+      {
+        "korean": "오다",
+        "english": "to come",
+        "romanization": "oda"
+      },
+      {
+        "korean": "우유",
+        "english": "milk",
+        "romanization": "uyu"
+      },
+      {
+        "korean": "그리고",
+        "english": "and",
+        "romanization": "geurigo"
+      },
+      {
+        "korean": "비",
+        "english": "rain",
+        "romanization": "bi"
+      }
+    ],
+    "explanation": [
+      "ㅏ sounds like 'a' in 'father'. It's written vertically on the right of consonants: 가, 나, 다",
+      "ㅓ sounds like 'uh' or 'o' in 'love'. Also written vertically: 거, 너, 더",
+      "ㅗ sounds like 'o' in 'go'. Written horizontally below consonants: 고, 노, 도",
+      "ㅜ sounds like 'oo' in 'food'. Also horizontal: 구, 누, 두",
+      "ㅡ sounds like 'eu' - try saying 'uh' with your mouth more closed. Horizontal: 그, 느, 드",
+      "ㅣ sounds like 'ee' in 'bee'. Vertical on the right: 기, 니, 디",
+      "Vowel position rule: Vertical vowels (ㅏㅓㅣ) go on the RIGHT. Horizontal vowels (ㅗㅜㅡ) go BELOW.",
+      "Practice: Try writing and reading 가거고구그기 (ga-geo-go-gu-geu-gi)!"
+    ]
+  },
+  {
+    "id": "1.3",
+    "group_id": "1",
+    "version": "2.0.0",
+    "title": "Complex Vowels",
+    "objectives": [
+      "Learn complex (compound) Korean vowels",
+      "Understand how basic vowels combine",
+      "Practice reading syllables with complex vowels"
+    ],
+    "context": [
+      "Korean has 10 basic vowels and 11 complex vowels. Complex vowels are made by combining two basic vowels together!",
+      "For example: ㅏ + ㅣ = ㅐ (like 'ae' in 'cat'). These compound vowels follow logical patterns.",
+      "Learning these will help you read and pronounce Korean words more accurately."
+    ],
+    "vocabulary": [
+      {
+        "word": "ㅐ",
+        "english": "vowel 'ae'",
+        "romanization": "ae",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅔ",
+        "english": "vowel 'e'",
+        "romanization": "e",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅚ",
+        "english": "vowel 'oe'",
+        "romanization": "oe",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅟ",
+        "english": "vowel 'wi'",
+        "romanization": "wi",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅢ",
+        "english": "vowel 'ui'",
+        "romanization": "ui",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅑ",
+        "english": "vowel 'ya'",
+        "romanization": "ya",
+        "type": "vowel"
+      },
+      {
+        "word": "ㅕ",
+        "english": "vowel 'yeo'",
+        "romanization": "yeo",
+        "type": "vowel"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "개",
+        "english": "dog",
+        "romanization": "gae"
+      },
+      {
+        "korean": "게",
+        "english": "crab",
+        "romanization": "ge"
+      },
+      {
+        "korean": "회",
+        "english": "sashimi",
+        "romanization": "hoe"
+      },
+      {
+        "korean": "의자",
+        "english": "chair",
+        "romanization": "uija"
+      },
+      {
+        "korean": "야구",
+        "english": "baseball",
+        "romanization": "yagu"
+      },
+      {
+        "korean": "여기",
+        "english": "here",
+        "romanization": "yeogi"
+      }
+    ],
+    "explanation": [
+      "ㅐ (ae) and ㅔ (e) sound almost identical in modern Korean - like 'eh' in 'bed'. Many Koreans pronounce them the same!",
+      "ㅚ is supposed to sound like 'we' but most Koreans pronounce it like ㅞ or just 'we/oe'.",
+      "ㅟ sounds like 'wee' in 'sweet'. It's ㅜ + ㅣ combined.",
+      "ㅢ is tricky! It sounds like 'ui' (oo-ee blended) but only at the start of words. Otherwise it often sounds like 'i'.",
+      "ㅑ (ya) is like 'ya' in 'yard'. It's the 'y' version of ㅏ.",
+      "ㅕ (yeo) is like 'yo' in 'yogurt'. It's the 'y' version of ㅓ.",
+      "Pattern: Adding a short line (ㅣ) to basic vowels makes them 'y' sounds: ㅏ→ㅑ, ㅓ→ㅕ, ㅗ→ㅛ, ㅜ→ㅠ"
+    ]
+  },
+  {
+    "id": "2.0",
+    "group_id": "2",
+    "version": "2.0.0",
+    "title": "Essential Greetings",
+    "objectives": [
+      "Learn 6 essential Korean greetings",
+      "Understand when to use each greeting",
+      "Practice proper pronunciation"
+    ],
+    "context": [
+      "Congratulations on learning Hangul! Now let's put it to use with real Korean phrases.",
+      "Korean culture values politeness, so greetings are very important. The phrases you'll learn here work in most situations.",
+      "Notice that many greetings end with 요 (yo) - this makes them polite!"
+    ],
+    "vocabulary": [
+      {
+        "word": "안녕하세요",
+        "english": "hello",
+        "romanization": "annyeonghaseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "안녕히 가세요",
+        "english": "goodbye (to someone leaving)",
+        "romanization": "annyeonghi gaseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "안녕히 계세요",
+        "english": "goodbye (when you're leaving)",
+        "romanization": "annyeonghi gyeseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "감사합니다",
+        "english": "thank you",
+        "romanization": "gamsahamnida",
+        "type": "phrase"
+      },
+      {
+        "word": "죄송합니다",
+        "english": "I'm sorry",
+        "romanization": "joesonghamnida",
+        "type": "phrase"
+      },
+      {
+        "word": "네",
+        "english": "yes",
+        "romanization": "ne",
+        "type": "phrase"
+      },
+      {
+        "word": "아니요",
+        "english": "no",
+        "romanization": "aniyo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "안녕하세요. 만나서 반갑습니다.",
+        "english": "Hello. Nice to meet you.",
+        "romanization": "annyeonghaseyo. mannaseo bangapseumnida."
+      },
+      {
+        "korean": "감사합니다. 안녕히 가세요.",
+        "english": "Thank you. Goodbye (to the person leaving).",
+        "romanization": "gamsahamnida. annyeonghi gaseyo."
+      },
+      {
+        "korean": "죄송합니다. 괜찮아요.",
+        "english": "I'm sorry. It's okay.",
+        "romanization": "joesonghamnida. gwaenchanayo."
+      },
+      {
+        "korean": "네, 알겠습니다.",
+        "english": "Yes, I understand.",
+        "romanization": "ne, algesseumnida."
+      }
+    ],
+    "explanation": [
+      "안녕하세요 (annyeonghaseyo) literally means 'Are you at peace?' It's used for hello/hi in polite situations.",
+      "There are TWO goodbyes in Korean! 안녕히 가세요 = 'go peacefully' (say to someone leaving). 안녕히 계세요 = 'stay peacefully' (say when you're leaving).",
+      "감사합니다 (gamsahamnida) is formal 'thank you'. You can also say 고맙습니다 (gomapseumnida) which is slightly less formal.",
+      "죄송합니다 (joesonghamnida) is formal apology. For casual 'sorry' you can say 미안해요 (mianhaeyo).",
+      "네 (ne) means yes. Sometimes Koreans say 예 (ye) which is more formal.",
+      "아니요 (aniyo) means no. In casual speech, you might hear 아니 (ani).",
+      "Pro tip: When answering the phone, Koreans say 여보세요 (yeoboseyo) = hello!"
+    ]
+  },
+  {
+    "id": "2.1",
+    "group_id": "2",
+    "version": "2.0.0",
+    "title": "Self Introduction",
+    "objectives": [
+      "Learn how to introduce yourself in Korean",
+      "Practice saying your name and nationality",
+      "Use basic sentence structures for self-introduction"
+    ],
+    "context": [
+      "In Korean culture, proper introductions are important! You'll often introduce yourself by name, then add information about where you're from.",
+      "The word order is different from English: 'I + name + am' becomes '저는 [name]이에요/예요' (jeoneun [name]ieyo/yeyo).",
+      "Let's learn the essentials for introducing yourself in any situation!"
+    ],
+    "vocabulary": [
+      {
+        "word": "저",
+        "english": "I (polite)",
+        "romanization": "jeo",
+        "type": "pronoun"
+      },
+      {
+        "word": "이름",
+        "english": "name",
+        "romanization": "ireum",
+        "type": "noun"
+      },
+      {
+        "word": "이에요",
+        "english": "is (after consonant)",
+        "romanization": "ieyo",
+        "type": "verb"
+      },
+      {
+        "word": "예요",
+        "english": "is (after vowel)",
+        "romanization": "yeyo",
+        "type": "verb"
+      },
+      {
+        "word": "입니다",
+        "english": "is (formal)",
+        "romanization": "imnida",
+        "type": "verb"
+      },
+      {
+        "word": "만나서 반갑습니다",
+        "english": "nice to meet you",
+        "romanization": "mannaseo bangapseumnida",
+        "type": "phrase"
+      },
+      {
+        "word": "미국",
+        "english": "America/USA",
+        "romanization": "miguk",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "저는 데이비드예요.",
+        "english": "I am David.",
+        "romanization": "jeoneun deibideu-yeyo"
+      },
+      {
+        "korean": "제 이름은 사라입니다.",
+        "english": "My name is Sarah.",
+        "romanization": "je ireumeun sara-imnida"
+      },
+      {
+        "korean": "저는 미국 사람이에요.",
+        "english": "I am American.",
+        "romanization": "jeoneun miguk saram-ieyo"
+      },
+      {
+        "korean": "만나서 반갑습니다.",
+        "english": "Nice to meet you.",
+        "romanization": "mannaseo bangapseumnida"
+      },
+      {
+        "korean": "저는 학생이에요.",
+        "english": "I am a student.",
+        "romanization": "jeoneun haksaeng-ieyo"
+      }
+    ],
+    "explanation": [
+      "저 (jeo) is the polite form of 'I/me'. In casual speech, you'd use 나 (na), but 저 is safer for introductions.",
+      "는 (neun) is a topic particle that follows nouns. 저는 (jeoneun) means 'As for me...' or simply 'I'.",
+      "이에요 vs 예요: Use 이에요 after words ending in consonants (데이비드이에요), use 예요 after vowels (사라예요).",
+      "입니다 (imnida) is more formal than 이에요/예요. Use it in professional settings or formal situations.",
+      "제 (je) is possessive 'my'. It's 저 + 의 combined. So 제 이름 = 'my name'.",
+      "Countries: 미국 (America), 한국 (Korea), 중국 (China), 일본 (Japan), 영국 (England).",
+      "Add 사람 (saram = person) after country names to say nationality: 미국 사람 = American person."
+    ]
+  },
+  {
+    "id": "2.2",
+    "group_id": "2",
+    "version": "2.0.0",
+    "title": "Friendly Checks & Small Talk",
+    "objectives": [
+      "Ask and answer 'How are you?' naturally",
+      "Use polite phrases for everyday encounters",
+      "Respond to casual small talk with confidence"
+    ],
+    "context": [
+      "After greeting someone, Koreans often check in with a quick small-talk question.",
+      "Polite endings like 요 keep things friendly without being too formal.",
+      "These phrases help you connect quickly without needing long sentences."
+    ],
+    "vocabulary": [
+      {
+        "word": "잘 지내요?",
+        "english": "How are you?",
+        "romanization": "jal jinaeyo?",
+        "type": "phrase"
+      },
+      {
+        "word": "네, 잘 지내요",
+        "english": "Yes, I'm doing well",
+        "romanization": "ne, jal jinaeyo",
+        "type": "phrase"
+      },
+      {
+        "word": "그럭저럭이에요",
+        "english": "I'm so-so",
+        "romanization": "geureokjeoreogieyo",
+        "type": "phrase"
+      },
+      {
+        "word": "오랜만이에요",
+        "english": "Long time no see",
+        "romanization": "oraenmanieyo",
+        "type": "phrase"
+      },
+      {
+        "word": "처음 뵙겠습니다",
+        "english": "Nice to meet you (very polite)",
+        "romanization": "cheoeum boepgetseumnida",
+        "type": "phrase"
+      },
+      {
+        "word": "좋은 아침이에요",
+        "english": "Good morning",
+        "romanization": "joeun achim-ieyo",
+        "type": "phrase"
+      },
+      {
+        "word": "좋은 하루 보내세요",
+        "english": "Have a good day",
+        "romanization": "joeun haru bonaeseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "잘 부탁드립니다",
+        "english": "Please take care of me / Let's work well together",
+        "romanization": "jal butakdeurimnida",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "안녕하세요. 잘 지내요?",
+        "english": "Hello. How are you?",
+        "romanization": "annyeonghaseyo. jal jinaeyo?"
+      },
+      {
+        "korean": "네, 잘 지내요. 오랜만이에요!",
+        "english": "Yes, I'm good. Long time no see!",
+        "romanization": "ne, jal jinaeyo. oraenmanieyo!"
+      },
+      {
+        "korean": "처음 뵙겠습니다. 잘 부탁드립니다.",
+        "english": "Nice to meet you. Please take care of me.",
+        "romanization": "cheoeum boepgetseumnida. jal butakdeurimnida."
+      },
+      {
+        "korean": "좋은 아침이에요. 좋은 하루 보내세요.",
+        "english": "Good morning. Have a good day.",
+        "romanization": "joeun achim-ieyo. joeun haru bonaeseyo."
+      },
+      {
+        "korean": "그럭저럭이에요, 조금 피곤해요.",
+        "english": "I'm so-so, a little tired.",
+        "romanization": "geureokjeoreogieyo, jogeum pigonhaeyo."
+      }
+    ],
+    "explanation": [
+      "잘 지내요? is the standard 'How are you?' for casual-polite settings. Answer with 네, 잘 지내요 or so-so: 그럭저럭이에요.",
+      "오랜만이에요 literally means 'It's been a long time.' Great for meeting someone after a while.",
+      "처음 뵙겠습니다 is business-level polite. Follow it with 잘 부탁드립니다 when starting a relationship or project.",
+      "좋은 아침이에요 is used less often than in English, but it's understood. Koreans often just say 안녕하세요 in the morning too.",
+      "좋은 하루 보내세요 is a warm send-off. You can also say 좋은 밤 되세요 (Have a good night)."
+    ]
+  },
+  {
+    "id": "2.3",
+    "group_id": "2",
+    "version": "2.0.0",
+    "title": "Getting Attention & Simple Requests",
+    "objectives": [
+      "Get someone's attention politely",
+      "Ask for simple help or items",
+      "Check understanding in real conversations"
+    ],
+    "context": [
+      "These phrases are lifesavers when you need help or clarification.",
+      "They are short, polite, and work in almost any everyday situation.",
+      "Focus on tone: keep your voice gentle and end with 요 to stay polite."
+    ],
+    "vocabulary": [
+      {
+        "word": "저기요",
+        "english": "Excuse me (to get attention)",
+        "romanization": "jeogiyo",
+        "type": "phrase"
+      },
+      {
+        "word": "잠시만요",
+        "english": "Just a moment",
+        "romanization": "jamsimanyo",
+        "type": "phrase"
+      },
+      {
+        "word": "실례합니다",
+        "english": "Excuse me (formal/apology)",
+        "romanization": "sillyehamnida",
+        "type": "phrase"
+      },
+      {
+        "word": "이거 주세요",
+        "english": "Please give me this",
+        "romanization": "igeo juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "도와주세요",
+        "english": "Please help me",
+        "romanization": "dowajuseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "천천히 말해 주세요",
+        "english": "Please speak slowly",
+        "romanization": "cheoncheonhi malhae juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "다시 말해 주세요",
+        "english": "Please say that again",
+        "romanization": "dasi malhae juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "이해 못 했어요",
+        "english": "I didn't understand",
+        "romanization": "ihae mot haesseoyo",
+        "type": "phrase"
+      },
+      {
+        "word": "괜찮아요",
+        "english": "It's okay / Are you okay?",
+        "romanization": "gwaenchanayo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "저기요, 여기 자리 있어요?",
+        "english": "Excuse me, is this seat taken?",
+        "romanization": "jeogiyo, yeogi jari isseoyo?"
+      },
+      {
+        "korean": "잠시만요. 조금만 기다려 주세요.",
+        "english": "One moment. Please wait just a bit.",
+        "romanization": "jamsimanyo. jogeumman gidaryeo juseyo."
+      },
+      {
+        "korean": "이거 주세요. 카드로 계산할게요.",
+        "english": "Please give me this. I'll pay by card.",
+        "romanization": "igeo juseyo. kadeuro gyesanalgeyo."
+      },
+      {
+        "korean": "천천히 말해 주세요. 이해 못 했어요.",
+        "english": "Please speak slowly. I didn't understand.",
+        "romanization": "cheoncheonhi malhae juseyo. ihae mot haesseoyo."
+      },
+      {
+        "korean": "괜찮아요? 도와드릴까요?",
+        "english": "Are you okay? Can I help you?",
+        "romanization": "gwaenchanayo? dowadeurilkkayo?"
+      }
+    ],
+    "explanation": [
+      "저기요 gets attention politely, like saying 'excuse me' to a waiter. 실례합니다 is stronger/apologetic (e.g., squeezing by someone).",
+      "주세요 is the magic polite request ending. Attach it after nouns (이거 주세요 = this please) or verb stems (도와주세요 = help me please).",
+      "천천히 말해 주세요 + 다시 말해 주세요 are key for learners. Don't be shy to use them—they're common and appreciated.",
+      "못 했어요 means 'couldn't do it/didn't manage.' 이해 못 했어요 = I didn't (couldn't) understand.",
+      "괜찮아요 works both ways: as a question ('Are you okay?') and as a response ('It's fine/I'm okay')."
+    ]
+  },
+  {
+    "id": "3.0",
+    "group_id": "3",
+    "version": "2.0.0",
+    "title": "Verb Basics & Present Tense",
+    "objectives": [
+      "Learn must-know base verbs",
+      "Conjugate to polite present tense (-아요/어요)",
+      "Build simple 'I do' sentences"
+    ],
+    "context": [
+      "Korean verbs are the engine of sentences. You need only the verb to make a full idea!",
+      "Dictionary forms end with -다. To speak politely, you change that ending to -아요/어요/해요.",
+      "Most verbs follow simple patterns once you know the final vowel."
+    ],
+    "vocabulary": [
+      {
+        "word": "가다",
+        "english": "to go",
+        "romanization": "gada",
+        "type": "verb"
+      },
+      {
+        "word": "오다",
+        "english": "to come",
+        "romanization": "oda",
+        "type": "verb"
+      },
+      {
+        "word": "하다",
+        "english": "to do",
+        "romanization": "hada",
+        "type": "verb"
+      },
+      {
+        "word": "먹다",
+        "english": "to eat",
+        "romanization": "meokda",
+        "type": "verb"
+      },
+      {
+        "word": "마시다",
+        "english": "to drink",
+        "romanization": "masida",
+        "type": "verb"
+      },
+      {
+        "word": "보다",
+        "english": "to see/watch",
+        "romanization": "boda",
+        "type": "verb"
+      },
+      {
+        "word": "살다",
+        "english": "to live",
+        "romanization": "salda",
+        "type": "verb"
+      },
+      {
+        "word": "알다",
+        "english": "to know",
+        "romanization": "alda",
+        "type": "verb"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "저는 집에 가요.",
+        "english": "I go home.",
+        "romanization": "jeoneun jibe gayo."
+      },
+      {
+        "korean": "친구가 와요.",
+        "english": "My friend is coming.",
+        "romanization": "chinguga wayo."
+      },
+      {
+        "korean": "지금 점심 먹어요.",
+        "english": "I'm eating lunch now.",
+        "romanization": "jigeum jeomsim meogeoyo."
+      },
+      {
+        "korean": "물 마셔요. 커피도 마셔요.",
+        "english": "I drink water. I drink coffee too.",
+        "romanization": "mul masyeoyo. keopido masyeoyo."
+      },
+      {
+        "korean": "넷플릭스 봐요. 재밌어요!",
+        "english": "I watch Netflix. It's fun!",
+        "romanization": "netpeullikseu bwayo. jaemisseoyo!"
+      }
+    ],
+    "explanation": [
+      "Drop 다 and add -아요 after bright vowels (ㅏ/ㅗ): 가다 → 가요, 보다 → 봐요. Add -어요 after other vowels: 먹다 → 먹어요, 마시다 → 마셔요.",
+      "하다 verbs always become 해요: 하다 → 해요 (운동해요, 공부해요, 일해요).",
+      "은/는 marks topics, 이/가 marks subjects. You can often omit them in casual speech when context is clear.",
+      "Present tense in Korean covers present and near future, like 'I go/I will go' depending on context.",
+      "Stress syllables smoothly. No strong stress like English; keep rhythm even."
+    ]
+  },
+  {
+    "id": "3.1",
+    "group_id": "3",
+    "version": "2.0.0",
+    "title": "Daily Routine Verbs",
+    "objectives": [
+      "Talk about morning-to-night activities",
+      "Chain verbs with time words",
+      "Use object particles naturally"
+    ],
+    "context": [
+      "A few core verbs cover most of your day: waking, working, studying, meeting, relaxing.",
+      "Add time words like 아침에 (in the morning) or 지금 (now) to give simple structure.",
+      "Object particles 을/를 attach to the thing you act on, but they often drop in speech."
+    ],
+    "vocabulary": [
+      {
+        "word": "일어나다",
+        "english": "to wake up",
+        "romanization": "ireonada",
+        "type": "verb"
+      },
+      {
+        "word": "씻다",
+        "english": "to wash/cleanse",
+        "romanization": "ssitda",
+        "type": "verb"
+      },
+      {
+        "word": "일하다",
+        "english": "to work",
+        "romanization": "ilhada",
+        "type": "verb"
+      },
+      {
+        "word": "공부하다",
+        "english": "to study",
+        "romanization": "gongbuhada",
+        "type": "verb"
+      },
+      {
+        "word": "운동하다",
+        "english": "to exercise",
+        "romanization": "undonghada",
+        "type": "verb"
+      },
+      {
+        "word": "쉬다",
+        "english": "to rest",
+        "romanization": "swida",
+        "type": "verb"
+      },
+      {
+        "word": "만나다",
+        "english": "to meet",
+        "romanization": "mannada",
+        "type": "verb"
+      },
+      {
+        "word": "잠자다",
+        "english": "to sleep",
+        "romanization": "jamjada",
+        "type": "verb"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "아침에 일어나서 세수해요.",
+        "english": "I wake up in the morning and wash my face.",
+        "romanization": "achime ireonaseo sesuhaeyo."
+      },
+      {
+        "korean": "회사에서 일해요. 점심에는 동료를 만나요.",
+        "english": "I work at the office. At lunch I meet a coworker.",
+        "romanization": "hoesaseo ilhaeyo. jeomsimeneun dongnyoreul mannayo."
+      },
+      {
+        "korean": "저녁에 운동하고 쉬어요.",
+        "english": "In the evening I work out and rest.",
+        "romanization": "jeonyeoge undonghago swieoyo."
+      },
+      {
+        "korean": "주말에 한국어를 공부해요.",
+        "english": "I study Korean on the weekend.",
+        "romanization": "jumare hangugeoreul gongbuhaeyo."
+      },
+      {
+        "korean": "열두 시쯤에 잠자요.",
+        "english": "I go to sleep around midnight.",
+        "romanization": "yeoldu sijjeume jamjayo."
+      }
+    ],
+    "explanation": [
+      "Object particles: 을 after consonant (한국어를), 를 after vowel (커피를). They can drop if the meaning is clear: 한국어 공부해요.",
+      "-아서/어서 links actions in sequence with cause/flow: 일어나서 씻어요 = I wake up and wash (right after).",
+      "Company/workplace phrases often use 에서 to show where an action happens: 회사에서 일해요, 집에서 쉬어요.",
+      "Time markers: 아침에 (in the morning), 점심에 (at lunchtime), 저녁에 (in the evening), 밤에 (at night).",
+      "For routines, present tense alone implies habit: 주말에 운동해요 = I work out on weekends."
+    ]
+  },
+  {
+    "id": "3.2",
+    "group_id": "3",
+    "version": "2.0.0",
+    "title": "Questions, Likes, and Negatives",
+    "objectives": [
+      "Turn verbs into questions",
+      "Express likes/wants politely",
+      "Say you don't do something using 안/못"
+    ],
+    "context": [
+      "Two small words open up conversation: 좋아하다 (to like) and -고 싶다 (to want).",
+      "안 and 못 sit before verbs to make simple negatives. 안 = don't, 못 = can't (unable).",
+      "Rising intonation turns statements into questions, or add -아요/어요? with a question mark."
+    ],
+    "vocabulary": [
+      {
+        "word": "좋아하다",
+        "english": "to like",
+        "romanization": "joahada",
+        "type": "verb"
+      },
+      {
+        "word": "원하다",
+        "english": "to want",
+        "romanization": "wonhada",
+        "type": "verb"
+      },
+      {
+        "word": "싶다",
+        "english": "to want to (auxiliary)",
+        "romanization": "sipda",
+        "type": "verb"
+      },
+      {
+        "word": "필요하다",
+        "english": "to need",
+        "romanization": "piryohada",
+        "type": "verb"
+      },
+      {
+        "word": "알고 싶어요",
+        "english": "I want to know",
+        "romanization": "algo sipeoyo",
+        "type": "phrase"
+      },
+      {
+        "word": "안 가요",
+        "english": "I don't go",
+        "romanization": "an gayo",
+        "type": "phrase"
+      },
+      {
+        "word": "못 먹어요",
+        "english": "I can't eat (unable)",
+        "romanization": "mot meogeoyo",
+        "type": "phrase"
+      },
+      {
+        "word": "괜찮아요?",
+        "english": "Is it okay? / Are you okay?",
+        "romanization": "gwaenchanayo?",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "한국 음식 좋아해요?",
+        "english": "Do you like Korean food?",
+        "romanization": "hanguk eumsik joahaeyo?"
+      },
+      {
+        "korean": "저는 매운 거 안 먹어요.",
+        "english": "I don't eat spicy things.",
+        "romanization": "jeoneun maeun geo an meogeoyo."
+      },
+      {
+        "korean": "커피 마시고 싶어요.",
+        "english": "I want to drink coffee.",
+        "romanization": "keopi masigo sipeoyo."
+      },
+      {
+        "korean": "오늘은 못 가요. 내일 가능해요.",
+        "english": "I can't go today. Tomorrow works.",
+        "romanization": "oneureun mot gayo. nae-il ganeunghaeyo."
+      },
+      {
+        "korean": "필요해요? 아니요, 괜찮아요.",
+        "english": "Do you need it? No, it's okay.",
+        "romanization": "piryohaeyo? aniyo, gwaenchanayo."
+      }
+    ],
+    "explanation": [
+      "Add -아요/어요? with rising tone to ask yes/no questions. WH-words (뭐/언제/어디/누구/왜/어떻게) stay in place: 누구 좋아해요?",
+      "좋아하다 takes an object: 커피를 좋아해요. 'I like coffee.'",
+      "-고 싶어요 attaches to verb stems to express desire: 가고 싶어요 (I want to go), 배우고 싶어요 (I want to learn).",
+      "안 + verb = don't/won't (choice). 못 + verb = can't (ability/circumstance).",
+      "필요하다 means 'to need.' You can say 필요 없어요 = I don't need it."
+    ]
+  },
+  {
+    "id": "4.0",
+    "group_id": "4",
+    "version": "2.0.0",
+    "title": "People & Relationships",
+    "objectives": [
+      "Name common people and relationships",
+      "Use possessives to show 'my/your'",
+      "Combine topics with 은/는 and subjects with 이/가"
+    ],
+    "context": [
+      "Talking about family, friends, and coworkers is everyday conversation.",
+      "Possessive 제/제 친구 adds warmth and clarity when introducing people.",
+      "Particles help mark who we're talking about and who is acting."
+    ],
+    "vocabulary": [
+      {
+        "word": "가족",
+        "english": "family",
+        "romanization": "gajok",
+        "type": "noun"
+      },
+      {
+        "word": "친구",
+        "english": "friend",
+        "romanization": "chingu",
+        "type": "noun"
+      },
+      {
+        "word": "동료",
+        "english": "coworker",
+        "romanization": "dongnyo",
+        "type": "noun"
+      },
+      {
+        "word": "부모님",
+        "english": "parents",
+        "romanization": "bumonim",
+        "type": "noun"
+      },
+      {
+        "word": "남편",
+        "english": "husband",
+        "romanization": "nampyeon",
+        "type": "noun"
+      },
+      {
+        "word": "아내",
+        "english": "wife",
+        "romanization": "anae",
+        "type": "noun"
+      },
+      {
+        "word": "아이",
+        "english": "child",
+        "romanization": "ai",
+        "type": "noun"
+      },
+      {
+        "word": "선생님",
+        "english": "teacher (polite)",
+        "romanization": "seonsaengnim",
+        "type": "noun"
+      },
+      {
+        "word": "제",
+        "english": "my (polite)",
+        "romanization": "je",
+        "type": "pronoun"
+      },
+      {
+        "word": "당신",
+        "english": "you (formal; careful use)",
+        "romanization": "dangsin",
+        "type": "pronoun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "저는 가족이 커요.",
+        "english": "My family is big.",
+        "romanization": "jeoneun gajogi keoyo."
+      },
+      {
+        "korean": "제 친구는 한국 사람이에요.",
+        "english": "My friend is Korean.",
+        "romanization": "je chinguneun hanguk saram-ieyo."
+      },
+      {
+        "korean": "동료가 아주 친절해요.",
+        "english": "My coworker is very kind.",
+        "romanization": "dongnyoga aju chinjeolhaeyo."
+      },
+      {
+        "korean": "부모님은 부산에 계세요.",
+        "english": "My parents are in Busan.",
+        "romanization": "bumonimeun busane gyeseyo."
+      },
+      {
+        "korean": "아이가 학교에 있어요.",
+        "english": "The child is at school.",
+        "romanization": "aiga hakgyoe isseoyo."
+      }
+    ],
+    "explanation": [
+      "제 is the polite 'my' (from 저 + 의). Use 내 for casual. 제 친구, 제 부모님 are safer than 내 with new people.",
+      "당신 is rarely used in conversation except between spouses or in customer service. Use 이름+씨 (e.g., 민수 씨) to say 'you.'",
+      "은/는 sets the topic (제 친구는...), 이/가 marks the subject (동료가...). Both can appear in one sentence if needed.",
+      "For respect toward elders/parents, use honorific verbs like 계시다 (to be/exist honorifically) instead of 있다: 부모님이 계세요.",
+      "To introduce someone: 이쪽은 제 친구 민수예요 = This is my friend Minsu."
+    ]
+  },
+  {
+    "id": "4.1",
+    "group_id": "4",
+    "version": "2.0.0",
+    "title": "Places & Location Particles",
+    "objectives": [
+      "Name everyday places",
+      "Use 에 vs 에서 correctly",
+      "Combine places with go/come/work verbs"
+    ],
+    "context": [
+      "에 marks location or destination; 에서 marks where an action happens.",
+      "Knowing a few building words helps with errands and commuting.",
+      "Attach place + 에/에서 before the verb—no prepositions needed."
+    ],
+    "vocabulary": [
+      {
+        "word": "집",
+        "english": "home/house",
+        "romanization": "jip",
+        "type": "noun"
+      },
+      {
+        "word": "학교",
+        "english": "school",
+        "romanization": "hakgyo",
+        "type": "noun"
+      },
+      {
+        "word": "회사",
+        "english": "company/office",
+        "romanization": "hoesa",
+        "type": "noun"
+      },
+      {
+        "word": "카페",
+        "english": "cafe",
+        "romanization": "kape",
+        "type": "noun"
+      },
+      {
+        "word": "병원",
+        "english": "hospital",
+        "romanization": "byeongwon",
+        "type": "noun"
+      },
+      {
+        "word": "공원",
+        "english": "park",
+        "romanization": "gongwon",
+        "type": "noun"
+      },
+      {
+        "word": "은행",
+        "english": "bank",
+        "romanization": "eunhaeng",
+        "type": "noun"
+      },
+      {
+        "word": "시장",
+        "english": "market",
+        "romanization": "sijang",
+        "type": "noun"
+      },
+      {
+        "word": "도서관",
+        "english": "library",
+        "romanization": "doseogwan",
+        "type": "noun"
+      },
+      {
+        "word": "마트",
+        "english": "mart/supermarket",
+        "romanization": "mateu",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "지금 회사에 가요.",
+        "english": "I'm going to the office now.",
+        "romanization": "jigeum hoesa-e gayo."
+      },
+      {
+        "korean": "카페에서 일해요.",
+        "english": "I work at a cafe.",
+        "romanization": "kape-eseo ilhaeyo."
+      },
+      {
+        "korean": "주말에는 공원에서 운동해요.",
+        "english": "On weekends I exercise at the park.",
+        "romanization": "jumaleneun gongwon-eseo undonghaeyo."
+      },
+      {
+        "korean": "은행은 시장 옆에 있어요.",
+        "english": "The bank is next to the market.",
+        "romanization": "eunhaengeun sijang yeope isseoyo."
+      },
+      {
+        "korean": "도서관에 책이 많아요.",
+        "english": "There are many books at the library.",
+        "romanization": "doseogwane chaegi manayo."
+      }
+    ],
+    "explanation": [
+      "에 answers 'to/at/in' for states or destinations: 집에 있어요 (at home), 학교에 가요 (go to school).",
+      "에서 answers 'at/in' for actions: 집에서 공부해요 (study at home), 회사에서 일해요 (work at the office).",
+      "With movement verbs 가다/오다, use 에: 집에 가요. With action verbs like 일하다/공부하다, use 에서.",
+      "Position words pair with 에: 학교 옆에 (next to), 시장 안에 (inside), 공원 근처에 (near the park).",
+      "Order: [Place + particle] + [time word] + verb is flexible. Common flow: 오늘 학교에서 수업해요 (Today at school I have class)."
+    ]
+  },
+  {
+    "id": "4.2",
+    "group_id": "4",
+    "version": "2.0.0",
+    "title": "There Is / There Isn't",
+    "objectives": [
+      "Use 있다/없다 for existence and possession",
+      "Describe where things are with location words",
+      "Answer 'Do you have...?' confidently"
+    ],
+    "context": [
+      "있다/없다 covers 'to have,' 'to be located,' and 'to exist.'",
+      "Combine with location markers to place objects and people.",
+      "These patterns appear everywhere: shops, directions, home descriptions."
+    ],
+    "vocabulary": [
+      {
+        "word": "있다",
+        "english": "to exist / to have",
+        "romanization": "itda",
+        "type": "verb"
+      },
+      {
+        "word": "없다",
+        "english": "to not exist / to not have",
+        "romanization": "eopda",
+        "type": "verb"
+      },
+      {
+        "word": "여기",
+        "english": "here",
+        "romanization": "yeogi",
+        "type": "adverb"
+      },
+      {
+        "word": "거기",
+        "english": "there (near listener)",
+        "romanization": "geogi",
+        "type": "adverb"
+      },
+      {
+        "word": "저기",
+        "english": "over there (far)",
+        "romanization": "jeogi",
+        "type": "adverb"
+      },
+      {
+        "word": "앞",
+        "english": "front",
+        "romanization": "ap",
+        "type": "noun"
+      },
+      {
+        "word": "뒤",
+        "english": "back/behind",
+        "romanization": "dwi",
+        "type": "noun"
+      },
+      {
+        "word": "옆",
+        "english": "side/next to",
+        "romanization": "yeop",
+        "type": "noun"
+      },
+      {
+        "word": "위",
+        "english": "above/on",
+        "romanization": "wi",
+        "type": "noun"
+      },
+      {
+        "word": "아래",
+        "english": "below/under",
+        "romanization": "arae",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "여기 화장실 있어요?",
+        "english": "Is there a restroom here?",
+        "romanization": "yeogi hwajangsil isseoyo?"
+      },
+      {
+        "korean": "지갑이 없어요.",
+        "english": "I don't have my wallet.",
+        "romanization": "jigabi eopseoyo."
+      },
+      {
+        "korean": "카페가 역 앞에 있어요.",
+        "english": "The cafe is in front of the station.",
+        "romanization": "kapega yeok ape isseoyo."
+      },
+      {
+        "korean": "버스 정류장은 저기 있어요.",
+        "english": "The bus stop is over there.",
+        "romanization": "beoseu jeongnyujangeun jeogi isseoyo."
+      },
+      {
+        "korean": "집에 고양이가 있어요.",
+        "english": "There is a cat at home.",
+        "romanization": "jibe goyangiga isseoyo."
+      }
+    ],
+    "explanation": [
+      "있다/없다 conjugate to 있어요/없어요 in polite present. With subjects, use 이/가: 화장실이 있어요? 아니요, 없어요.",
+      "For possession, Korean literally says 'Something exists (for me)': 저한테 시간 있어요 = I have time. 지갑이 없어요 = I don't have my wallet.",
+      "Location structure: [Place/Thing] + 이/가 + [Location word] + 에 있어요. Example: 은행이 시장 옆에 있어요.",
+      "여기/거기/저기 can replace a full place name when pointing. Add 에 to mark location: 거기에 있어요 = It's there.",
+      "없다 can sound abrupt alone; soften with 죄송하지만 or 미안해요 when refusing politely."
+    ]
+  },
+  {
+    "id": "5.0",
+    "group_id": "5",
+    "version": "2.0.0",
+    "title": "Korean Food Words & Flavors",
+    "objectives": [
+      "Name staple Korean foods and drinks",
+      "Talk about taste with key adjectives",
+      "Express likes/dislikes about food"
+    ],
+    "context": [
+      "Food is central in Korean culture—knowing dishes helps you order confidently.",
+      "Describing flavors with simple adjectives goes a long way.",
+      "You can mix food nouns with 맛있어요/없어요 and other adjectives to react naturally."
+    ],
+    "vocabulary": [
+      {
+        "word": "밥",
+        "english": "rice/meal",
+        "romanization": "bap",
+        "type": "noun"
+      },
+      {
+        "word": "김치",
+        "english": "kimchi",
+        "romanization": "gimchi",
+        "type": "noun"
+      },
+      {
+        "word": "불고기",
+        "english": "bulgogi",
+        "romanization": "bulgogi",
+        "type": "noun"
+      },
+      {
+        "word": "비빔밥",
+        "english": "bibimbap",
+        "romanization": "bibimbap",
+        "type": "noun"
+      },
+      {
+        "word": "라면",
+        "english": "ramen/instant noodles",
+        "romanization": "ramyeon",
+        "type": "noun"
+      },
+      {
+        "word": "물",
+        "english": "water",
+        "romanization": "mul",
+        "type": "noun"
+      },
+      {
+        "word": "소주",
+        "english": "soju",
+        "romanization": "soju",
+        "type": "noun"
+      },
+      {
+        "word": "맛있어요",
+        "english": "It's tasty",
+        "romanization": "masisseoyo",
+        "type": "phrase"
+      },
+      {
+        "word": "맵다",
+        "english": "to be spicy",
+        "romanization": "maepda",
+        "type": "adjective"
+      },
+      {
+        "word": "싱거워요",
+        "english": "It's bland",
+        "romanization": "singgeowoyo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "김치 정말 맛있어요.",
+        "english": "Kimchi is really delicious.",
+        "romanization": "gimchi jeongmal masisseoyo."
+      },
+      {
+        "korean": "불고기는 안 매워요.",
+        "english": "Bulgogi isn't spicy.",
+        "romanization": "bulgogineun an maewoyo."
+      },
+      {
+        "korean": "물 좀 주세요.",
+        "english": "Please give me some water.",
+        "romanization": "mul jom juseyo."
+      },
+      {
+        "korean": "라면은 조금 맵지만 맛있어요.",
+        "english": "Ramen is a bit spicy but tasty.",
+        "romanization": "ramyeoneun jogeum maepjiman masisseoyo."
+      },
+      {
+        "korean": "이 국은 조금 싱거워요.",
+        "english": "This soup is a little bland.",
+        "romanization": "i gugeun jogeum singgeowoyo."
+      }
+    ],
+    "explanation": [
+      "맛있어요 = It's tasty. 맛없어요 = It's not tasty. Add 정말/진짜/너무 to intensify: 정말 맛있어요!",
+      "맵다 (to be spicy) conjugates to 매워요. Many Korean dishes are 맵고 짜요 (spicy and salty) but balanced.",
+      "밥 can mean 'rice' or 'meal.' 밥 먹었어요? often means 'Have you eaten? / How are you?'.",
+      "Use 조금 (a little) or 아주/정말 (very) before adjectives: 조금 매워요, 아주 맛있어요.",
+      "Add 은/는 to highlight contrast: 불고기는 안 매워요, 하지만 김치는 매워요."
+    ]
+  },
+  {
+    "id": "5.1",
+    "group_id": "5",
+    "version": "2.0.0",
+    "title": "Ordering Food Like a Local",
+    "objectives": [
+      "Order food and drinks politely",
+      "Point and choose items with 이거/저거",
+      "Handle quantities and takeout requests"
+    ],
+    "context": [
+      "Korean restaurants often use direct but polite phrases with 주세요.",
+      "Pointing with 이거 (this) and using numbers + 개 makes ordering simple even without reading the menu.",
+      "Takeout, dine-in, and payment each have short standard lines."
+    ],
+    "vocabulary": [
+      {
+        "word": "메뉴",
+        "english": "menu",
+        "romanization": "menyu",
+        "type": "noun"
+      },
+      {
+        "word": "이거",
+        "english": "this (near me)",
+        "romanization": "igeo",
+        "type": "pronoun"
+      },
+      {
+        "word": "저거",
+        "english": "that (over there)",
+        "romanization": "jeogeo",
+        "type": "pronoun"
+      },
+      {
+        "word": "주세요",
+        "english": "please give",
+        "romanization": "juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "추천",
+        "english": "recommendation",
+        "romanization": "chucheon",
+        "type": "noun"
+      },
+      {
+        "word": "하나/둘/셋",
+        "english": "one/two/three (native numbers)",
+        "romanization": "hana/dul/set",
+        "type": "number"
+      },
+      {
+        "word": "개",
+        "english": "item counter",
+        "romanization": "gae",
+        "type": "counter"
+      },
+      {
+        "word": "포장",
+        "english": "takeout",
+        "romanization": "pojang",
+        "type": "noun"
+      },
+      {
+        "word": "계산서",
+        "english": "bill/check",
+        "romanization": "gyesanseo",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "메뉴 추천해 주세요.",
+        "english": "Please recommend a menu item.",
+        "romanization": "menyu chucheonhae juseyo."
+      },
+      {
+        "korean": "이거 하나, 저거 둘 주세요.",
+        "english": "This one (1) and that one (2), please.",
+        "romanization": "igeo hana, jeogeo dul juseyo."
+      },
+      {
+        "korean": "물은 무료예요?",
+        "english": "Is water free?",
+        "romanization": "mureun muryoyeyo?"
+      },
+      {
+        "korean": "포장해 주세요.",
+        "english": "Please make it to go.",
+        "romanization": "pojanghae juseyo."
+      },
+      {
+        "korean": "계산서 주세요. 카드로 할게요.",
+        "english": "Bill, please. I'll pay by card.",
+        "romanization": "gyesanseo juseyo. kadeuro halgeyo."
+      }
+    ],
+    "explanation": [
+      "Point + number + counter + 주세요 is the core ordering pattern: 이거 두 개 주세요 (Please give me two of these).",
+      "Native numbers 1-4 often shorten before counters: 하나→한, 둘→두, 셋→세, 넷→네: 불고기 두 개 주세요.",
+      "For dine-in vs takeout, staff may ask '드시고 가세요?' Reply: 네, 먹고 갈게요 (eat here) / 포장해 주세요 (to go).",
+      "카드로요? 현금으로요? means 'By card? By cash?' Reply with the method you prefer.",
+      "After paying, you'll often hear 수고하세요 (take care/thanks for your effort) as you leave."
+    ]
+  },
+  {
+    "id": "5.2",
+    "group_id": "5",
+    "version": "2.0.0",
+    "title": "Dietary Needs & Restaurant Etiquette",
+    "objectives": [
+      "Share dietary preferences or restrictions",
+      "Ask for less spice, less salt, or substitutions",
+      "Use polite apologies and thanks in restaurants"
+    ],
+    "context": [
+      "Staff appreciate clear, polite requests about spice level or allergies.",
+      "Korean dishes are often shared; learn how to speak up kindly.",
+      "Short set phrases handle most needs without long grammar."
+    ],
+    "vocabulary": [
+      {
+        "word": "안 매운 거",
+        "english": "non-spicy option",
+        "romanization": "an maeun geo",
+        "type": "phrase"
+      },
+      {
+        "word": "덜 맵게",
+        "english": "less spicy",
+        "romanization": "deol maepge",
+        "type": "phrase"
+      },
+      {
+        "word": "짜지 않게",
+        "english": "not too salty",
+        "romanization": "jjaji ange",
+        "type": "phrase"
+      },
+      {
+        "word": "채식주의자",
+        "english": "vegetarian",
+        "romanization": "chaesikjuuija",
+        "type": "noun"
+      },
+      {
+        "word": "알레르기",
+        "english": "allergy",
+        "romanization": "allereugi",
+        "type": "noun"
+      },
+      {
+        "word": "고기 빼 주세요",
+        "english": "Please remove the meat",
+        "romanization": "gogi bbae juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "덜 주세요",
+        "english": "Please give less",
+        "romanization": "deol juseyo",
+        "type": "phrase"
+      },
+      {
+        "word": "물티슈",
+        "english": "wet wipe",
+        "romanization": "multisyu",
+        "type": "noun"
+      },
+      {
+        "word": "맛있게 드세요",
+        "english": "Enjoy your meal (polite)",
+        "romanization": "masitge deuseyo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "안 매운 거 있어요?",
+        "english": "Do you have something not spicy?",
+        "romanization": "an maeun geo isseoyo?"
+      },
+      {
+        "korean": "조금 덜 맵게 해 주세요.",
+        "english": "Please make it a little less spicy.",
+        "romanization": "jogeum deol maepge hae juseyo."
+      },
+      {
+        "korean": "저는 채식주의자예요. 고기 빼 주세요.",
+        "english": "I'm vegetarian. Please leave out the meat.",
+        "romanization": "jeoneun chaesikjuuija-yeyo. gogi bbae juseyo."
+      },
+      {
+        "korean": "우유 알레르기가 있어요.",
+        "english": "I have a dairy allergy.",
+        "romanization": "uyu allereugi-ga isseoyo."
+      },
+      {
+        "korean": "감사합니다. 맛있게 드세요.",
+        "english": "Thank you. Enjoy your meal (response to staff).",
+        "romanization": "gamsahamnida. masitge deuseyo."
+      }
+    ],
+    "explanation": [
+      "덜/더 + adjective turns into 'less/more': 덜 맵게, 더 맵게. Add 조금 for extra softness: 조금 덜 맵게 해 주세요.",
+      "짠 음식 is salty food. Say 짜지 않게 해 주세요 = Please make it not too salty.",
+      "For allergies, be direct: 저는 땅콩 알레르기가 있어요 (I have a peanut allergy). Follow with 못 먹어요 (I can't eat it).",
+      "채식주의자예요 (I'm vegetarian) / 비건이에요 (I'm vegan). Ask '고기 들어가요?' = Does this have meat?",
+      "맛있게 드세요 is a polite 'enjoy' used by staff or to others. You respond with 잘 먹겠습니다 before eating in formal settings."
+    ]
+  },
+  {
+    "id": "6.0",
+    "group_id": "6",
+    "version": "2.0.0",
+    "title": "Adjective Basics",
+    "objectives": [
+      "Learn common descriptive adjectives",
+      "Conjugate adjectives to -아요/어요",
+      "React naturally with 맛있어요/괜찮아요 patterns"
+    ],
+    "context": [
+      "Korean 'adjectives' are actually descriptive verbs ending in -다.",
+      "They conjugate just like action verbs to make polite statements.",
+      "A few versatile adjectives cover taste, price, size, and looks."
+    ],
+    "vocabulary": [
+      {
+        "word": "맛있다",
+        "english": "to be delicious",
+        "romanization": "masitda",
+        "type": "adjective"
+      },
+      {
+        "word": "맛없다",
+        "english": "to taste bad",
+        "romanization": "madeopda",
+        "type": "adjective"
+      },
+      {
+        "word": "비싸다",
+        "english": "to be expensive",
+        "romanization": "bissada",
+        "type": "adjective"
+      },
+      {
+        "word": "싸다",
+        "english": "to be cheap",
+        "romanization": "ssada",
+        "type": "adjective"
+      },
+      {
+        "word": "크다",
+        "english": "to be big",
+        "romanization": "keuda",
+        "type": "adjective"
+      },
+      {
+        "word": "작다",
+        "english": "to be small",
+        "romanization": "jakda",
+        "type": "adjective"
+      },
+      {
+        "word": "예쁘다",
+        "english": "to be pretty",
+        "romanization": "yeppeuda",
+        "type": "adjective"
+      },
+      {
+        "word": "괜찮다",
+        "english": "to be okay/fine",
+        "romanization": "gwaenchantda",
+        "type": "adjective"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "이 옷 예뻐요.",
+        "english": "This outfit is pretty.",
+        "romanization": "i ot yeppeoyo."
+      },
+      {
+        "korean": "가격이 비싸요.",
+        "english": "The price is expensive.",
+        "romanization": "gagyeogi bissayo."
+      },
+      {
+        "korean": "방이 좀 작아요.",
+        "english": "The room is a bit small.",
+        "romanization": "bangi jom jagayo."
+      },
+      {
+        "korean": "괜찮아요. 좋아요.",
+        "english": "It's okay. It's good.",
+        "romanization": "gwaenchanayo. joayo."
+      },
+      {
+        "korean": "이 커피 맛있어요!",
+        "english": "This coffee is delicious!",
+        "romanization": "i keopi masisseoyo!"
+      }
+    ],
+    "explanation": [
+      "Drop 다, add -아요/어요: 비싸다 → 비싸요, 싸다 → 싸요, 괜찮다 → 괜찮아요.",
+      "ㅂ irregular not here yet; these are regular. Notice 예쁘다 → 예뻐요 (merge ㅡ to ㅓ).",
+      "Add 조금/좀 to soften: 좀 비싸요 (a bit pricey). Add 아주/정말 to strengthen: 정말 예뻐요.",
+      "괜찮아요 means 'It's fine/I'm fine' and is a polite neutral response in many contexts.",
+      "Adjectives can stand as sentences: 맛있어요! (It's delicious!), 따뜻해요 (It's warm)."
+    ]
+  },
+  {
+    "id": "6.1",
+    "group_id": "6",
+    "version": "2.0.0",
+    "title": "Describing People & Things",
+    "objectives": [
+      "Use adjectives for mood, condition, and personality",
+      "Place adjectives before nouns using -은/-ㄴ",
+      "Softly agree or disagree with descriptions"
+    ],
+    "context": [
+      "Korean often puts adjectives directly before nouns using a short modifier form.",
+      "Describing how people feel or act helps with daily check-ins.",
+      "Use intensifiers like 정말/좀 to fine-tune your tone."
+    ],
+    "vocabulary": [
+      {
+        "word": "친절하다",
+        "english": "to be kind",
+        "romanization": "chinjeolhada",
+        "type": "adjective"
+      },
+      {
+        "word": "바쁘다",
+        "english": "to be busy",
+        "romanization": "bappeuda",
+        "type": "adjective"
+      },
+      {
+        "word": "피곤하다",
+        "english": "to be tired",
+        "romanization": "pigonhada",
+        "type": "adjective"
+      },
+      {
+        "word": "건강하다",
+        "english": "to be healthy",
+        "romanization": "geonganghada",
+        "type": "adjective"
+      },
+      {
+        "word": "시원하다",
+        "english": "to be cool/refreshing",
+        "romanization": "siwonhada",
+        "type": "adjective"
+      },
+      {
+        "word": "따뜻하다",
+        "english": "to be warm",
+        "romanization": "ttatteuthada",
+        "type": "adjective"
+      },
+      {
+        "word": "재미있다",
+        "english": "to be fun/interesting",
+        "romanization": "jaemiitda",
+        "type": "adjective"
+      },
+      {
+        "word": "지루하다",
+        "english": "to be boring",
+        "romanization": "jiruhada",
+        "type": "adjective"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "오늘 좀 피곤해요.",
+        "english": "I'm a bit tired today.",
+        "romanization": "oneul jom pigonhaeyo."
+      },
+      {
+        "korean": "친절한 사람을 좋아해요.",
+        "english": "I like kind people.",
+        "romanization": "chinjeolhan sarameul joahaeyo."
+      },
+      {
+        "korean": "따뜻한 커피 주세요.",
+        "english": "Please give me warm coffee.",
+        "romanization": "ttatteuthan keopi juseyo."
+      },
+      {
+        "korean": "회의가 지루해요.",
+        "english": "The meeting is boring.",
+        "romanization": "hoeui-ga jiruhaeyo."
+      },
+      {
+        "korean": "날씨가 시원하고 좋아요.",
+        "english": "The weather is cool and nice.",
+        "romanization": "nalssiga siwonhago joayo."
+      }
+    ],
+    "explanation": [
+      "Adjectives before nouns use -은/-ㄴ after dropping 다: 친절하다 → 친절한 사람, 따뜻하다 → 따뜻한 커피. With ㅂ irregulars (e.g., 따뜻하다 regular), other irregular rules apply later.",
+      "Add 너무/정말 for stronger tone: 너무 바빠요 (I'm very busy). Add 조금/좀 to soften complaints: 좀 피곤해요.",
+      "하다 adjectives like 건강하다 behave like verbs but still describe state: 저는 건강해요.",
+      "When agreeing politely: 맞아요/네, 그래요. When soft disagreeing: 그런 것 같아요 (I think it's like that), 조금 다른 것 같아요 (I think it's a bit different).",
+      "재미있다 is often pronounced 재미있다/재밌다 (both common). Both conjugate to 재미있어요/재밌어요."
+    ]
+  },
+  {
+    "id": "6.2",
+    "group_id": "6",
+    "version": "2.0.0",
+    "title": "Comparisons & Degree",
+    "objectives": [
+      "Compare things using 더/덜 and 제일",
+      "Soften or strengthen adjectives with adverbs",
+      "Give opinions with 'I think...' patterns"
+    ],
+    "context": [
+      "Comparatives in Korean are simple—no verb changes, just add 더 (more) or 덜 (less).",
+      "Use 제일/가장 for 'the most' and 조금/정말/너무 to dial intensity.",
+      "Adding 것 같아요 expresses a thoughtful opinion rather than a blunt fact."
+    ],
+    "vocabulary": [
+      {
+        "word": "더",
+        "english": "more",
+        "romanization": "deo",
+        "type": "adverb"
+      },
+      {
+        "word": "덜",
+        "english": "less",
+        "romanization": "deol",
+        "type": "adverb"
+      },
+      {
+        "word": "제일",
+        "english": "the most",
+        "romanization": "jeil",
+        "type": "adverb"
+      },
+      {
+        "word": "가장",
+        "english": "the most (formal)",
+        "romanization": "gajang",
+        "type": "adverb"
+      },
+      {
+        "word": "조금",
+        "english": "a little",
+        "romanization": "jogeum",
+        "type": "adverb"
+      },
+      {
+        "word": "너무",
+        "english": "too/very",
+        "romanization": "neomu",
+        "type": "adverb"
+      },
+      {
+        "word": "정말",
+        "english": "really",
+        "romanization": "jeongmal",
+        "type": "adverb"
+      },
+      {
+        "word": "것 같아요",
+        "english": "I think/It seems",
+        "romanization": "geot gatayo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "이 가방이 더 예뻐요.",
+        "english": "This bag is prettier.",
+        "romanization": "i gabangi deo yeppeoyo."
+      },
+      {
+        "korean": "이 식당이 덜 매워요.",
+        "english": "This restaurant is less spicy.",
+        "romanization": "i sikdangi deol maewoyo."
+      },
+      {
+        "korean": "서울이 제일 비싸요.",
+        "english": "Seoul is the most expensive.",
+        "romanization": "seouri jeil bissayo."
+      },
+      {
+        "korean": "조금 피곤한 것 같아요.",
+        "english": "I think I'm a little tired.",
+        "romanization": "jogeum pigonhan geot gatayo."
+      },
+      {
+        "korean": "이게 더 좋은 것 같아요.",
+        "english": "I think this one is better.",
+        "romanization": "ige deo joheun geot gatayo."
+      }
+    ],
+    "explanation": [
+      "더/덜 go before the adjective: 더 커요 (bigger), 덜 매워요 (less spicy). No need for 'than' word; context or a phrase like X보다 clarifies: 서울보다 부산이 덜 비싸요.",
+      "제일/가장 before adjectives mark the superlative: 제일 맛있어요 = It's the most delicious.",
+      "너무 can mean 'too' or 'very' depending on tone. For positive emphasis without 'too,' use 정말/진짜.",
+      "것 같아요 softens statements into opinions: 따뜻한 것 같아요 (It seems warm). You can add '제 생각에는' = In my opinion.",
+      "Combine: 저는 덜 짠 음식이 제일 좋아요 = I like less salty food the most."
+    ]
+  },
+  {
+    "id": "7.0",
+    "group_id": "7",
+    "version": "2.0.0",
+    "title": "Days & Time Words",
+    "objectives": [
+      "Name days and simple time markers",
+      "Place time expressions naturally in sentences",
+      "Ask and answer 'when' questions"
+    ],
+    "context": [
+      "Knowing when something happens is often more important than the full sentence.",
+      "Korean time words go before the verb and often before particles like 에 (at).",
+      "Combine with present tense to talk about plans, routines, and recent past."
+    ],
+    "vocabulary": [
+      {
+        "word": "오늘",
+        "english": "today",
+        "romanization": "oneul",
+        "type": "noun"
+      },
+      {
+        "word": "어제",
+        "english": "yesterday",
+        "romanization": "eoje",
+        "type": "noun"
+      },
+      {
+        "word": "내일",
+        "english": "tomorrow",
+        "romanization": "nae-il",
+        "type": "noun"
+      },
+      {
+        "word": "지금",
+        "english": "now",
+        "romanization": "jigeum",
+        "type": "adverb"
+      },
+      {
+        "word": "곧",
+        "english": "soon",
+        "romanization": "got",
+        "type": "adverb"
+      },
+      {
+        "word": "아침",
+        "english": "morning",
+        "romanization": "achim",
+        "type": "noun"
+      },
+      {
+        "word": "점심",
+        "english": "lunch/noon",
+        "romanization": "jeomsim",
+        "type": "noun"
+      },
+      {
+        "word": "저녁",
+        "english": "evening/dinner",
+        "romanization": "jeonyeok",
+        "type": "noun"
+      },
+      {
+        "word": "주말",
+        "english": "weekend",
+        "romanization": "jumal",
+        "type": "noun"
+      },
+      {
+        "word": "언제",
+        "english": "when",
+        "romanization": "eonje",
+        "type": "question"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "오늘 뭐 해요?",
+        "english": "What are you doing today?",
+        "romanization": "oneul mwo haeyo?"
+      },
+      {
+        "korean": "내일 아침에 회의가 있어요.",
+        "english": "I have a meeting tomorrow morning.",
+        "romanization": "nae-il achime hoeui-ga isseoyo."
+      },
+      {
+        "korean": "주말에 쉬어요.",
+        "english": "I rest on the weekend.",
+        "romanization": "jumare swieoyo."
+      },
+      {
+        "korean": "곧 시작해요.",
+        "english": "It starts soon.",
+        "romanization": "got sijakhaeyo."
+      },
+      {
+        "korean": "언제 시간 돼요?",
+        "english": "When are you free?",
+        "romanization": "eonje sigan dwaeyo?"
+      }
+    ],
+    "explanation": [
+      "Time words usually come early: [Time] + [Place] + [Verb]. Example: 내일 회사에서 일해요 (Tomorrow I work at the office).",
+      "아침/점심/저녁 can pair with 에 to mean 'in/at': 아침에, 점심에, 저녁에.",
+      "언제 is flexible: 언제 만나요? 언제 출발해요?",
+      "주말 (weekend) vs 주중 (during the week). Add 이번/다음/지난 before weeks or months: 이번 주, 다음 주.",
+      "곧 (soon) and 지금 (now) don't take 에. They act like adverbs right before the verb."
+    ]
+  },
+  {
+    "id": "7.1",
+    "group_id": "7",
+    "version": "2.0.0",
+    "title": "Clock Time & Appointments",
+    "objectives": [
+      "Tell time with hours and minutes",
+      "Set meetings and appointments",
+      "Use -에 for specific times"
+    ],
+    "context": [
+      "Hours use native numbers (한 시, 두 시), minutes use Sino numbers (십 분, 삼십 분).",
+      "에 marks specific clock times: 세 시에 만나요 (Let's meet at 3).",
+      "약속 (appointment) and 시간 (time) show up constantly when scheduling."
+    ],
+    "vocabulary": [
+      {
+        "word": "시",
+        "english": "hour/o'clock",
+        "romanization": "si",
+        "type": "counter"
+      },
+      {
+        "word": "분",
+        "english": "minute",
+        "romanization": "bun",
+        "type": "counter"
+      },
+      {
+        "word": "반",
+        "english": "half past",
+        "romanization": "ban",
+        "type": "noun"
+      },
+      {
+        "word": "시작",
+        "english": "start",
+        "romanization": "sijak",
+        "type": "noun"
+      },
+      {
+        "word": "끝",
+        "english": "end/finish",
+        "romanization": "kkeut",
+        "type": "noun"
+      },
+      {
+        "word": "약속",
+        "english": "appointment/promise",
+        "romanization": "yaksok",
+        "type": "noun"
+      },
+      {
+        "word": "회의",
+        "english": "meeting",
+        "romanization": "hoeui",
+        "type": "noun"
+      },
+      {
+        "word": "시간 있어요?",
+        "english": "Do you have time?",
+        "romanization": "sigan isseoyo?",
+        "type": "phrase"
+      },
+      {
+        "word": "예약하다",
+        "english": "to book/reserve",
+        "romanization": "yeyakhada",
+        "type": "verb"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "두 시 반에 만나요.",
+        "english": "Let's meet at 2:30.",
+        "romanization": "du si bane mannayo."
+      },
+      {
+        "korean": "회의가 세 시에 시작해요.",
+        "english": "The meeting starts at 3.",
+        "romanization": "hoeui-ga se sie sijakhaeyo."
+      },
+      {
+        "korean": "네 시 십오 분에 끝나요.",
+        "english": "It ends at 4:15.",
+        "romanization": "ne si sibo bune kkeunnayo."
+      },
+      {
+        "korean": "내일 약속 있어요?",
+        "english": "Do you have plans tomorrow?",
+        "romanization": "nae-il yaksok isseoyo?"
+      },
+      {
+        "korean": "여섯 시로 예약했어요.",
+        "english": "I booked it for 6 o'clock.",
+        "romanization": "yeoseot siro yeyakhaesseoyo."
+      }
+    ],
+    "explanation": [
+      "Hours use native numbers: 한/두/세/네/다섯/여섯/일곱/여덟/아홉/열 시. Minutes use Sino numbers: 십 분 (10), 이십 분 (20), 삼십 분 (30).",
+      "반 = half past: 두 시 반 (2:30). For quarter past, say 십오 분 (15 minutes).",
+      "Use -에 for specific times: 오전 아홉 시에 (at 9 a.m.). For 'around,' add 쯤: 여섯 시쯤에.",
+      "시간 있어요? = Do you have time? 없어요 = I don't. 조금 있어요 = I have a little.",
+      "예약하다 combines 예약 (reservation) + 하다. You can 예약했어요 (I reserved) or 예약하고 싶어요 (I want to book)."
+    ]
+  },
+  {
+    "id": "7.2",
+    "group_id": "7",
+    "version": "2.0.0",
+    "title": "Making Plans & Future Tense",
+    "objectives": [
+      "Invite and suggest plans",
+      "Use -(으)ㄹ 거예요 for future",
+      "Confirm availability politely"
+    ],
+    "context": [
+      "Future tense is simple: verb stem + -(으)ㄹ 거예요 handles intentions and predictions.",
+      "Korean invitations often use 같이 (together) and -ㄹ래요?/갈래요? to propose gently.",
+      "Polite checking phrases keep scheduling smooth."
+    ],
+    "vocabulary": [
+      {
+        "word": "같이",
+        "english": "together",
+        "romanization": "gachi",
+        "type": "adverb"
+      },
+      {
+        "word": "-(으)ㄹ 거예요",
+        "english": "will/going to",
+        "romanization": "-(eu)l geoyeyo",
+        "type": "grammar"
+      },
+      {
+        "word": "-ㄹ래요?",
+        "english": "Would you like to...?",
+        "romanization": "-llaeyo?",
+        "type": "grammar"
+      },
+      {
+        "word": "만나다",
+        "english": "to meet",
+        "romanization": "mannada",
+        "type": "verb"
+      },
+      {
+        "word": "가능하다",
+        "english": "to be possible",
+        "romanization": "ganeunghada",
+        "type": "verb"
+      },
+      {
+        "word": "어렵다",
+        "english": "to be difficult",
+        "romanization": "eoryeopda",
+        "type": "adjective"
+      },
+      {
+        "word": "일정",
+        "english": "schedule",
+        "romanization": "iljeong",
+        "type": "noun"
+      },
+      {
+        "word": "확인하다",
+        "english": "to check/confirm",
+        "romanization": "hwaginhada",
+        "type": "verb"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "내일 같이 점심 먹을래요?",
+        "english": "Do you want to have lunch together tomorrow?",
+        "romanization": "nae-il gachi jeomsim meogeullaeyo?"
+      },
+      {
+        "korean": "저녁에 운동할 거예요.",
+        "english": "I'm going to work out in the evening.",
+        "romanization": "jeonyeoge undonghal geoyeyo."
+      },
+      {
+        "korean": "주말에는 시간이 없을 것 같아요.",
+        "english": "I think I won't have time on the weekend.",
+        "romanization": "jumaleneun sigani eopseul geot gatayo."
+      },
+      {
+        "korean": "일정 확인하고 알려줄게요.",
+        "english": "I'll check my schedule and let you know.",
+        "romanization": "iljeong hwaginhago allyeojulgeyo."
+      },
+      {
+        "korean": "그날은 조금 어려워요. 다른 날 가능해요?",
+        "english": "That day is a bit difficult. Is another day possible?",
+        "romanization": "geunareun jogeum eoryeowoyo. dareun nal ganeunghaeyo?"
+      }
+    ],
+    "explanation": [
+      "-(으)ㄹ 거예요 adds a future/intent meaning. Add -을 after consonants, -ㄹ after vowels: 가다 → 갈 거예요, 먹다 → 먹을 거예요.",
+      "-ㄹ래요? suggests plans softly: 커피 마실래요? 같이 갈래요? It's more casual than -(으)실래요? but polite enough with 요.",
+      "가능해요 = It's possible. 어려워요 = It's hard/difficult. Combine with 조금 to soften refusals.",
+      "일정 확인하고 알려줄게요 literally 'I'll check the schedule and will let you know.' -줄게요 is a friendly promise.",
+      "Use 것 같아요 to hedge: 아마 늦을 것 같아요 (I think I'll be late)."
+    ]
+  },
+  {
+    "id": "8.0",
+    "group_id": "8",
+    "version": "2.0.0",
+    "title": "Transportation Essentials",
+    "objectives": [
+      "Name common transport options",
+      "Use ride/transfer/get-off verbs",
+      "Handle tickets and payment basics"
+    ],
+    "context": [
+      "Public transit in Korea is extensive—knowing the key words keeps you moving.",
+      "타다 (to ride) and 내리다 (to get off) pair with any vehicle.",
+      "Cards are king: a 교통카드 works on buses, subways, and some taxis."
+    ],
+    "vocabulary": [
+      {
+        "word": "버스",
+        "english": "bus",
+        "romanization": "beoseu",
+        "type": "noun"
+      },
+      {
+        "word": "지하철",
+        "english": "subway",
+        "romanization": "jihacheol",
+        "type": "noun"
+      },
+      {
+        "word": "택시",
+        "english": "taxi",
+        "romanization": "taegsi",
+        "type": "noun"
+      },
+      {
+        "word": "기차",
+        "english": "train",
+        "romanization": "gicha",
+        "type": "noun"
+      },
+      {
+        "word": "비행기",
+        "english": "airplane",
+        "romanization": "bihaenggi",
+        "type": "noun"
+      },
+      {
+        "word": "정류장",
+        "english": "(bus) stop",
+        "romanization": "jeongnyujang",
+        "type": "noun"
+      },
+      {
+        "word": "역",
+        "english": "station",
+        "romanization": "yeok",
+        "type": "noun"
+      },
+      {
+        "word": "타다",
+        "english": "to ride",
+        "romanization": "tada",
+        "type": "verb"
+      },
+      {
+        "word": "내리다",
+        "english": "to get off",
+        "romanization": "naerida",
+        "type": "verb"
+      },
+      {
+        "word": "갈아타다",
+        "english": "to transfer",
+        "romanization": "garatada",
+        "type": "verb"
+      },
+      {
+        "word": "교통카드",
+        "english": "transit card",
+        "romanization": "gyotongkadeu",
+        "type": "noun"
+      },
+      {
+        "word": "표",
+        "english": "ticket",
+        "romanization": "pyo",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "버스를 타고 회사에 가요.",
+        "english": "I take the bus to the office.",
+        "romanization": "beoseureul tago hoesa-e gayo."
+      },
+      {
+        "korean": "두 정류장 전에 내렸어요.",
+        "english": "I got off two stops earlier.",
+        "romanization": "du jeongnyujang jeone naeryeosseoyo."
+      },
+      {
+        "korean": "강남역에서 2호선으로 갈아타요.",
+        "english": "At Gangnam Station I transfer to Line 2.",
+        "romanization": "gangnam-yeogeseo iho-seon-euro garatayo."
+      },
+      {
+        "korean": "교통카드 있어요? 충전했어요?",
+        "english": "Do you have a transit card? Did you top it up?",
+        "romanization": "gyotongkadeu isseoyo? chungjeonhaesseoyo?"
+      },
+      {
+        "korean": "표 두 장 주세요.",
+        "english": "Two tickets, please.",
+        "romanization": "pyo du jang juseyo."
+      }
+    ],
+    "explanation": [
+      "Vehicles take object particle sometimes but often omitted: 버스(를) 타요. Use 에서 with stations for actions: 역에서 갈아타요.",
+      "호선 is subway line: 2호선 (line 2), 9호선 (line 9). Attach 으로/로 after the line number.",
+      "충전하다 = to recharge/top up (a card). 잔액 means remaining balance: 잔액이 없어요 (no balance).",
+      "Taxis often ask '카드요? 현금요?' Answer with the method. Some taxis accept 교통카드 taps too.",
+      "For buses, press the stop button before your stop: 다음 정류장에서 내릴게요 (I'll get off at the next stop)."
+    ]
+  },
+  {
+    "id": "8.1",
+    "group_id": "8",
+    "version": "2.0.0",
+    "title": "Asking for Directions",
+    "objectives": [
+      "Understand and give basic directions",
+      "Use location nouns like 왼쪽/오른쪽/직진",
+      "Form polite direction questions"
+    ],
+    "context": [
+      "Short, direct phrases are best when asking strangers for help.",
+      "Directional nouns pair with 으로/로 to indicate movement.",
+      "Landmark-based directions are more common than exact addresses."
+    ],
+    "vocabulary": [
+      {
+        "word": "왼쪽",
+        "english": "left",
+        "romanization": "oenjjok",
+        "type": "noun"
+      },
+      {
+        "word": "오른쪽",
+        "english": "right",
+        "romanization": "oreunjjok",
+        "type": "noun"
+      },
+      {
+        "word": "직진",
+        "english": "go straight",
+        "romanization": "jikjin",
+        "type": "noun"
+      },
+      {
+        "word": "신호등",
+        "english": "traffic light",
+        "romanization": "sinhodeung",
+        "type": "noun"
+      },
+      {
+        "word": "횡단보도",
+        "english": "crosswalk",
+        "romanization": "hoengdambodo",
+        "type": "noun"
+      },
+      {
+        "word": "입구",
+        "english": "entrance",
+        "romanization": "ipgu",
+        "type": "noun"
+      },
+      {
+        "word": "출구",
+        "english": "exit",
+        "romanization": "chulgu",
+        "type": "noun"
+      },
+      {
+        "word": "근처",
+        "english": "nearby/around",
+        "romanization": "geuncheo",
+        "type": "noun"
+      },
+      {
+        "word": "맞은편",
+        "english": "across from",
+        "romanization": "majeunpyeon",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "지하철역이 어디에 있어요?",
+        "english": "Where is the subway station?",
+        "romanization": "jihacheol-yeogi eodie isseoyo?"
+      },
+      {
+        "korean": "저기 횡단보도에서 왼쪽으로 가세요.",
+        "english": "At that crosswalk over there, go left.",
+        "romanization": "jeogi hoengdambodoseo oenjjogeuro gaseyo."
+      },
+      {
+        "korean": "두 블록 직진하고 오른쪽으로 도세요.",
+        "english": "Go straight two blocks and turn right.",
+        "romanization": "du beullok jikjinhago oreunjjogeuro doseyo."
+      },
+      {
+        "korean": "출구는 반대편에 있어요.",
+        "english": "The exit is on the opposite side.",
+        "romanization": "chulguneun bandaepyeone isseoyo."
+      },
+      {
+        "korean": "근처에 카페 있어요?",
+        "english": "Is there a cafe nearby?",
+        "romanization": "geuncheoe kape isseoyo?"
+      }
+    ],
+    "explanation": [
+      "Direction question frame: [Place] 어디에 있어요? Use 에 to mark static location. To ask how to get there, switch to 어떻게 가요?",
+      "-으로/로 after a direction shows route: 왼쪽으로 가세요 (go to the left), 직진하세요 (go straight).",
+      "Landmarks are key: 신호등/횡단보도/편의점/은행 + 에서/앞에서 give clear instructions.",
+      "맞은편 = across from. 건너편 also works. Use -에 to mark: 역 맞은편에 있어요 (It's across from the station).",
+      "In subway stations, 출구 numbers matter: 3번 출구로 나가세요 (exit through gate 3)."
+    ]
+  },
+  {
+    "id": "8.2",
+    "group_id": "8",
+    "version": "2.0.0",
+    "title": "Travel Timing & Fixes",
+    "objectives": [
+      "Ask how long a trip takes",
+      "Handle delays, traffic, and being lost",
+      "Confirm you're on the right route"
+    ],
+    "context": [
+      "Even with maps, you need quick phrases to confirm you're headed correctly.",
+      "Korean commuters talk about traffic (막히다) and duration (얼마나 걸려요?).",
+      "Stay polite but clear when asking to speed up or double-checking stops."
+    ],
+    "vocabulary": [
+      {
+        "word": "얼마나 걸려요?",
+        "english": "How long does it take?",
+        "romanization": "eolmana geollyeoyo?",
+        "type": "phrase"
+      },
+      {
+        "word": "막히다",
+        "english": "to be jammed (traffic)",
+        "romanization": "makhida",
+        "type": "verb"
+      },
+      {
+        "word": "빨리",
+        "english": "quickly",
+        "romanization": "ppalli",
+        "type": "adverb"
+      },
+      {
+        "word": "천천히",
+        "english": "slowly",
+        "romanization": "cheoncheonhi",
+        "type": "adverb"
+      },
+      {
+        "word": "길을 잃다",
+        "english": "to get lost",
+        "romanization": "gireul ilta",
+        "type": "verb"
+      },
+      {
+        "word": "맞아요?",
+        "english": "Is this correct?",
+        "romanization": "majayo?",
+        "type": "phrase"
+      },
+      {
+        "word": "정거장",
+        "english": "stop/station",
+        "romanization": "jeonggeojang",
+        "type": "noun"
+      },
+      {
+        "word": "내리는 곳",
+        "english": "drop-off place",
+        "romanization": "naerineun got",
+        "type": "noun"
+      },
+      {
+        "word": "지연",
+        "english": "delay",
+        "romanization": "jiyeon",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "여기서 공항까지 얼마나 걸려요?",
+        "english": "How long does it take from here to the airport?",
+        "romanization": "yeogiseo gonghangkkaji eolmana geollyeoyo?"
+      },
+      {
+        "korean": "지금 길이 많이 막혀요.",
+        "english": "The road is really jammed right now.",
+        "romanization": "jigeum giri mani makhyeoyo."
+      },
+      {
+        "korean": "이 버스 강남역 가는 거 맞아요?",
+        "english": "Does this bus go to Gangnam Station?",
+        "romanization": "i beoseu gangnam-yeok ganeun geo majayo?"
+      },
+      {
+        "korean": "다음 정거장에서 내려야 해요.",
+        "english": "I have to get off at the next stop.",
+        "romanization": "daeum jeonggeojangeseo naeryeoya haeyo."
+      },
+      {
+        "korean": "길을 잃었어요. 여기 어디예요?",
+        "english": "I'm lost. Where am I here?",
+        "romanization": "gireul ireosseoyo. yeogi eodieyo?"
+      }
+    ],
+    "explanation": [
+      "얼마나 걸려요? asks duration. Reply with minutes/hours: 20분 걸려요 (takes 20 minutes), 한 시간쯤 걸려요 (about an hour).",
+      "막히다 conjugates to 막혀요. 'Traffic is heavy' = 차가 많이 막혀요.",
+      "Check routes: [Transport] + [destination] + 가요/가는 거예요? e.g., 이 기차 부산 가요?",
+      "To request faster/slower politely: 조금만 빨리 가 주세요 / 천천히 가 주세요 (for taxis).",
+      "If lost, pair place words: 여기 근처에 은행 있어요? 길을 잃었어요, 도와주세요 (I'm lost, please help)."
+    ]
+  },
+  {
+    "id": "9.0",
+    "group_id": "9",
+    "version": "2.0.0",
+    "title": "Sino-Korean Numbers",
+    "objectives": [
+      "Count with 일 이 삼 사 오 and beyond",
+      "Use Sino numbers for dates, money, and minutes",
+      "Read large numbers smoothly"
+    ],
+    "context": [
+      "Korean has two number systems. Sino-Korean numbers (한자어 수) come from Chinese and handle money, minutes, phone numbers, floors, months, and more.",
+      "Pattern is regular: 일(1) 이(2) 삼(3) 사(4) 오(5) 육(6) 칠(7) 팔(8) 구(9) 십(10).",
+      "Combine tens and hundreds like Lego blocks: 이십(20), 삼십오(35), 백오십(150)."
+    ],
+    "vocabulary": [
+      {
+        "word": "공",
+        "english": "zero (phone numbers)",
+        "romanization": "gong",
+        "type": "number"
+      },
+      {
+        "word": "영",
+        "english": "zero",
+        "romanization": "yeong",
+        "type": "number"
+      },
+      {
+        "word": "일",
+        "english": "one",
+        "romanization": "il",
+        "type": "number"
+      },
+      {
+        "word": "이",
+        "english": "two",
+        "romanization": "i",
+        "type": "number"
+      },
+      {
+        "word": "삼",
+        "english": "three",
+        "romanization": "sam",
+        "type": "number"
+      },
+      {
+        "word": "사",
+        "english": "four",
+        "romanization": "sa",
+        "type": "number"
+      },
+      {
+        "word": "오",
+        "english": "five",
+        "romanization": "o",
+        "type": "number"
+      },
+      {
+        "word": "십",
+        "english": "ten",
+        "romanization": "sip",
+        "type": "number"
+      },
+      {
+        "word": "백",
+        "english": "hundred",
+        "romanization": "baek",
+        "type": "number"
+      },
+      {
+        "word": "천",
+        "english": "thousand",
+        "romanization": "cheon",
+        "type": "number"
+      },
+      {
+        "word": "만",
+        "english": "ten thousand",
+        "romanization": "man",
+        "type": "number"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "오늘은 3월 15일이에요.",
+        "english": "Today is March 15th.",
+        "romanization": "oneureun sam-wol sip-o-il-ieyo."
+      },
+      {
+        "korean": "가격이 만 오천 원이에요.",
+        "english": "The price is 15,000 won.",
+        "romanization": "gagyeogi man ocheon won-ieyo."
+      },
+      {
+        "korean": "회의가 30분 걸려요.",
+        "english": "The meeting takes 30 minutes.",
+        "romanization": "hoeui-ga samsip bun geollyeoyo."
+      },
+      {
+        "korean": "제 번호는 010-9876-5432예요.",
+        "english": "My number is 010-9876-5432.",
+        "romanization": "je beonhoneun gong-il-gong, gu-pal-chil-yuk, o-sa-sam-i-yeyo."
+      },
+      {
+        "korean": "십이층에 살아요.",
+        "english": "I live on the 12th floor.",
+        "romanization": "sibi cheunge sarayo."
+      }
+    ],
+    "explanation": [
+      "십 to 백 to 천 to 만 build up: 이십(20) = 2×10, 삼십사(34) = 3×10 + 4, 이천오백(2,500) = 2×1000 + 5×100.",
+      "Dates use Sino numbers for months and days: 3월 15일 (March 15th). Months are number + 월; days are number + 일.",
+      "Phone numbers often use 공 (0) instead of 영. Read digits individually: 010 → 공-일-공.",
+      "Money uses 원 with Sino numbers: 만 원 (10,000 won), 삼만 육천 원 (36,000 won).",
+      "Floors also Sino: 1층 (il cheung), 12층 (sibi cheung)."
+    ]
+  },
+  {
+    "id": "9.1",
+    "group_id": "9",
+    "version": "2.0.0",
+    "title": "Native Numbers & Basic Counters",
+    "objectives": [
+      "Count with native Korean numbers 1-10",
+      "Use common counters like 개/명/마리",
+      "Order small quantities in real situations"
+    ],
+    "context": [
+      "Native numbers handle age (살), hours (시), and everyday counting up to about 99.",
+      "Counters follow the number to match the type of thing you're counting.",
+      "Numbers 1-4 often shorten before counters (한/두/세/네)."
+    ],
+    "vocabulary": [
+      {
+        "word": "하나",
+        "english": "one",
+        "romanization": "hana",
+        "type": "number"
+      },
+      {
+        "word": "둘",
+        "english": "two",
+        "romanization": "dul",
+        "type": "number"
+      },
+      {
+        "word": "셋",
+        "english": "three",
+        "romanization": "set",
+        "type": "number"
+      },
+      {
+        "word": "넷",
+        "english": "four",
+        "romanization": "net",
+        "type": "number"
+      },
+      {
+        "word": "다섯",
+        "english": "five",
+        "romanization": "daseot",
+        "type": "number"
+      },
+      {
+        "word": "열",
+        "english": "ten",
+        "romanization": "yeol",
+        "type": "number"
+      },
+      {
+        "word": "개",
+        "english": "item counter",
+        "romanization": "gae",
+        "type": "counter"
+      },
+      {
+        "word": "명",
+        "english": "people counter",
+        "romanization": "myeong",
+        "type": "counter"
+      },
+      {
+        "word": "마리",
+        "english": "animal counter",
+        "romanization": "mari",
+        "type": "counter"
+      },
+      {
+        "word": "병",
+        "english": "bottle counter",
+        "romanization": "byeong",
+        "type": "counter"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "사과 세 개 주세요.",
+        "english": "Three apples, please.",
+        "romanization": "sagwa se gae juseyo."
+      },
+      {
+        "korean": "친구 네 명이 와요.",
+        "english": "Four friends are coming.",
+        "romanization": "chingu ne myeongi wayo."
+      },
+      {
+        "korean": "맥주 두 병 주문했어요.",
+        "english": "I ordered two bottles of beer.",
+        "romanization": "maekju du byeong jumonhaesseoyo."
+      },
+      {
+        "korean": "강아지 한 마리 키워요.",
+        "english": "I raise one dog.",
+        "romanization": "gangaji han mari kiwoyo."
+      },
+      {
+        "korean": "열 개 있어요.",
+        "english": "There are ten (items).",
+        "romanization": "yeol gae isseoyo."
+      }
+    ],
+    "explanation": [
+      "Short forms before counters: 하나→한, 둘→두, 셋→세, 넷→네. Example: 두 개, 세 명, 네 시.",
+      "개 is the all-purpose counter for inanimate items. 명 is for people (분 is the honorific people counter).",
+      "Use native numbers for age with 살: 저는 스물다섯 살이에요 (I'm 25).",
+      "Up to 99 uses native numbers: 열하나 (11), 스물 (20), 서른 (30), 마흔 (40), 쉰 (50). Sino numbers take over for large counts.",
+      "Counters come right after numbers: 사탕 다섯 개, 학생 여섯 명."
+    ]
+  },
+  {
+    "id": "9.2",
+    "group_id": "9",
+    "version": "2.0.0",
+    "title": "Practical Counting: Money, Time, Age",
+    "objectives": [
+      "Talk about prices and change",
+      "Tell time and age with correct systems",
+      "Use common counters like 시/분/살/층"
+    ],
+    "context": [
+      "Korean swaps between Sino and native numbers depending on what you're counting.",
+      "Money, dates, minutes use Sino numbers; hours and age use native (with some exceptions).",
+      "Practice mixing both systems in one sentence for real-life fluency."
+    ],
+    "vocabulary": [
+      {
+        "word": "원",
+        "english": "won (currency)",
+        "romanization": "won",
+        "type": "counter"
+      },
+      {
+        "word": "시",
+        "english": "hour (native)",
+        "romanization": "si",
+        "type": "counter"
+      },
+      {
+        "word": "분",
+        "english": "minute (Sino)",
+        "romanization": "bun",
+        "type": "counter"
+      },
+      {
+        "word": "살",
+        "english": "years old",
+        "romanization": "sal",
+        "type": "counter"
+      },
+      {
+        "word": "층",
+        "english": "floor/story",
+        "romanization": "cheung",
+        "type": "counter"
+      },
+      {
+        "word": "번",
+        "english": "number/time",
+        "romanization": "beon",
+        "type": "counter"
+      },
+      {
+        "word": "시간",
+        "english": "hour (duration)",
+        "romanization": "sigan",
+        "type": "noun"
+      },
+      {
+        "word": "잔돈",
+        "english": "change (money)",
+        "romanization": "jandon",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "이거 얼마예요?",
+        "english": "How much is this?",
+        "romanization": "igeo eolmayeyo?"
+      },
+      {
+        "korean": "오천오백 원이에요.",
+        "english": "It's 5,500 won.",
+        "romanization": "ocheonobaek won-ieyo."
+      },
+      {
+        "korean": "한 시 십 분에 만나요.",
+        "english": "Let's meet at 1:10.",
+        "romanization": "han si sip bune mannayo."
+      },
+      {
+        "korean": "저는 스물아홉 살이에요.",
+        "english": "I'm 29 years old.",
+        "romanization": "jeoneun seumulahop sarieyo."
+      },
+      {
+        "korean": "방은 7층이에요.",
+        "english": "The room is on the 7th floor.",
+        "romanization": "bang-eun chil cheung-ieyo."
+      }
+    ],
+    "explanation": [
+      "가격/돈 use Sino numbers + 원: 삼만 칠천 원 (37,000 won). Asking price: 얼마예요?",
+      "Clock time mixes systems: hours = native (한 시, 두 시), minutes = Sino (십 분, 이십오 분).",
+      "Age uses native numbers with 살: 스물다섯 살 (25). In very formal settings, Sino with 세 sometimes appears, but 살 covers most cases.",
+      "층 uses Sino: 1층 (il cheung), 7층 (chil cheung). 번 marks order/number: 몇 번 버스예요? (Which bus number is it?).",
+      "Duration 'for X hours/minutes' uses -동안 or just counters: 두 시간 동안 공부했어요 (studied for two hours), 10분만 기다려 주세요 (please wait only 10 minutes)."
+    ]
+  },
+  {
+    "id": "10.0",
+    "group_id": "10",
+    "version": "2.0.0",
+    "title": "Airport & Immigration",
+    "objectives": [
+      "Handle check-in and security",
+      "Answer basic immigration questions",
+      "Ask for help with boarding and baggage"
+    ],
+    "context": [
+      "Airports use predictable phrases about passports, tickets, and luggage.",
+      "Immigration officers often ask about purpose of visit and length of stay.",
+      "Keep answers short and polite—simple present/future tense works well."
+    ],
+    "vocabulary": [
+      {
+        "word": "여권",
+        "english": "passport",
+        "romanization": "yeogwon",
+        "type": "noun"
+      },
+      {
+        "word": "탑승권",
+        "english": "boarding pass",
+        "romanization": "tapseunggwon",
+        "type": "noun"
+      },
+      {
+        "word": "수하물",
+        "english": "checked baggage",
+        "romanization": "suhamul",
+        "type": "noun"
+      },
+      {
+        "word": "기내 반입",
+        "english": "carry-on",
+        "romanization": "ginae banip",
+        "type": "noun"
+      },
+      {
+        "word": "면세점",
+        "english": "duty-free shop",
+        "romanization": "myeonsejeom",
+        "type": "noun"
+      },
+      {
+        "word": "입국 심사",
+        "english": "immigration check",
+        "romanization": "ipguk simsa",
+        "type": "noun"
+      },
+      {
+        "word": "목적",
+        "english": "purpose",
+        "romanization": "mokjeok",
+        "type": "noun"
+      },
+      {
+        "word": "체류 기간",
+        "english": "length of stay",
+        "romanization": "cheryu gigan",
+        "type": "noun"
+      },
+      {
+        "word": "환승",
+        "english": "transfer/layover",
+        "romanization": "hwanseung",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "여권과 탑승권 보여 주세요.",
+        "english": "Please show your passport and boarding pass.",
+        "romanization": "yeogwongwa tapseunggwon boyeo juseyo."
+      },
+      {
+        "korean": "수하물 두 개 부쳤어요.",
+        "english": "I checked two bags.",
+        "romanization": "suhamul du gae bucheosseoyo."
+      },
+      {
+        "korean": "여행 목적이 뭐예요?",
+        "english": "What is the purpose of your trip?",
+        "romanization": "yeohaeng mokjeogi mwoyeyo?"
+      },
+      {
+        "korean": "관광이에요. 1주일 있을 거예요.",
+        "english": "Tourism. I'll stay one week.",
+        "romanization": "gwangwang-ieyo. il-ju-il isseul geoyeyo."
+      },
+      {
+        "korean": "환승 승객이에요. 어디로 가야 해요?",
+        "english": "I'm a transfer passenger. Where should I go?",
+        "romanization": "hwanseung seunggaeg-ieyo. eodiro gaya haeyo?"
+      }
+    ],
+    "explanation": [
+      "입국 심사에서 you'll hear '여행 목적이 뭐예요?' (purpose) and '체류 기간이 얼마예요?' (length of stay). Prepare short answers: 관광/출장 (business) / 가족 방문.",
+      "Checked bag = 수하물, carry-on = 기내 반입. 부치다 means to check luggage. 수하물 찾는 곳 = baggage claim.",
+      "환승 means transfer. If you have a layover, say 환승이에요 and ask for the gate: 게이트가 어디예요?",
+      "Security asks '액체 있어요?' (Any liquids?) or '노트북 꺼내 주세요' (Please take out your laptop).",
+      "Numbers for dates use Sino: 1주일 (one week), 3일 (three days), 2달 (two months using native counter 달)."
+    ]
+  },
+  {
+    "id": "10.1",
+    "group_id": "10",
+    "version": "2.0.0",
+    "title": "Hotels & Stays",
+    "objectives": [
+      "Book, check in, and check out smoothly",
+      "Request essentials like Wi‑Fi and extra items",
+      "Handle room problems politely"
+    ],
+    "context": [
+      "Hotels and guesthouses use many English loanwords, but polite Korean earns quick help.",
+      "Short requests with 있어요?/주세요 cover most needs.",
+      "Be ready to explain issues with simple adjectives (안 나와요/고장 났어요)."
+    ],
+    "vocabulary": [
+      {
+        "word": "예약",
+        "english": "reservation",
+        "romanization": "yeyak",
+        "type": "noun"
+      },
+      {
+        "word": "체크인",
+        "english": "check-in",
+        "romanization": "chekeuin",
+        "type": "noun"
+      },
+      {
+        "word": "체크아웃",
+        "english": "check-out",
+        "romanization": "chekeuaut",
+        "type": "noun"
+      },
+      {
+        "word": "방",
+        "english": "room",
+        "romanization": "bang",
+        "type": "noun"
+      },
+      {
+        "word": "열쇠",
+        "english": "key",
+        "romanization": "yeolsoe",
+        "type": "noun"
+      },
+      {
+        "word": "와이파이",
+        "english": "Wi‑Fi",
+        "romanization": "waipai",
+        "type": "noun"
+      },
+      {
+        "word": "비밀번호",
+        "english": "password",
+        "romanization": "bimilbeonho",
+        "type": "noun"
+      },
+      {
+        "word": "수건",
+        "english": "towel",
+        "romanization": "sugeon",
+        "type": "noun"
+      },
+      {
+        "word": "고장 났어요",
+        "english": "It's broken",
+        "romanization": "gojang nasseoyo",
+        "type": "phrase"
+      },
+      {
+        "word": "안 나와요",
+        "english": "It doesn't come out (water/power)",
+        "romanization": "an nawayo",
+        "type": "phrase"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "예약했어요. 체크인하고 싶어요.",
+        "english": "I have a reservation. I'd like to check in.",
+        "romanization": "yeyakhaesseoyo. chekeuinhago sipeoyo."
+      },
+      {
+        "korean": "두 시부터 체크인이에요.",
+        "english": "Check-in is from 2 p.m.",
+        "romanization": "du sibuteo chekeuin-ieyo."
+      },
+      {
+        "korean": "와이파이 비밀번호가 뭐예요?",
+        "english": "What's the Wi‑Fi password?",
+        "romanization": "waipai bimilbeonhoga mwoyeyo?"
+      },
+      {
+        "korean": "수건 좀 더 주세요.",
+        "english": "Please give me more towels.",
+        "romanization": "sugeon jom deo juseyo."
+      },
+      {
+        "korean": "샤워기가 안 나와요. 방을 바꿔 주세요.",
+        "english": "The shower doesn't work. Please change the room.",
+        "romanization": "syawogi-ga an nawayo. bangeul bakkwo juseyo."
+      }
+    ],
+    "explanation": [
+      "체크인/체크아웃 times are usually stated in English numbers. Ask '체크아웃이 몇 시예요?'",
+      "비밀번호 literally 'secret number.' Some places say 비번 for short.",
+      "안 나와요 works for water/electricity: 물이 안 나와요 (no water). For broken items, use 고장 났어요.",
+      "Extra items: 담요(=blanket) 좀 더 주세요, 베개(=pillow) 하나만 더 주세요.",
+      "To request cleaning: 객실 청소 해 주세요 / 오늘은 청소 안 해도 돼요 (No cleaning needed today)."
+    ]
+  },
+  {
+    "id": "10.2",
+    "group_id": "10",
+    "version": "2.0.0",
+    "title": "Shopping & Payment",
+    "objectives": [
+      "Ask about prices, sizes, and colors",
+      "Try on items and request discounts",
+      "Handle receipts, tax refunds, and bags"
+    ],
+    "context": [
+      "Markets and shops are friendly to short, clear Korean. Many staff reply in simple English, but Korean gets better service.",
+      "Size and fit words are often English loanwords—listen for 사이즈, 라지, 스몰.",
+      "Receipts and tax-free forms are common for tourists; know the key terms."
+    ],
+    "vocabulary": [
+      {
+        "word": "얼마예요?",
+        "english": "How much is it?",
+        "romanization": "eolmayeyo?",
+        "type": "phrase"
+      },
+      {
+        "word": "사이즈",
+        "english": "size",
+        "romanization": "saijeu",
+        "type": "noun"
+      },
+      {
+        "word": "색/색깔",
+        "english": "color",
+        "romanization": "saek/saekkkal",
+        "type": "noun"
+      },
+      {
+        "word": "입어 봐도 돼요?",
+        "english": "May I try it on?",
+        "romanization": "ibeo bwado dwaeyo?",
+        "type": "phrase"
+      },
+      {
+        "word": "좀 더 큰",
+        "english": "a bit bigger",
+        "romanization": "jom deo keun",
+        "type": "phrase"
+      },
+      {
+        "word": "할인",
+        "english": "discount",
+        "romanization": "harin",
+        "type": "noun"
+      },
+      {
+        "word": "영수증",
+        "english": "receipt",
+        "romanization": "yeongsujeung",
+        "type": "noun"
+      },
+      {
+        "word": "면세",
+        "english": "tax-free",
+        "romanization": "myeonse",
+        "type": "noun"
+      },
+      {
+        "word": "봉투",
+        "english": "bag",
+        "romanization": "bongtu",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "이거 얼마예요?",
+        "english": "How much is this?",
+        "romanization": "igeo eolmayeyo?"
+      },
+      {
+        "korean": "한 사이즈 더 있어요?",
+        "english": "Do you have one size bigger?",
+        "romanization": "han saijeu deo isseoyo?"
+      },
+      {
+        "korean": "검은색 말고 다른 색 있어요?",
+        "english": "Do you have another color besides black?",
+        "romanization": "geomeunsaek malgo dareun saek isseoyo?"
+      },
+      {
+        "korean": "입어 봐도 돼요?",
+        "english": "Can I try it on?",
+        "romanization": "ibeo bwado dwaeyo?"
+      },
+      {
+        "korean": "할인돼요? 면세 가능해요?",
+        "english": "Is there a discount? Is tax-free possible?",
+        "romanization": "harindwaeyo? myeonse ganeunghaeyo?"
+      },
+      {
+        "korean": "봉투 필요 없어요.",
+        "english": "I don't need a bag.",
+        "romanization": "bongtu piryo eopseoyo."
+      }
+    ],
+    "explanation": [
+      "사이즈 uses English letter sizes: 스몰/미디엄/라지. Numbers for shoes are in mm (e.g., 250).",
+      "입어 봐도 돼요? uses the permission pattern -아/어도 돼요? meaning 'Is it okay if...?'",
+      "할인 (discount) pairs with 카드 할인, 멤버십 할인. If price feels high, ask 조금만 깎아 주세요 (Please lower it a little).",
+      "면세 (tax-free) often requires a passport. 영수증 주세요 = Please give me a receipt.",
+      "For bags at stores: 봉투 필요하세요? Reply 필요 없어요 (No need) or 하나 주세요 (One please)."
+    ]
+  },
+  {
+    "id": "10.3",
+    "group_id": "10",
+    "version": "2.0.0",
+    "title": "Emergencies & Health",
+    "objectives": [
+      "Get help quickly in urgent situations",
+      "Describe symptoms and needs",
+      "Call or direct someone to emergency services"
+    ],
+    "context": [
+      "Keep sentences short and clear in emergencies—keywords matter more than grammar.",
+      "119 is Korea's emergency number (ambulance/fire). 112 is police.",
+      "At pharmacies or clinics, describing symptoms simply gets you quick aid."
+    ],
+    "vocabulary": [
+      {
+        "word": "도와주세요!",
+        "english": "Help, please!",
+        "romanization": "dowajuseyo!",
+        "type": "phrase"
+      },
+      {
+        "word": "119/112",
+        "english": "emergency numbers",
+        "romanization": "il-il-gu / il-il-i",
+        "type": "number"
+      },
+      {
+        "word": "아파요",
+        "english": "It hurts/I'm sick",
+        "romanization": "apayo",
+        "type": "phrase"
+      },
+      {
+        "word": "응급실",
+        "english": "emergency room",
+        "romanization": "eunggeupsil",
+        "type": "noun"
+      },
+      {
+        "word": "병원",
+        "english": "hospital",
+        "romanization": "byeongwon",
+        "type": "noun"
+      },
+      {
+        "word": "약국",
+        "english": "pharmacy",
+        "romanization": "yakguk",
+        "type": "noun"
+      },
+      {
+        "word": "증상",
+        "english": "symptom",
+        "romanization": "jeungsang",
+        "type": "noun"
+      },
+      {
+        "word": "두통",
+        "english": "headache",
+        "romanization": "dutong",
+        "type": "noun"
+      },
+      {
+        "word": "복통",
+        "english": "stomachache",
+        "romanization": "boktong",
+        "type": "noun"
+      },
+      {
+        "word": "알레르기",
+        "english": "allergy",
+        "romanization": "allereugi",
+        "type": "noun"
+      }
+    ],
+    "sentences": [
+      {
+        "korean": "도와주세요! 친구가 아파요!",
+        "english": "Help! My friend is hurt!",
+        "romanization": "dowajuseyo! chinguga apayo!"
+      },
+      {
+        "korean": "119에 전화해 주세요.",
+        "english": "Please call 119.",
+        "romanization": "il-il-gu-e jeonhwahae juseyo."
+      },
+      {
+        "korean": "병원 응급실이 어디예요?",
+        "english": "Where is the hospital emergency room?",
+        "romanization": "byeongwon eunggeupsili eodieyo?"
+      },
+      {
+        "korean": "두통이 심해요. 약 있어요?",
+        "english": "I have a bad headache. Do you have medicine?",
+        "romanization": "dutongi simhaeyo. yak isseoyo?"
+      },
+      {
+        "korean": "저는 땅콩 알레르기가 있어요. 이 약 먹어도 돼요?",
+        "english": "I have a peanut allergy. Can I take this medicine?",
+        "romanization": "jeoneun ttangkong allereugi-ga isseoyo. i yak meogeodo dwaeyo?"
+      }
+    ],
+    "explanation": [
+      "Shout 도와주세요! or 경찰 불러 주세요! (Please call the police). Mention the issue fast: 사고 났어요 (There was an accident).",
+      "Emergency numbers: 119 for ambulance/fire, 112 for police. Say 위치 (location) + 상황 (situation).",
+      "At a pharmacy, say 증상이 뭐예요? (What are the symptoms?) or name them: 두통/복통/기침(=cough). Add 며칠째예요 (for how many days).",
+      "Use -아/어도 돼요? for permission: 이 약 먹어도 돼요? (Is it okay to take this?).",
+      "If you have allergies or conditions, say it first: 저는 ___ 알레르기가 있어요 / 저는 약에 알레르기 있어요."
+    ]
+  }
+]
