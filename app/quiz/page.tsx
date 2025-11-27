@@ -19,7 +19,8 @@ function QuizPageContent() {
   const searchParams = useSearchParams();
   const lessonIdFromUrl = searchParams.get("lessonId");
 
-  const [state, setState] = useState<QuizState>("setup");
+  // If lessonId is provided, start in loading state to avoid flash
+  const [state, setState] = useState<QuizState>(lessonIdFromUrl ? "quiz" : "setup");
   const [currentQuizId, setCurrentQuizId] = useState<string>("");
   const [questions, setQuestions] = useState<QuizQuestionType[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -27,7 +28,7 @@ function QuizPageContent() {
   const [answers, setAnswers] = useState<
     { question: string; selected: string; correct: string; isCorrect: boolean }[]
   >([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(!!lessonIdFromUrl); // Start loading if lessonId present
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [completedLessonQuizzes, setCompletedLessonQuizzes] = useState<Set<string>>(new Set());
   const [showRomanization, setShowRomanization] = useState(false);
@@ -41,11 +42,11 @@ function QuizPageContent() {
 
   // Auto-start quiz if lessonId is provided in URL
   useEffect(() => {
-    if (lessonIdFromUrl && state === "setup" && !loading) {
+    if (lessonIdFromUrl && questions.length === 0 && !currentQuizId) {
       // Auto-start with 10 questions from the specific lesson
       startQuiz(10, "all", lessonIdFromUrl);
     }
-  }, [lessonIdFromUrl, state]);
+  }, [lessonIdFromUrl]);
 
   const loadLessons = async () => {
     const lessonsData = await getAllLessons();
@@ -166,12 +167,19 @@ function QuizPageContent() {
   };
 
   const resetQuiz = () => {
-    setState("setup");
-    setQuestions([]);
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setAnswers([]);
-    setCurrentQuizId("");
+    // If we came from a lesson, go back to that lesson
+    if (lessonIdFromUrl) {
+      window.location.href = `/lessons/${lessonIdFromUrl}`;
+    } else {
+      // Otherwise go back to quiz setup
+      setState("setup");
+      setQuestions([]);
+      setCurrentQuestionIndex(0);
+      setScore(0);
+      setAnswers([]);
+      setCurrentQuizId("");
+      setLoading(false);
+    }
   };
 
   if (state === "setup") {
@@ -345,7 +353,18 @@ function QuizPageContent() {
     );
   }
 
-  // Quiz in progress
+  // Quiz in progress or loading
+  if (loading || questions.length === 0) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-6xl mb-4">✏️</div>
+          <p className="text-xl text-garden-earth/70">Loading quiz questions...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-garden-white via-garden-mint/10 to-garden-lavender/10">
       <div className="container mx-auto px-4 py-12">
@@ -356,7 +375,7 @@ function QuizPageContent() {
             variant="outline"
             className="gap-2"
           >
-            ← Exit Quiz
+            ← {lessonIdFromUrl ? 'Back to Lesson' : 'Exit Quiz'}
           </Button>
         </div>
 
