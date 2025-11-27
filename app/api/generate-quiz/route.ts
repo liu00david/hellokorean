@@ -19,11 +19,36 @@ export async function GET(request: Request) {
     let entries: any[] = [];
 
     if (lessonIdParam) {
-      // Fetch entries for a specific lesson
+      // Fetch the lesson to get its vocabulary
+      const { data: lessonData, error: lessonError } = await supabase
+        .from("lessons")
+        .select("vocabulary")
+        .eq("id", lessonIdParam)
+        .single();
+
+      if (lessonError) {
+        console.error("Error fetching lesson:", lessonError);
+        return NextResponse.json(
+          { error: "Failed to fetch lesson" },
+          { status: 500 }
+        );
+      }
+
+      if (!lessonData || !lessonData.vocabulary) {
+        return NextResponse.json(
+          { error: "Lesson not found or has no vocabulary" },
+          { status: 404 }
+        );
+      }
+
+      // Get the words from lesson vocabulary
+      const lessonWords = lessonData.vocabulary.map((v: any) => v.word);
+
+      // Fetch dictionary entries for those specific words
       const { data, error } = await supabase
         .from("dictionary")
         .select("*")
-        .contains("lessons", [lessonIdParam]);
+        .in("word", lessonWords);
 
       if (error) {
         console.error("Error fetching lesson words:", error);
