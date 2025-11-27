@@ -24,7 +24,7 @@ export default function DictionaryPage() {
   const [sortBy, setSortBy] = useState<SortType>("lesson");
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [lessons, setLessons] = useState<{ id: string; title: string }[]>([]);
+  const [lessons, setLessons] = useState<{ id: string; title: string; order_index: number }[]>([]);
 
   // Fetch lessons for the lesson filter
   useEffect(() => {
@@ -82,10 +82,15 @@ export default function DictionaryPage() {
         case "english":
           return a.english.localeCompare(b.english, "en");
         case "lesson":
-          // Sort by first lesson ID if available
-          const aLesson = (a as any).lessons?.[0] || "";
-          const bLesson = (b as any).lessons?.[0] || "";
-          return aLesson.localeCompare(bLesson);
+          // Sort by first lesson's order_index if available
+          const aLessonId = (a as any).lessons?.[0] || "";
+          const bLessonId = (b as any).lessons?.[0] || "";
+
+          // Find order_index for each lesson
+          const aLessonOrder = lessons.find(l => l.id === aLessonId)?.order_index ?? 9999;
+          const bLessonOrder = lessons.find(l => l.id === bLessonId)?.order_index ?? 9999;
+
+          return aLessonOrder - bLessonOrder;
         case "type":
           return a.type.localeCompare(b.type);
         default:
@@ -96,12 +101,12 @@ export default function DictionaryPage() {
     setFilteredEntries(sorted);
     // Reset to page 1 when filters change
     setCurrentPage(1);
-  }, [searchTerm, typeFilter, lessonFilter, sortBy, allEntries, learnedEntries, activeTab]);
+  }, [searchTerm, typeFilter, lessonFilter, sortBy, allEntries, learnedEntries, activeTab, lessons]);
 
   const fetchLessons = async () => {
     const { data, error } = await supabase
       .from("lessons")
-      .select("id, title")
+      .select("id, title, order_index")
       .order("order_index", { ascending: true });
 
     if (!error && data) {
@@ -230,7 +235,7 @@ export default function DictionaryPage() {
                     placeholder="Search Kor/Eng"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink text-sm md:text-base"
                   />
                 </div>
 
@@ -242,7 +247,7 @@ export default function DictionaryPage() {
                   <select
                     value={typeFilter}
                     onChange={(e) => setTypeFilter(e.target.value)}
-                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink text-sm md:text-base"
                   >
                     <option value="all">All Types</option>
                     {types.map((type) => (
@@ -261,7 +266,7 @@ export default function DictionaryPage() {
                   <select
                     value={lessonFilter}
                     onChange={(e) => setLessonFilter(e.target.value)}
-                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink text-sm md:text-base"
                   >
                     <option value="all">All Lessons</option>
                     {lessons.map((lesson) => (
@@ -280,7 +285,7 @@ export default function DictionaryPage() {
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value as SortType)}
-                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink"
+                    className="w-full px-4 py-2 border border-garden-earth/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-garden-pink text-sm md:text-base"
                   >
                     <option value="korean">Korean (가-하)</option>
                     <option value="english">English (A-Z)</option>
