@@ -32,7 +32,7 @@ export function QuizResults({ score, totalQuestions, onRetry }: QuizResultsProps
       <CardContent>
         <div className="text-center space-y-6">
           {/* Score Display */}
-          <div className="text-8xl mb-4">{grade.emoji}</div>
+          <div className="text-6xl md:text-8xl mb-4">{grade.emoji}</div>
 
           <div>
             <p className={`text-3xl font-bold ${grade.color} mb-2`}>
@@ -55,17 +55,17 @@ export function QuizResults({ score, totalQuestions, onRetry }: QuizResultsProps
           </div>
 
           {/* Actions */}
-          <div className="flex gap-4 justify-center mt-8">
-            <Button onClick={onRetry} variant="default" className="gap-2">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-4 justify-center mt-8">
+            <Button onClick={onRetry} variant="default" className="gap-2 w-full md:w-auto">
               🔄 Try Again
             </Button>
-            <Link href="/lessons">
-              <Button variant="outline" className="gap-2">
+            <Link href="/lessons" className="w-full md:w-auto">
+              <Button variant="outline" className="gap-2 w-full">
                 📚 Back to Lessons
               </Button>
             </Link>
-            <Link href="/profile">
-              <Button variant="secondary" className="gap-2">
+            <Link href="/profile" className="w-full md:w-auto">
+              <Button variant="secondary" className="gap-2 w-full">
                 👤 View Profile
               </Button>
             </Link>

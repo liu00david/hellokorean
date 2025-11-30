@@ -1,7 +1,7 @@
 {
   "id": "4.1",
   "group_id": "4",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Places & Location Particles",
   "objectives": [
     "Name everyday places",
@@ -38,5 +38,58 @@
     "With movement verbs 가다/오다, use 에: 집에 가요. With action verbs like 일하다/공부하다, use 에서.",
     "Position words pair with 에: 학교 옆에 (next to), 시장 안에 (inside), 공원 근처에 (near the park).",
     "Order: [Place + particle] + [time word] + verb is flexible. Common flow: 오늘 학교에서 수업해요 (Today at school I have class)."
-  ]
+  ],
+  "dialogue": {
+    "title": "Planning Errands with Places",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "안녕하세요, 서연! 지금 집이에요? 회사에 가요?",
+        "english": "Hello, Seoyeon! Are you at home now? Are you going to the office?",
+        "romanization": "annyeonghaseyo, seoyeon! jigeum jib-ieyo? hoesa-e gayo?"
+      },
+      {
+        "speaker": "서연",
+        "korean": "지금 회사에 가요. 점심에는 카페에서 일해요.",
+        "english": "I'm going to the office now. At lunch I work at a cafe.",
+        "romanization": "jigeum hoesa-e gayo. jeomsimeneun kape-eseo ilhaeyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "저는 학교에 가요. 학교에서 공부해요.",
+        "english": "I'm going to school. I study at school.",
+        "romanization": "jeoneun hakgyoe gayo. hakgyoeseo gongbuhaeyo."
+      },
+      {
+        "speaker": "서연",
+        "korean": "저녁에는 공원에서 운동해요. 집에도 가요.",
+        "english": "In the evening I exercise at the park. I go home too.",
+        "romanization": "jeonyeogeneun gongwon-eseo undonghaeyo. jibedo gayo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "오늘 은행에 가요. 시장도 가요.",
+        "english": "Today I'm going to the bank. I'm going to the market too.",
+        "romanization": "oneul eunhaenge gayo. sijangdo gayo."
+      },
+      {
+        "speaker": "서연",
+        "korean": "저는 도서관에 가요. 책이 많아요.",
+        "english": "I'm going to the library. There are many books.",
+        "romanization": "jeoneun doseogwane gayo. chaegi manayo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "마트에도 가요.",
+        "english": "I'm also going to the mart.",
+        "romanization": "mateudo gayo."
+      },
+      {
+        "speaker": "서연",
+        "korean": "병원에도 가요? 괜찮아요?",
+        "english": "Are you going to the hospital too? Are you okay?",
+        "romanization": "byeongwon-edo gayo? gwaenchanayo?"
+      }
+    ]
+  }
 }

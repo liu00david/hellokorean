@@ -25,6 +25,18 @@ interface LessonExplanation {
   romanization?: string
 }
 
+interface DialogueMessage {
+  speaker: string
+  korean: string
+  english: string
+  romanization: string
+}
+
+interface Dialogue {
+  title: string
+  messages: DialogueMessage[]
+}
+
 interface Lesson {
   id: string
   group_id: string
@@ -36,6 +48,7 @@ interface Lesson {
   vocabulary: LessonVocabulary[]
   sentences: LessonSentence[]
   explanation: string[]
+  dialogue?: Dialogue
 }
 
 interface LessonGroup {
@@ -175,6 +188,10 @@ export async function POST(request: Request) {
       const needsSync = !existingVersion || existingVersion !== lesson.version
 
       if (needsSync) {
+        // Calculate order_index from lesson ID (e.g., "2.3" -> 2003)
+        const [major, minor] = lesson.id.split('.').map(n => parseInt(n, 10))
+        const orderIndex = (major * 1000) + minor
+
         const { error: lessonError } = await supabaseAdmin
           .from('lessons')
           .upsert({
@@ -187,7 +204,8 @@ export async function POST(request: Request) {
             vocabulary: lesson.vocabulary,
             sentences: lesson.sentences,
             explanation: lesson.explanation,
-            order_index: i
+            dialogue: lesson.dialogue || null,
+            order_index: orderIndex
           }, {
             onConflict: 'id'
           })

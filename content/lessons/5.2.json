@@ -1,7 +1,7 @@
 {
   "id": "5.2",
   "group_id": "5",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Dietary Needs & Restaurant Etiquette",
   "objectives": [
     "Share dietary preferences or restrictions",
@@ -37,5 +37,58 @@
     "For allergies, be direct: 저는 땅콩 알레르기가 있어요 (I have a peanut allergy). Follow with 못 먹어요 (I can't eat it).",
     "채식주의자예요 (I'm vegetarian) / 비건이에요 (I'm vegan). Ask '고기 들어가요?' = Does this have meat?",
     "맛있게 드세요 is a polite 'enjoy' used by staff or to others. You respond with 잘 먹겠습니다 before eating in formal settings."
-  ]
+  ],
+  "dialogue": {
+    "title": "Sharing Dietary Needs",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "저기요! 안 매운 거 있어요?",
+        "english": "Excuse me! Do you have something not spicy?",
+        "romanization": "jeogiyo! an maeun geo isseoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 있어요. 불고기는 안 매워요.",
+        "english": "Yes, we do. Bulgogi isn't spicy.",
+        "romanization": "ne, isseoyo. bulgogi an maewoyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "저는 채식주의자예요. 고기 빼 주세요.",
+        "english": "I'm vegetarian. Please remove the meat.",
+        "romanization": "jeoneun chaesikjuuija-yeyo. gogi bbae juseyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 덜 맵게, 짜지 않게 할게요.",
+        "english": "Okay, I'll make it less spicy and not too salty.",
+        "romanization": "ne, deol maepge, jjaji anke halgeyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "라면은 덜 주세요.",
+        "english": "Please give less ramen.",
+        "romanization": "ramyeoneun deol juseyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "저는 우유 알레르기 있어요.",
+        "english": "I have a milk allergy.",
+        "romanization": "jeoneun uyu allereugi isseoyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "물티슈 있어요. 여기 있어요.",
+        "english": "We have wet wipes. Here you go.",
+        "romanization": "multisyu isseoyo. yeogi isseoyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "맛있게 드세요.",
+        "english": "Enjoy your meal.",
+        "romanization": "masitge deuseyo."
+      }
+    ]
+  }
 }

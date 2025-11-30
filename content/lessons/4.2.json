@@ -1,7 +1,7 @@
 {
   "id": "4.2",
   "group_id": "4",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "There Is / There Isn't",
   "objectives": [
     "Use 있다/없다 for existence and possession",
@@ -23,7 +23,10 @@
     {"word": "뒤", "english": "back/behind", "romanization": "dwi", "type": "noun"},
     {"word": "옆", "english": "side/next to", "romanization": "yeop", "type": "noun"},
     {"word": "위", "english": "above/on", "romanization": "wi", "type": "noun"},
-    {"word": "아래", "english": "below/under", "romanization": "arae", "type": "noun"}
+    {"word": "아래", "english": "below/under", "romanization": "arae", "type": "noun"},
+    {"word": "책", "english": "book", "romanization": "chaek", "type": "noun"},
+    {"word": "가방", "english": "bag", "romanization": "gabang", "type": "noun"},
+    {"word": "의자", "english": "chair", "romanization": "uija", "type": "noun"}
   ],
   "sentences": [
     {"korean": "여기 화장실 있어요?", "english": "Is there a restroom here?", "romanization": "yeogi hwajangsil isseoyo?"},
@@ -38,5 +41,58 @@
     "Location structure: [Place/Thing] + 이/가 + [Location word] + 에 있어요. Example: 은행이 시장 옆에 있어요.",
     "여기/거기/저기 can replace a full place name when pointing. Add 에 to mark location: 거기에 있어요 = It's there.",
     "없다 can sound abrupt alone; soften with 죄송하지만 or 미안해요 when refusing politely."
-  ]
+  ],
+  "dialogue": {
+    "title": "Finding Places and Items",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "여기 카페 있어요?",
+        "english": "Is there a cafe here?",
+        "romanization": "yeogi kape isseoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 카페가 시장 옆에 있어요.",
+        "english": "Yes, the cafe is next to the market.",
+        "romanization": "ne, kapega sijang yeope isseoyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "은행은 시장 앞에 있어요?",
+        "english": "Is the bank in front of the market?",
+        "romanization": "eunhaengeun sijang ape isseoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "거기 은행 없어요. 저기 공원 뒤에 은행 있어요.",
+        "english": "There's no bank there. Over there behind the park, there is a bank.",
+        "romanization": "geogi eunhaeng eopseoyo. jeogi gongwon dwie eunhaeng isseoyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "도서관 위에 뭐 있어요?",
+        "english": "What's above the library?",
+        "romanization": "doseogwan wie mwo isseoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "도서관 위에 카페 있어요. 책은 도서관에 있어요.",
+        "english": "There's a cafe above the library. The books are in the library.",
+        "romanization": "doseogwan wie kape isseoyo. chaegeun doseogwane isseoyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "가방은 어디에 있어요? 여기 없어요.",
+        "english": "Where is the bag? It's not here.",
+        "romanization": "gabang-eun eodie isseoyo? yeogi eopseoyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "의자 아래에 있어요. 괜찮아요.",
+        "english": "It's under the chair. It's okay.",
+        "romanization": "uija araee isseoyo. gwaenchanayo."
+      }
+    ]
+  }
 }

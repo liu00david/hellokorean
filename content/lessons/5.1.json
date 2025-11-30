@@ -1,7 +1,7 @@
 {
   "id": "5.1",
   "group_id": "5",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Ordering Food Like a Local",
   "objectives": [
     "Order food and drinks politely",
@@ -37,5 +37,58 @@
     "For dine-in vs takeout, staff may ask '드시고 가세요?' Reply: 네, 먹고 갈게요 (eat here) / 포장해 주세요 (to go).",
     "카드로요? 현금으로요? means 'By card? By cash?' Reply with the method you prefer.",
     "After paying, you'll often hear 수고하세요 (take care/thanks for your effort) as you leave."
-  ]
+  ],
+  "dialogue": {
+    "title": "Ordering at a Restaurant",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "저기요! 메뉴 추천해 주세요.",
+        "english": "Excuse me! Please recommend a menu item.",
+        "romanization": "jeogiyo! menyu chucheonhae juseyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 불고기 추천이에요.",
+        "english": "Yes, bulgogi is the recommendation.",
+        "romanization": "ne, bulgogi chucheonieyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "이거 한 개, 저거 두 개 주세요.",
+        "english": "This one, one; that one, two, please.",
+        "romanization": "igeo han gae, jeogeo du gae juseyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 이거 한 개, 저거 두 개요.",
+        "english": "Okay, one of this, two of that.",
+        "romanization": "ne, igeo han gae, jeogeo du gaeyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "라면은 셋 개 주세요.",
+        "english": "Three ramen, please.",
+        "romanization": "ramyeoneun set gae juseyo."
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 라면 셋 개요. 포장해요?",
+        "english": "Okay, three ramen. Is it to go?",
+        "romanization": "ne, ramyeon set gaeyo. pojanghaeyo?"
+      },
+      {
+        "speaker": "지수",
+        "korean": "네, 포장해 주세요.",
+        "english": "Yes, please make it to go.",
+        "romanization": "ne, pojanghae juseyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "계산서 주세요.",
+        "english": "Bill, please.",
+        "romanization": "gyesanseo juseyo."
+      }
+    ]
+  }
 }

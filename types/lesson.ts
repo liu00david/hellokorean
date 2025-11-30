@@ -11,6 +11,18 @@ export interface Sentence {
   romanization: string;
 }
 
+export interface DialogueMessage {
+  speaker: string;
+  korean: string;
+  english: string;
+  romanization: string;
+}
+
+export interface Dialogue {
+  title: string;
+  messages: DialogueMessage[];
+}
+
 export interface Lesson {
   id: string;
   group_id: string;
@@ -21,6 +33,7 @@ export interface Lesson {
   vocabulary: VocabularyEntry[];
   sentences: Sentence[];
   explanation: string[];
+  dialogue?: Dialogue;
 }
 
 export interface LessonGroup {

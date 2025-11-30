@@ -1,7 +1,7 @@
 {
   "id": "5.0",
   "group_id": "5",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Korean Food Words & Flavors",
   "objectives": [
     "Name staple Korean foods and drinks",
@@ -38,5 +38,58 @@
     "밥 can mean 'rice' or 'meal.' 밥 먹었어요? often means 'Have you eaten? / How are you?'.",
     "Use 조금 (a little) or 아주/정말 (very) before adjectives: 조금 매워요, 아주 맛있어요.",
     "Add 은/는 to highlight contrast: 불고기는 안 매워요, 하지만 김치는 매워요."
-  ]
+  ],
+  "dialogue": {
+    "title": "Talking About Korean Dishes",
+    "messages": [
+      {
+        "speaker": "민호",
+        "korean": "안녕하세요! 오늘 밥 먹어요? 비빔밥 좋아해요?",
+        "english": "Hello! Are you eating rice today? Do you like bibimbap?",
+        "romanization": "annyeonghaseyo! oneul bap meogeoyo? bibimbap joahaeyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 비빔밥 맛있어요. 김치도 맛있어요.",
+        "english": "Yes, bibimbap is tasty. Kimchi is tasty too.",
+        "romanization": "ne, bibimbap masisseoyo. gimchido masisseoyo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "김치 매워요?",
+        "english": "Is the kimchi spicy?",
+        "romanization": "gimchi maewoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "매워요. 불고기는 안 매워요. 불고기 맛있어요.",
+        "english": "It's spicy. Bulgogi isn't spicy. Bulgogi is tasty.",
+        "romanization": "maewoyo. bulgogineun an maewoyo. bulgogi masisseoyo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "라면은 싱거워요?",
+        "english": "Is the ramen bland?",
+        "romanization": "ramyeoneun singgeowoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "라면은 안 싱거워요. 물도 있어요.",
+        "english": "The ramen isn't bland. There's water too.",
+        "romanization": "ramyeoneun an singgeowoyo. muldo isseoyo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "소주 있어요? 소주 맛있어요?",
+        "english": "Do you have soju? Is soju tasty?",
+        "romanization": "soju isseoyo? soju masisseoyo?"
+      },
+      {
+        "speaker": "동현",
+        "korean": "네, 소주 있어요. 저는 소주 좋아해요.",
+        "english": "Yes, we have soju. I like soju.",
+        "romanization": "ne, soju isseoyo. jeoneun soju joahaeyo."
+      }
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "3.1",
   "group_id": "3",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Daily Routine Verbs",
   "objectives": [
     "Talk about morning-to-night activities",
@@ -21,7 +21,11 @@
     {"word": "운동하다", "english": "to exercise", "romanization": "undonghada", "type": "verb"},
     {"word": "쉬다", "english": "to rest", "romanization": "swida", "type": "verb"},
     {"word": "만나다", "english": "to meet", "romanization": "mannada", "type": "verb"},
-    {"word": "잠자다", "english": "to sleep", "romanization": "jamjada", "type": "verb"}
+    {"word": "잠자다", "english": "to sleep", "romanization": "jamjada", "type": "verb"},
+    {"word": "아침", "english": "morning", "romanization": "achim", "type": "noun"},
+    {"word": "저녁", "english": "evening", "romanization": "jeonyeok", "type": "noun"},
+    {"word": "밤", "english": "night", "romanization": "bam", "type": "noun"},
+    {"word": "주말", "english": "weekend", "romanization": "jumal", "type": "noun"}
   ],
   "sentences": [
     {"korean": "아침에 일어나서 세수해요.", "english": "I wake up in the morning and wash my face.", "romanization": "achime ireonaseo sesuhaeyo."},
@@ -36,5 +40,46 @@
     "Company/workplace phrases often use 에서 to show where an action happens: 회사에서 일해요, 집에서 쉬어요.",
     "Time markers: 아침에 (in the morning), 점심에 (at lunchtime), 저녁에 (in the evening), 밤에 (at night).",
     "For routines, present tense alone implies habit: 주말에 운동해요 = I work out on weekends."
-  ]
+  ],
+  "dialogue": {
+    "title": "Daily Routine Check-In",
+    "messages": [
+      {
+        "speaker": "서연",
+        "korean": "안녕하세요, 준호! 오늘 아침에 일어나서 씻어요?",
+        "english": "Hello, Junho! Do you wake up and wash in the morning?",
+        "romanization": "annyeonghaseyo, junho! oneul achime ireonaseo ssiseoyo?"
+      },
+      {
+        "speaker": "준호",
+        "korean": "네, 아침에 일어나서 씻어요. 지금 일해요.",
+        "english": "Yes, I wake up in the morning and wash. I'm working now.",
+        "romanization": "ne, achime ireonaseo ssiseoyo. jigeum ilhaeyo."
+      },
+      {
+        "speaker": "서연",
+        "korean": "점심에 쉬어요?",
+        "english": "Do you rest at lunch?",
+        "romanization": "jeomsime swieoyo?"
+      },
+      {
+        "speaker": "준호",
+        "korean": "네, 점심에 쉬어요. 저녁에 운동해요.",
+        "english": "Yes, I rest at lunch. I work out in the evening.",
+        "romanization": "ne, jeomsime swieoyo. jeonyeoge undonghaeyo."
+      },
+      {
+        "speaker": "서연",
+        "korean": "저녁에 공부해요? 주말에는 민호 만나요?",
+        "english": "Do you study in the evening? Do you meet Minho on the weekend?",
+        "romanization": "jeonyeoge gongbuhaeyo? jumaleneun minho mannayo?"
+      },
+      {
+        "speaker": "준호",
+        "korean": "네, 저녁에 공부해요. 공부하고 쉬어요. 밤에 잠자요.",
+        "english": "Yes, I study in the evening. I study and rest. I sleep at night.",
+        "romanization": "ne, jeonyeoge gongbuhaeyo. gongbuhago swieoyo. bame jamjayo."
+      }
+    ]
+  }
 }

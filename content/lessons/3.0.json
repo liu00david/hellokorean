@@ -1,7 +1,7 @@
 {
   "id": "3.0",
   "group_id": "3",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Verb Basics & Present Tense",
   "objectives": [
     "Learn must-know base verbs",
@@ -21,7 +21,16 @@
     {"word": "마시다", "english": "to drink", "romanization": "masida", "type": "verb"},
     {"word": "보다", "english": "to see/watch", "romanization": "boda", "type": "verb"},
     {"word": "살다", "english": "to live", "romanization": "salda", "type": "verb"},
-    {"word": "알다", "english": "to know", "romanization": "alda", "type": "verb"}
+    {"word": "알다", "english": "to know", "romanization": "alda", "type": "verb"},
+    {"word": "집", "english": "home/house", "romanization": "jip", "type": "noun"},
+    {"word": "점심", "english": "lunch", "romanization": "jeomsim", "type": "noun"},
+    {"word": "커피", "english": "coffee", "romanization": "keopi", "type": "noun"},
+    {"word": "물", "english": "water", "romanization": "mul", "type": "noun"},
+    {"word": "오늘", "english": "today", "romanization": "oneul", "type": "adverb"},
+    {"word": "지금", "english": "now", "romanization": "jigeum", "type": "adverb"},
+    {"word": "드라마", "english": "drama/show", "romanization": "deurama", "type": "noun"},
+    {"word": "서울", "english": "Seoul", "romanization": "seoul", "type": "noun"},
+    {"word": "뭐", "english": "what", "romanization": "mwo", "type": "pronoun"}
   ],
   "sentences": [
     {"korean": "저는 집에 가요.", "english": "I go home.", "romanization": "jeoneun jibe gayo."},
@@ -36,5 +45,58 @@
     "은/는 marks topics, 이/가 marks subjects. You can often omit them in casual speech when context is clear.",
     "Present tense in Korean covers present and near future, like 'I go/I will go' depending on context.",
     "Stress syllables smoothly. No strong stress like English; keep rhythm even."
-  ]
+  ],
+  "dialogue": {
+    "title": "Lunch Plans with Basic Verbs",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "안녕하세요, 민호! 오늘 점심 먹어요?",
+        "english": "Hello, Minho! Are you eating lunch today?",
+        "romanization": "annyeonghaseyo, minho! oneul jeomsim meogeoyo?"
+      },
+      {
+        "speaker": "민호",
+        "korean": "네, 지금 점심 먹어요. 물도 마셔요.",
+        "english": "Yes, I'm eating lunch now. I drink water too.",
+        "romanization": "ne, jigeum jeomsim meogeoyo. muldo masyeoyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "저는 커피 마셔요. 점심 먹고 집에 가요.",
+        "english": "I drink coffee. After lunch I go home.",
+        "romanization": "jeoneun keopi masyeoyo. jeomsim meokgo jibe gayo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "저는 지금 집에 와요. 서울에 살아요.",
+        "english": "I'm coming home now. I live in Seoul.",
+        "romanization": "jeoneun jigeum jibe wayo. seoure salayo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "집에서 뭐 해요?",
+        "english": "What do you do at home?",
+        "romanization": "jibeseo mwo haeyo?"
+      },
+      {
+        "speaker": "민호",
+        "korean": "집에서 드라마 봐요. 드라마 알아요?",
+        "english": "I watch a drama at home. Do you know the drama?",
+        "romanization": "jibeseo deurama bwayo. deurama arayo?"
+      },
+      {
+        "speaker": "지수",
+        "korean": "네, 알아요. 저도 봐요.",
+        "english": "Yes, I know it. I watch it too.",
+        "romanization": "ne, arayo. jeodo bwayo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "오늘 집에서 봐요.",
+        "english": "Let's watch at home today.",
+        "romanization": "oneul jibeseo bwayo."
+      }
+    ]
+  }
 }

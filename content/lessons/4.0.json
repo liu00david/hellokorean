@@ -1,7 +1,7 @@
 {
   "id": "4.0",
   "group_id": "4",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "People & Relationships",
   "objectives": [
     "Name common people and relationships",
@@ -38,5 +38,58 @@
     "은/는 sets the topic (제 친구는...), 이/가 marks the subject (동료가...). Both can appear in one sentence if needed.",
     "For respect toward elders/parents, use honorific verbs like 계시다 (to be/exist honorifically) instead of 있다: 부모님이 계세요.",
     "To introduce someone: 이쪽은 제 친구 민수예요 = This is my friend Minsu."
-  ]
+  ],
+  "dialogue": {
+    "title": "Introducing Family and Friends",
+    "messages": [
+      {
+        "speaker": "수진",
+        "korean": "안녕하세요! 저는 선생님 수진이에요. 만나서 반갑습니다.",
+        "english": "Hello! I'm teacher Sujin. Nice to meet you.",
+        "romanization": "annyeonghaseyo! jeoneun seonsaengnim sujin-ieyo. mannaseo bangapseumnida."
+      },
+      {
+        "speaker": "서연",
+        "korean": "안녕하세요, 선생님. 저는 서연이에요. 제 남편 준호예요.",
+        "english": "Hello, teacher. I'm Seoyeon. This is my husband Junho.",
+        "romanization": "annyeonghaseyo, seonsaengnim. jeoneun seoyeon-ieyo. je nampyeon junho-yeyo."
+      },
+      {
+        "speaker": "준호",
+        "korean": "안녕하세요. 민호는 제 친구예요. 제 동료예요.",
+        "english": "Hello. Minho is my friend. He's my coworker.",
+        "romanization": "annyeonghaseyo. minhoneun je chingu-yeyo. je dongnyo-yeyo."
+      },
+      {
+        "speaker": "수진",
+        "korean": "가족은 서울에 있어요?",
+        "english": "Is your family in Seoul?",
+        "romanization": "gajogeun seoure isseoyo?"
+      },
+      {
+        "speaker": "서연",
+        "korean": "네, 제 가족은 서울에 있어요. 부모님도 서울에 있어요.",
+        "english": "Yes, my family is in Seoul. My parents are in Seoul too.",
+        "romanization": "ne, je gajogeun seoure isseoyo. bumonimdo seoure isseoyo."
+      },
+      {
+        "speaker": "준호",
+        "korean": "당신, 아이는 집에 있어요.",
+        "english": "Dear, our child is at home.",
+        "romanization": "dangsin, aineun jibe isseoyo."
+      },
+      {
+        "speaker": "수진",
+        "korean": "민호는 아내 있어요?",
+        "english": "Does Minho have a wife?",
+        "romanization": "minhoneun anae isseoyo?"
+      },
+      {
+        "speaker": "민호",
+        "korean": "네, 제 아내 있어요. 지금 집에 있어요.",
+        "english": "Yes, I have a wife. She's at home now.",
+        "romanization": "ne, je anae isseoyo. jigeum jibe isseoyo."
+      }
+    ]
+  }
 }

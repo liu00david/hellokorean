@@ -193,6 +193,7 @@ interface DbLesson {
   vocabulary: Lesson['vocabulary'];
   sentences: Lesson['sentences'];
   explanation: string[];
+  dialogue?: Lesson['dialogue'];
 }
 
 // Transform database lesson to Lesson type
@@ -207,5 +208,6 @@ function transformLesson(dbLesson: DbLesson): Lesson {
     vocabulary: dbLesson.vocabulary,
     sentences: dbLesson.sentences,
     explanation: dbLesson.explanation,
+    dialogue: dbLesson.dialogue,
   };
 }

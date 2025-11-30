@@ -166,8 +166,24 @@ export function LessonActions({ lessonId, lesson }: LessonActionsProps) {
     );
   }
 
+  // Check if we should show the reading button (groups 3+)
+  const shouldShowReadingButton = groupId && parseInt(groupId) >= 3;
+  const hasDialogue = !!lesson?.dialogue;
+  const readingLink = hasDialogue ? `/reading-practice/${lessonId}` : '/coming-soon';
+
   return (
     <div className="space-y-8">
+      {/* Reading button - Only for groups 3+ */}
+      {shouldShowReadingButton && (
+        <div className="flex justify-center">
+          <Link href={readingLink} className="w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="w-full sm:w-auto gap-2 bg-garden-lavender/20 hover:bg-garden-lavender/30 border-garden-lavender/40">
+              💬 Go to Lesson Reading
+            </Button>
+          </Link>
+        </div>
+      )}
+
       {/* Quiz button - Above the divider line */}
       <div className="flex justify-center">
         <Link href={`/quiz?lessonId=${lessonId}`} className="w-full sm:w-auto">

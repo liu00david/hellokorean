@@ -1,7 +1,7 @@
 {
   "id": "3.2",
   "group_id": "3",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "title": "Questions, Likes, and Negatives",
   "objectives": [
     "Turn verbs into questions",
@@ -21,7 +21,13 @@
     {"word": "알고 싶어요", "english": "I want to know", "romanization": "algo sipeoyo", "type": "phrase"},
     {"word": "안 가요", "english": "I don't go", "romanization": "an gayo", "type": "phrase"},
     {"word": "못 먹어요", "english": "I can't eat (unable)", "romanization": "mot meogeoyo", "type": "phrase"},
-    {"word": "괜찮아요?", "english": "Is it okay? / Are you okay?", "romanization": "gwaenchanayo?", "type": "phrase"}
+    {"word": "괜찮아요?", "english": "Is it okay? / Are you okay?", "romanization": "gwaenchanayo?", "type": "phrase"},
+    {"word": "한국", "english": "Korea/Korean", "romanization": "hanguk", "type": "noun"},
+    {"word": "음식", "english": "food", "romanization": "eumsik", "type": "noun"},
+    {"word": "식당", "english": "restaurant", "romanization": "sikdang", "type": "noun"},
+    {"word": "시간", "english": "time", "romanization": "sigan", "type": "noun"},
+    {"word": "언제", "english": "when", "romanization": "eonje", "type": "adverb"},
+    {"word": "어디", "english": "where", "romanization": "eodi", "type": "adverb"}
   ],
   "sentences": [
     {"korean": "한국 음식 좋아해요?", "english": "Do you like Korean food?", "romanization": "hanguk eumsik joahaeyo?"},
@@ -36,5 +42,46 @@
     "-고 싶어요 attaches to verb stems to express desire: 가고 싶어요 (I want to go), 배우고 싶어요 (I want to learn).",
     "안 + verb = don't/won't (choice). 못 + verb = can't (ability/circumstance).", 
     "필요하다 means 'to need.' You can say 필요 없어요 = I don't need it."
-  ]
+  ],
+  "dialogue": {
+    "title": "Choosing Lunch Plans",
+    "messages": [
+      {
+        "speaker": "지수",
+        "korean": "안녕하세요! 오늘 점심에 한국 음식 먹어요?",
+        "english": "Hello! Are you eating Korean food for lunch today?",
+        "romanization": "annyeonghaseyo! oneul jeomsime hanguk eumsik meogeoyo?"
+      },
+      {
+        "speaker": "민호",
+        "korean": "죄송합니다. 저는 지금 못 먹어요. 식당 안 가요.",
+        "english": "I'm sorry. I can't eat now. I'm not going to the restaurant.",
+        "romanization": "joesonghamnida. jeoneun jigeum mot meogeoyo. sikdang an gayo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "괜찮아요? 물 필요해요?",
+        "english": "Are you okay? Do you need water?",
+        "romanization": "gwaenchanayo? mul piryohaeyo?"
+      },
+      {
+        "speaker": "민호",
+        "korean": "네, 물이 필요해요. 커피도 좋아해요. 커피 원해요.",
+        "english": "Yes, I need water. I like coffee too. I want coffee.",
+        "romanization": "ne, muri piryohaeyo. keopido joahaeyo. keopi wonhaeyo."
+      },
+      {
+        "speaker": "지수",
+        "korean": "저는 커피 마시고 싶어요. 점심 시간 알고 싶어요.",
+        "english": "I want to drink coffee. I want to know the lunchtime.",
+        "romanization": "jeoneun keopi masigo sipeoyo. jeomsim sigan algo sipeoyo."
+      },
+      {
+        "speaker": "민호",
+        "korean": "저도 점심 시간 알고 싶어요. 괜찮아요.",
+        "english": "I also want to know the lunchtime. It's okay.",
+        "romanization": "jeodo jeomsim sigan algo sipeoyo. gwaenchanayo."
+      }
+    ]
+  }
 }

@@ -122,19 +122,19 @@ export function QuizQuestion({
         </div>
 
         {hasAnswered && (
-          <div className="mt-6 space-y-4">
-            <div className="p-4 bg-garden-mint/10 rounded-xl">
+          <div className="mt-3 md:mt-6 space-y-2 md:space-y-4">
+            <div className="py-2 px-3 md:p-4 bg-garden-mint/10 rounded-xl">
               {selectedAnswer === question.answer ? (
                 <div className="text-center">
-                  <div className="text-4xl mb-2">✓</div>
-                  <p className="text-lg font-semibold text-garden-leaf">
+                  <div className="text-3xl md:text-4xl mb-0.5 md:mb-2">✓</div>
+                  <p className="text-base md:text-lg font-semibold text-garden-leaf">
                     Correct!
                   </p>
                 </div>
               ) : (
                 <div className="text-center">
-                  <div className="text-4xl mb-2">✗</div>
-                  <p className="text-lg font-semibold text-red-500 mb-2">
+                  <div className="text-3xl md:text-4xl mb-0.5 md:mb-2">✗</div>
+                  <p className="text-base md:text-lg font-semibold text-red-500 mb-1 md:mb-2">
                     Incorrect
                   </p>
                   <p className="text-sm text-garden-earth/70">
@@ -148,7 +148,7 @@ export function QuizQuestion({
             {onNext && (
               <Button
                 onClick={onNext}
-                className="w-full py-6 text-lg"
+                className="w-full py-4 md:py-6 text-base md:text-lg"
                 variant="default"
               >
                 {questionNumber === totalQuestions

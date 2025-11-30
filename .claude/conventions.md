@@ -26,3 +26,18 @@ END;
 $$ LANGUAGE plpgsql SECURITY DEFINER
 SET search_path = public;  -- Always set this for SECURITY DEFINER functions
 ```
+
+## Lesson Content Versioning
+
+Whenever lesson content is updated in `content/lessons/*.json`, always bump the minor version number:
+
+```
+2.0.1 → 2.0.2
+3.1.5 → 3.1.6
+```
+
+This triggers the sync mechanism to update the database. The version format is:
+- **Major.Minor.Patch** (e.g., `2.0.1`)
+- Increment patch version for any content changes (vocabulary, dialogue, explanation, etc.)
+
+After updating versions, sync content via the admin panel to apply changes to the database.
