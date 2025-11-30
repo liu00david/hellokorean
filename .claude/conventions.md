@@ -4,8 +4,15 @@
 
 All new database migration files in `supabase/` should follow this naming format:
 
+```bash
+$(date +%Y%m%d)-purpose.sql
 ```
-YYYYMMDD-purpose.sql
+
+The date prefix is auto-generated using `date +%Y%m%d` command. Example usage:
+
+```bash
+# Create a new migration file with today's date
+touch supabase/$(date +%Y%m%d)-add-new-feature.sql
 ```
 
 Examples:
@@ -27,9 +34,33 @@ $$ LANGUAGE plpgsql SECURITY DEFINER
 SET search_path = public;  -- Always set this for SECURITY DEFINER functions
 ```
 
-## Lesson Content Versioning
+## Lesson Content Structure
 
-Whenever lesson content is updated in `content/lessons/*.json`, always bump the minor version number:
+Lesson files in `content/lessons/*.json` follow this structure:
+
+### Required Fields
+- `id`: Lesson identifier (e.g., `"3.0"`)
+- `group_id`: Group identifier (e.g., `"3"`)
+- `version`: Semantic version (e.g., `"2.1.1"`)
+- `title`: Lesson title
+- `objectives`: Array of learning objectives
+- `vocabulary`: Array of vocabulary items
+- `sentences`: Array of example sentences
+- `explanation`: Array of explanation strings
+
+### Optional Fields
+- `context`: Array of context strings
+- `dialogue`: Object containing reading practice dialogue
+  - `title`: Dialogue title (e.g., `"Lunch Plans with Basic Verbs"`)
+  - `messages`: Array of dialogue messages
+    - `speaker`: Speaker name
+    - `korean`: Korean text
+    - `english`: English translation
+    - `romanization`: Romanized text
+
+### Versioning
+
+Whenever lesson content is updated in `content/lessons/*.json`, always bump the patch version number:
 
 ```
 2.0.1 → 2.0.2
