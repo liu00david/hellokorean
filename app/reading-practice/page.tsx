@@ -103,7 +103,7 @@ export default function ReadingPracticePage() {
                               <span className="text-sm font-semibold text-garden-earth/60">
                                 {lesson.id}
                               </span>
-                              <h3 className="text-lg font-semibold text-garden-earth group-hover:text-garden-lavender/80">
+                              <h3 className="text-lg font-semibold text-garden-earth group-hover:text-garden-earth/80">
                                 {lesson.dialogue?.title}
                               </h3>
                             </div>
